@@ -808,5 +808,437 @@
             }
         ],
         "explanation": "for (int i = 0; i < c.length; i++) { ... }"
+    },
+    {
+        "id": "q31",
+        "text": "Si 'Chat' hérite de 'Animal', et qu'on exécute : 'Animal a = new Chat(...);'. Quelles méthodes l'instance 'a' peut-elle appeler directement ?",
+        "explanation": "Seulement les méthodes définies dans la classe Animal (ou héritées par Animal).",
+        "options": [
+            {
+                "id": "a",
+                "label": "Toutes les méthodes de 'Animal' ET toutes celles de 'Chat'.",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Seulement les méthodes définies dans la classe Animal (ou héritées par Animal).",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Seulement les méthodes de 'Chat', car l'objet réel est un 'Chat'.",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Aucune, il faut 'caster' 'a' en 'Chat' d'abord.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "id": "q32",
+        "text": "Que se passe-t-il si on essaie d'instancier une classe déclarée 'public abstract class Animal' ?",
+        "explanation": "Le compilateur lève une erreur car la classe est abstraite.",
+        "options": [
+            {
+                "id": "a",
+                "label": "Un objet 'Animal' est créé avec des valeurs 'null' pour ses attributs.",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Cela fonctionne uniquement si la classe abstraite n'a pas de méthodes abstraites.",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Le compilateur lève une erreur car la classe est abstraite.",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Une 'AbstractMethodException' est levée à l'exécution.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "id": "q33",
+        "text": "Quelle est la principale contrainte d'une méthode 'static' (méthode de classe) ?",
+        "explanation": "Elle ne peut pas accéder à des membres d'instance (non statiques) comme 'this'.",
+        "options": [
+            {
+                "id": "a",
+                "label": "Elle ne peut pas être appelée depuis l'extérieur de la classe.",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Elle ne peut pas avoir de paramètres.",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Elle doit obligatoirement retourner une valeur.",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Elle ne peut pas accéder à des membres d'instance (non statiques) comme 'this'.",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "id": "q34",
+        "text": "Dans le constructeur d'une classe enfant, quelle est la règle impérative concernant l'appel 'super(...)' ?",
+        "explanation": "Il doit s'agir de la toute première instruction du constructeur.",
+        "options": [
+            {
+                "id": "a",
+                "label": "Il doit s'agir de la toute première instruction du constructeur.",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Il doit être appelé après l'initialisation des attributs de l'enfant.",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Il est optionnel si la classe parent a un constructeur.",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Il doit être la dernière instruction du constructeur.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "id": "q35",
+        "text": "Pourquoi 'String s1 = \"txt\"; String s2 = \"txt\";' donne-t-il 'true' pour 's1 == s2' ?",
+        "explanation": "Par optimisation, Java crée une seule instance de la chaîne 'txt' dans le 'String pool'.",
+        "options": [
+            {
+                "id": "a",
+                "label": "Car '.equals()' est appelé implicitement par '=='.",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Par optimisation, Java crée une seule instance de la chaîne 'txt' dans le 'String pool'.",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "'==' compare toujours la valeur des chaînes, pas la référence.",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "C'est un cas particulier qui ne fonctionne que pour la chaîne 'txt'.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "id": "q36",
+        "text": "Si 'String s3 = \"5\";' et 'int i1 = 5;', que retourne 's3.equals(i1)' ?",
+        "explanation": "False, car 'equals' compare le type et la valeur, et 'i1' n'est pas un 'String'.",
+        "options": [
+            {
+                "id": "a",
+                "label": "True, car Java convertit 'i1' en 'String' avant la comparaison.",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Une erreur de compilation car on ne peut pas comparer un 'String' et un 'int'.",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "False, car 'equals' compare le type et la valeur, et 'i1' n'est pas un 'String'.",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Une 'ClassCastException' à l'exécution.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "id": "q37",
+        "text": "Quel modificateur rend un élément accessible uniquement dans sa classe et son package ?",
+        "explanation": "Le modificateur par défaut (aucun mot-clé).",
+        "options": [
+            {
+                "id": "a",
+                "label": "private",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "public",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "protected",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le modificateur par défaut (aucun mot-clé).",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "id": "q38",
+        "text": "À quoi sert la généricité (ex: 'class Cellule&ltT&gt') ?",
+        "explanation": "À créer une classe qui peut fonctionner avec différents types d'objets (placeholder).",
+        "options": [
+            {
+                "id": "a",
+                "label": "À créer une classe qui ne peut être instanciée qu'une seule fois.",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "À forcer la classe à être 'public'.",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "À créer une classe qui peut fonctionner avec différents types d'objets (placeholder).",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "À marquer la classe comme étant un 'Test'.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "id": "q39",
+        "text": "Que signifie 'public sealed interface Animal permits Chien, Chat' ?",
+        "explanation": "Que seule les classes 'Chien' et 'Chat' sont autorisées à implémenter 'Animal'.",
+        "options": [
+            {
+                "id": "a",
+                "label": "Que 'Animal' ne peut être utilisée que par les classes 'Chien' et 'Chat'.",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Que seule les classes 'Chien' et 'Chat' sont autorisées à implémenter 'Animal'.",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Que 'Animal' hérite de 'Chien' et 'Chat'.",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Que l'interface est verrouillée et ne peut plus être modifiée.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "id": "q40",
+        "text": "Si une classe 'Chat' est déclarée 'public non-sealed class Chat... ' (héritant d'une classe scellée), qu'est-ce que cela implique ?",
+        "explanation": "Que n'importe quelle autre classe peut désormais hériter de 'Chat'.",
+        "options": [
+            {
+                "id": "a",
+                "label": "Que 'Chat' ne peut plus hériter de personne.",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Que 'Chat' ne peut pas être instanciée.",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Que n'importe quelle autre classe peut désormais hériter de 'Chat'.",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Que 'Chat' est obligée d'implémenter une interface.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "id": "q41",
+        "text": "Techniquement, qu'est-ce que 'LUNDI' dans 'public enum Jour { LUNDI, MARDI... }' ?",
+        "explanation": "Une instance 'public static final' de la classe 'Jour'.",
+        "options": [
+            {
+                "id": "a",
+                "label": "Une simple variable 'String' statique.",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Une variable 'int' globale.",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Une instance 'public static final' de la classe 'Jour'.",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Une méthode statique qui retourne un 'Jour'.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "id": "q42",
+        "text": "Quelle est la principale différence conceptuelle entre 'Classe abstraite' et 'Interface' ?",
+        "explanation": "La classe abstraite définit ce qu'un objet 'est', l'interface définit ce qu'il 'sait faire'.",
+        "options": [
+            {
+                "id": "a",
+                "label": "Les interfaces ne peuvent pas avoir de méthodes, seulement des attributs.",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Les classes abstraites ne peuvent pas avoir de constructeur.",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "La classe abstraite définit ce qu'un objet 'est', l'interface définit ce qu'il 'sait faire'.",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "On ne peut hériter que d'une interface, mais implémenter plusieurs classes abstraites.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "id": "q43",
+        "text": "Si 'Chat c1 = new Chat(10, \"Oupi\");', où est stockée la référence 'c1' et où est stocké l'objet 'Chat' ?",
+        "explanation": "La référence 'c1' est sur la pile, l'objet 'Chat' créé avec 'new' est sur le tas.",
+        "options": [
+            {
+                "id": "a",
+                "label": "Les deux sont stockés sur le tas.",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Les deux sont stockés sur la pile.",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "La référence 'c1' est sur le tas, l'objet 'Chat' est sur la pile.",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "La référence 'c1' est sur la pile, l'objet 'Chat' créé avec 'new' est sur le tas.",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "id": "q44",
+        "text": "Qu'est-il impossible de faire avec une variable de type 'null' ?",
+        "explanation": "Accéder à ses attributs ou appeler ses méthodes (non statiques).",
+        "options": [
+            {
+                "id": "a",
+                "label": "La comparer avec '==' à une autre variable.",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "L'assigner à une variable de type 'Object'.",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Accéder à ses attributs ou appeler ses méthodes (non statiques).",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "La passer en paramètre d'une méthode.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "id": "q45",
+        "text": "Une classe 'public abstract class Forme implements Dessinable' est déclarée. Doit-elle implémenter les méthodes de 'Dessinable' ?",
+        "explanation": "Non, elle peut choisir de ne pas les implémenter (laissant les sous-classes le faire).",
+        "options": [
+            {
+                "id": "a",
+                "label": "Oui, toute classe qui 'implements' une interface doit implémenter toutes ses méthodes.",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Non, car une classe abstraite ne peut pas implémenter d'interface.",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Non, elle peut choisir de ne pas les implémenter (laissant les sous-classes le faire).",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Oui, mais seulement si 'Dessinable' est aussi 'abstract'.",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "id": "q46",
+        "text": "Que signifie le modificateur 'protected' sur un attribut ?",
+        "explanation": "Il est accessible par la classe, le package, et les sous-classes (même hors package).",
+        "options": [
+            {
+                "id": "a",
+                "label": "Il est accessible uniquement par la classe et ses sous-classes (pas le package).",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Il est accessible par la classe, le package, et les sous-classes (même hors package).",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Il est synonyme de 'private', mais pour l'héritage.",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Il n'est accessible que par le package.",
+                "correct": false
+            }
+        ]
     }
 ]

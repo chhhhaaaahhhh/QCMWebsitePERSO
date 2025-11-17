@@ -1,0 +1,3539 @@
+[
+    {
+        "id": "q01",
+        "text": "Select the correct definition for the word \"subtle\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "delicate, slight, artful",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "intrude, invade, overstep",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "risk, peril, danger",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "roommate",
+                "correct": false
+            }
+        ],
+        "explanation": "Subtle means delicate, slight, artful."
+    },
+    {
+        "id": "q02",
+        "text": "Select the correct definition for the word \"flash (v)\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "display something briefly",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "to rise and float in the air",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "good, fund, property",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "monotony, tedium",
+                "correct": false
+            }
+        ],
+        "explanation": "Flash means to display something briefly."
+    },
+    {
+        "id": "q03",
+        "text": "Select the correct definition for the word \"brainwash (v)\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "to make someone believe something that is not true",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "extendable",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "assignment, vocation, task",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "split, break, tear",
+                "correct": false
+            }
+        ],
+        "explanation": "Brainwash means persuading someone to believe something untrue."
+    },
+    {
+        "id": "q04",
+        "text": "Select the correct definition for the word \"drove (n)\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "crowd",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "innovator, founder, explorer",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "add, deposit",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "saving account",
+                "correct": false
+            }
+        ],
+        "explanation": "Drove means crowd."
+    },
+    {
+        "id": "q05",
+        "text": "Select the correct definition for the word \"tailor (v)\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "customize, adapt, personalize",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "risk, peril, danger",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "feeling of longing for one’s home",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "pressure loss trouble",
+                "correct": false
+            }
+        ],
+        "explanation": "Tailor means customize, adapt, personalize."
+    },
+    {
+        "id": "q06",
+        "text": "Select the correct definition for the word \"scholar\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "highly educated, intellectual",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "move or travel",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "intrude, invade, overstep",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "interact, engage in social activities",
+                "correct": false
+            }
+        ],
+        "explanation": "A scholar is a highly educated, intellectual person."
+    },
+    {
+        "id": "q07",
+        "text": "Select the correct definition for the word \"revolve around\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "focus on, center on",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "remove, withdraw",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "legislator, authority",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "richness",
+                "correct": false
+            }
+        ],
+        "explanation": "Revolve around means focus on, center on."
+    },
+    {
+        "id": "q08",
+        "text": "Select the correct definition for the word \"subversive\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "challenging and disruptive",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "to rise and float in the air",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "mobile wallet",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "affiliate company, branch",
+                "correct": false
+            }
+        ],
+        "explanation": "Subversive means challenging and disruptive."
+    },
+    {
+        "id": "q09",
+        "text": "Select the correct definition for the word \"wear down\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "tire, fatigue",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "monetary, economic",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "good, fund, property",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "innovator, founder, explorer",
+                "correct": false
+            }
+        ],
+        "explanation": "Wear down means tire, fatigue."
+    },
+    {
+        "id": "q10",
+        "text": "Select the correct definition for the word \"aisle\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "passageway",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "investor",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "execute, fulfill",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "strong and intense desire for something",
+                "correct": false
+            }
+        ],
+        "explanation": "Aisle means passageway."
+    },
+    {
+        "id": "q11",
+        "text": "Select the correct definition for the word \"tempt\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "attract, entice, seduce",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "pressure loss trouble",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "monotony, tedium",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "investor",
+                "correct": false
+            }
+        ],
+        "explanation": "Tempt means attract, entice, seduce."
+    },
+    {
+        "id": "q12",
+        "text": "Select the correct definition for the word \"fleeting\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "passing, momentary",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "unfavorably known",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "saving account",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "legislator, authority",
+                "correct": false
+            }
+        ],
+        "explanation": "Fleeting means passing, momentary."
+    },
+    {
+        "id": "q13",
+        "text": "Select the correct definition for the word \"controversial\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "debatable",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "risk, peril, danger",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "richness",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "home loan",
+                "correct": false
+            }
+        ],
+        "explanation": "Controversial means debatable."
+    },
+    {
+        "id": "q14",
+        "text": "Select the correct definition for the word \"compel\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "force",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "move or travel",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "regain, retrieve",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "deal, purchase",
+                "correct": false
+            }
+        ],
+        "explanation": "Compel means force."
+    },
+    {
+        "id": "q15",
+        "text": "Select the correct definition for the word \"quirk (n)\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "unusual or unexpected habit",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "provide, deliver",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "roommate",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "interchange fee",
+                "correct": false
+            }
+        ],
+        "explanation": "A quirk is an unusual or unexpected habit."
+    },
+    {
+        "id": "q16",
+        "text": "Select the correct definition for the word \"cooperative\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "teamwork, collaborative",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "strong connection or attachment",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "intrude, invade, overstep",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "innovator, founder, explorer",
+                "correct": false
+            }
+        ],
+        "explanation": "Cooperative means teamwork, collaborative."
+    },
+    {
+        "id": "q17",
+        "text": "Select the correct definition for the word \"rewind (v)\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "go back",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "interact, engage in social activities",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "faraway, distant",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "pressure loss trouble",
+                "correct": false
+            }
+        ],
+        "explanation": "Rewind means to go back."
+    },
+    {
+        "id": "q18",
+        "text": "Select the correct definition for the word \"supplier\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "a company that provides a particular product",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "strong desire for something",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "monotony, tedium",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "force",
+                "correct": false
+            }
+        ],
+        "explanation": "A supplier is a company that provides a particular product."
+    },
+    {
+        "id": "q19",
+        "text": "Select the correct definition for the word \"negotiate\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "discuss, transact",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "execute, fulfill",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "pressure loss trouble",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "unfavorably known",
+                "correct": false
+            }
+        ],
+        "explanation": "Negotiate means discuss, transact."
+    },
+    {
+        "id": "q20",
+        "text": "Select the correct definition for the word \"equitable\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "reasonable, just, fair",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "high-speed transport system",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "legislator, authority",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "to make someone believe something false",
+                "correct": false
+            }
+        ],
+        "explanation": "Equitable means reasonable, just, fair."
+    },
+    {
+        "id": "q21",
+        "text": "Select the correct definition for the word \"pioneer\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "innovator, founder, settler, developer, explorer",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "interact, engage in social activities",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "faraway, distant",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "richness",
+                "correct": false
+            }
+        ],
+        "explanation": "A pioneer is an innovator, founder, settler, developer, explorer."
+    },
+    {
+        "id": "q22",
+        "text": "Select the correct definition for the word \"stock (n)\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "good, fund, property",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "monetary, economic",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "challenging and disruptive",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "split, break, tear",
+                "correct": false
+            }
+        ],
+        "explanation": "Stock refers to goods, funds or property."
+    },
+    {
+        "id": "q23",
+        "text": "Select the correct definition for the word \"overarching (adj)\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "something that is comprehensive, all-encompassing",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "pressure loss trouble",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "legislator, authority",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "monotony, tedium",
+                "correct": false
+            }
+        ],
+        "explanation": "Overarching means comprehensive, all-encompassing."
+    },
+    {
+        "id": "q24",
+        "text": "Select the correct definition for the word \"jointly\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "collectively, together, mutually",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "regain, retrieve",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "interchange fee",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "pressure loss trouble",
+                "correct": false
+            }
+        ],
+        "explanation": "Jointly means collectively, together, mutually."
+    },
+    {
+        "id": "q25",
+        "text": "Select the correct definition for the word \"shareholder\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "investor",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "force",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "saving account",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "risk, peril, danger",
+                "correct": false
+            }
+        ],
+        "explanation": "A shareholder is an investor."
+    },
+    {
+        "id": "q26",
+        "text": "Select the correct definition for the word \"mission\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "assignment, vocation, task",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "innovator, founder, explorer",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "richness",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "strong desire for something",
+                "correct": false
+            }
+        ],
+        "explanation": "Mission means assignment, vocation, task."
+    },
+    {
+        "id": "q27",
+        "text": "Select the correct definition for the word \"implement\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "execute, fulfill",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "remove, withdraw",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "cultural unease, adjustment difficulty",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "regain, retrieve",
+                "correct": false
+            }
+        ],
+        "explanation": "Implement means execute, fulfill."
+    },
+    {
+        "id": "q28",
+        "text": "Select the correct definition for the word \"payment\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "interchange fee",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "roommate",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "faraway, distant",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "pressure loss trouble",
+                "correct": false
+            }
+        ],
+        "explanation": "Payment refers to an interchange fee."
+    },
+    {
+        "id": "q29",
+        "text": "Select the correct definition for the word \"digital wallet\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "mobile wallet",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "force",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "assignment, vocation, task",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "innovator, founder, explorer",
+                "correct": false
+            }
+        ],
+        "explanation": "A digital wallet is a mobile wallet."
+    },
+    {
+        "id": "q30",
+        "text": "Select the correct definition for the word \"financial\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "monetary, economic",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "split, break, tear",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "good, fund, property",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "move or travel",
+                "correct": false
+            }
+        ],
+        "explanation": "Financial means monetary, economic."
+    },
+    {
+        "id": "q31",
+        "text": "Select the correct definition for the word \"threat (n)\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "risk, peril, danger",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "richness",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "faraway, distant",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "innovator, founder, explorer",
+                "correct": false
+            }
+        ],
+        "explanation": "A threat is a risk, peril or danger."
+    },
+    {
+        "id": "q32",
+        "text": "Select the correct definition for the word \"encroach\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "intrude, invade, overstep",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "pressure loss trouble",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "assignment, vocation, task",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "monotony, tedium",
+                "correct": false
+            }
+        ],
+        "explanation": "Encroach means intrude, invade, overstep."
+    },
+    {
+        "id": "q33",
+        "text": "Select the correct definition for the word \"competitor\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "rival",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "passageway",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "extendable",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "legislator, authority",
+                "correct": false
+            }
+        ],
+        "explanation": "A competitor is a rival."
+    },
+    {
+        "id": "q34",
+        "text": "Select the correct definition for the word \"deposit account\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "saving account",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "pressure loss trouble",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "interact, engage in social activities",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "force",
+                "correct": false
+            }
+        ],
+        "explanation": "A deposit account is a saving account."
+    },
+    {
+        "id": "q35",
+        "text": "Select the correct definition for the word \"revenue (n)\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "income, profit",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "innovator, founder, explorer",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "move or travel",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "assignment, vocation, task",
+                "correct": false
+            }
+        ],
+        "explanation": "Revenue means income, profit."
+    },
+    {
+        "id": "q36",
+        "text": "Select the correct definition for the word \"transaction\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "deal, purchase",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "social services counselor",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "to rise and float in the air",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "unusual or unexpected habit",
+                "correct": false
+            }
+        ],
+        "explanation": "A transaction is a deal or purchase."
+    },
+    {
+        "id": "q37",
+        "text": "Select the correct definition for the word \"debit\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "remove, withdraw",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "monetary, economic",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "a strong connection or attachment",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "split, break, tear",
+                "correct": false
+            }
+        ],
+        "explanation": "To debit means to remove or withdraw."
+    },
+    {
+        "id": "q38",
+        "text": "Select the correct definition for the word \"credit\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "add, deposit",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "richness",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "assignment, vocation, task",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "interact, engage in social activities",
+                "correct": false
+            }
+        ],
+        "explanation": "To credit means to add or deposit."
+    },
+    {
+        "id": "q39",
+        "text": "Select the correct definition for the word \"issue (v)\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "provide, deliver",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "risk, peril, danger",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "monotony, tedium",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "regain, retrieve",
+                "correct": false
+            }
+        ],
+        "explanation": "Issue means provide, deliver."
+    },
+    {
+        "id": "q40",
+        "text": "Select the correct definition for the word \"lender\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "loan provider",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "teamwork, collaborative",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "passageway",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "faraway, distant",
+                "correct": false
+            }
+        ],
+        "explanation": "A lender is a loan provider."
+    },
+    {
+        "id": "q41",
+        "text": "Select the correct definition for the word \"subsidiary\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "affiliate company, branch",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "risk, peril, danger",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "interact, engage in social activities",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "remove, withdraw",
+                "correct": false
+            }
+        ],
+        "explanation": "A subsidiary is an affiliate company or branch."
+    },
+    {
+        "id": "q42",
+        "text": "Select the correct definition for the word \"eligible\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "proper, acceptable, qualified",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "monotony, tedium",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "pressure loss trouble",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "richness",
+                "correct": false
+            }
+        ],
+        "explanation": "Eligible means proper, acceptable, qualified."
+    },
+    {
+        "id": "q43",
+        "text": "Select the correct definition for the word \"remote (adj)\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "faraway, distant",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "assignment, vocation, task",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "pressure loss trouble",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "interchange fee",
+                "correct": false
+            }
+        ],
+        "explanation": "Remote means faraway, distant."
+    },
+    {
+        "id": "q44",
+        "text": "Select the correct definition for the word \"reclaim (v)\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "regain, retrieve",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "move or travel",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "execute, fulfill",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "strong connection or attachment",
+                "correct": false
+            }
+        ],
+        "explanation": "Reclaim means regain, retrieve."
+    },
+    {
+        "id": "q45",
+        "text": "Select the correct definition for the word \"fare (n)\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "expense",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "to rise and float in the air",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "saving account",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "richness",
+                "correct": false
+            }
+        ],
+        "explanation": "Fare refers to an expense."
+    },
+    {
+        "id": "q46",
+        "text": "Select the correct definition for the word \"reluctant\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "hesitant, unwilling",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "legislator, authority",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "force",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "richness",
+                "correct": false
+            }
+        ],
+        "explanation": "Reluctant means hesitant or unwilling."
+    },
+    {
+        "id": "q47",
+        "text": "Select the correct definition for the word \"give up\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "surrender",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "remove, withdraw",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "innovator, founder, explorer",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "teamwork, collaborative",
+                "correct": false
+            }
+        ],
+        "explanation": "Give up means surrender."
+    },
+    {
+        "id": "q48",
+        "text": "Select the correct definition for the word \"mortgage\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "home loan",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "pressure loss trouble",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "mobile wallet",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "introducing initiatives",
+                "correct": false
+            }
+        ],
+        "explanation": "A mortgage is a home loan."
+    },
+    {
+        "id": "q49",
+        "text": "Select the correct definition for the word \"policymaker\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "legislator, authority",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "strong desire for something",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "passageway",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "deal, purchase",
+                "correct": false
+            }
+        ],
+        "explanation": "A policymaker is a legislator or authority."
+    },
+    {
+        "id": "q50",
+        "text": "Select the correct definition for the word \"boredom\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "monotony, tedium",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "investor",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "intrude, invade, overstep",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "high-speed transport system",
+                "correct": false
+            }
+        ],
+        "explanation": "Boredom means monotony, tedium."
+    },
+    {
+        "id": "q51",
+        "text": "Select the correct definition for the word \"commuter\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "passenger, traveler",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "strong connection or attachment",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "intrude, invade, overstep",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "challenging and disruptive",
+                "correct": false
+            }
+        ],
+        "explanation": "A commuter is a passenger or traveler."
+    },
+    {
+        "id": "q52",
+        "text": "Select the correct definition for the word \"tackle (v)\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "handle, manage, address",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "monotony, tedium",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "legislator, authority",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "intrude, invade, overstep",
+                "correct": false
+            }
+        ],
+        "explanation": "Tackle means handle, manage, address."
+    },
+    {
+        "id": "q53",
+        "text": "Select the correct definition for the word \"revolutionize\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "transform, modernize",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "roommate",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "good, fund, property",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "saving account",
+                "correct": false
+            }
+        ],
+        "explanation": "Revolutionize means transform, modernize."
+    },
+    {
+        "id": "q54",
+        "text": "Select the correct definition for the word \"underfunded\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "insufficient money",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "mobile wallet",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "force",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "strong desire for something",
+                "correct": false
+            }
+        ],
+        "explanation": "Underfunded means having insufficient money."
+    },
+    {
+        "id": "q55",
+        "text": "Select the correct definition for the word \"luxury\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "richness",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "passageway",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "pressure loss trouble",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "legislator, authority",
+                "correct": false
+            }
+        ],
+        "explanation": "Luxury refers to richness."
+    },
+    {
+        "id": "q56",
+        "text": "Select the correct definition for the word \"futuristic pod\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "high-tech enclosure, advanced capsule",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "innovator, founder, explorer",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "monotony, tedium",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "challenging and disruptive",
+                "correct": false
+            }
+        ],
+        "explanation": "A futuristic pod is a high-tech enclosure or advanced capsule."
+    },
+    {
+        "id": "q57",
+        "text": "Select the correct definition for the word \"scalable\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "extendable",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "risk, peril, danger",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "pressure loss trouble",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "move or travel",
+                "correct": false
+            }
+        ],
+        "explanation": "Scalable means extendable."
+    },
+    {
+        "id": "q58",
+        "text": "Select the correct definition for the word \"plague (v)\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "trouble, bother",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "monotony, tedium",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "saving account",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "faraway, distant",
+                "correct": false
+            }
+        ],
+        "explanation": "To plague means to trouble or bother."
+    },
+    {
+        "id": "q59",
+        "text": "Select the correct definition for the word \"levitate (v)\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "to rise and float in the air",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "risk, peril, danger",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "investor",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "richness",
+                "correct": false
+            }
+        ],
+        "explanation": "To levitate means to rise and float in the air."
+    },
+    {
+        "id": "q60",
+        "text": "Select the correct definition for the word \"rupture (n)\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "split, break, tear",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "legislator, authority",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "monotony, tedium",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "to make someone believe something false",
+                "correct": false
+            }
+        ],
+        "explanation": "A rupture is a split, break or tear."
+    },
+    {
+        "id": "q61",
+        "text": "Select the correct definition for the word \"hyperloop\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "high-speed transport system",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "strong desire for something",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "loan provider",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "challenging and disruptive",
+                "correct": false
+            }
+        ],
+        "explanation": "A hyperloop is a high-speed transport system."
+    },
+    {
+        "id": "q62",
+        "text": "Select the correct definition for the word \"unveiling plans\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "introducing initiatives",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "risk, peril, danger",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "affiliate company, branch",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "interact, engage in social activities",
+                "correct": false
+            }
+        ],
+        "explanation": "Unveiling plans means introducing initiatives."
+    },
+    {
+        "id": "q63",
+        "text": "Select the correct definition for the word \"proprietary (n)\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "ownership",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "monotony, tedium",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "richness",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "to rise and float in the air",
+                "correct": false
+            }
+        ],
+        "explanation": "Proprietary refers to ownership."
+    },
+    {
+        "id": "q64",
+        "text": "Select the correct definition for the word \"vacuum failure\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "pressure loss trouble",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "mobile wallet",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "investor",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "faraway, distant",
+                "correct": false
+            }
+        ],
+        "explanation": "Vacuum failure refers to pressure loss trouble."
+    },
+    {
+        "id": "q65",
+        "text": "Select the correct definition for the word \"daunting\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "frightening",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "good, fund, property",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "passageway",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "monetary, economic",
+                "correct": false
+            }
+        ],
+        "explanation": "Daunting means frightening."
+    },
+    {
+        "id": "q66",
+        "text": "Select the correct definition for the word \"warn (v)\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "inform",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "teamwork, collaborative",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "pressure loss trouble",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "strong desire for something",
+                "correct": false
+            }
+        ],
+        "explanation": "Warn means inform."
+    },
+    {
+        "id": "q67",
+        "text": "Select the correct definition for the word \"homesick\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "feeling of longing or nostalgia for one’s home",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "risk, peril, danger",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "interact, engage in social activities",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "monotony, tedium",
+                "correct": false
+            }
+        ],
+        "explanation": "Homesick means feeling longing or nostalgia for one’s home."
+    },
+    {
+        "id": "q68",
+        "text": "Select the correct definition for the word \"culture shock\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "cultural unease, cultural adjustment difficulties",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "add, deposit",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "extendable",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "challenging and disruptive",
+                "correct": false
+            }
+        ],
+        "explanation": "Culture shock refers to cultural unease or adjustment difficulty."
+    },
+    {
+        "id": "q69",
+        "text": "Select the correct definition for the word \"infamous\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "unfavorably known",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "monotony, tedium",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "strong connection or attachment",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "execute, fulfill",
+                "correct": false
+            }
+        ],
+        "explanation": "Infamous means unfavorably known."
+    },
+    {
+        "id": "q70",
+        "text": "Select the correct definition for the word \"overwhelmed\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "deeply and intensely affected by many emotions, tasks, or situations",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "pressure loss trouble",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "saving account",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "richness",
+                "correct": false
+            }
+        ],
+        "explanation": "Overwhelmed means deeply and intensely affected by many emotions or tasks."
+    },
+    {
+        "id": "q71",
+        "text": "Select the correct definition for the word \"get around\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "move or travel",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "home loan",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "deal, purchase",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "pressure loss trouble",
+                "correct": false
+            }
+        ],
+        "explanation": "Get around means move or travel."
+    },
+    {
+        "id": "q72",
+        "text": "Select the correct definition for the word \"crave (n)\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "strong and intense desire for something",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "affiliate company, branch",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "teamwork, collaborative",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "remove, withdraw",
+                "correct": false
+            }
+        ],
+        "explanation": "To crave means to have a strong and intense desire."
+    },
+    {
+        "id": "q73",
+        "text": "Select the correct definition for the word \"flatmate\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "roommate",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "risk, peril, danger",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "loan provider",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "faraway, distant",
+                "correct": false
+            }
+        ],
+        "explanation": "A flatmate is a roommate."
+    },
+    {
+        "id": "q74",
+        "text": "Select the correct definition for the word \"bond (n)\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "a strong connection or attachment between individuals",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "saving account",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "roommate",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "mobile wallet",
+                "correct": false
+            }
+        ],
+        "explanation": "A bond is a strong connection or attachment between individuals."
+    },
+    {
+        "id": "q75",
+        "text": "Select the correct definition for the word \"welfare advisor\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "social services counselor",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "deal, purchase",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "innovator, founder, explorer",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "pressure loss trouble",
+                "correct": false
+            }
+        ],
+        "explanation": "A welfare advisor is a social services counselor."
+    },
+    {
+        "id": "q76",
+        "text": "Select the correct definition for the word \"socialize\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "interact, engage in social activities",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "monetary, economic",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "passageway",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "risk, peril, danger",
+                "correct": false
+            }
+        ],
+        "explanation": "Socialize means interact, engage in social activities."
+    },
+    {
+        "id": "q77",
+        "text": "Select the correct definition for the word \"literally\".",
+        "options": [
+            {
+                "id": "a",
+                "label": "truly",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "faraway, distant",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "home loan",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "risk, peril, danger",
+                "correct": false
+            }
+        ],
+        "explanation": "Literally means truly."
+    },
+    {
+        "id": "q101",
+        "text": "Which word matches the following definition: \"delicate, slight, artful\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "subtle",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "flash (v)",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "brainwash (v)",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "drove (n)",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"delicate, slight, artful\" corresponds to the word \"subtle\"."
+    },
+    {
+        "id": "q102",
+        "text": "Which word matches the following definition: \"display something briefly\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "flash (v)",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "subtle",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "tailor (v)",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "scholar",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"display something briefly\" corresponds to the word \"flash (v)\"."
+    },
+    {
+        "id": "q103",
+        "text": "Which word matches the following definition: \"to make someone believe something that is not true\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "brainwash (v)",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "revolve around",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "compel",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "tempt",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"to make someone believe something that is not true\" corresponds to the word \"brainwash (v)\"."
+    },
+    {
+        "id": "q104",
+        "text": "Which word matches the following definition: \"crowd\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "drove (n)",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "bond (n)",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "commuter",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "threat (n)",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"crowd\" corresponds to the word \"drove (n)\"."
+    },
+    {
+        "id": "q105",
+        "text": "Which word matches the following definition: \"customize, adapt, personalize\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "tailor (v)",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "implement",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "socialize",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "reclaim (v)",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"customize, adapt, personalize\" corresponds to the word \"tailor (v)\"."
+    },
+    {
+        "id": "q106",
+        "text": "Which word matches the following definition: \"highly educated, intellectual\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "scholar",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "shareholder",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "pioneer",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "lender",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"highly educated, intellectual\" corresponds to the word \"scholar\"."
+    },
+    {
+        "id": "q107",
+        "text": "Which word matches the following definition: \"focus on, center on\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "revolve around",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "encroach",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "get around",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "negotiate",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"focus on, center on\" corresponds to the phrase \"revolve around\"."
+    },
+    {
+        "id": "q108",
+        "text": "Which word matches the following definition: \"challenging and disruptive\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "subversive",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "daunting",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "controversial",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "threat (n)",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"challenging and disruptive\" corresponds to the word \"subversive\"."
+    },
+    {
+        "id": "q109",
+        "text": "Which word matches the following definition: \"tire, fatigue\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "wear down",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "give up",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "warn (v)",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "get around",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"tire, fatigue\" corresponds to the phrase \"wear down\"."
+    },
+    {
+        "id": "q110",
+        "text": "Which word matches the following definition: \"passageway\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "aisle",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "route",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "hyperloop",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "stock (n)",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"passageway\" corresponds to the word \"aisle\"."
+    },
+    {
+        "id": "q111",
+        "text": "Which word matches the following definition: \"attract, entice, seduce\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "tempt",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "compel",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "plague (v)",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "reclaim (v)",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"attract, entice, seduce\" corresponds to the word \"tempt\"."
+    },
+    {
+        "id": "q112",
+        "text": "Which word matches the following definition: \"passing, momentary\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "fleeting",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "remote (adj)",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "intermittent",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "overwhelmed",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"passing, momentary\" corresponds to the word \"fleeting\"."
+    },
+    {
+        "id": "q113",
+        "text": "Which word matches the following definition: \"debatable\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "controversial",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "equitable",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "eligible",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "boredom",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"debatable\" corresponds to the word \"controversial\"."
+    },
+    {
+        "id": "q114",
+        "text": "Which word matches the following definition: \"force\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "compel",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "implement",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "revolutionize",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "subsidiary",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"force\" corresponds to the word \"compel\"."
+    },
+    {
+        "id": "q115",
+        "text": "Which word matches the following definition: \"unusual or unexpected habit\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "quirk (n)",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "luxury",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "mission",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "culture shock",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"unusual or unexpected habit\" corresponds to the noun \"quirk\"."
+    },
+    {
+        "id": "q116",
+        "text": "Which word matches the following definition: \"teamwork, collaborative\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "cooperative",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "jointly",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "shareholder",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "supplier",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"teamwork, collaborative\" corresponds to the word \"cooperative\"."
+    },
+    {
+        "id": "q117",
+        "text": "Which word matches the following definition: \"go back\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "rewind (v)",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "give up",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "get around",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "warn (v)",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"go back\" corresponds to the verb \"rewind\"."
+    },
+    {
+        "id": "q118",
+        "text": "Which word matches the following definition: \"a company that provides a particular product\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "supplier",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "lender",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "subsidiary",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "shareholder",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"a company that provides a particular product\" corresponds to the word \"supplier\"."
+    },
+    {
+        "id": "q119",
+        "text": "Which word matches the following definition: \"discuss, transact\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "negotiate",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "implement",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "issue (v)",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "tackle (v)",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"discuss, transact\" corresponds to the word \"negotiate\"."
+    },
+    {
+        "id": "q120",
+        "text": "Which word matches the following definition: \"reasonable, just, fair\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "equitable",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "financial",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "eligible",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "underfunded",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"reasonable, just, fair\" corresponds to the word \"equitable\"."
+    },
+    {
+        "id": "q121",
+        "text": "Which word matches the following definition: \"innovator, founder, settler, developer, explorer\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "pioneer",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "commuter",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "competitor",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "welfare advisor",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"innovator, founder, settler, developer, explorer\" corresponds to the word \"pioneer\"."
+    },
+    {
+        "id": "q122",
+        "text": "Which word matches the following definition: \"good, fund, property\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "stock (n)",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "revenue (n)",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "payment",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "luxury",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"good, fund, property\" corresponds to the noun \"stock\"."
+    },
+    {
+        "id": "q123",
+        "text": "Which word matches the following definition: \"something that is comprehensive, all-encompassing\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "overarching (adj)",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "hyperloop",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "overwhelmed",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "futuristic pod",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"something that is comprehensive, all-encompassing\" corresponds to \"overarching\"."
+    },
+    {
+        "id": "q124",
+        "text": "Which word matches the following definition: \"collectively, together, mutually\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "jointly",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "cooperative",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "socialize",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "bond (n)",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"collectively, together, mutually\" corresponds to the word \"jointly\"."
+    },
+    {
+        "id": "q125",
+        "text": "Which word matches the following definition: \"investor\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "shareholder",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "lender",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "policymaker",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "supplier",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"investor\" corresponds to the word \"shareholder\"."
+    },
+    {
+        "id": "q126",
+        "text": "Which word matches the following definition: \"assignment, vocation, task\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "mission",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "transaction",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "fare (n)",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "issue (v)",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"assignment, vocation, task\" corresponds to the word \"mission\"."
+    },
+    {
+        "id": "q127",
+        "text": "Which word matches the following definition: \"execute, fulfill\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "implement",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "negotiate",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "credit",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "warn (v)",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"execute, fulfill\" corresponds to the word \"implement\"."
+    },
+    {
+        "id": "q128",
+        "text": "Which word matches the following definition: \"interchange fee\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "payment",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "revenue (n)",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "debit",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "transaction",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"interchange fee\" corresponds to the word \"payment\"."
+    },
+    {
+        "id": "q129",
+        "text": "Which word matches the following definition: \"mobile wallet\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "digital wallet",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "vacuum failure",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "futuristic pod",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "hyperloop",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"mobile wallet\" corresponds to the term \"digital wallet\"."
+    },
+    {
+        "id": "q130",
+        "text": "Which word matches the following definition: \"monetary, economic\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "financial",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "equitable",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "luxury",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "underfunded",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"monetary, economic\" corresponds to the word \"financial\"."
+    },
+    {
+        "id": "q131",
+        "text": "Which word matches the following definition: \"risk, peril, danger\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "threat (n)",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "rupture (n)",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "daunting",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "homesick",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"risk, peril, danger\" corresponds to the word \"threat (n)\"."
+    },
+    {
+        "id": "q132",
+        "text": "Which word matches the following definition: \"intrude, invade, overstep\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "encroach",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "implement",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "tempt",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "remote (adj)",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"intrude, invade, overstep\" corresponds to the word \"encroach\"."
+    },
+    {
+        "id": "q133",
+        "text": "Which word matches the following definition: \"rival\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "competitor",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "shareholder",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "pioneer",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "commuter",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"rival\" corresponds to the word \"competitor\"."
+    },
+    {
+        "id": "q134",
+        "text": "Which word matches the following definition: \"saving account\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "deposit account",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "stock (n)",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "fare (n)",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "quirk (n)",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"saving account\" corresponds to the term \"deposit account\"."
+    },
+    {
+        "id": "q135",
+        "text": "Which word matches the following definition: \"income, profit\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "revenue (n)",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "transaction",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "payment",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "credit",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"income, profit\" corresponds to the noun \"revenue\"."
+    },
+    {
+        "id": "q136",
+        "text": "Which word matches the following definition: \"deal, purchase\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "transaction",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "issue (v)",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "luxury",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "bond (n)",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"deal, purchase\" corresponds to the term \"transaction\"."
+    },
+    {
+        "id": "q137",
+        "text": "Which word matches the following definition: \"remove, withdraw\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "debit",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "give up",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "credit",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "reclaim (v)",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"remove, withdraw\" corresponds to \"debit\"."
+    },
+    {
+        "id": "q138",
+        "text": "Which word matches the following definition: \"add, deposit\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "credit",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "threat (n)",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "supplier",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "stock (n)",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"add, deposit\" corresponds to \"credit\"."
+    },
+    {
+        "id": "q139",
+        "text": "Which word matches the following definition: \"provide, deliver\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "issue (v)",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "negotiate",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "tempt",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "luxury",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"provide, deliver\" corresponds to the verb \"issue\"."
+    },
+    {
+        "id": "q140",
+        "text": "Which word matches the following definition: \"loan provider\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "lender",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "shareholder",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "competitor",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "deposit account",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"loan provider\" corresponds to the word \"lender\"."
+    },
+    {
+        "id": "q141",
+        "text": "Which word matches the following definition: \"affiliate company, branch\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "subsidiary",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "stock (n)",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "jointly",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "mission",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"affiliate company, branch\" corresponds to \"subsidiary\"."
+    },
+    {
+        "id": "q142",
+        "text": "Which word matches the following definition: \"proper, acceptable, qualified\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "eligible",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "luxury",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "contaminated",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "plague (v)",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"proper, acceptable, qualified\" corresponds to \"eligible\"."
+    },
+    {
+        "id": "q143",
+        "text": "Which word matches the following definition: \"faraway, distant\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "remote (adj)",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "fleeting",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "threat (n)",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "quirk (n)",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"faraway, distant\" corresponds to the word \"remote\"."
+    },
+    {
+        "id": "q144",
+        "text": "Which word matches the following definition: \"regain, retrieve\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "reclaim (v)",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "rewind (v)",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "tempt",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "levitate (v)",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"regain, retrieve\" corresponds to the verb \"reclaim\"."
+    },
+    {
+        "id": "q145",
+        "text": "Which word matches the following definition: \"expense\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "fare (n)",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "luxury",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "revenue (n)",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "issue (v)",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"expense\" corresponds to the noun \"fare\"."
+    },
+    {
+        "id": "q146",
+        "text": "Which word matches the following definition: \"hesitant, unwilling\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "reluctant",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "compel",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "pioneer",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "levitate (v)",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"hesitant, unwilling\" corresponds to \"reluctant\"."
+    },
+    {
+        "id": "q147",
+        "text": "Which word matches the following definition: \"surrender\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "give up",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "remote (adj)",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "tempt",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "luxury",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"surrender\" corresponds to the phrase \"give up\"."
+    },
+    {
+        "id": "q148",
+        "text": "Which word matches the following definition: \"home loan\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "mortgage",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "payment",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "bond (n)",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "hyperloop",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"home loan\" corresponds to the word \"mortgage\"."
+    },
+    {
+        "id": "q149",
+        "text": "Which word matches the following definition: \"legislator, authority\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "policymaker",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "competitor",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "futuristic pod",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "luxury",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"legislator, authority\" corresponds to the word \"policymaker\"."
+    },
+    {
+        "id": "q150",
+        "text": "Which word matches the following definition: \"monotony, tedium\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "boredom",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "overwhelmed",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "quirk (n)",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "tempt",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"monotony, tedium\" corresponds to the noun \"boredom\"."
+    },
+    {
+        "id": "q151",
+        "text": "Which word matches the following definition: \"passenger, traveler\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "commuter",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "shareholder",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "lender",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "remote (adj)",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"passenger, traveler\" corresponds to the word \"commuter\"."
+    },
+    {
+        "id": "q152",
+        "text": "Which word matches the following definition: \"handle, manage, address\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "tackle (v)",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "levitate (v)",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "reclaim (v)",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "underfunded",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"handle, manage, address\" corresponds to \"tackle\"."
+    },
+    {
+        "id": "q153",
+        "text": "Which word matches the following definition: \"transform, modernize\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "revolutionize",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "overarching (adj)",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "jointly",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "culture shock",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"transform, modernize\" corresponds to \"revolutionize\"."
+    },
+    {
+        "id": "q154",
+        "text": "Which word matches the following definition: \"insufficient money\"?",
+        "options": [
+            {
+                "id": "a",
+                "label": "underfunded",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "luxury",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "remote (adj)",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "implment",
+                "correct": false
+            }
+        ],
+        "explanation": "The definition \"insufficient money\" corresponds to \"underfunded\"."
+    }
+]

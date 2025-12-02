@@ -1,0 +1,2162 @@
+[
+    {
+        "id": "q1",
+        "text": "Quelle version du noyau NT correspond au système d'exploitation Windows 7 ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "5.1",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "6.0",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "6.1",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "6.2",
+                "correct": false
+            }
+        ],
+        "explanation": "Selon le tableau comparatif OS/Noyau, Windows XP est en 5.1, Vista en 6.0, Windows 7 en 6.1 et Windows 8 en 6.2."
+    },
+    {
+        "id": "q2",
+        "text": "Quel mode d'exécution du processeur a introduit l'adressage sur 64 bits ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Real Mode",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Long Mode",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Protected Mode",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Virtual 8086",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Long Mode, introduit par AMD en 2003, permet l'adressage sur 64 bits et rend la pagination obligatoire."
+    },
+    {
+        "id": "q3",
+        "text": "Dans le contexte de la pagination, que se passe-t-il si le bit 'present' d'une PTE (Page Table Entry) est à 0 ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le processeur déclenche une exception 'page fault'",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "La page est automatiquement chargée depuis le cache L1",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "L'accès est redirigé vers le kernel mode",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le programme continue sans erreur en écrivant dans la RAM",
+                "correct": false
+            }
+        ],
+        "explanation": "Si une PTE indique que la page n'est pas présente en RAM (bit present=0), le processeur déclenche une exception appelée page fault."
+    },
+    {
+        "id": "q4",
+        "text": "Quels niveaux de privilèges sont effectivement utilisés par les systèmes d'exploitation Windows modernes ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Ring 0, 1, 2 et 3",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Ring 1 et Ring 2",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Ring 0 (Kernel) et Ring 3 (User)",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Uniquement le Ring 0",
+                "correct": false
+            }
+        ],
+        "explanation": "Bien que l'architecture x86 définisse 4 niveaux, Windows et Linux n'utilisent que le Ring 0 (kernel mode) et le Ring 3 (user mode)."
+    },
+    {
+        "id": "q5",
+        "text": "Quelle structure noyau représente le centre de contrôle interne d'un processus et contient le pointeur vers le PEB ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "ETHREAD",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "EPROCESS",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "TEB",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "KPCR",
+                "correct": false
+            }
+        ],
+        "explanation": "EPROCESS est la structure interne du noyau représentant un processus. Elle contient, entre autres, un pointeur vers le PEB, le PID et la liste des threads."
+    },
+    {
+        "id": "q6",
+        "text": "Parmi ces structures, laquelle réside dans l'espace mémoire utilisateur (User Space) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "EPROCESS",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "KPCR",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "ETHREAD",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "PEB (Process Environment Block)",
+                "correct": true
+            }
+        ],
+        "explanation": "Le PEB (Process Environment Block) est une structure de l'espace user qui contient l'état global et les paramètres partagés d'un processus."
+    },
+    {
+        "id": "q7",
+        "text": "Quel composant de l'architecture Windows est chargé de masquer les différences matérielles pour assurer la portabilité de l'OS ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Executive",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "HAL",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Win32 Subsystem",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Session Manager",
+                "correct": false
+            }
+        ],
+        "explanation": "Le HAL (Hardware Abstraction Layer) est un composant bas niveau qui fournit une interface standard au noyau pour accéder au matériel, masquant ainsi les différences d'architectures."
+    },
+    {
+        "id": "q8",
+        "text": "Dans le registre Windows, quelle ruche contient les hashs de mots de passe des comptes locaux ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "HKLM\\SYSTEM",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "HKCU",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "HKLM\\SAM",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "HKLM\\SOFTWARE",
+                "correct": false
+            }
+        ],
+        "explanation": "La hive SAM (Security Account Manager) gère les comptes locaux et stocke les hashs de mots de passe NTLM."
+    },
+    {
+        "id": "q9",
+        "text": "Quel est le RID (Relative Identifier) du compte Administrateur intégré (built-in) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "500",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "501",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "1000",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "512",
+                "correct": false
+            }
+        ],
+        "explanation": "Le RID 500 est réservé au compte 'Administrator' intégré au système. Le 501 est pour le compte Invité (Guest)."
+    },
+    {
+        "id": "q10",
+        "text": "Quel mécanisme de sécurité empêche l'exécution de code dans des zones mémoire de données (comme la heap ou la stack) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "ASLR",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "UAC",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "DEP",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "KPP",
+                "correct": false
+            }
+        ],
+        "explanation": "Le DEP  (Data Execution Prevention) utilise le bit NX (NoExecute) pour empêcher le processeur d'exécuter des instructions situées dans des zones marquées comme données."
+    },
+    {
+        "id": "q11",
+        "text": "Dans le système de fichiers NTFS, quel élément contient une entrée pour chaque fichier ou dossier présent sur le volume ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Boot Sector",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "MFT",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "$LogFile",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "USN Journal",
+                "correct": false
+            }
+        ],
+        "explanation": "La MFT (Master File Table) est la table maîtresse où chaque fichier ou dossier dispose d'une entrée unique décrivant ses métadonnées et l'emplacement de ses données."
+    },
+    {
+        "id": "q12",
+        "text": "Quel privilège système permet d'ouvrir n'importe quel processus avec tous les droits, souvent utilisé pour le débogage ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "SeBackupPrivilege",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "SeShutdownPrivilege",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "SeImpersonatePrivilege",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "SeDebugPrivilege",
+                "correct": true
+            }
+        ],
+        "explanation": "Le SeDebugPrivilege permet d'ouvrir des processus, même système, avec des droits complets, ce qui est critique pour les outils de débogage."
+    },
+    {
+        "id": "q13",
+        "text": "Quelle bibliothèque (DLL) est chargée par LSASS pour implémenter le protocole d'authentification NTLM ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "kerberos.dll",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "ntdll.dll",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "msv1_0.dll",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "user32.dll",
+                "correct": false
+            }
+        ],
+        "explanation": "MSV1_0.dll est le package d'authentification qui gère NTLM lorsque Kerberos n'est pas disponible ou pour les comptes locaux."
+    },
+    {
+        "id": "q14",
+        "text": "Quel est l'ordre de priorité correct lors de l'évaluation des permissions (ACE) par Windows ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Explicit Deny > Explicit Allow > Inherited Deny > Inherited Allow",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Explicit Allow > Explicit Deny > Inherited Allow > Inherited Deny",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Inherited Deny > Explicit Deny > Inherited Allow > Explicit Allow",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Tout est évalué simultanément sans ordre",
+                "correct": false
+            }
+        ],
+        "explanation": "Windows évalue d'abord les refus explicites (Explicit DENY), puis les autorisations explicites, ensuite les refus hérités et enfin les autorisations héritées."
+    },
+    {
+        "id": "q15",
+        "text": "Quelle fonctionnalité de sécurité de l'UAC assombrit l'écran et bloque les interactions des autres applications lors d'une demande d'élévation ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Admin Approval Mode",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Secure Desktop",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Credential Guard",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Over-the-shoulder prompt",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Secure Desktop isole la fenêtre UAC en assombrissant l'écran pour empêcher les keyloggers ou malwares de simuler un clic de validation."
+    },
+    {
+        "id": "q16",
+        "text": "En quoi consiste l'attaque 'Pass-the-Hash' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Déchiffrer le mot de passe NTLM pour l'obtenir en clair",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Utiliser le NT hash directement pour s'authentifier sans connaître le mot de passe",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Intercepté le ticket Kerberos pour le rejouer plus tard",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Injecter une DLL malveillante dans LSASS",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Pass-the-Hash permet à un attaquant de s'authentifier en fournissant le hash NTLM à la place du mot de passe en clair, car le protocole utilise le hash comme secret."
+    },
+    {
+        "id": "q17",
+        "text": "Quelle amélioration cryptographique NTLMv2 apporte-t-il par rapport à NTLMv1 ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Il remplace DES par HMAC-MD5",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Il utilise AES-256 pour le chiffrement",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Il supprime totalement l'utilisation du NT Hash",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Il ajoute une authentification mutuelle obligatoire",
+                "correct": false
+            }
+        ],
+        "explanation": "NTLMv2 remplace l'algorithme DES (faible) utilisé dans v1 par HMAC-MD5 et ajoute des données variables (blob client) pour contrer le rejeu."
+    },
+    {
+        "id": "q18",
+        "text": "À quoi servent les 'Pico Processes' sous Windows ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "À exécuter des micro-services critiques du noyau",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "À exécuter des processus non-Windows (ex: Linux pour WSL) directement sur le noyau NT",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "À gérer l'interface graphique en mode minimal",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "À lancer les tâches planifiées invisibles",
+                "correct": false
+            }
+        ],
+        "explanation": "Les pico processes permettent l'exécution de binaires non-Windows (comme ELF pour Linux) directement sur le noyau NT via un pico provider (base de WSL)."
+    },
+    {
+        "id": "q19",
+        "text": "Quelle est la fonction principale du composant VBS (Virtualization Based Security) 'Credential Guard' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Empêcher l'exécution de pilotes non signés",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Chiffrer le disque dur avec BitLocker",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Protéger les secrets d'authentification (LSASS) dans un conteneur isolé",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Vérifier l'intégrité du code au démarrage (Secure Boot)",
+                "correct": false
+            }
+        ],
+        "explanation": "Credential Guard utilise la virtualisation pour isoler les secrets (comme les hashs NTLM dans LSASS) dans un environnement sécurisé inaccessible au reste de l'OS."
+    },
+    {
+        "id": "q20",
+        "text": "Dans le contexte de la mémoire virtuelle 64 bits (Windows 8.1+), quelle est la taille de l'espace adressable User Process Space ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "2 GB",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "8 TB",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "4 GB",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "128 TB",
+                "correct": true
+            }
+        ],
+        "explanation": "Sur les systèmes 64 bits modernes (Win 8.1+), l'espace utilisateur (User Process Space) et l'espace système sont passés à 128 TB chacun."
+    },
+    {
+        "id": "q21",
+        "text": "En quelle année le MS-DOS, base des premiers systèmes Windows, a-t-il été introduit ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "1978",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "1993",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "1981",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "1985",
+                "correct": false
+            }
+        ],
+        "explanation": "D'après l'historique fourni, MS-DOS a été introduit en 1981 et a servi de base aux premiers Windows."
+    },
+    {
+        "id": "q22",
+        "text": "Quelle est la fonction principale du mode SMM (System Management Mode) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Gérer la gestion thermique et l'alimentation au niveau firmware",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Exécuter les applications utilisateur en 32 bits",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Gérer la mémoire virtuelle pour le noyau",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Assurer la compatibilité avec les applications 16 bits",
+                "correct": false
+            }
+        ],
+        "explanation": "Le SMM est un mode matériel réservé au firmware du CPU pour des opérations de très bas niveau comme la gestion thermique et de l'alimentation."
+    },
+    {
+        "id": "q23",
+        "text": "Dans le cadre de la segmentation x86, quel registre pointe vers le segment contenant le code exécutable ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "SS (Stack Segment)",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "CS (Code Segment)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "DS (Data Segment)",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "ES (Extra Segment)",
+                "correct": false
+            }
+        ],
+        "explanation": "Le registre CS (Code Segment) pointe vers le segment qui contient les instructions (le code) à exécuter par le CPU."
+    },
+    {
+        "id": "q24",
+        "text": "Quelle structure est spécifique à chaque thread et accessible via le registre FS (x86) ou GS (x64) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "EPROCESS",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "PEB",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "GDT",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "TEB (Thread Environment Block)",
+                "correct": true
+            }
+        ],
+        "explanation": "Le TEB (Thread Environment Block) est une structure de l'espace utilisateur unique pour chaque thread, accessible via les registres de segment FS ou GS."
+    },
+    {
+        "id": "q25",
+        "text": "Quel composant du noyau Windows est responsable de la gestion des objets, des E/S et de la sécurité ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Executive",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "HAL",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Microkernel",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Hypervisor",
+                "correct": false
+            }
+        ],
+        "explanation": "L'Executive est la partie haute de ntoskrnl.exe qui regroupe les services principaux comme l'Object Manager, le Memory Manager et l'I/O Manager."
+    },
+    {
+        "id": "q26",
+        "text": "Quel type d'objet Windows n'est accessible que par le noyau et ne possède pas de handle direct en mode utilisateur ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Executive objects",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "GDI objects",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Kernel objects",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "User objects",
+                "correct": false
+            }
+        ],
+        "explanation": "Les 'Kernel objects' (de la partie microkernel) sont utilisés uniquement par le noyau et ne sont pas accessibles depuis le user-mode, contrairement aux executive objects."
+    },
+    {
+        "id": "q27",
+        "text": "Dans le registre Windows, quel hive est utilisé pour gérer les associations de fichiers et les objets COM ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "HKEY_CURRENT_CONFIG",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "HKEY_CLASSES_ROOT (HKCR)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "HKEY_USERS",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "HKEY_LOCAL_MACHINE",
+                "correct": false
+            }
+        ],
+        "explanation": "HKCR (HKEY_CLASSES_ROOT) contient les informations nécessaires pour les associations de fichiers et l'enregistrement des composants COM."
+    },
+    {
+        "id": "q28",
+        "text": "Quel composant gère le démarrage des services configurés en 'Automatique' lors du boot ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Winlogon",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Explorer.exe",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "LSA",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "SCM (Service Control Manager)",
+                "correct": true
+            }
+        ],
+        "explanation": "Le SCM (Service Control Manager) est responsable de lancer tous les services dont le type de démarrage est réglé sur Automatique au démarrage de Windows."
+    },
+    {
+        "id": "q29",
+        "text": "Quelle clé de registre permet de lancer un programme une seule fois au démarrage avant d'être supprimée ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "RunOnce",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Run",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Prefetch",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Services",
+                "correct": false
+            }
+        ],
+        "explanation": "La clé RunOnce permet de lancer un programme au prochain démarrage, puis l'entrée est automatiquement effacée du registre."
+    },
+    {
+        "id": "q30",
+        "text": "À quoi sert le fichier 'Amcache' du point de vue forensic ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "À stocker les mots de passe des navigateurs",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "À lister les périphériques USB connectés",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "À stocker des informations sur les exécutables présents/exécutés sur le système",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "À enregistrer les modifications des fichiers NTFS",
+                "correct": false
+            }
+        ],
+        "explanation": "Amcache stocke des métadonnées sur les applications et exécutables présents sur le système, ce qui est utile pour prouver l'exécution ou la présence d'un programme."
+    },
+    {
+        "id": "q31",
+        "text": "Quel compte intégré dispose de privilèges comparables à ceux du noyau et exécute de nombreux services système ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Guest",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "LocalSystem",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "LocalService",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "NetworkService",
+                "correct": false
+            }
+        ],
+        "explanation": "LocalSystem est un compte intégré avec des privilèges très élevés (contrôle total sur le système local), utilisé par les services critiques."
+    },
+    {
+        "id": "q32",
+        "text": "Dans un SID (Security Identifier), que signifie la valeur 5 dans le champ 'Identifier Authority' (S-1-5-...) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "NT AUTHORITY",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "World Authority",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Local Authority",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Creator Authority",
+                "correct": false
+            }
+        ],
+        "explanation": "Dans la structure d'un SID, le chiffre 5 dans le champ d'autorité d'identification correspond à 'NT AUTHORITY', utilisé pour les comptes Windows."
+    },
+    {
+        "id": "q33",
+        "text": "Quelle est la différence entre une DACL et une SACL ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "La DACL gère les audits, la SACL gère les droits d'accès",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "La DACL est pour les fichiers, la SACL pour le registre",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "La DACL est obsolète, la SACL la remplace",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "La DACL définit les autorisations d'accès, la SACL définit les règles d'audit",
+                "correct": true
+            }
+        ],
+        "explanation": "La DACL (Discretionary Access Control List) détermine qui a accès à un objet (Allow/Deny), tandis que la SACL (System Access Control List) gère la surveillance (audit) des accès."
+    },
+    {
+        "id": "q34",
+        "text": "Quel privilège très sensible est souvent résumé par l'expression 'act as part of the OS' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "SeBackupPrivilege",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "SeTcbPrivilege",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "SeDebugPrivilege",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "SeTakeOwnershipPrivilege",
+                "correct": false
+            }
+        ],
+        "explanation": "SeTcbPrivilege (Trusted Computer Base) permet à un processus d'agir comme une partie du système d'exploitation, un privilège critique réservé au composant LSA."
+    },
+    {
+        "id": "q35",
+        "text": "Où sont stockés les hashs des comptes de domaine (Active Directory) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Dans le fichier SAM local",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Dans le fichier Swapfile.sys",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Dans la base de données NTDS.dit sur le contrôleur de domaine",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Uniquement dans la mémoire vive du client",
+                "correct": false
+            }
+        ],
+        "explanation": "Pour les comptes de domaine, les informations (dont les hashs) sont stockées dans le fichier NTDS.dit situé sur les contrôleurs de domaine (DC)."
+    },
+    {
+        "id": "q36",
+        "text": "Quel type de token permet à un thread d'adopter temporairement l'identité d'un autre utilisateur ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Impersonation Token",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Primary Token",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Kernel Token",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Session Token",
+                "correct": false
+            }
+        ],
+        "explanation": "Le 'impersonation token' (jeton d'emprunt d'identité) est spécifiquement conçu pour permettre à un thread d'agir au nom d'un autre utilisateur, distinct du jeton principal du processus."
+    },
+    {
+        "id": "q37",
+        "text": "Quelle vulnérabilité majeure persiste dans NTLMv2 malgré ses améliorations ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "L'utilisation de DES 56 bits",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "L'envoi du mot de passe en clair",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "L'absence de challenge serveur",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "L'absence d'authentification mutuelle (vulnérabilité au NTLM Relay)",
+                "correct": true
+            }
+        ],
+        "explanation": "NTLMv2 ne permet pas au client de vérifier l'identité du serveur (pas d'authentification mutuelle), ce qui laisse le protocole vulnérable aux attaques par relais (Relay Attacks)."
+    },
+    {
+        "id": "q38",
+        "text": "Quel est le rôle du journal USN (USN Journal) dans NTFS ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Stocker les fichiers supprimés pour la corbeille",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Enregistrer toutes les modifications apportées aux fichiers et dossiers",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Contenir la table de partition du disque",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Chiffrer les données du disque",
+                "correct": false
+            }
+        ],
+        "explanation": "L'USN Journal enregistre l'historique des changements (création, modif, suppression) sur les fichiers, facilitant la synchronisation et l'indexation."
+    },
+    {
+        "id": "q39",
+        "text": "Hyper-V est classé comme quel type d'hyperviseur ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Hosted (Type 2)",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Container",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Bare metal (Type 1)",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Emulateur",
+                "correct": false
+            }
+        ],
+        "explanation": "Hyper-V est un hyperviseur 'bare metal' (Type 1) qui s'exécute directement sur le matériel, la partition racine (root partition) gérant les I/O."
+    },
+    {
+        "id": "q40",
+        "text": "À quoi correspond le mécanisme 'Over-the-shoulder prompt' de l'UAC ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Demander les identifiants d'un admin lorsqu'un utilisateur standard tente une action privilégiée",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Assombrir le bureau pour empêcher les clics",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Bloquer l'exécution des drivers non signés",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Envoyer une notification à l'administrateur réseau",
+                "correct": false
+            }
+        ],
+        "explanation": "L'invite 'par-dessus l'épaule' permet à un utilisateur standard d'exécuter une tâche administrative en saisissant les crédentials d'un administrateur à la demande de l'UAC."
+    },
+    {
+        "id": "q41",
+        "text": "Quel mode, introduit avec le 80386, permet d'exécuter du code 16-bits comme un processus utilisateur au sein d'un OS en mode protégé ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Real Mode",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Long Mode",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Virtual 8086",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "SMM Mode",
+                "correct": false
+            }
+        ],
+        "explanation": "Le mode Virtual 8086 est un sous-mode du Protected Mode qui permet d'exécuter des applications héritées (Real Mode/16-bits) dans un environnement protégé[cite: 42, 44]."
+    },
+    {
+        "id": "q42",
+        "text": "Dans le contexte de la segmentation, vers quel segment pointe le registre SS ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le segment de code (Code Segment)",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le segment de pile (Stack Segment)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Le segment de données (Data Segment)",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le segment étendu (Extra Segment)",
+                "correct": false
+            }
+        ],
+        "explanation": "Le registre SS (Stack Segment) pointe spécifiquement vers le segment où réside la stack (pile) du programme[cite: 62]."
+    },
+    {
+        "id": "q43",
+        "text": "Quelle structure mémoire du kernel est propre à chaque processeur logique (cœur CPU) et stocke des informations comme l'IDT et le thread courant ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "KPCR (Kernel Processor Control Region)",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "EPROCESS",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "PEB",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "VAD",
+                "correct": false
+            }
+        ],
+        "explanation": "Le KPCR est une structure par processeur qui permet au kernel d'accéder aux données spécifiques au matériel (interruptions, état CPU) et au thread en cours[cite: 390, 397]."
+    },
+    {
+        "id": "q44",
+        "text": "Quelle fonction de l'API Win32 est le point d'entrée classique pour la création d'un processus avant d'appeler les fonctions du noyau ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "NtCreateUserProcess",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "PsCreateSystemThread",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "LdrLoadDll",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "CreateProcess()",
+                "correct": true
+            }
+        ],
+        "explanation": "CreateProcess() est la fonction documentée de l'API Win32 utilisée par les applications, qui appellera ensuite en interne des fonctions noyau comme NTCreateUserProcess[cite: 293, 296]."
+    },
+    {
+        "id": "q45",
+        "text": "Qu'est-ce qu'un 'Handle' dans l'architecture Windows ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Un pointeur direct vers l'adresse physique de la RAM",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Un descripteur opaque utilisé par les applications user-mode pour accéder à un objet noyau",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Un type de clé de registre",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Un segment de mémoire exécutable",
+                "correct": false
+            }
+        ],
+        "explanation": "Les handles sont des descripteurs qui fournissent un accès sécurisé et contrôlé aux objets gérés par le système sans exposer directement les structures internes[cite: 233]."
+    },
+    {
+        "id": "q46",
+        "text": "Quel composant matériel est responsable de la traduction d'une adresse virtuelle en adresse physique ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "ALU",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "BIOS",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "MMU (Memory Management Unit)",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "TPM",
+                "correct": false
+            }
+        ],
+        "explanation": "La MMU est le composant du processeur qui effectue la traduction des adresses virtuelles (vues par le programme) vers les adresses physiques (RAM)[cite: 112]."
+    },
+    {
+        "id": "q47",
+        "text": "Quelle hive du registre contient les informations sur la configuration matérielle *actuelle* de l'ordinateur ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "HKCC (HKEY_CURRENT_CONFIG)",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "HKU (HKEY_USERS)",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "HKLM (HKEY_LOCAL_MACHINE)",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "HKCR (HKEY_CLASSES_ROOT)",
+                "correct": false
+            }
+        ],
+        "explanation": "HKCC stocke les informations volatiles sur le profil matériel utilisé durant la session actuelle[cite: 552]."
+    },
+    {
+        "id": "q48",
+        "text": "Quel est le SID (Security Identifier) universel correspondant au groupe 'Everyone' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "S-1-5-18",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "S-1-1-0",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "S-1-5-32-544",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "S-1-5-11",
+                "correct": false
+            }
+        ],
+        "explanation": "Le SID S-1-1-0 est l'identifiant universel pour le groupe 'World Authority' ou 'Everyone'[cite: 723]."
+    },
+    {
+        "id": "q49",
+        "text": "Quel privilège est nécessaire pour charger ou décharger des pilotes (drivers) en mode noyau ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "SeSystemtimePrivilege",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "SeBackupPrivilege",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "SeTakeOwnershipPrivilege",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "SeLoadDriverPrivilege",
+                "correct": true
+            }
+        ],
+        "explanation": "Le SeLoadDriverPrivilege autorise explicitement le chargement de code noyau (pilotes), ce qui est une opération critique[cite: 755]."
+    },
+    {
+        "id": "q50",
+        "text": "Quel privilège permet de modifier l'heure système ou le fuseau horaire ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "SeSecurityPrivilege",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "SeIncreaseQuotaPrivilege",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "SeTimeZonePrivilege / SeSystemtimePrivilege",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "SeShutdownPrivilege",
+                "correct": false
+            }
+        ],
+        "explanation": "Ces privilèges (SeTimeZonePrivilege et SeSystemtimePrivilege) contrôlent la capacité à modifier l'horloge du système[cite: 761]."
+    },
+    {
+        "id": "q51",
+        "text": "Quel exécutable héberge le processus LSASS (Local Security Authority Subsystem Service) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "%SystemRoot%\\System32\\lsass.exe",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "%SystemRoot%\\System32\\svchost.exe",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "%SystemRoot%\\System32\\lsm.exe",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "%SystemRoot%\\System32\\winlogon.exe",
+                "correct": false
+            }
+        ],
+        "explanation": "LSASS est un processus critique du système situé dans System32 sous le nom lsass.exe[cite: 819]."
+    },
+    {
+        "id": "q52",
+        "text": "Quelle est la taille du 'Server Challenge' (nonce) généré par le serveur dans le protocole NTLMv1 ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "16 octets",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "8 octets",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "32 octets",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "64 octets",
+                "correct": false
+            }
+        ],
+        "explanation": "Dans NTLMv1, le serveur génère un nombre aléatoire de 8 octets comme challenge, ce qui est considéré comme court et vulnérable aujourd'hui[cite: 873, 886]."
+    },
+    {
+        "id": "q53",
+        "text": "Dans le système de fichiers NTFS, à quoi sert le fichier spécial '$LogFile' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "À stocker les logs d'événements Windows",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "À lister les permissions ACL",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "À journaliser les transactions pour restaurer l'intégrité après un crash",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "À indexer le contenu des fichiers pour la recherche",
+                "correct": false
+            }
+        ],
+        "explanation": "Le $LogFile est un journal des transactions qui permet à NTFS de rejouer ou d'annuler des opérations incomplètes en cas de coupure brutale[cite: 611, 612]."
+    },
+    {
+        "id": "q54",
+        "text": "Dans ntoskrnl.exe, quelle partie s'occupe des mécanismes les plus bas niveau comme le scheduling des threads et les interruptions ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le Kernel",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "L'Executive",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Le HAL",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le Win32k",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Kernel (au sens strict, distingué de l'Executive) gère les fonctions bas niveau comme le scheduling, la synchronisation et les interruptions[cite: 450, 464]."
+    },
+    {
+        "id": "q55",
+        "text": "Dans la structure d'un fichier PE (Portable Executable), qu'est-ce que le 'MZ Header' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "La table des importations",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le DOS Stub (en-tête de compatibilité DOS)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "La signature numérique du fichier",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "La section contenant le code source",
+                "correct": false
+            }
+        ],
+        "explanation": "Le MZ Header est le tout premier en-tête qui contient le DOS Stub pour assurer que le programme ne plante pas s'il est lancé sous DOS[cite: 522]."
+    },
+    {
+        "id": "q56",
+        "text": "Quel est l'objectif principal de l'ASLR (Address Space Layout Randomization) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Accélérer le chargement des DLLs",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Empêcher l'exécution de données sur la pile",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Isoler les processus dans des machines virtuelles",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Placer aléatoirement les zones mémoire pour contrer les attaques type ROP",
+                "correct": true
+            }
+        ],
+        "explanation": "L'ASLR randomise l'emplacement des zones critiques (stack, heap, libs) pour empêcher les attaquants de prédire les adresses mémoire nécessaires aux exploits[cite: 531]."
+    },
+    {
+        "id": "q57",
+        "text": "Que sont les 'Trustlets' dans l'architecture sécurisée de Windows 10/11 ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Des applets du panneau de configuration",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Des certificats racines de confiance",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Des processus protégés exécutés dans un environnement isolé (IUM) via VBS",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Des scripts PowerShell signés",
+                "correct": false
+            }
+        ],
+        "explanation": "Les Trustlets sont des processus sécurisés hébergés dans l'IUM (Isolated User Mode), protégés par Hyper-V et inaccessibles au kernel standard[cite: 504]."
+    },
+    {
+        "id": "q58",
+        "text": "Dans quel dossier sont stockés les fichiers XML définissant les tâches planifiées de Windows ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "C:\\Windows\\System32\\Tasks\\",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "C:\\Windows\\Tasks\\XML\\",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "C:\\ProgramData\\Microsoft\\Schedule\\",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "C:\\Users\\Default\\AppData\\Local\\Tasks\\",
+                "correct": false
+            }
+        ],
+        "explanation": "Les définitions des tâches planifiées sont stockées sous forme de fichiers XML dans le répertoire C:\\Windows\\System32\\Tasks\\[cite: 242]."
+    },
+    {
+        "id": "q59",
+        "text": "Dans le registre Windows, à quel type de donnée correspond 'REG_SZ' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Un entier 32 bits",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Une chaîne de caractères (texte)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Une donnée binaire brute",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Un lien symbolique",
+                "correct": false
+            }
+        ],
+        "explanation": "REG_SZ désigne une valeur de type chaîne de caractères (String) dans le registre[cite: 554]."
+    },
+    {
+        "id": "q60",
+        "text": "Les objets GDI (Graphics Device Interface) sont-ils accessibles depuis le mode utilisateur (User Mode) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Oui, via l'API Win32",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Non, ils sont strictement réservés au Kernel",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Uniquement en mode administrateur",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Seulement via un débogueur noyau",
+                "correct": false
+            }
+        ],
+        "explanation": "Contrairement aux objets Kernel purs, les objets GDI/User (fenêtres, polices) sont accessibles par les applications via l'API Win32[cite: 239]."
+    },
+    {
+        "id": "q61",
+        "text": "Que signifie l'acronyme PID associé à un processus ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Process Integrity Descriptor",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Private Identity Data",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Process Identifier",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Program Input Device",
+                "correct": false
+            }
+        ],
+        "explanation": "Le PID (Process Identifier) est l'identifiant unique attribué à un processus lors de sa création[cite: 231]."
+    },
+    {
+        "id": "q62",
+        "text": "Que signifie l'acronyme DLL ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Data Link Layer",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Dynamic Link Library",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Direct Local Loader",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Distributed Low Level",
+                "correct": false
+            }
+        ],
+        "explanation": "Une DLL est une Dynamic Link Library, un format de bibliothèque dynamique utilisé par Windows[cite: 519]."
+    },
+    {
+        "id": "q63",
+        "text": "À quoi correspond l'acronyme NTFS pour le système de fichiers ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "New Technology File System",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Network Transfer File Service",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Native Table File Structure",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Non-Transactional File System",
+                "correct": false
+            }
+        ],
+        "explanation": "NTFS signifie New Technology File System, le système de fichiers par défaut depuis Windows NT[cite: 590]."
+    },
+    {
+        "id": "q64",
+        "text": "Que signifie l'acronyme GDT dans la gestion de la mémoire ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Global Data Transaction",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Graphical Display Table",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Global Descriptor Table",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "General Drive Technology",
+                "correct": false
+            }
+        ],
+        "explanation": "La GDT signifie Global Descriptor Table, une table unique pour tout le système contenant des descripteurs de segments[cite: 101]."
+    },
+    {
+        "id": "q65",
+        "text": "Que signifie l'acronyme UAC ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "User Access Command",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Universal Application Control",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "User Account Control",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Unified Authorization Center",
+                "correct": false
+            }
+        ],
+        "explanation": "UAC signifie User Account Control, un mécanisme visant à appliquer le principe du moindre privilège[cite: 914]."
+    },
+    {
+        "id": "q66",
+        "text": "À quoi correspond l'acronyme SID ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "System Integrity Domain",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Security Identifier",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Session ID",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Secure Identity Data",
+                "correct": false
+            }
+        ],
+        "explanation": "Un SID est un Security Identifier, un identifiant unique attribué à chaque utilisateur, groupe ou machine[cite: 692]."
+    },
+    {
+        "id": "q67",
+        "text": "Que signifie l'abréviation HKLM dans le registre ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "HKEY_LOCAL_MANAGER",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "HKEY_LOCAL_MEMORY",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "HKEY_LOCAL_MACHINE",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "HKEY_KERNEL_LOAD_MODULE",
+                "correct": false
+            }
+        ],
+        "explanation": "HKLM est l'abréviation de HKEY_LOCAL_MACHINE, la ruche contenant les paramètres globaux de l'ordinateur[cite: 550]."
+    },
+    {
+        "id": "q68",
+        "text": "Que signifie l'acronyme ACL en termes de sécurité ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Access Control List",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Authorization Command Level",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Application Code Layer",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Account Check Log",
+                "correct": false
+            }
+        ],
+        "explanation": "Une ACL est une Access Control List, une liste de règles de sécurité associée à un objet[cite: 771]."
+    },
+    {
+        "id": "q69",
+        "text": "À quel format de fichier correspond l'acronyme PE ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Program Entry",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Portable Executable",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Protected Environment",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Physical Extension",
+                "correct": false
+            }
+        ],
+        "explanation": "PE signifie Portable Executable, le format binaire utilisé par Windows pour les exécutables (.exe) et les DLL[cite: 518]."
+    },
+    {
+        "id": "q70",
+        "text": "Que signifie l'acronyme NTLM ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "NT LAN Manager",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Network Transport Logic Module",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "New Technology Login Mode",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Native Thread Lock Mechanism",
+                "correct": false
+            }
+        ],
+        "explanation": "NTLM signifie NT LAN Manager, une famille de protocoles d'authentification Microsoft[cite: 863]."
+    },
+    {
+        "id": "q71",
+        "text": "Que signifie l'acronyme LSA ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Local System Account",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Local Security Authority",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Logon Service Access",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Last Session Activity",
+                "correct": false
+            }
+        ],
+        "explanation": "LSA signifie Local Security Authority, le service interne chargé de la gestion des identités et des politiques de sécurité[cite: 808]."
+    },
+    {
+        "id": "q72",
+        "text": "À quoi correspond l'acronyme MMU dans le processeur ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Main Memory Unit",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Memory Management Unit",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Micro Management Utility",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Multimedia Unit",
+                "correct": false
+            }
+        ],
+        "explanation": "MMU signifie Memory Management Unit, le composant qui traduit les adresses virtuelles en adresses physiques[cite: 112]."
+    },
+    {
+        "id": "q73",
+        "text": "Que signifie l'acronyme DEP ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Data Encryption Protocol",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Disk Error Protection",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Device Enumeration Process",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Data Execution Prevention",
+                "correct": true
+            }
+        ],
+        "explanation": "DEP signifie Data Execution Prevention, un mécanisme qui empêche l'exécution de code dans les zones de données[cite: 528]."
+    },
+    {
+        "id": "q74",
+        "text": "Que signifie l'acronyme VBS en lien avec la sécurité Windows ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Visual Basic Script",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Virtualization Based Security",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Virtual Boot System",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Verified Boot Security",
+                "correct": false
+            }
+        ],
+        "explanation": "VBS signifie Virtualization Based Security, une fonctionnalité utilisant Hyper-V pour isoler des fonctions critiques[cite: 497]."
+    },
+    {
+        "id": "q75",
+        "text": "À quoi correspond l'acronyme ASLR ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Address Space Layout Randomization",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Advanced Security Login Routine",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Application System Load Recovery",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Allocation Size Limit Restriction",
+                "correct": false
+            }
+        ],
+        "explanation": "ASLR signifie Address Space Layout Randomization, un mécanisme qui place aléatoirement les zones mémoire[cite: 531]."
+    },
+    {
+        "id": "q76",
+        "text": "Que signifie l'acronyme SAM ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "System Access Monitor",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Security Account Manager",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Secure Authentication Module",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Storage Allocation Method",
+                "correct": false
+            }
+        ],
+        "explanation": "SAM signifie Security Account Manager, la base de données gérant les comptes locaux[cite: 793]."
+    },
+    {
+        "id": "q77",
+        "text": "Que signifie l'acronyme SCM qui gère les services ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "System Configuration Module",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Service Control Manager",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Secure Connection Monitor",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Server Communication Mode",
+                "correct": false
+            }
+        ],
+        "explanation": "SCM signifie Service Control Manager, le composant qui gère le démarrage et l'arrêt des services[cite: 252]."
+    },
+    {
+        "id": "q78",
+        "text": "À quoi correspond l'acronyme AD pour les comptes de domaine ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Access Domain",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Advanced Defender",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Active Directory",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Admin Database",
+                "correct": false
+            }
+        ],
+        "explanation": "AD signifie Active Directory, l'annuaire utilisé pour gérer les comptes de domaine[cite: 625]."
+    },
+    {
+        "id": "q79",
+        "text": "Que signifie l'acronyme HAL ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Hardware Abstraction Layer",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "High Availability Level",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Hypervisor Access Layer",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Hardware Access List",
+                "correct": false
+            }
+        ],
+        "explanation": "HAL signifie Hardware Abstraction Layer, la couche logicielle masquant les différences matérielles[cite: 471]."
+    },
+    {
+        "id": "q80",
+        "text": "Que signifie l'acronyme PTE dans la pagination ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Physical Table Entry",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Process Thread Element",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Page Table Entry",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Protected Task Environment",
+                "correct": false
+            }
+        ],
+        "explanation": "PTE signifie Page Table Entry, une entrée dans la table des pages décrivant une page mémoire[cite: 133]."
+    }
+]

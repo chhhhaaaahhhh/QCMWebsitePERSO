@@ -1,0 +1,1352 @@
+[
+    {
+        "id": "q1",
+        "text": "Quel modèle réseau sert de base à la pile réseau Windows ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Modèle OSI uniquement",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Modèle TCP/IP",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Modèle Bluetooth",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Modèle GSM",
+                "correct": false
+            }
+        ],
+        "explanation": "Windows implémente la pile réseau en suivant le modèle TCP/IP."
+    },
+    {
+        "id": "q2",
+        "text": "Quel protocole permet la résolution d’adresse MAC à partir d’une adresse IP ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "DNS",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "ARP",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "HTTP",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "RDP",
+                "correct": false
+            }
+        ],
+        "explanation": "ARP est utilisé pour trouver l’adresse MAC associée à une IP locale."
+    },
+    {
+        "id": "q3",
+        "text": "Quel port TCP est utilisé par défaut par le protocole RDP ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "80",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "445",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "3389",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "53",
+                "correct": false
+            }
+        ],
+        "explanation": "RDP utilise le port TCP 3389 par défaut."
+    },
+    {
+        "id": "q4",
+        "text": "Quel protocole Windows utilise le port 445/TCP pour le partage de fichiers ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "FTP",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "SMB",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "SSH",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "SMTP",
+                "correct": false
+            }
+        ],
+        "explanation": "SMB fonctionne principalement sur le port 445/TCP."
+    },
+    {
+        "id": "q5",
+        "text": "Quel outil Windows permet d’afficher la configuration IP complète ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "netstat",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "netsh",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "ipconfig",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "ping",
+                "correct": false
+            }
+        ],
+        "explanation": "ipconfig /all montre l’ensemble de la configuration IP."
+    },
+    {
+        "id": "q6",
+        "text": "Quel protocole est utilisé par ping pour tester la connectivité réseau ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "TCP",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "UDP",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "ICMP",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "RDP",
+                "correct": false
+            }
+        ],
+        "explanation": "Ping utilise ICMP pour envoyer des requêtes Echo."
+    },
+    {
+        "id": "q7",
+        "text": "Quelle commande permet de visualiser les ports ouverts et connexions actives ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "ipconfig",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "nslookup",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "netstat",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "arp",
+                "correct": false
+            }
+        ],
+        "explanation": "netstat liste les connexions actives et ports en écoute."
+    },
+    {
+        "id": "q8",
+        "text": "Quel protocole a été exploité par le ransomware WannaCry ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "SMBv1",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "HTTP",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "RDP",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "DNS",
+                "correct": false
+            }
+        ],
+        "explanation": "WannaCry exploitait une faille dans SMBv1 (EternalBlue)."
+    },
+    {
+        "id": "q9",
+        "text": "Comment s’appelle la commande permettant de modifier des paramètres réseau avancés ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "ipconfig",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "netcfg",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "netsh",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "route",
+                "correct": false
+            }
+        ],
+        "explanation": "netsh permet d’administrer la configuration réseau et le pare-feu."
+    },
+    {
+        "id": "q10",
+        "text": "Quel type de service Windows écoute sur le port 445 ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Service HTTP",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Service SMB",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Service DNS",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Service Telnet",
+                "correct": false
+            }
+        ],
+        "explanation": "Le port 445 est utilisé par le service SMB pour le partage de fichiers."
+    },
+    {
+        "id": "q11",
+        "text": "Quel outil permet d’observer les connexions actives ET le PID associé ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "ipconfig /all",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "netstat -ano",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "arp -a",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "tracert",
+                "correct": false
+            }
+        ],
+        "explanation": "netstat -ano affiche les ports en écoute et le PID associé."
+    },
+    {
+        "id": "q12",
+        "text": "Quel protocole applicatif utilise TCP/3389 ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "HTTP",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "DNS",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "RDP",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "SMB",
+                "correct": false
+            }
+        ],
+        "explanation": "RDP utilise le port TCP 3389."
+    },
+    {
+        "id": "q13",
+        "text": "Quelle attaque cible la résolution DNS au niveau applicatif ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "ARP spoofing",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "DNS poisoning",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "MAC flooding",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "ICMP redirect",
+                "correct": false
+            }
+        ],
+        "explanation": "Le DNS poisoning modifie les réponses DNS retournées."
+    },
+    {
+        "id": "q14",
+        "text": "Quel port doit rester fermé sur Internet pour éviter des risques liés à SMB ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "21",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "53",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "445",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "123",
+                "correct": false
+            }
+        ],
+        "explanation": "Le port 445 expose SMB et ne doit jamais être public."
+    },
+    {
+        "id": "q15",
+        "text": "Quelle version de SMB est désactivée par défaut dans les versions récentes de Windows ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "SMBv3",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "SMBv1",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "SMBv2",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "SMBv4",
+                "correct": false
+            }
+        ],
+        "explanation": "SMBv1 est désactivé car obsolète et vulnérable."
+    },
+    {
+        "id": "q16",
+        "text": "Quel service doit être activé pour autoriser RDP sur Windows ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Serveur HTTP",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Bureau à distance",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "SSH",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Telnet",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Bureau à distance doit être activé manuellement."
+    },
+    {
+        "id": "q17",
+        "text": "Quel outil peut modifier les règles du pare-feu Windows ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "ipconfig",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "netstat",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "netsh advfirewall",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "ping",
+                "correct": false
+            }
+        ],
+        "explanation": "netsh advfirewall permet de gérer entièrement le pare-feu."
+    },
+    {
+        "id": "q18",
+        "text": "Quel profil de pare-feu doit être utilisé sur un réseau non fiable ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Profil Domaine",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Profil Public",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Profil Privé",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Profil Administrateur",
+                "correct": false
+            }
+        ],
+        "explanation": "Le profil Public bloque la majorité des ports sensibles."
+    },
+    {
+        "id": "q19",
+        "text": "Quelle commande permet de visualiser la table ARP locale ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "netstat -a",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "arp -a",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "ipconfig -a",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "route -a",
+                "correct": false
+            }
+        ],
+        "explanation": "arp -a affiche les associations IP ↔ MAC."
+    },
+    {
+        "id": "q20",
+        "text": "Quel port Windows est particulièrement ciblé par des attaques par force brute ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "445",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "3389",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "8080",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "22",
+                "correct": false
+            }
+        ],
+        "explanation": "Le port RDP (3389) est très attaqué lorsqu’il est exposé."
+    },
+    {
+        "id": "q21",
+        "text": "Quelle commande affiche la configuration IPv4 via netsh ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "netsh show ip",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "netsh ipv4 show",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "netsh interface ipv4 show config",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "netsh config ipv4",
+                "correct": false
+            }
+        ],
+        "explanation": "netsh interface ipv4 show config affiche la configuration IPv4 détaillée."
+    },
+    {
+        "id": "q22",
+        "text": "Quel service Windows permet le partage de fichiers SMB côté serveur ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "LanmanServer",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "LanmanWorkstation",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "FileService",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "SMBHost",
+                "correct": false
+            }
+        ],
+        "explanation": "LanmanServer fournit les partages SMB côté hôte."
+    },
+    {
+        "id": "q23",
+        "text": "Que se passe-t-il si aucune passerelle par défaut n’est configurée ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Impossible de communiquer en local",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Impossible de sortir du réseau local",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Le DNS ne fonctionne plus",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "La machine change d’adresse IP",
+                "correct": false
+            }
+        ],
+        "explanation": "La passerelle est nécessaire pour atteindre d’autres réseaux."
+    },
+    {
+        "id": "q24",
+        "text": "Quel est le principal risque d’exposer RDP directement sur Internet ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Déconnexion du réseau",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Attaques par force brute ou exploits",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Corruption DNS",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Panne du service DHCP",
+                "correct": false
+            }
+        ],
+        "explanation": "RDP exposé attire immédiatement les attaques automatisées."
+    },
+    {
+        "id": "q25",
+        "text": "Quel service RDP nécessite une authentification avant d’ouvrir la session ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "SMB",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "NLA",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "SSH",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Kerberos Only",
+                "correct": false
+            }
+        ],
+        "explanation": "L'Authentification au niveau du réseau (NLA) renforce la sécurité de RDP."
+    },
+    {
+        "id": "q26",
+        "text": "Quel outil peut être utilisé par un attaquant pour modifier le pare-feu Windows ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "netsh",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "ipconfig",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "whoami",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "nslookup",
+                "correct": false
+            }
+        ],
+        "explanation": "netsh permet de modifier des règles de sécurité, parfois de manière discrète."
+    },
+    {
+        "id": "q27",
+        "text": "Quel est l’intérêt de l’outil netstat en investigation sécurité ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Voir les fichiers ouverts",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Lister les ports en écoute et les processus associés",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Modifier les règles du pare-feu",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Changer l’adresse IP",
+                "correct": false
+            }
+        ],
+        "explanation": "netstat peut détecter des services inattendus ou malveillants."
+    },
+    {
+        "id": "q28",
+        "text": "Quel protocole applicatif utilise la couche transport TCP ou UDP ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "HTTP",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Ethernet",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "ARP",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "MAC",
+                "correct": false
+            }
+        ],
+        "explanation": "Les protocoles applicatifs comme HTTP s’appuient sur TCP/UDP."
+    },
+    {
+        "id": "q29",
+        "text": "Quel outil permet de vider le cache DNS local ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "netsh dns flush",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "ipconfig /flushdns",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "nslookup -flush",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "arp -d",
+                "correct": false
+            }
+        ],
+        "explanation": "ipconfig /flushdns vide le cache DNS."
+    },
+    {
+        "id": "q30",
+        "text": "Quelle commande affiche les partages SMB configurés sur un système ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "smbclient -list",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "net share",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "shares list",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "smbstat",
+                "correct": false
+            }
+        ],
+        "explanation": "net share liste tous les partages SMB locaux."
+    },
+    {
+        "id": "q31",
+        "text": "Quels sont des exemples de partages administratifs par défaut ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Users$, Temp$",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "C$, ADMIN$",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Docs$, RAM$",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Win$, Sys$",
+                "correct": false
+            }
+        ],
+        "explanation": "C$ et ADMIN$ sont des partages administratifs créés automatiquement."
+    },
+    {
+        "id": "q32",
+        "text": "Quel protocole réseau utilise des trames et adresse les machines via MAC ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "TCP",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Ethernet",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "DNS",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "SMB",
+                "correct": false
+            }
+        ],
+        "explanation": "La couche liaison (Ethernet) fonctionne via trames et adresses MAC."
+    },
+    {
+        "id": "q33",
+        "text": "Quelle commande netsh affiche l’état du pare-feu actif ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "netsh firewall current",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "netsh advfirewall show currentprofile",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "netsh firewall show all",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "netsh firewall state",
+                "correct": false
+            }
+        ],
+        "explanation": "Cette commande affiche le profil actif et l’état du pare-feu."
+    },
+    {
+        "id": "q34",
+        "text": "Que signifient des ‘* * *’ dans une commande tracert ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "La destination n’existe pas",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Un routeur ne répond pas aux requêtes ICMP",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "La connexion est chiffrée",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le réseau local est défaillant",
+                "correct": false
+            }
+        ],
+        "explanation": "Certains routeurs ne renvoient pas de réponses ICMP."
+    },
+    {
+        "id": "q35",
+        "text": "Pourquoi est-il risqué de laisser SMBv1 activé ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Il est trop lent",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Il manque des fonctionnalités modernes",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Il contient des vulnérabilités critiques exploitées massivement",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Il ne supporte pas IPv6",
+                "correct": false
+            }
+        ],
+        "explanation": "SMBv1 a été exploité par WannaCry et d’autres attaques."
+    },
+    {
+        "id": "q36",
+        "text": "Quel est le rôle principal de la couche transport ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Acheminer des trames",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Assurer la fiabilité ou non des communications via TCP/UDP",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Gérer les noms de domaine",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Chiffrer les transmissions",
+                "correct": false
+            }
+        ],
+        "explanation": "La couche transport gère TCP et UDP."
+    },
+    {
+        "id": "q37",
+        "text": "Quel service SMB permet au client d'accéder aux partages d’un autre ordinateur ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "LanmanServer",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "LanmanWorkstation",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "SMBClient",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "FileShareAgent",
+                "correct": false
+            }
+        ],
+        "explanation": "LanmanWorkstation correspond au client SMB."
+    },
+    {
+        "id": "q38",
+        "text": "Quel est le principal rôle du pare-feu Windows ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Accélérer le réseau",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Contrôler les communications entrantes/sortantes",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Assigner les adresses IP",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Arrêter les services non utilisés",
+                "correct": false
+            }
+        ],
+        "explanation": "Le pare-feu Windows filtre les communications selon des règles."
+    },
+    {
+        "id": "q39",
+        "text": "Quel type d’attaque RDP a mené à la publication du patch BlueKeep ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Attaque sans authentification",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Attaque ARP spoofing",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Attaque DNS",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Attaque DoS uniquement",
+                "correct": false
+            }
+        ],
+        "explanation": "BlueKeep permettait l'exécution de code sans credentials."
+    },
+    {
+        "id": "q40",
+        "text": "Pourquoi est-il recommandé de protéger RDP derrière un VPN ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Pour améliorer les performances",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Pour empêcher une exposition directe à Internet",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Pour activer SMBv1",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Pour éviter la résolution DNS",
+                "correct": false
+            }
+        ],
+        "explanation": "Un VPN réduit fortement les risques d’attaque RDP."
+    },
+    {
+        "id": "q41",
+        "text": "Quel est le rôle du masque de sous-réseau ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Déterminer la passerelle",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Définir la taille du réseau et séparation réseau/local",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Crypter l’adresse IP",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Attribuer des ports aux applications",
+                "correct": false
+            }
+        ],
+        "explanation": "Le masque détermine la partie réseau/host d’une IP."
+    },
+    {
+        "id": "q42",
+        "text": "Quelle commande netstat affiche toutes les connexions avec les noms résolus ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "netstat -n",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "netstat -a",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "netstat -p",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "netstat -f",
+                "correct": false
+            }
+        ],
+        "explanation": "netstat -a affiche toutes les connexions avec résolution DNS."
+    },
+    {
+        "id": "q43",
+        "text": "Quelle action peut révéler un malware écoutant sur un port ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "ipconfig /all",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "netstat -ano",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "ping localhost",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "arp -a",
+                "correct": false
+            }
+        ],
+        "explanation": "netstat -ano peut révéler des processus inconnus écoutant sur des ports."
+    },
+    {
+        "id": "q44",
+        "text": "Quel protocole Windows est particulièrement risqué lorsqu’il est exposé sans filtrage ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "HTTP",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "SMB",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "DHCP",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "NTP",
+                "correct": false
+            }
+        ],
+        "explanation": "SMB exposé expose fortement la machine à des attaques."
+    },
+    {
+        "id": "q45",
+        "text": "Quel composant Windows gère localement les règles de filtrage réseau ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "DHCP Client",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Pare-feu Windows Defender",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "DNS Client",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "WinHTTP Proxy",
+                "correct": false
+            }
+        ],
+        "explanation": "Le pare-feu Windows filtre les communications selon le profil actif."
+    },
+    {
+        "id": "q46",
+        "text": "Qu’est-ce qu’un port 'LISTENING' dans netstat ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Un port fermé",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Un port acceptant des connexions entrantes",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Un port utilisé en sortie",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Un port bloqué par le pare-feu",
+                "correct": false
+            }
+        ],
+        "explanation": "Un port en LISTENING peut accepter des connexions."
+    },
+    {
+        "id": "q47",
+        "text": "Quel outil permet de configurer un port forwarding sous Windows ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "ipconfig",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "netsh interface portproxy",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "netstat -p",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "arp -s",
+                "correct": false
+            }
+        ],
+        "explanation": "netsh interface portproxy permet de rediriger des ports."
+    },
+    {
+        "id": "q48",
+        "text": "Quels sont deux risques concrets liés à RDP exposé ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Attaques par dictionnaire et exploitation de vulnérabilités",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Perte du Wi-Fi",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Corruption de fichiers locaux uniquement",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Blocage du clavier",
+                "correct": false
+            }
+        ],
+        "explanation": "RDP exposé à Internet est massivement attaqué et a eu plusieurs vulnérabilités graves."
+    },
+    {
+        "id": "q49",
+        "text": "Qu’est-ce qu’une adresse passerelle ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Adresse de diffusion locale",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Adresse permettant d'accéder à d’autres réseaux",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Adresse d’un serveur DNS",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Adresse MAC du routeur",
+                "correct": false
+            }
+        ],
+        "explanation": "La passerelle permet de sortir du réseau local."
+    },
+    {
+        "id": "q50",
+        "text": "Pourquoi le pare-feu Windows est-il considéré comme un dernier rempart ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Il accélère le réseau",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Il bloque les accès non autorisés même si d’autres protections échouent",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Il remplace l’antivirus",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Il désactive les ports inutiles automatiquement",
+                "correct": false
+            }
+        ],
+        "explanation": "Le pare-feu bloque les connexions non autorisées et limite la propagation d’attaques."
+    }
+]

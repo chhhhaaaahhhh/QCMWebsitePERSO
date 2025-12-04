@@ -1,0 +1,1352 @@
+[
+    {
+        "id": "q1",
+        "text": "Quel est l'un des principes fondamentaux du cloud selon le cours ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Rendre l'utilisateur responsable du matériel physique.",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Mettre à disposition des ressources informatiques à la demande.",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Forcer l'achat de serveurs privés.",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Imposer une facturation fixe mensuelle.",
+                "correct": false
+            }
+        ],
+        "explanation": "Le cloud met à disposition des ressources informatiques à la demande via Internet."
+    },
+    {
+        "id": "q2",
+        "text": "Quel modèle économique est associé au cloud ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "CAPEX uniquement.",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "OPEX (paiement à l'utilisation).",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Achat définitif du matériel.",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Investissement obligatoire en datacenter.",
+                "correct": false
+            }
+        ],
+        "explanation": "Le cloud fonctionne principalement sur un modèle OPEX : coût à l'utilisation."
+    },
+    {
+        "id": "q3",
+        "text": "Quel modèle de service implique que le client gère l'OS et les applications ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "SaaS",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "PaaS",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "IaaS",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "FaaS",
+                "correct": false
+            }
+        ],
+        "explanation": "En IaaS, le fournisseur gère le matériel et le client gère l'OS et les applications."
+    },
+    {
+        "id": "q4",
+        "text": "Quel modèle de service fournit une application prête à l'emploi ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "IaaS",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "PaaS",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "SaaS",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "CaaS",
+                "correct": false
+            }
+        ],
+        "explanation": "Le SaaS fournit une application prête à être utilisée."
+    },
+    {
+        "id": "q5",
+        "text": "Quel type de cloud est partagé entre plusieurs organisations et géré par un fournisseur ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Cloud privé",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Cloud hybride",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Cloud public",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Multi-cloud",
+                "correct": false
+            }
+        ],
+        "explanation": "Le cloud public est géré par un fournisseur et partagé entre clients."
+    },
+    {
+        "id": "q6",
+        "text": "Quel avantage du cloud permet d'adapter rapidement les ressources en fonction des besoins ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Disponibilité permanente",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Élasticité",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Sécurité absolue",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Stockage illimité garanti",
+                "correct": false
+            }
+        ],
+        "explanation": "L'élasticité permet d'adapter instantanément les ressources."
+    },
+    {
+        "id": "q7",
+        "text": "Quel risque est fortement associé au cloud selon la CSA ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Panne physique du datacenter",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Mauvaise configuration de ressources",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Absence d'API",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Incompatibilité des serveurs",
+                "correct": false
+            }
+        ],
+        "explanation": "La mauvaise configuration est la cause la plus fréquente de fuites."
+    },
+    {
+        "id": "q8",
+        "text": "Quel organisme définit les caractéristiques du cloud telles que l'élasticité ou l'accès à la demande ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "ISO",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "NIST",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "CNIL",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "OWASP",
+                "correct": false
+            }
+        ],
+        "explanation": "Les caractéristiques fondamentales du cloud sont définies par le NIST."
+    },
+    {
+        "id": "q9",
+        "text": "Quel provider est présenté comme le leader historique du cloud ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Azure",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Google Cloud",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "AWS",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "IBM Cloud",
+                "correct": false
+            }
+        ],
+        "explanation": "AWS est le pionnier (lancé en 2006) et leader du marché."
+    },
+    {
+        "id": "q10",
+        "text": "Quel service AWS est utilisé pour les machines virtuelles ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "S3",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "IAM",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "EC2",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Lambda",
+                "correct": false
+            }
+        ],
+        "explanation": "EC2 est le service de compute pour les VM."
+    },
+    {
+        "id": "q11",
+        "text": "Quel service Azure gère les identités et les accès ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Blob Storage",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Azure AD",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Azure VM",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Azure Guard",
+                "correct": false
+            }
+        ],
+        "explanation": "Azure AD est le service d'identité et de gestion des accès."
+    },
+    {
+        "id": "q12",
+        "text": "Quel provider est décrit comme le spécialiste de la donnée et du machine learning ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "AWS",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Azure",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "GCP",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Oracle Cloud",
+                "correct": false
+            }
+        ],
+        "explanation": "GCP est réputé pour la gestion de données massives et l'IA."
+    },
+    {
+        "id": "q13",
+        "text": "Quel concept remplace le modèle de sécurité périmétrique traditionnel dans le cloud ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Open Access",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Zero Trust",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Full Trust",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Secure Firewall",
+                "correct": false
+            }
+        ],
+        "explanation": "Zero Trust : aucune entité n'est considérée comme fiable par défaut."
+    },
+    {
+        "id": "q14",
+        "text": "Dans le modèle de responsabilité partagée, que gère le fournisseur ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Les données du client",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "La configuration réseau du client",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "L'infrastructure physique et la virtualisation",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Les accès IAM du client",
+                "correct": false
+            }
+        ],
+        "explanation": "Le fournisseur sécurise l'infrastructure physique et l'hyperviseur."
+    },
+    {
+        "id": "q15",
+        "text": "Dans un incident de bucket public exposé, qui est responsable ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le fournisseur cloud",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le client",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Les deux",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Personne",
+                "correct": false
+            }
+        ],
+        "explanation": "La configuration des ressources est sous la responsabilité du client."
+    },
+    {
+        "id": "q16",
+        "text": "Quel principe IAM recommande de donner seulement les droits nécessaires ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Trust All",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Least Privilege",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Full Access",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Open Access",
+                "correct": false
+            }
+        ],
+        "explanation": "Le principe du moindre privilège est essentiel."
+    },
+    {
+        "id": "q17",
+        "text": "Quel outil AWS permet la gestion centralisée des logs d'audit ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "S3",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "GuardDuty",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "CloudTrail",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "EC2",
+                "correct": false
+            }
+        ],
+        "explanation": "CloudTrail trace toutes les actions dans AWS."
+    },
+    {
+        "id": "q18",
+        "text": "Quel outil GCP permet la détection centralisée des menaces ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Cloud Storage",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Security Command Center",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "IAM",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "BigQuery",
+                "correct": false
+            }
+        ],
+        "explanation": "Security Command Center centralise la détection."
+    },
+    {
+        "id": "q19",
+        "text": "Quel risque relève de la confidentialité dans le triangle CIA ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Panne réseau",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Modification des données",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Fuite de données",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Non-respect de procédures",
+                "correct": false
+            }
+        ],
+        "explanation": "La confidentialité concerne la protection contre la divulgation."
+    },
+    {
+        "id": "q20",
+        "text": "Quel standard concerne la protection des données personnelles ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "ISO 27017",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "SOC 2",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "NIST CSF",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "RGPD",
+                "correct": true
+            }
+        ],
+        "explanation": "Le RGPD encadre la protection des données personnelles."
+    },
+    {
+        "id": "q21",
+        "text": "Quel service Azure fournit un moteur de détection des menaces ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Azure AD",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Azure Policy",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Microsoft Defender for Cloud",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Key Vault",
+                "correct": false
+            }
+        ],
+        "explanation": "Microsoft Defender for Cloud analyse les menaces."
+    },
+    {
+        "id": "q22",
+        "text": "Quel service permet de gérer les clés de chiffrement sur AWS ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "IAM",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "KMS",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "S3",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "EC2",
+                "correct": false
+            }
+        ],
+        "explanation": "KMS gère le chiffrement et les clés."
+    },
+    {
+        "id": "q23",
+        "text": "Dans un contexte multi-cloud, que signifie l'utilisation de plusieurs providers ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Utiliser un seul provider mais plusieurs régions",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Utiliser plusieurs providers différents",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Reproduire l'infrastructure interne",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Déléguer toute la sécurité au provider",
+                "correct": false
+            }
+        ],
+        "explanation": "Le multi-cloud consiste à combiner plusieurs fournisseurs."
+    },
+    {
+        "id": "q24",
+        "text": "Quel service GCP est l'équivalent d'EC2 pour les machines virtuelles ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Cloud Functions",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Cloud Storage",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Compute Engine",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Kubernetes Engine",
+                "correct": false
+            }
+        ],
+        "explanation": "Compute Engine permet de gérer des VM."
+    },
+    {
+        "id": "q25",
+        "text": "Que signifie 'Infrastructure as Code' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Configuration manuelle des ressources",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Définir l’infrastructure via du code",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Développement d'applications",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Automatisation des tests",
+                "correct": false
+            }
+        ],
+        "explanation": "IaC permet de déployer et gérer l'infrastructure via du code."
+    },
+    {
+        "id": "q26",
+        "text": "Quel élément de sécurité doit être activé pour tous les comptes selon les bonnes pratiques ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Accès root permanent",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "MFA",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Accès public par défaut",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Partage automatique",
+                "correct": false
+            }
+        ],
+        "explanation": "Le MFA est un standard recommandé."
+    },
+    {
+        "id": "q27",
+        "text": "Quel type d’accès constitue un risque majeur selon la CSA ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Accès avec MFA obligatoire",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Accès en lecture seule",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Accès avec privilèges excessifs",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Accès restreint par rôle",
+                "correct": false
+            }
+        ],
+        "explanation": "Les privilèges excessifs sont un risque IAM majeur."
+    },
+    {
+        "id": "q28",
+        "text": "Quel outil Azure permet la gestion des politiques de conformité ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Azure Monitor",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Azure Policy",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Key Vault",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Blob Storage",
+                "correct": false
+            }
+        ],
+        "explanation": "Azure Policy permet de définir et appliquer des règles de conformité."
+    },
+    {
+        "id": "q29",
+        "text": "Quelle catégorie du triangle CIA concerne les attaques DDoS ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Confidentialité",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Intégrité",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Disponibilité",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Conformité",
+                "correct": false
+            }
+        ],
+        "explanation": "Les DDoS visent à rendre un service indisponible."
+    },
+    {
+        "id": "q30",
+        "text": "Quel élément du cloud nécessite une surveillance constante via logs ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Les murs du datacenter",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Les actions d'administration",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Le matériel physique",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Les réseaux publics",
+                "correct": false
+            }
+        ],
+        "explanation": "Les logs permettent d’auditer les actions critiques."
+    },
+    {
+        "id": "q31",
+        "text": "Quelle technologie est fréquemment citée comme cause de fuites lorsqu'elle est mal configurée ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "EC2",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "S3",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Lambda",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "RDS",
+                "correct": false
+            }
+        ],
+        "explanation": "S3 est souvent mal configuré, provoquant des fuites."
+    },
+    {
+        "id": "q32",
+        "text": "Quel provider est fortement intégré avec l'écosystème Microsoft ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "AWS",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "GCP",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Azure",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "IBM Cloud",
+                "correct": false
+            }
+        ],
+        "explanation": "Azure est intégré nativement avec AD, Office 365, etc."
+    },
+    {
+        "id": "q33",
+        "text": "Quel service AWS détecte les menaces automatiquement ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Security Hub",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "GuardDuty",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "IAM",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "EC2",
+                "correct": false
+            }
+        ],
+        "explanation": "GuardDuty analyse et détecte des menaces."
+    },
+    {
+        "id": "q34",
+        "text": "Pourquoi la cybersécurité cloud abandonne-t-elle le périmètre traditionnel ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Parce que les firewalls ne fonctionnent plus",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Parce que les environnements sont dynamiques et distribués",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Parce que le cloud supprime Internet",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Parce que les utilisateurs n'ont plus d'identité",
+                "correct": false
+            }
+        ],
+        "explanation": "Les environnements cloud sont distribués et dynamiques."
+    },
+    {
+        "id": "q35",
+        "text": "Quel élément doit absolument être activé pour détecter les changements de configuration ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Snapshots",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Logs d’audit",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Auto-scaling",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Monitoring réseau",
+                "correct": false
+            }
+        ],
+        "explanation": "Les logs permettent de suivre toute modification."
+    },
+    {
+        "id": "q36",
+        "text": "Quel standard est une norme de sécurité appliquée au cloud ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "ISO 27017",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "ISO 9001",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "PCI-DSS",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "CGI",
+                "correct": false
+            }
+        ],
+        "explanation": "ISO 27017 concerne la sécurité cloud."
+    },
+    {
+        "id": "q37",
+        "text": "Quel service GCP centralise les logs ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Cloud Monitoring",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Cloud Logging",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Cloud KMS",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Cloud SQL",
+                "correct": false
+            }
+        ],
+        "explanation": "Cloud Logging gère les logs sur GCP."
+    },
+    {
+        "id": "q38",
+        "text": "Quels services sont mutualisés dans un cloud public selon le NIST ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Les OS des clients",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Les ressources informatiques",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Les identifiants utilisateurs",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Les données des clients",
+                "correct": false
+            }
+        ],
+        "explanation": "Le NIST précise que le cloud repose sur un pool de ressources mutualisées."
+    },
+    {
+        "id": "q39",
+        "text": "Quel élément est un avantage du cloud ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le besoin d’investir dans un datacenter",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "La scalabilité rapide",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "La gestion matérielle obligatoire",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "La mise à jour manuelle des serveurs",
+                "correct": false
+            }
+        ],
+        "explanation": "Le cloud permet de scaler très rapidement."
+    },
+    {
+        "id": "q40",
+        "text": "Quel risque est lié à l’intégrité dans le modèle CIA ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Modification non autorisée",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Interruption de service",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Fuite de données",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Perte de conformité",
+                "correct": false
+            }
+        ],
+        "explanation": "L’intégrité concerne les modifications non autorisées."
+    },
+    {
+        "id": "q41",
+        "text": "Quel service Azure correspond au stockage d’objet ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Azure SQL",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Blob Storage",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Azure AD",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Azure Firewall",
+                "correct": false
+            }
+        ],
+        "explanation": "Blob Storage est le service de stockage objet."
+    },
+    {
+        "id": "q42",
+        "text": "Le cloud facilite l’innovation notamment dans quel domaine ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Cuisine moléculaire",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Big Data et IA",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Agriculture",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Transport maritime",
+                "correct": false
+            }
+        ],
+        "explanation": "Le cloud accélère l’innovation, notamment en IA et Big Data."
+    },
+    {
+        "id": "q43",
+        "text": "Quel type de déploiement combine Cloud public et Cloud privé ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Privé",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Multi-cloud",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Hybride",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Public",
+                "correct": false
+            }
+        ],
+        "explanation": "Le cloud hybride mélange public et privé."
+    },
+    {
+        "id": "q44",
+        "text": "Quel élément du cloud doit être configuré avec précaution pour éviter l’accès public involontaire ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Les VM",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Les buckets de stockage",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Les réseaux privés",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Les clés SSH",
+                "correct": false
+            }
+        ],
+        "explanation": "Les buckets sont souvent rendus publics par erreur."
+    },
+    {
+        "id": "q45",
+        "text": "Quel service AWS centralise les bonnes pratiques de sécurité et conformité ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Security Hub",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "CloudTrail",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "S3",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "IAM",
+                "correct": false
+            }
+        ],
+        "explanation": "Security Hub agrège les informations de sécurité."
+    },
+    {
+        "id": "q46",
+        "text": "Quel outil Azure gère les clés de chiffrement ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Azure Monitor",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Key Vault",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Azure AD",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Azure Policy",
+                "correct": false
+            }
+        ],
+        "explanation": "Key Vault protège les clés et secrets."
+    },
+    {
+        "id": "q47",
+        "text": "Quelle technologie cloud est centrale dans les environnements orientés containers selon GCP ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Docker Swarm",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Kubernetes",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "VMWare",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Xen",
+                "correct": false
+            }
+        ],
+        "explanation": "GCP met fortement en avant Kubernetes."
+    },
+    {
+        "id": "q48",
+        "text": "Quel service permet d'héberger une application sans gérer l'infrastructure sous-jacente ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "IaaS",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "PaaS",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "SaaS",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Bare Metal",
+                "correct": false
+            }
+        ],
+        "explanation": "Le PaaS gère l’OS et l’infrastructure."
+    },
+    {
+        "id": "q49",
+        "text": "Quel modèle cloud permet de démarrer une machine virtuelle en quelques minutes ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Capex",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Cloud public",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "On-premise",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Cloud privé uniquement",
+                "correct": false
+            }
+        ],
+        "explanation": "Le cloud public offre une grande flexibilité."
+    },
+    {
+        "id": "q50",
+        "text": "Quel risque est avant tout lié à des erreurs humaines selon le cours ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Problèmes de facturation",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Mauvaise configuration",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Défaillance du matériel",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Absence de services cloud",
+                "correct": false
+            }
+        ],
+        "explanation": "Les erreurs humaines de configuration sont les principaux risques."
+    }
+]

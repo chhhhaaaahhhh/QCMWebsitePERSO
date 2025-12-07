@@ -1,0 +1,662 @@
+[
+    {
+        "id": "q1",
+        "text": "Quelle analogie est utilisée pour expliquer la simplicité d'utilisation du cloud ?",
+        "options": [
+            { "id": "a", "label": "Le cloud est comme une voiture de location", "correct": false },
+            { "id": "b", "label": "Le cloud est comme l'électricité", "correct": true },
+            { "id": "c", "label": "Le cloud est comme un disque dur externe", "correct": false },
+            { "id": "d", "label": "Le cloud est comme une banque", "correct": false }
+        ],
+        "explanation": "Le cours compare le cloud à l'électricité : on l'utilise sans se soucier de la centrale qui la produit."
+    },
+    {
+        "id": "q2",
+        "text": "Que signifie l'acronyme CAPEX ?",
+        "options": [
+            { "id": "a", "label": "Charges opérationnelles récurrentes", "correct": false },
+            { "id": "b", "label": "Investissements à long terme", "correct": true },
+            { "id": "c", "label": "Capital Externalisé", "correct": false },
+            { "id": "d", "label": "Cloud Application Exchange", "correct": false }
+        ],
+        "explanation": "CAPEX (Capital Expenditure) correspond aux investissements à long terme, amortis sur plusieurs années."
+    },
+    {
+        "id": "q3",
+        "text": "Quelle dépense correspond aux charges opérationnelles récurrentes déduites des revenus ?",
+        "options": [
+            { "id": "a", "label": "CAPEX", "correct": false },
+            { "id": "b", "label": "TOTEX", "correct": false },
+            { "id": "c", "label": "OPEX", "correct": true },
+            { "id": "d", "label": "FOPEX", "correct": false }
+        ],
+        "explanation": "L'OPEX (Operational Expenditure) représente les coûts de fonctionnement récurrents, favorisés par le modèle cloud."
+    },
+    {
+        "id": "q4",
+        "text": "Lequel de ces éléments n'est PAS une caractéristique du cloud selon le NIST ?",
+        "options": [
+            { "id": "a", "label": "Accès en libre-service", "correct": false },
+            { "id": "b", "label": "Élasticité rapide", "correct": false },
+            { "id": "c", "label": "Service mesurable", "correct": false },
+            { "id": "d", "label": "Hébergement local obligatoire", "correct": true }
+        ],
+        "explanation": "L'hébergement local n'est pas une caractéristique du cloud. Les caractéristiques incluent l'accès ubiquitaire, le pool de ressources, l'élasticité, etc."
+    },
+    {
+        "id": "q5",
+        "text": "Dans le modèle IaaS, qui gère le système d'exploitation (OS) ?",
+        "options": [
+            { "id": "a", "label": "Le fournisseur de cloud", "correct": false },
+            { "id": "b", "label": "L'utilisateur", "correct": true },
+            { "id": "c", "label": "Un tiers auditeur", "correct": false },
+            { "id": "d", "label": "Le fournisseur d'accès internet", "correct": false }
+        ],
+        "explanation": "En IaaS (Infrastructure as a Service), l'utilisateur a la responsabilité de gérer l'OS et les applications."
+    },
+    {
+        "id": "q6",
+        "text": "Quel service est un exemple de PaaS (Platform as a Service) ?",
+        "options": [
+            { "id": "a", "label": "Azure App Service", "correct": true },
+            { "id": "b", "label": "Amazon EC2", "correct": false },
+            { "id": "c", "label": "Microsoft Office 365", "correct": false },
+            { "id": "d", "label": "Gmail", "correct": false }
+        ],
+        "explanation": "Azure App Service est cité comme exemple de PaaS, où le provider gère l'OS et l'infra."
+    },
+    {
+        "id": "q7",
+        "text": "Dans quel modèle de service l'utilisateur utilise-t-il une application prête à l'emploi ?",
+        "options": [
+            { "id": "a", "label": "IaaS", "correct": false },
+            { "id": "b", "label": "PaaS", "correct": false },
+            { "id": "c", "label": "SaaS", "correct": true },
+            { "id": "d", "label": "DaaS", "correct": false }
+        ],
+        "explanation": "Le SaaS (Software as a Service) fournit un produit fini prêt à l'emploi (ex: Gmail, Office365)."
+    },
+    {
+        "id": "q8",
+        "text": "Qu'est-ce qu'un cloud hybride ?",
+        "options": [
+            { "id": "a", "label": "Un cloud dédié à une seule organisation", "correct": false },
+            { "id": "b", "label": "Un mélange de cloud public et privé", "correct": true },
+            { "id": "c", "label": "L'utilisation de plusieurs fournisseurs publics", "correct": false },
+            { "id": "d", "label": "Un cloud géré par le gouvernement", "correct": false }
+        ],
+        "explanation": "Le cloud hybride combine les infrastructures de cloud public et privé."
+    },
+    {
+        "id": "q9",
+        "text": "Quel terme désigne l'utilisation de plusieurs fournisseurs de cloud public ?",
+        "options": [
+            { "id": "a", "label": "Cloud Hybride", "correct": false },
+            { "id": "b", "label": "Multi-cloud", "correct": true },
+            { "id": "c", "label": "Mega-cloud", "correct": false },
+            { "id": "d", "label": "Open Cloud", "correct": false }
+        ],
+        "explanation": "Le multi-cloud consiste à utiliser les services de plusieurs fournisseurs de cloud public différents."
+    },
+    {
+        "id": "q10",
+        "text": "Quel est un inconvénient majeur du cloud mentionné dans le cours ?",
+        "options": [
+            { "id": "a", "label": "Lenteur de déploiement", "correct": false },
+            { "id": "b", "label": "Coût initial élevé", "correct": false },
+            { "id": "c", "label": "Dépendance à un fournisseur (lock-in)", "correct": true },
+            { "id": "d", "label": "Manque d'innovation", "correct": false }
+        ],
+        "explanation": "La dépendance à un fournisseur (vendor lock-in) est citée comme un risque/inconvénient du cloud."
+    },
+    {
+        "id": "q11",
+        "text": "Quel fournisseur de cloud propose le service 'EC2' ?",
+        "options": [
+            { "id": "a", "label": "Google Cloud", "correct": false },
+            { "id": "b", "label": "Microsoft Azure", "correct": false },
+            { "id": "c", "label": "AWS", "correct": true },
+            { "id": "d", "label": "IBM Cloud", "correct": false }
+        ],
+        "explanation": "EC2 est le service de machines virtuelles d'AWS."
+    },
+    {
+        "id": "q12",
+        "text": "Quel est l'équivalent du service 'S3' (AWS) chez Microsoft Azure ?",
+        "options": [
+            { "id": "a", "label": "Cloud Storage", "correct": false },
+            { "id": "b", "label": "Blob Storage", "correct": true },
+            { "id": "c", "label": "Azure S3", "correct": false },
+            { "id": "d", "label": "OneDrive", "correct": false }
+        ],
+        "explanation": "Le stockage d'objets s'appelle S3 chez AWS et Blob Storage chez Azure."
+    },
+    {
+        "id": "q13",
+        "text": "Comment s'appelle le service de base de données relationnelle chez Google Cloud ?",
+        "options": [
+            { "id": "a", "label": "RDS", "correct": false },
+            { "id": "b", "label": "Azure SQL", "correct": false },
+            { "id": "c", "label": "Cloud SQL", "correct": true },
+            { "id": "d", "label": "Google DB", "correct": false }
+        ],
+        "explanation": "Cloud SQL est le service de base de données géré par Google Cloud (GCP)."
+    },
+    {
+        "id": "q14",
+        "text": "Quel service AWS permet de gérer les identités et les accès ?",
+        "options": [
+            { "id": "a", "label": "KMS", "correct": false },
+            { "id": "b", "label": "IAM", "correct": true },
+            { "id": "c", "label": "GuardDuty", "correct": false },
+            { "id": "d", "label": "CloudTrail", "correct": false }
+        ],
+        "explanation": "IAM (Identity and Access Management) est le service de gestion des accès chez AWS."
+    },
+    {
+        "id": "q15",
+        "text": "Quelle est la responsabilité du fournisseur (AWS, Azure, GCP) en matière de sécurité ?",
+        "options": [
+            { "id": "a", "label": "La sécurité DANS le cloud", "correct": false },
+            { "id": "b", "label": "La sécurité DU cloud", "correct": true },
+            { "id": "c", "label": "La configuration du pare-feu client", "correct": false },
+            { "id": "d", "label": "La gestion des données clients", "correct": false }
+        ],
+        "explanation": "Le fournisseur est responsable de la sécurité DU cloud (infrastructure physique, virtualisation, etc.)."
+    },
+    {
+        "id": "q16",
+        "text": "Qui est responsable de la configuration réseau et de la gestion des données en IaaS ?",
+        "options": [
+            { "id": "a", "label": "Le fournisseur", "correct": false },
+            { "id": "b", "label": "Le client", "correct": true },
+            { "id": "c", "label": "Le gouvernement", "correct": false },
+            { "id": "d", "label": "Personne", "correct": false }
+        ],
+        "explanation": "Le client est responsable de la sécurité DANS le cloud, ce qui inclut les données et la configuration réseau."
+    },
+    {
+        "id": "q17",
+        "text": "Quel principe de sécurité stipule de ne faire confiance à personne par défaut ?",
+        "options": [
+            { "id": "a", "label": "Full Trust", "correct": false },
+            { "id": "b", "label": "Open Access", "correct": false },
+            { "id": "c", "label": "Zéro-trust", "correct": true },
+            { "id": "d", "label": "Trust but Verify", "correct": false }
+        ],
+        "explanation": "Le zéro-trust implique qu'on ne fait confiance à personne (machine, user, réseau) par défaut, même au sein du cloud."
+    },
+    {
+        "id": "q18",
+        "text": "Quelle conséquence a l'approche 'tout est code' sur la sécurité ?",
+        "options": [
+            { "id": "a", "label": "Le code est automatiquement sécurisé par le cloud", "correct": false },
+            { "id": "b", "label": "Une erreur dans le code devient une faille de sécurité", "correct": true },
+            { "id": "c", "label": "On n'a plus besoin de développeurs", "correct": false },
+            { "id": "d", "label": "La sécurité physique devient plus importante", "correct": false }
+        ],
+        "explanation": "Comme l'infrastructure et la sécurité sont définies par du code, une erreur de codage entraîne directement une faille."
+    },
+    {
+        "id": "q19",
+        "text": "Quel est un exemple courant de mauvaise configuration cloud cité dans le cours ?",
+        "options": [
+            { "id": "a", "label": "Un mot de passe trop long", "correct": false },
+            { "id": "b", "label": "Un bucket S3 laissé en public", "correct": true },
+            { "id": "c", "label": "L'utilisation de trop de serveurs", "correct": false },
+            { "id": "d", "label": "L'installation d'un antivirus", "correct": false }
+        ],
+        "explanation": "Laisser un bucket S3 (stockage) en accès public est un exemple classique de mauvaise configuration risquée."
+    },
+    {
+        "id": "q20",
+        "text": "Que signifie MFA ?",
+        "options": [
+            { "id": "a", "label": "Multi-Factor Authentication", "correct": true },
+            { "id": "b", "label": "Master File Access", "correct": false },
+            { "id": "c", "label": "Managed Firewall Application", "correct": false },
+            { "id": "d", "label": "Main Frame Architecture", "correct": false }
+        ],
+        "explanation": "MFA signifie Multi-Factor Authentication, une pratique essentielle pour sécuriser les accès."
+    },
+    {
+        "id": "q21",
+        "text": "Quel principe IAM consiste à donner uniquement les droits nécessaires ?",
+        "options": [
+            { "id": "a", "label": "Le principe de l'accès root", "correct": false },
+            { "id": "b", "label": "Le principe du moindre privilège", "correct": true },
+            { "id": "c", "label": "Le principe de l'administrateur unique", "correct": false },
+            { "id": "d", "label": "Le principe de confiance totale", "correct": false }
+        ],
+        "explanation": "Le principe du moindre privilège impose de ne donner à un utilisateur ou service que les droits strictement nécessaires."
+    },
+    {
+        "id": "q22",
+        "text": "Laquelle de ces normes concerne la protection des données personnelles ?",
+        "options": [
+            { "id": "a", "label": "ISO 27001", "correct": false },
+            { "id": "b", "label": "SOC 2", "correct": false },
+            { "id": "c", "label": "RGPD", "correct": true },
+            { "id": "d", "label": "NIST CSF", "correct": false }
+        ],
+        "explanation": "Le RGPD (Règlement Général sur la Protection des Données) concerne la conformité et la protection des données personnelles."
+    },
+    {
+        "id": "q23",
+        "text": "Quel outil AWS est utilisé pour les logs et l'audit ?",
+        "options": [
+            { "id": "a", "label": "CloudWatch", "correct": false },
+            { "id": "b", "label": "CloudTrail", "correct": true },
+            { "id": "c", "label": "CloudFront", "correct": false },
+            { "id": "d", "label": "CloudFormation", "correct": false }
+        ],
+        "explanation": "CloudTrail est le service AWS cité pour enregistrer les logs et permettre l'audit des actions."
+    },
+    {
+        "id": "q24",
+        "text": "En SaaS, que gère le fournisseur de cloud ?",
+        "options": [
+            { "id": "a", "label": "Uniquement le matériel", "correct": false },
+            { "id": "b", "label": "Le matériel et l'OS, mais pas l'application", "correct": false },
+            { "id": "c", "label": "Tout : matériel, OS, middleware et application", "correct": true },
+            { "id": "d", "label": "Uniquement le réseau", "correct": false }
+        ],
+        "explanation": "Dans le modèle SaaS, le provider gère tout, de l'infrastructure jusqu'à l'application elle-même."
+    },
+    {
+        "id": "q25",
+        "text": "Quel risque concerne la 'fuite de données' ?",
+        "options": [
+            { "id": "a", "label": "Confidentialité", "correct": true },
+            { "id": "b", "label": "Intégrité", "correct": false },
+            { "id": "c", "label": "Disponibilité", "correct": false },
+            { "id": "d", "label": "Traçabilité", "correct": false }
+        ],
+        "explanation": "La confidentialité est le pilier de sécurité compromis lors d'une fuite de données."
+    },
+    {
+        "id": "q26",
+        "text": "Quel risque concerne une 'modification non autorisée' ?",
+        "options": [
+            { "id": "a", "label": "Confidentialité", "correct": false },
+            { "id": "b", "label": "Intégrité", "correct": true },
+            { "id": "c", "label": "Disponibilité", "correct": false },
+            { "id": "d", "label": "Authentification", "correct": false }
+        ],
+        "explanation": "L'intégrité garantit que les données n'ont pas été modifiées de manière non autorisée."
+    },
+    {
+        "id": "q27",
+        "text": "Que signifie l'acronyme VM ?",
+        "options": [
+            { "id": "a", "label": "Virtual Memory", "correct": false },
+            { "id": "b", "label": "Virtual Machine", "correct": true },
+            { "id": "c", "label": "Visual Mode", "correct": false },
+            { "id": "d", "label": "Very Much", "correct": false }
+        ],
+        "explanation": "VM signifie Virtual Machine (Machine Virtuelle), comme EC2 ou Azure VM."
+    },
+    {
+        "id": "q28",
+        "text": "Quel service GCP correspond à 'Active Directory' ou 'IAM' ?",
+        "options": [
+            { "id": "a", "label": "Cloud Identity", "correct": false },
+            { "id": "b", "label": "Cloud IAM", "correct": true },
+            { "id": "c", "label": "Google Auth", "correct": false },
+            { "id": "d", "label": "G-Access", "correct": false }
+        ],
+        "explanation": "Cloud IAM est le service de gestion des identités et accès sur Google Cloud Platform."
+    },
+    {
+        "id": "q29",
+        "text": "Quel type de cloud l'armée française utiliserait-elle pour ses données sensibles ?",
+        "options": [
+            { "id": "a", "label": "Cloud Public uniquement", "correct": false },
+            { "id": "b", "label": "Cloud Privé", "correct": true },
+            { "id": "c", "label": "SaaS public", "correct": false },
+            { "id": "d", "label": "Un serveur Discord", "correct": false }
+        ],
+        "explanation": "L'exemple du cours mentionne l'usage d'un cloud privé pour les données sensibles (ex: armée)."
+    },
+    {
+        "id": "q30",
+        "text": "Quelle est la première chose que vérifie un enquêteur en cybersécurité ?",
+        "options": [
+            { "id": "a", "label": "Le code source", "correct": false },
+            { "id": "b", "label": "Les services de logging (journaux d'audit)", "correct": true },
+            { "id": "c", "label": "La température du datacenter", "correct": false },
+            { "id": "d", "label": "Les factures", "correct": false }
+        ],
+        "explanation": "Les services de logging (comme CloudTrail) sont la première source d'information pour une enquête."
+    },
+    {
+        "id": "q31",
+        "text": "Quel service de sécurité Azure permet la gestion des clés ?",
+        "options": [
+            { "id": "a", "label": "Azure Policy", "correct": false },
+            { "id": "b", "label": "Key Vault", "correct": true },
+            { "id": "c", "label": "Azure Monitor", "correct": false },
+            { "id": "d", "label": "Defender for Cloud", "correct": false }
+        ],
+        "explanation": "Key Vault est l'outil Azure mentionné pour la gestion des clés de sécurité."
+    },
+    {
+        "id": "q32",
+        "text": "Dans le modèle de responsabilité partagée, qui gère le 'refroidissement' des serveurs ?",
+        "options": [
+            { "id": "a", "label": "Le client", "correct": false },
+            { "id": "b", "label": "Le fournisseur (Provider)", "correct": true },
+            { "id": "c", "label": "Une entreprise de climatisation tierce", "correct": false },
+            { "id": "d", "label": "C'est géré par logiciel", "correct": false }
+        ],
+        "explanation": "Le refroidissement fait partie de l'infrastructure physique (sécurité DU cloud), gérée par le fournisseur."
+    },
+    {
+        "id": "q33",
+        "text": "Quel service AWS permet la détection de menaces ?",
+        "options": [
+            { "id": "a", "label": "S3", "correct": false },
+            { "id": "b", "label": "EC2", "correct": false },
+            { "id": "c", "label": "GuardDuty", "correct": true },
+            { "id": "d", "label": "RDS", "correct": false }
+        ],
+        "explanation": "GuardDuty est listé comme l'outil de détection des menaces chez AWS."
+    },
+    {
+        "id": "q34",
+        "text": "Quelle norme concerne la sécurité spécifique au Cloud ?",
+        "options": [
+            { "id": "a", "label": "ISO 9001", "correct": false },
+            { "id": "b", "label": "ISO 27017", "correct": true },
+            { "id": "c", "label": "Hébergeur de Données de Santé", "correct": false },
+            { "id": "d", "label": "PCI-DSS", "correct": false }
+        ],
+        "explanation": "ISO 27017 est citée comme la norme de sécurité spécifique au cloud."
+    },
+    {
+        "id": "q35",
+        "text": "Pourquoi le cloud est-il considéré comme 'peu onéreux' selon le cours ?",
+        "options": [
+            { "id": "a", "label": "Car les machines sont de mauvaise qualité", "correct": false },
+            { "id": "b", "label": "Car les ressources sont mutualisées", "correct": true },
+            { "id": "c", "label": "Car c'est subventionné", "correct": false },
+            { "id": "d", "label": "Car l'électricité est gratuite pour les datacenters", "correct": false }
+        ],
+        "explanation": "La mutualisation des ressources (pool de ressources) permet de réduire les coûts."
+    },
+    {
+        "id": "q36",
+        "text": "Qu'est-ce que 'Compute Engine' ?",
+        "options": [
+            { "id": "a", "label": "Le service de VM de GCP", "correct": true },
+            { "id": "b", "label": "Un moteur de recherche", "correct": false },
+            { "id": "c", "label": "Le service de VM d'AWS", "correct": false },
+            { "id": "d", "label": "Un outil de monitoring", "correct": false }
+        ],
+        "explanation": "Compute Engine est le nom du service de machines virtuelles (VM) sur Google Cloud (GCP)."
+    },
+    {
+        "id": "q37",
+        "text": "Quelle attaque vise la disponibilité des services (ex: VM stoppée) ?",
+        "options": [
+            { "id": "a", "label": "Phishing", "correct": false },
+            { "id": "b", "label": "SQL Injection", "correct": false },
+            { "id": "c", "label": "DDoS", "correct": true },
+            { "id": "d", "label": "Brute force", "correct": false }
+        ],
+        "explanation": "Le cours cite les attaques DDoS (Déni de service) comme un risque pour la disponibilité."
+    },
+    {
+        "id": "q38",
+        "text": "En PaaS, l'utilisateur doit-il gérer le multitenancy s'il installe une base de données ?",
+        "options": [
+            { "id": "a", "label": "Non, c'est automatique", "correct": false },
+            { "id": "b", "label": "Oui, il doit le gérer lui-même", "correct": true },
+            { "id": "c", "label": "Le PaaS ne permet pas de base de données", "correct": false },
+            { "id": "d", "label": "Seulement si c'est Oracle", "correct": false }
+        ],
+        "explanation": "Le cours précise : 'si on met une bdd [en PaaS] il faut pouvoir gérer multitenancy soi même'."
+    },
+    {
+        "id": "q39",
+        "text": "Quel service GCP est utilisé pour le chiffrement ?",
+        "options": [
+            { "id": "a", "label": "Cloud KMS", "correct": true },
+            { "id": "b", "label": "Cloud Encrypt", "correct": false },
+            { "id": "c", "label": "GCP Vault", "correct": false },
+            { "id": "d", "label": "SafeKey", "correct": false }
+        ],
+        "explanation": "Cloud KMS (Key Management Service) est l'outil de chiffrement pour GCP."
+    },
+    {
+        "id": "q40",
+        "text": "Que signifie l'élasticité dans le cloud ?",
+        "options": [
+            { "id": "a", "label": "La capacité des câbles à s'étirer", "correct": false },
+            { "id": "b", "label": "L'adaptation des ressources à la demande", "correct": true },
+            { "id": "c", "label": "La variabilité des prix selon l'heure", "correct": false },
+            { "id": "d", "label": "La possibilité de changer de fournisseur facilement", "correct": false }
+        ],
+        "explanation": "L'élasticité désigne la capacité d'augmenter ou réduire les ressources informatiques automatiquement selon la demande."
+    },
+    {
+        "id": "q41",
+        "text": "Dans le modèle IaaS, qui est responsable de la gestion du Middleware ?",
+        "options": [
+            { "id": "a", "label": "Le fournisseur", "correct": false },
+            { "id": "b", "label": "L'utilisateur", "correct": true },
+            { "id": "c", "label": "Un prestataire tiers", "correct": false },
+            { "id": "d", "label": "C'est partagé 50/50", "correct": false }
+        ],
+        "explanation": "Selon le schéma de responsabilité partagée (page 3), en IaaS, le Middleware est dans la zone verte, sous la responsabilité de l'utilisateur."
+    },
+    {
+        "id": "q42",
+        "text": "Dans le modèle PaaS, qui est responsable de la gestion du Middleware ?",
+        "options": [
+            { "id": "a", "label": "L'utilisateur", "correct": false },
+            { "id": "b", "label": "Le fournisseur", "correct": true },
+            { "id": "c", "label": "Le développeur de l'application", "correct": false },
+            { "id": "d", "label": "L'intégrateur système", "correct": false }
+        ],
+        "explanation": "En PaaS (page 3), le Middleware passe dans la zone bleue, gérée par le fournisseur."
+    },
+    {
+        "id": "q43",
+        "text": "Selon le diagramme de responsabilité, quel est le seul élément technique restant à la charge de l'utilisateur en SaaS ?",
+        "options": [
+            { "id": "a", "label": "L'application", "correct": false },
+            { "id": "b", "label": "Le système d'exploitation", "correct": false },
+            { "id": "c", "label": "Les données", "correct": true },
+            { "id": "d", "label": "Le réseau", "correct": false }
+        ],
+        "explanation": "Dans le modèle SaaS (page 3), seule la couche 'Données' reste en vert (responsabilité de l'utilisateur), le reste est géré par le fournisseur."
+    },
+    {
+        "id": "q44",
+        "text": "Quel modèle de service est le plus adapté si vous voulez déployer du code sans gérer le système d'exploitation ?",
+        "options": [
+            { "id": "a", "label": "IaaS", "correct": false },
+            { "id": "b", "label": "SaaS", "correct": false },
+            { "id": "c", "label": "PaaS", "correct": true },
+            { "id": "d", "label": "On-premise", "correct": false }
+        ],
+        "explanation": "Le PaaS (Platform as a Service) permet de gérer les applications et les données sans se soucier de l'OS ou de l'infrastructure sous-jacente."
+    },
+    {
+        "id": "q45",
+        "text": "Quel modèle de déploiement est défini comme étant 'dédié à une seule organisation' ?",
+        "options": [
+            { "id": "a", "label": "Cloud Public", "correct": false },
+            { "id": "b", "label": "Cloud Hybride", "correct": false },
+            { "id": "c", "label": "Multi-cloud", "correct": false },
+            { "id": "d", "label": "Cloud Privé", "correct": true }
+        ],
+        "explanation": "Le cloud privé est spécifiquement défini comme étant dédié à une seule organisation (source 31)."
+    },
+    {
+        "id": "q46",
+        "text": "Dans l'exemple de l'armée donné dans le cours, pour quelle partie le Cloud Public est-il utilisé ?",
+        "options": [
+            { "id": "a", "label": "Pour le stockage des données sensibles", "correct": false },
+            { "id": "b", "label": "Pour le 'compute' (puissance de calcul)", "correct": true },
+            { "id": "c", "label": "Pour l'authentification des utilisateurs", "correct": false },
+            { "id": "d", "label": "Pour la gestion des accès physiques", "correct": false }
+        ],
+        "explanation": "L'exemple mentionne : 'cloud privé pour données, cloud public pour compute' (source 35)."
+    },
+    {
+        "id": "q47",
+        "text": "Utiliser simultanément AWS et Google Cloud est un exemple de quelle stratégie ?",
+        "options": [
+            { "id": "a", "label": "Cloud Hybride", "correct": false },
+            { "id": "b", "label": "Cloud Privé", "correct": false },
+            { "id": "c", "label": "Multi-cloud", "correct": true },
+            { "id": "d", "label": "Cloud Bursting", "correct": false }
+        ],
+        "explanation": "Le multi-cloud est défini comme l'utilisation de plusieurs fournisseurs de cloud public (source 33)."
+    },
+    {
+        "id": "q48",
+        "text": "Qui est responsable de la couche 'Virtualisation' dans un modèle IaaS ?",
+        "options": [
+            { "id": "a", "label": "L'utilisateur", "correct": false },
+            { "id": "b", "label": "Le fournisseur", "correct": true },
+            { "id": "c", "label": "Le département IT interne", "correct": false },
+            { "id": "d", "label": "Le fournisseur de l'hyperviseur", "correct": false }
+        ],
+        "explanation": "Même en IaaS, la virtualisation est gérée par le fournisseur de cloud (zone bleue dans le diagramme page 3)."
+    },
+    {
+        "id": "q49",
+        "text": "Si vous devez appliquer un correctif de sécurité (patch) sur l'OS, quel modèle de service utilisez-vous probablement ?",
+        "options": [
+            { "id": "a", "label": "SaaS", "correct": false },
+            { "id": "b", "label": "PaaS", "correct": false },
+            { "id": "c", "label": "IaaS", "correct": true },
+            { "id": "d", "label": "FaaS", "correct": false }
+        ],
+        "explanation": "En IaaS, l'utilisateur gère l'OS (source 21) et est donc responsable de ses mises à jour et correctifs."
+    },
+    {
+        "id": "q50",
+        "text": "Office 365 est classé dans quelle catégorie de service ?",
+        "options": [
+            { "id": "a", "label": "IaaS", "correct": false },
+            { "id": "b", "label": "PaaS", "correct": false },
+            { "id": "c", "label": "SaaS", "correct": true },
+            { "id": "d", "label": "DaaS", "correct": false }
+        ],
+        "explanation": "Office 365 est cité comme exemple de SaaS (Software as a Service) (source 28)."
+    },
+    {
+        "id": "q51",
+        "text": "Quelle caractéristique définit le cloud public ?",
+        "options": [
+            { "id": "a", "label": "Il est partagé et géré par un fournisseur", "correct": true },
+            { "id": "b", "label": "Il est hébergé sur les serveurs du client", "correct": false },
+            { "id": "c", "label": "Il est accessible uniquement via VPN", "correct": false },
+            { "id": "d", "label": "Il ne propose que du stockage", "correct": false }
+        ],
+        "explanation": "Le cloud public est défini comme étant 'partagé et géré par un fournisseur' (source 30)."
+    },
+    {
+        "id": "q52",
+        "text": "Qui gère le 'Moteur d'exécution' (Runtime) dans un modèle PaaS ?",
+        "options": [
+            { "id": "a", "label": "L'utilisateur", "correct": false },
+            { "id": "b", "label": "Le fournisseur", "correct": true },
+            { "id": "c", "label": "Le gestionnaire de base de données", "correct": false },
+            { "id": "d", "label": "Le responsable sécurité", "correct": false }
+        ],
+        "explanation": "En PaaS, le moteur d'exécution (Runtime) est sous la responsabilité du fournisseur (diagramme page 3)."
+    },
+    {
+        "id": "q53",
+        "text": "Qui gère le 'Moteur d'exécution' (Runtime) dans un modèle IaaS ?",
+        "options": [
+            { "id": "a", "label": "Le fournisseur", "correct": false },
+            { "id": "b", "label": "L'utilisateur", "correct": true },
+            { "id": "c", "label": "L'opérateur réseau", "correct": false },
+            { "id": "d", "label": "L'intégrateur", "correct": false }
+        ],
+        "explanation": "En IaaS, le moteur d'exécution est dans la zone verte, sous la responsabilité de l'utilisateur (diagramme page 3)."
+    },
+    {
+        "id": "q54",
+        "text": "Quel modèle de service offre le plus haut niveau d'abstraction pour l'utilisateur ?",
+        "options": [
+            { "id": "a", "label": "IaaS", "correct": false },
+            { "id": "b", "label": "PaaS", "correct": false },
+            { "id": "c", "label": "SaaS", "correct": true },
+            { "id": "d", "label": "Metal as a Service", "correct": false }
+        ],
+        "explanation": "Le SaaS offre le produit fini, l'utilisateur a le moins de responsabilités techniques, c'est donc le niveau d'abstraction le plus élevé."
+    },
+    {
+        "id": "q55",
+        "text": "Si une entreprise souhaite garder un contrôle total sur la configuration de sécurité de son OS, quel modèle doit-elle choisir ?",
+        "options": [
+            { "id": "a", "label": "SaaS", "correct": false },
+            { "id": "b", "label": "PaaS", "correct": false },
+            { "id": "c", "label": "IaaS", "correct": true },
+            { "id": "d", "label": "Serverless", "correct": false }
+        ],
+        "explanation": "L'IaaS est le seul modèle où l'utilisateur gère l'OS et donc sa configuration de sécurité fine."
+    },
+    {
+        "id": "q56",
+        "text": "Qui gère l'infrastructure physique (datacenter, énergie) dans un Cloud Public ?",
+        "options": [
+            { "id": "a", "label": "Le fournisseur", "correct": true },
+            { "id": "b", "label": "Le client", "correct": false },
+            { "id": "c", "label": "Une coopérative d'utilisateurs", "correct": false },
+            { "id": "d", "label": "L'État", "correct": false }
+        ],
+        "explanation": "Le fournisseur est responsable de la sécurité DU cloud, incluant l'infra physique, l'énergie et le datacenter (source 74, 106-111)."
+    },
+    {
+        "id": "q57",
+        "text": "Azure VM (Virtual Machine) est un exemple de quel service ?",
+        "options": [
+            { "id": "a", "label": "SaaS", "correct": false },
+            { "id": "b", "label": "PaaS", "correct": false },
+            { "id": "c", "label": "IaaS", "correct": true },
+            { "id": "d", "label": "CaaS", "correct": false }
+        ],
+        "explanation": "Azure VM est cité comme un exemple d'IaaS (source 23)."
+    },
+    {
+        "id": "q58",
+        "text": "Google Compute Engine est l'équivalent de quel service AWS ?",
+        "options": [
+            { "id": "a", "label": "S3", "correct": false },
+            { "id": "b", "label": "RDS", "correct": false },
+            { "id": "c", "label": "EC2", "correct": true },
+            { "id": "d", "label": "Lambda", "correct": false }
+        ],
+        "explanation": "Compute Engine (GCP) et EC2 (AWS) sont tous deux des services de Machines Virtuelles (Tableau page 2)."
+    },
+    {
+        "id": "q59",
+        "text": "Quelle affirmation est vraie concernant le PaaS ?",
+        "options": [
+            { "id": "a", "label": "L'utilisateur gère le matériel", "correct": false },
+            { "id": "b", "label": "Le fournisseur gère l'OS et l'infra", "correct": true },
+            { "id": "c", "label": "L'utilisateur ne gère que le réseau", "correct": false },
+            { "id": "d", "label": "C'est un modèle dédié au stockage pur", "correct": false }
+        ],
+        "explanation": "La définition du PaaS indique : 'la plateforme = le provider gère l'os et l'infra' (source 25)."
+    },
+    {
+        "id": "q60",
+        "text": "Dans quel modèle la gestion du réseau est-elle explicitement partagée ou entièrement gérée par le provider (l'utilisateur ne configure pas les routeurs virtuels bas niveau) ?",
+        "options": [
+            { "id": "a", "label": "IaaS", "correct": false },
+            { "id": "b", "label": "SaaS", "correct": true },
+            { "id": "c", "label": "Bare Metal", "correct": false },
+            { "id": "d", "label": "On-premise", "correct": false }
+        ],
+        "explanation": "En SaaS, toute la pile, y compris la configuration réseau sous-jacente pour l'application, est gérée par le fournisseur. En IaaS, l'utilisateur configure souvent ses réseaux virtuels (VPC/VNET)."
+    }
+]

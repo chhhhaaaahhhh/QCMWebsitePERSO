@@ -1,0 +1,2702 @@
+[
+    {
+        "id": "q101",
+        "text": "Quelle version de Windows a introduit le noyau NT 6.0 ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Windows XP",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Windows 7",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Windows Vista",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Windows 8",
+                "correct": false
+            }
+        ],
+        "explanation": "Windows Vista correspond à la version 6.0 du noyau NT, marquant une évolution majeure après la version 5.1 de XP."
+    },
+    {
+        "id": "q102",
+        "text": "Quel processeur a introduit le mode protégé (Protected Mode) en 1982 ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Intel 8086",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Intel 80286",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Intel 80386",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "AMD64",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Protected Mode a été introduit avec le processeur 80286, apportant la gestion de la mémoire virtuelle et la protection mémoire."
+    },
+    {
+        "id": "q103",
+        "text": "Dans la segmentation, quel registre est utilisé pour le 'Data Segment' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "CS",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "SS",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "DS",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "ES",
+                "correct": false
+            }
+        ],
+        "explanation": "Le registre DS (Data Segment) pointe vers le segment contenant les données du programme en cours d'exécution."
+    },
+    {
+        "id": "q104",
+        "text": "Quelle table de descripteurs est spécifique à un processus (contrairement à celle du système entier) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "GDT (Global Descriptor Table)",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "IDT (Interrupt Descriptor Table)",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "LDT (Local Descriptor Table)",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "MFT (Master File Table)",
+                "correct": false
+            }
+        ],
+        "explanation": "La LDT (Local Descriptor Table) est spécifique à un processus, permettant d'avoir des segments propres à chaque tâche, bien qu'elle soit peu utilisée aujourd'hui."
+    },
+    {
+        "id": "q105",
+        "text": "Quel registre du processeur contient l'adresse physique de la racine de la structure de pagination (PML4 ou Page Directory) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "EIP",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "CR3",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "ESP",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "EAX",
+                "correct": false
+            }
+        ],
+        "explanation": "Le registre de contrôle CR3 contient l'adresse physique de base des tables de pagination (PML4 en 64 bits ou Page Directory en 32 bits)."
+    },
+    {
+        "id": "q106",
+        "text": "Dans la distribution de l'espace mémoire 32 bits par défaut, quelle est la taille réservée au Kernel (System Space) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "1 GB",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "2 GB",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "3 GB",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "4 GB",
+                "correct": false
+            }
+        ],
+        "explanation": "Par défaut sur un système 32 bits, l'espace d'adressage est divisé en deux moitiés égales : 2 Go pour l'espace utilisateur et 2 Go pour l'espace système."
+    },
+    {
+        "id": "q107",
+        "text": "Quelle structure mémoire noyau permet de gérer l'isolation mémoire d'un processus (liste des plages d'adresses virtuelles allouées) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "VAD (Virtual Address Descriptor)",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "HAL (Hardware Abstraction Layer)",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "SID (Security Identifier)",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "IRP (I/O Request Packet)",
+                "correct": false
+            }
+        ],
+        "explanation": "Les VAD (Virtual Address Descriptors) sont des structures de données utilisées par le gestionnaire de mémoire pour garder une trace des adresses virtuelles allouées à un processus."
+    },
+    {
+        "id": "q108",
+        "text": "Quel fichier exécutable du noyau est utilisé sur un système multiprocesseur supportant le PAE ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "ntoskrnl.exe",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "ntkrnlmp.exe",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "ntkrpamp.exe",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "hal.dll",
+                "correct": false
+            }
+        ],
+        "explanation": "Lors de l'installation, ntoskrnl.exe est remplacé par une version spécifique. 'ntkrpamp.exe' correspond à la version Multiprocesseur + PAE."
+    },
+    {
+        "id": "q109",
+        "text": "Quel gestionnaire de l'Executive est responsable de la communication avec les périphériques via les pilotes ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Process Manager",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Configuration Manager",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Object Manager",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "I/O Manager",
+                "correct": true
+            }
+        ],
+        "explanation": "L'I/O Manager gère les entrées/sorties et la communication avec les drivers via des paquets IRP."
+    },
+    {
+        "id": "q110",
+        "text": "Quelle est la particularité d'un hyperviseur de type 'Hosted' (Type 2) comme VMware Workstation ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Il s'exécute directement sur le matériel (bare metal)",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Il s'exécute au-dessus d'un système d'exploitation hôte",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Il ne supporte pas la virtualisation matérielle",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Il est intégré au firmware du BIOS",
+                "correct": false
+            }
+        ],
+        "explanation": "Les hyperviseurs de type Hosted (Type 2) s'installent comme une application au-dessus d'un OS existant, contrairement au Type 1 (Bare Metal)."
+    },
+    {
+        "id": "q111",
+        "text": "Que signifie l'acronyme HVCI dans la sécurité Windows ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "High Volume Control Interface",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Hypervisor-Enforced Code Integrity",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Hardware Virtualized Core Isolation",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Host Virtual Control Instruction",
+                "correct": false
+            }
+        ],
+        "explanation": "HVCI (Hypervisor-Enforced Code Integrity) utilise l'hyperviseur pour empêcher l'exécution de code non signé ou malveillant dans le noyau."
+    },
+    {
+        "id": "q112",
+        "text": "Quelle section d'un fichier PE contient généralement les ressources du programme (icônes, images) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": ".text",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": ".data",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": ".rsrc",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": ".reloc",
+                "correct": false
+            }
+        ],
+        "explanation": "La section `.rsrc` d'un fichier Portable Executable (PE) est destinée au stockage des ressources telles que les icônes, les menus et les chaînes de caractères."
+    },
+    {
+        "id": "q113",
+        "text": "Quel outil en ligne de commande permet de modifier ou créer une valeur dans le registre ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "reg query",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "reg add",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "reg delete",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "regedit",
+                "correct": false
+            }
+        ],
+        "explanation": "La commande `reg add` est utilisée en CLI pour ajouter de nouvelles clés ou modifier des valeurs existantes dans le registre."
+    },
+    {
+        "id": "q114",
+        "text": "Quelle ruche du registre est utilisée pour stocker les profils de *tous* les utilisateurs de la machine ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "HKEY_CURRENT_USER",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "HKEY_USERS",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "HKEY_CLASSES_ROOT",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "HKEY_CURRENT_CONFIG",
+                "correct": false
+            }
+        ],
+        "explanation": "HKEY_USERS (HKU) contient les sous-clés correspondant aux profils de tous les utilisateurs chargés sur le système."
+    },
+    {
+        "id": "q115",
+        "text": "Quel élément du registre permet de tracer les périphériques USB ayant été connectés à la machine ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "MRU Lists",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "RunOnce",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Historique USB (USBSTOR)",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "UserAssist",
+                "correct": false
+            }
+        ],
+        "explanation": "Le registre conserve un historique des connexions USB (souvent dans la clé USBSTOR), ce qui est précieux pour l'analyse forensique."
+    },
+    {
+        "id": "q116",
+        "text": "Quel compte spécial possède le RID 501 ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Administrator",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Guest (Invité)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Krbtgt",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Domain Admins",
+                "correct": false
+            }
+        ],
+        "explanation": "Le RID 501 est universellement attribué au compte Invité (Guest), qui est désactivé par défaut."
+    },
+    {
+        "id": "q117",
+        "text": "Quel type de compte de service est géré automatiquement par l'AD et possède un mot de passe qui change tout seul ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Local User Account",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Domain User Account",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "MSA (Managed Service Account)",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Guest Account",
+                "correct": false
+            }
+        ],
+        "explanation": "Les MSA (Managed Service Accounts) et gMSA sont des comptes de domaine spéciaux dont la gestion des mots de passe est automatisée par l'Active Directory."
+    },
+    {
+        "id": "q118",
+        "text": "Quel est le RID du groupe 'Domain Users' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "512",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "513",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "514",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "500",
+                "correct": false
+            }
+        ],
+        "explanation": "Le groupe 'Domain Users', qui contient tous les utilisateurs du domaine, a le RID 513."
+    },
+    {
+        "id": "q119",
+        "text": "Dans un Security Descriptor, quel champ identifie l'entité qui a le droit par défaut de modifier les permissions (DACL) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le groupe",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "La SACL",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Le propriétaire (Owner)",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Le MIC label",
+                "correct": false
+            }
+        ],
+        "explanation": "Le propriétaire (Owner) d'un objet possède implicitement le droit WRITE_DAC, c'est-à-dire le droit de modifier la liste de contrôle d'accès (DACL)."
+    },
+    {
+        "id": "q120",
+        "text": "Quel privilège permet de prendre possession d'un objet système, même si l'accès est initialement refusé ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "SeTakeOwnershipPrivilege",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "SeRestorePrivilege",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "SeImpersonatePrivilege",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "SeAuditPrivilege",
+                "correct": false
+            }
+        ],
+        "explanation": "SeTakeOwnershipPrivilege permet à un utilisateur de devenir le propriétaire d'un objet, ce qui lui donne ensuite le droit de modifier les permissions pour s'octroyer l'accès."
+    },
+    {
+        "id": "q121",
+        "text": "Quel fichier contient la base de données Active Directory sur un contrôleur de domaine ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "SAM.hiv",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "NTDS.dit",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "AD_Database.mdf",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "SECURITY.log",
+                "correct": false
+            }
+        ],
+        "explanation": "NTDS.dit est le fichier de base de données principal de l'Active Directory, stocké sur les contrôleurs de domaine."
+    },
+    {
+        "id": "q122",
+        "text": "Quelle clé (Key) est utilisée pour chiffrer les hashs stockés dans la base SAM ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "BitLocker Key",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Boot Key (ou SysKey)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "User Session Key",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Kerberos TGT",
+                "correct": false
+            }
+        ],
+        "explanation": "Les hashs de mots de passe dans la SAM sont chiffrés à l'aide de la Boot Key (aussi appelée SysKey), qui est stockée dans la hive SYSTEM."
+    },
+    {
+        "id": "q123",
+        "text": "Quelle bibliothèque gère l'authentification Kerberos dans Windows ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "msv1_0.dll",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "kerberos.dll",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "ntdll.dll",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "secur32.dll",
+                "correct": false
+            }
+        ],
+        "explanation": "Le fichier `kerberos.dll` est le package d'authentification chargé par LSASS pour gérer le protocole Kerberos."
+    },
+    {
+        "id": "q124",
+        "text": "Dans le protocole NTLMv2, quelle fonction de hachage remplace le DES utilisé dans NTLMv1 ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "SHA-256",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "RC4",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "HMAC-MD5",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "AES-128",
+                "correct": false
+            }
+        ],
+        "explanation": "NTLMv2 utilise HMAC-MD5 pour sécuriser la réponse au challenge, remplaçant l'algorithme DES vieillissant de la version 1."
+    },
+    {
+        "id": "q125",
+        "text": "À quoi sert le 'blob' généré par le client dans une authentification NTLMv2 ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "À ajouter de l'entropie (timestamp, challenge client) pour empêcher le rejeu",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "À compresser le mot de passe",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "À stocker le certificat numérique de l'utilisateur",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "À identifier le type de processeur du client",
+                "correct": false
+            }
+        ],
+        "explanation": "Le blob NTLMv2 contient un timestamp, un challenge client aléatoire et des informations de cible, rendant unique chaque tentative d'authentification pour éviter le rejeu."
+    },
+    {
+        "id": "q126",
+        "text": "Quelle est la conséquence directe d'une attaque 'Pass-the-Hash' réussie ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "L'attaquant connaît le mot de passe en clair",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "L'attaquant peut s'authentifier auprès d'un service sans connaître le mot de passe",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Le serveur plante (Déni de service)",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "La base SAM est supprimée",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Pass-the-Hash permet d'utiliser le hash intercepté pour s'authentifier, car le protocole NTLM utilise le hash comme preuve de connaissance du secret."
+    },
+    {
+        "id": "q127",
+        "text": "Que signifie le mode 'Admin Approval Mode' de l'UAC ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "L'administrateur a tous les droits automatiquement",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Les actions administratives nécessitent une validation manuelle explicite",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Les utilisateurs standards ne peuvent rien exécuter",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le compte Administrateur est désactivé",
+                "correct": false
+            }
+        ],
+        "explanation": "Ce mode impose que même un administrateur connecté doive confirmer (via une invite) toute action nécessitant une élévation de privilèges."
+    },
+    {
+        "id": "q128",
+        "text": "Quel est le format de fichier utilisé pour définir les tâches planifiées dans System32\\Tasks ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "JSON",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "INI",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "XML",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "YAML",
+                "correct": false
+            }
+        ],
+        "explanation": "Windows stocke les définitions de tâches planifiées sous forme de fichiers XML."
+    },
+    {
+        "id": "q129",
+        "text": "Quel est le rôle du 'Service Control Manager' (SCM) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Gérer les interruptions CPU",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Gérer les services (démarrage, arrêt, configuration)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Gérer la mémoire virtuelle",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Gérer les connexions réseau",
+                "correct": false
+            }
+        ],
+        "explanation": "Le SCM est le composant système qui administre les services Windows (lancement, arrêt, interaction)."
+    },
+    {
+        "id": "q130",
+        "text": "Quel privilège permet de sauvegarder des fichiers en contournant les droits d'accès NTFS standards (DACL) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "SeBackupPrivilege",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "SeDebugPrivilege",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "SeImpersonatePrivilege",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "SeTcbPrivilege",
+                "correct": false
+            }
+        ],
+        "explanation": "SeBackupPrivilege est conçu pour les logiciels de sauvegarde, leur permettant de lire tous les fichiers pour les copier, quelles que soient les permissions."
+    },
+    {
+        "id": "q131",
+        "text": "Quel processus utilisateur contient la structure PEB (Process Environment Block) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Il est stocké dans le noyau uniquement",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Tous les processus utilisateur possèdent leur propre PEB dans leur espace mémoire",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Uniquement dans csrss.exe",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Dans la mémoire du contrôleur de domaine",
+                "correct": false
+            }
+        ],
+        "explanation": "Le PEB est une structure qui réside dans l'espace d'adressage utilisateur de chaque processus."
+    },
+    {
+        "id": "q132",
+        "text": "Quel acronyme désigne la liste des fichiers récemment ouverts stockée dans le registre ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "ACL",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "MRU (Most Recently Used)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "MFT",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "SID",
+                "correct": false
+            }
+        ],
+        "explanation": "MRU signifie Most Recently Used. Ces listes dans le registre tracent l'activité utilisateur récente."
+    },
+    {
+        "id": "q133",
+        "text": "Dans le modèle de sécurité Windows, à quoi correspond un 'Access Token' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "À un mot de passe chiffré",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "À un objet noyau représentant l'identité et les droits d'une session active",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "À une clé USB de sécurité",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "À une entrée dans la table MFT",
+                "correct": false
+            }
+        ],
+        "explanation": "L'Access Token est généré à la connexion et contient les SIDs de l'utilisateur, ses groupes et ses privilèges. Il est attaché aux processus."
+    },
+    {
+        "id": "q134",
+        "text": "Quel registre de segment pointe vers la structure TEB (Thread Environment Block) sur une architecture x64 ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "FS",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "GS",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "DS",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "CS",
+                "correct": false
+            }
+        ],
+        "explanation": "Sur x86-64 (64 bits), c'est le registre de segment GS qui est utilisé pour accéder au TEB. (FS est utilisé sur x86 32 bits)."
+    },
+    {
+        "id": "q135",
+        "text": "Quel mode d'exécution du processeur est requis pour exécuter le code du noyau (Kernel Mode) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Ring 3",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Ring 0",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Real Mode",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Virtual 8086",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Ring 0 est le niveau de privilège le plus élevé, réservé au noyau et aux pilotes, donnant accès total au matériel."
+    },
+    {
+        "id": "q136",
+        "text": "Quelle est la fonction principale du 'Virtual 8086 Mode' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Exécuter des applications 64 bits sur un CPU 32 bits",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Exécuter du code 16 bits (DOS) dans un environnement protégé",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Virtualiser les périphériques GPU",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Gérer la consommation d'énergie",
+                "correct": false
+            }
+        ],
+        "explanation": "Ce mode permet la rétrocompatibilité en exécutant de vieilles applications Real Mode (16 bits) au sein d'un OS moderne en Protected Mode."
+    },
+    {
+        "id": "q137",
+        "text": "Quel composant de l'Executive est chargé de la gestion des 'Jobs' (groupes de processus) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Process Manager",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Memory Manager",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Security Reference Monitor",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Plug and Play Manager",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Process Manager gère non seulement les processus individuels et les threads, mais aussi les objets Job."
+    },
+    {
+        "id": "q138",
+        "text": "Que signifie SDDL dans le contexte de la sécurité Windows ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Secure Data Description Language",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Security Descriptor Definition Language",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "System Drive Data Log",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Service Descriptor Dynamic Link",
+                "correct": false
+            }
+        ],
+        "explanation": "SDDL est un format de chaîne de caractères utilisé pour représenter de manière compacte un Security Descriptor (permissions, propriétaire, audit)."
+    },
+    {
+        "id": "q139",
+        "text": "Quel type d'ACE permet de refuser explicitement l'accès à un utilisateur ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "ACCESS_ALLOWED_ACE",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "ACCESS_DENIED_ACE",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "SYSTEM_AUDIT_ACE",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "OBJECT_INHERIT_ACE",
+                "correct": false
+            }
+        ],
+        "explanation": "ACCESS_DENIED_ACE est l'entrée dans une ACL qui spécifie un refus d'accès. Elle est évaluée prioritairement par rapport aux autorisations."
+    },
+    {
+        "id": "q140",
+        "text": "Dans le registre, quelle clé racine contient les informations sur la configuration logicielle et système locale ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "HKEY_LOCAL_MACHINE (HKLM)",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "HKEY_CURRENT_USER (HKCU)",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "HKEY_USERS (HKU)",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "HKEY_CURRENT_CONFIG (HKCC)",
+                "correct": false
+            }
+        ],
+        "explanation": "HKLM stocke les paramètres qui s'appliquent à l'ordinateur entier, indépendamment de l'utilisateur connecté (Software, System, SAM, etc.)."
+    },
+    {
+        "id": "q141",
+        "text": "Quel groupe intégré (Built-in) possède le RID 544 ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Users",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Guests",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Administrators",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Power Users",
+                "correct": false
+            }
+        ],
+        "explanation": "Le RID 544 correspond au groupe local 'Administrators' qui a le contrôle total sur la machine."
+    },
+    {
+        "id": "q142",
+        "text": "Quelle est la fonction principale du 'I/O Manager' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Gérer l'interface graphique",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Gérer la communication avec les périphériques via des paquets IRP",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Gérer l'authentification réseau",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Gérer la pagination mémoire",
+                "correct": false
+            }
+        ],
+        "explanation": "L'I/O Manager centralise toutes les demandes d'entrée/sortie et les transmet aux pilotes appropriés via des I/O Request Packets (IRP)."
+    },
+    {
+        "id": "q143",
+        "text": "À quoi sert le registre GDTR ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "À stocker le résultat d'une multiplication",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "À pointer vers la base et la taille de la GDT (Global Descriptor Table)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "À gérer les interruptions",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "À pointer vers la table des pages",
+                "correct": false
+            }
+        ],
+        "explanation": "Le registre GDTR (Global Descriptor Table Register) contient l'adresse physique de base et la limite de la GDT."
+    },
+    {
+        "id": "q144",
+        "text": "Quel privilège permet de restaurer des fichiers et répertoires, contournant les vérifications de sécurité d'écriture ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "SeRestorePrivilege",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "SeBackupPrivilege",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "SeShutdownPrivilege",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "SeChangeNotifyPrivilege",
+                "correct": false
+            }
+        ],
+        "explanation": "SeRestorePrivilege est le complément de SeBackupPrivilege, permettant d'écrire des fichiers lors d'une restauration sans se soucier des ACLs existantes."
+    },
+    {
+        "id": "q145",
+        "text": "Quel type de mémoire stocke les données propres à chaque thread au sein d'un processus ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Heap globale",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "TLS (Thread Local Storage)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "LDT",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Paged Pool",
+                "correct": false
+            }
+        ],
+        "explanation": "Le TLS (Thread Local Storage) est un mécanisme permettant de stocker des données qui sont uniques pour chaque thread d'un même processus."
+    },
+    {
+        "id": "q146",
+        "text": "Quel est le nom de l'objet noyau qui représente une instance en exécution d'un programme ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Thread",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Processus",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Job",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Token",
+                "correct": false
+            }
+        ],
+        "explanation": "Le processus est l'objet conteneur qui représente une instance d'un programme, possédant son propre espace mémoire et ses ressources."
+    },
+    {
+        "id": "q147",
+        "text": "Quel composant de Windows 10/11 protège les informations d'authentification (LSASS) en utilisant la virtualisation ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Credential Guard",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Device Guard",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "AppLocker",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "BitLocker",
+                "correct": false
+            }
+        ],
+        "explanation": "Credential Guard utilise la VBS (Virtualization Based Security) pour isoler le processus LSASS dans un conteneur virtuel, empêchant l'extraction de secrets."
+    },
+    {
+        "id": "q148",
+        "text": "Quel est le nom du compte système utilisé pour les communications réseau via le compte de l'ordinateur ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "LocalSystem",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "NetworkService",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "LocalService",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Managed Service Account",
+                "correct": false
+            }
+        ],
+        "explanation": "NetworkService est un compte intégré qui dispose de privilèges limités localement mais s'authentifie sur le réseau comme la machine (DOMAIN\\MACHINE$)."
+    },
+    {
+        "id": "q149",
+        "text": "Quel est le principal défaut de sécurité de NTLMv1 concernant le chiffrement ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Il utilise AES",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Il utilise DES (56 bits), facilement cassable",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Il n'utilise aucun chiffrement",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Il utilise RSA 2048 bits",
+                "correct": false
+            }
+        ],
+        "explanation": "NTLMv1 repose sur l'algorithme DES, dont la clé est trop courte (56 bits), ce qui le rend vulnérable aux attaques par force brute modernes."
+    },
+    {
+        "id": "q150",
+        "text": "À quoi sert le dossier 'Amcache' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Stocker les mises à jour Windows téléchargées",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Stocker des preuves d'exécution et des métadonnées sur les programmes (SHA1, date...)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Stocker le cache du navigateur Edge",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Stocker les fichiers supprimés de la corbeille",
+                "correct": false
+            }
+        ],
+        "explanation": "Amcache.hve est un fichier de registre qui conserve des traces détaillées des exécutables lancés ou présents sur le système, très utile en forensic."
+    },
+    {
+        "id": "q151",
+        "text": "Dans le mécanisme de segmentation, quel est le rôle du registre GDTR ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Stocker l'adresse de la pile",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Pointer vers la base et définir la taille de la GDT (Global Descriptor Table)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Calculer les offsets de mémoire",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Gérer les interruptions matérielles",
+                "correct": false
+            }
+        ],
+        "explanation": "Le registre GDTR est un registre spécial qui indique au processeur où se trouve la GDT en mémoire RAM et quelle est sa taille."
+    },
+    {
+        "id": "q152",
+        "text": "Quelle est la principale différence entre la fragmentation en segmentation et en pagination ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "La segmentation cause de la fragmentation interne, la pagination de la fragmentation externe",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "La segmentation cause de la fragmentation externe, la pagination peut causer de la fragmentation interne",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Aucune des deux ne cause de fragmentation",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "La pagination ne fragmente jamais la mémoire",
+                "correct": false
+            }
+        ],
+        "explanation": "La segmentation, avec ses tailles variables, crée des trous (fragmentation externe). La pagination, avec ses blocs fixes, peut laisser de l'espace vide à la fin d'une page (fragmentation interne)."
+    },
+    {
+        "id": "q153",
+        "text": "Dans la traduction d'adresse par pagination, qu'est-ce qu'une 'Frame' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Un bloc de taille fixe dans la mémoire physique (RAM)",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Une fenêtre du système d'exploitation",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Un segment de code exécutable",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Une entrée dans la table des pages",
+                "correct": false
+            }
+        ],
+        "explanation": "La mémoire physique est divisée en blocs de taille fixe appelés 'frames', dans lesquels le système mappe les pages virtuelles."
+    },
+    {
+        "id": "q154",
+        "text": "Quelle structure contient la liste des modules chargés (DLLs) pour un processus donné ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "KPCR",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le Loader Database (dans le PEB)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "La MFT",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le registre CS",
+                "correct": false
+            }
+        ],
+        "explanation": "Le PEB contient une structure appelée 'Loader Database' (PEB_LDR_DATA) qui maintient des listes chaînées des modules (DLLs) chargés en mémoire."
+    },
+    {
+        "id": "q155",
+        "text": "Quel champ du PEB (Process Environment Block) permet aux attaquants de savoir si un processus est en cours de débogage ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "ImageBaseAddress",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "BeingDebugged (ou NT Global Flags)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "SessionID",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "OSMajorVersion",
+                "correct": false
+            }
+        ],
+        "explanation": "Le PEB contient des indicateurs comme le champ 'BeingDebugged' ou 'NT Global Flags' qui révèlent la présence d'un débogueur."
+    },
+    {
+        "id": "q156",
+        "text": "Quelle structure noyau lie un processus à sa session utilisateur (graphique, périphérique) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "MM_SESSION_SPACE",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "VAD_ROOT",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "HANDLE_TABLE",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "KGDTENTRY",
+                "correct": false
+            }
+        ],
+        "explanation": "Dans la structure EPROCESS, un lien vers MM_SESSION_SPACE permet de rattacher le processus à une session utilisateur spécifique."
+    },
+    {
+        "id": "q157",
+        "text": "Où est stockée la ligne de commande (CommandLine) utilisée pour lancer un processus ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Dans le registre uniquement",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Dans la structure Process Parameters du PEB",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Dans l'en-tête du fichier EXE",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Dans la table MFT",
+                "correct": false
+            }
+        ],
+        "explanation": "Le PEB contient un pointeur vers 'Process Parameters' (RTL_USER_PROCESS_PARAMETERS) qui stocke la ligne de commande complète."
+    },
+    {
+        "id": "q158",
+        "text": "Quelle est la fonction du 'Configuration Manager' au sein de l'Executive Windows ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Gérer la souris et le clavier",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Gérer le Registre Windows",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Gérer les connexions Wi-Fi",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Gérer l'affichage des fenêtres",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Configuration Manager est le sous-système du noyau responsable de l'implémentation et de la gestion de la base de registre."
+    },
+    {
+        "id": "q159",
+        "text": "Quel fichier correspond à l'image binaire du noyau chargée en mémoire ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "kernel32.dll",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "ntoskrnl.exe",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "bootmgr",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "explorer.exe",
+                "correct": false
+            }
+        ],
+        "explanation": "ntoskrnl.exe est le binaire principal qui contient le code du noyau (Kernel) et de l'Executive."
+    },
+    {
+        "id": "q160",
+        "text": "Quel composant logiciel permet l'accès aux bus matériels et la gestion des timers de manière abstraite ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "WinLogon",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "HAL (Hardware Abstraction Layer)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "LSA",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "GDI",
+                "correct": false
+            }
+        ],
+        "explanation": "Le HAL fournit une couche d'abstraction pour le matériel, gérant les bus, les timers et les contrôleurs d'interruptions."
+    },
+    {
+        "id": "q161",
+        "text": "Qu'est-ce qu'un 'Job' dans la terminologie des objets du noyau Windows ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Une tâche planifiée dans le calendrier",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Un ensemble de processus regroupés pour être gérés et limités collectivement",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Un service d'impression",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Une transaction de base de données",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Process Manager gère les objets 'Job', qui permettent de grouper plusieurs processus pour leur appliquer des quotas ou des limites communes."
+    },
+    {
+        "id": "q162",
+        "text": "Quelle est la différence entre un objet 'Kernel' et un objet 'Executive' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Les objets Kernel sont accessibles via des handles, les Executive non",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Les objets Executive sont accessibles via des handles, les Kernel sont internes au noyau",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Il n'y a aucune différence, ce sont des synonymes",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Les objets Kernel sont graphiques, les Executive sont textuels",
+                "correct": false
+            }
+        ],
+        "explanation": "Les objets Executive (Fichier, Processus) sont exposés au mode utilisateur via des handles, tandis que les objets Kernel (structures bas niveau) sont internes."
+    },
+    {
+        "id": "q163",
+        "text": "Quel privilège est nécessaire pour gérer les journaux de sécurité (Security Logs) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "SeSecurityPrivilege",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "SeBackupPrivilege",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "SeDebugPrivilege",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "SeShutdownPrivilege",
+                "correct": false
+            }
+        ],
+        "explanation": "SeSecurityPrivilege autorise la gestion et la lecture des journaux d'audit de sécurité, ainsi que la modification des SACL."
+    },
+    {
+        "id": "q164",
+        "text": "Quel est le SID associé au compte 'LocalSystem' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "S-1-5-18",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "S-1-5-19",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "S-1-5-20",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "S-1-5-21",
+                "correct": false
+            }
+        ],
+        "explanation": "Le SID S-1-5-18 identifie le compte système local (LocalSystem), qui a des privilèges très élevés."
+    },
+    {
+        "id": "q165",
+        "text": "Quel est le SID associé au compte 'NetworkService' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "S-1-5-18",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "S-1-5-19",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "S-1-5-20",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "S-1-1-0",
+                "correct": false
+            }
+        ],
+        "explanation": "Le SID S-1-5-20 correspond au compte NetworkService."
+    },
+    {
+        "id": "q166",
+        "text": "Dans une ACL, que signifie le flag 'OBJECT_INHERIT' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "L'ACE est héritée par les fichiers enfants",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "L'ACE est héritée par les dossiers enfants",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "L'ACE ne s'applique qu'à l'objet lui-même",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "L'ACE est désactivée",
+                "correct": false
+            }
+        ],
+        "explanation": "OBJECT_INHERIT indique que la règle de contrôle d'accès doit se propager aux objets non-conteneurs (fichiers) créés dans le dossier parent."
+    },
+    {
+        "id": "q167",
+        "text": "Quel est le SID du groupe 'Authenticated Users' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "S-1-5-11",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "S-1-1-0",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "S-1-5-32-544",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "S-1-5-18",
+                "correct": false
+            }
+        ],
+        "explanation": "S-1-5-11 représente le groupe virtuel des utilisateurs authentifiés (ayant fourni des identifiants valides)."
+    },
+    {
+        "id": "q168",
+        "text": "Dans l'ordre d'évaluation des permissions NTFS, quelle règle prime sur toutes les autres ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Inherited Allow",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Explicit Deny (Refus explicite)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Explicit Allow",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Inherited Deny",
+                "correct": false
+            }
+        ],
+        "explanation": "Un refus explicite (Explicit Deny) arrête immédiatement l'évaluation et bloque l'accès, quelle que soit les autres permissions."
+    },
+    {
+        "id": "q169",
+        "text": "Quel type de données stocke la clé de registre 'REG_BINARY' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Du texte lisible",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Un nombre entier",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Des données brutes (octets)",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Un lien vers un autre fichier",
+                "correct": false
+            }
+        ],
+        "explanation": "REG_BINARY est utilisé pour stocker des séquences d'octets arbitraires, souvent pour des configurations matérielles ou des états chiffrés."
+    },
+    {
+        "id": "q170",
+        "text": "À quoi sert la clé 'HKEY_CURRENT_CONFIG' (HKCC) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Elle contient les mots de passe utilisateur",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Elle stocke les informations sur le profil matériel utilisé pour la session actuelle",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Elle contient la liste des logiciels installés",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Elle gère les associations de fichiers",
+                "correct": false
+            }
+        ],
+        "explanation": "HKCC est une vue volatile qui pointe vers la configuration matérielle active au moment du démarrage (profil matériel)."
+    },
+    {
+        "id": "q171",
+        "text": "Quel outil graphique Windows permet d'éditer le registre ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Notepad",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Regedit",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Task Manager",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Event Viewer",
+                "correct": false
+            }
+        ],
+        "explanation": "Regedit (Registry Editor) est l'outil standard intégré pour explorer et modifier les clés et valeurs du registre."
+    },
+    {
+        "id": "q172",
+        "text": "Dans le système de fichiers NTFS, quelle est l'unité minimale d'allocation d'espace disque ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le secteur",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le cluster",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "La page",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le segment",
+                "correct": false
+            }
+        ],
+        "explanation": "Bien que le disque soit divisé en secteurs, NTFS alloue l'espace par 'clusters' (qui sont des groupes de secteurs contigus)."
+    },
+    {
+        "id": "q173",
+        "text": "Qu'est-ce que le 'DOS Stub' dans un fichier PE ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Un virus préhistorique",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Un petit programme affichant un message d'erreur si exécuté sous MS-DOS",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "La table des exportations",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "La signature numérique",
+                "correct": false
+            }
+        ],
+        "explanation": "Le DOS Stub est un petit code au début du fichier PE qui affiche généralement 'This program cannot be run in DOS mode' pour la rétrocompatibilité."
+    },
+    {
+        "id": "q174",
+        "text": "Quel champ du 'PE Header' indique l'adresse mémoire où l'exécution du programme doit commencer ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "ImageBase",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "AddressOfEntryPoint",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "CheckSum",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Subsystem",
+                "correct": false
+            }
+        ],
+        "explanation": "AddressOfEntryPoint est le champ qui spécifie l'adresse (RVA) de la première instruction à exécuter par le loader."
+    },
+    {
+        "id": "q175",
+        "text": "Quel mécanisme de sécurité utilise le 'NoExecute' (NX) bit ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "ASLR",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "DEP (Data Execution Prevention)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "UAC",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "BitLocker",
+                "correct": false
+            }
+        ],
+        "explanation": "Le DEP s'appuie sur le bit NX pour marquer des pages mémoire comme non-exécutables, empêchant l'exécution de code malveillant dans la pile ou le tas."
+    },
+    {
+        "id": "q176",
+        "text": "Que signifie l'acronyme KPCR ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Kernel Process Control Registry",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Kernel Processor Control Region",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Key Protection Core Ring",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Kernel Page Control Record",
+                "correct": false
+            }
+        ],
+        "explanation": "KPCR signifie Kernel Processor Control Region, une structure de données maintenue par le noyau pour chaque processeur logique."
+    },
+    {
+        "id": "q177",
+        "text": "Quel privilège permet de modifier les variables d'environnement du firmware (UEFI/BIOS) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "SeSystemEnvironmentPrivilege",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "SeShutdownPrivilege",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "SeTcbPrivilege",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "SeLoadDriverPrivilege",
+                "correct": false
+            }
+        ],
+        "explanation": "SeSystemEnvironmentPrivilege est requis pour utiliser les API qui modifient les variables stockées dans la mémoire non volatile du firmware."
+    },
+    {
+        "id": "q178",
+        "text": "Quel fichier de registre est utilisé par l'outil 'Amcache' pour le forensic ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "SAM",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Amcache.hve",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "NTUSER.DAT",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "SECURITY",
+                "correct": false
+            }
+        ],
+        "explanation": "Le fichier Amcache.hve est une ruche spécifique qui stocke les informations de compatibilité et d'exécution des programmes."
+    },
+    {
+        "id": "q179",
+        "text": "Dans le modèle UAC, qu'est-ce que le 'Secure Desktop' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Un antivirus intégré",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Un environnement isolé qui assombrit l'écran lors d'une demande d'élévation",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Le bureau de l'administrateur",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Une machine virtuelle",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Secure Desktop est une session distincte activée lors de l'invite UAC pour empêcher les logiciels malveillants d'interagir avec la fenêtre de confirmation."
+    },
+    {
+        "id": "q180",
+        "text": "Quel attribut du 'Token' permet de filtrer les droits lors de l'utilisation de l'UAC ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le jeton restreint (Restricted/Filtered Token)",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Le jeton d'emprunt",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Le jeton primaire",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le SID",
+                "correct": false
+            }
+        ],
+        "explanation": "L'UAC crée deux jetons à la connexion d'un admin : un jeton complet et un jeton restreint (filtré) utilisé pour les tâches standard."
+    },
+    {
+        "id": "q181",
+        "text": "Quelle vulnérabilité permet de relayer une authentification NTLM vers un autre serveur ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Buffer Overflow",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "NTLM Relay",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "SQL Injection",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "BlueKeep",
+                "correct": false
+            }
+        ],
+        "explanation": "L'attaque NTLM Relay exploite l'absence d'authentification mutuelle pour intercepter et relayer les échanges d'authentification."
+    },
+    {
+        "id": "q182",
+        "text": "Quelle est la taille d'une page mémoire standard sur une architecture x86/x64 ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "1 Ko",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "4 Ko",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "2 Mo",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "1 Go",
+                "correct": false
+            }
+        ],
+        "explanation": "La taille par défaut d'une page (et d'une frame) est de 4 Ko (4096 octets)."
+    },
+    {
+        "id": "q183",
+        "text": "Quel composant est responsable de la traduction Adresse Virtuelle vers Adresse Physique ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "ALU",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "MMU (Memory Management Unit)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "BIOS",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "GPU",
+                "correct": false
+            }
+        ],
+        "explanation": "La MMU est le circuit matériel du processeur qui gère les tables de pages pour effectuer la traduction d'adresses."
+    },
+    {
+        "id": "q184",
+        "text": "Quel service Windows gère l'exécution des tâches planifiées en arrière-plan ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Windows Schedule",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Windows Update",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Spooler",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "WinRM",
+                "correct": false
+            }
+        ],
+        "explanation": "Le service 'Windows Schedule' est responsable du lancement automatique des tâches définies dans le planificateur."
+    },
+    {
+        "id": "q185",
+        "text": "Dans le contexte des services, que signifie un démarrage 'Manuel' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le service démarre tout seul au boot",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le service doit être démarré par un utilisateur ou un programme",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Le service est désactivé",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le service est cassé",
+                "correct": false
+            }
+        ],
+        "explanation": "Un service en mode Manuel ne démarre pas automatiquement avec Windows ; il attend une commande explicite de démarrage."
+    },
+    {
+        "id": "q186",
+        "text": "Qu'est-ce que 'WinDbg' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Un jeu vidéo",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Un débogueur puissant fourni par Microsoft pour le Kernel et l'User mode",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Un éditeur de texte",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Un antivirus",
+                "correct": false
+            }
+        ],
+        "explanation": "WinDbg est l'outil de référence pour le débogage système et noyau sous Windows."
+    },
+    {
+        "id": "q187",
+        "text": "Quel est le but de la randomisation ASLR ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Rendre les adresses mémoire imprévisibles pour compliquer les exploits",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Optimiser la vitesse de la RAM",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Chiffrer le disque dur",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Compresser les DLLs",
+                "correct": false
+            }
+        ],
+        "explanation": "ASLR place aléatoirement les zones mémoire clés (Heap, Stack, DLLs) pour empêcher les attaquants de deviner les adresses (protection contre ROP)."
+    },
+    {
+        "id": "q188",
+        "text": "Quel composant est utilisé pour exécuter des processus Linux directement sur le noyau NT (WSL) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Pico Process / Pico Provider",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Virtual 8086",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "WoW64",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "NTVDM",
+                "correct": false
+            }
+        ],
+        "explanation": "Les 'Pico processes' sont une évolution des minimal processes permettant d'héberger des binaires non-Windows (ELF) via un pilote traducteur."
+    },
+    {
+        "id": "q189",
+        "text": "Où se trouve physiquement le fichier de registre correspondant à la ruche SAM ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "C:\\Windows\\System32\\config\\SAM",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "C:\\Users\\Default\\SAM",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "C:\\SAM.db",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "C:\\Windows\\System32\\drivers\\SAM",
+                "correct": false
+            }
+        ],
+        "explanation": "La base de données SAM est stockée dans le dossier de configuration système : %SystemRoot%\\System32\\config\\SAM."
+    },
+    {
+        "id": "q190",
+        "text": "Quel attribut ACE permet de définir des conditions d'accès dynamiques ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "CALLBACK_ACE",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "STATIC_ACE",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "ALLOWED_ACE",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "DENIED_ACE",
+                "correct": false
+            }
+        ],
+        "explanation": "Les CALLBACK_ACE sont utilisées pour le contrôle d'accès dynamique (Dynamic Access Control), évaluant des conditions au moment de l'accès."
+    },
+    {
+        "id": "q191",
+        "text": "Quel est le rôle du 'Service Control Manager' (SCM) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Gérer les services Windows (lancement, arrêt)",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Gérer les fenêtres du bureau",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Gérer les connexions réseau",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Gérer les fichiers temporaires",
+                "correct": false
+            }
+        ],
+        "explanation": "Le SCM est le processus système responsable de l'administration des services (démarrage automatique, arrêt manuel, etc.)."
+    },
+    {
+        "id": "q192",
+        "text": "Quelle clé de registre est souvent utilisée par les malwares pour la persistance au démarrage ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "HKLM\\...\\Run",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "HKLM\\...\\MountPoints",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "HKCU\\...\\Console",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "HKCR\\txtfile",
+                "correct": false
+            }
+        ],
+        "explanation": "La clé 'Run' (dans HKLM ou HKCU) est un emplacement classique pour lancer automatiquement des programmes au démarrage."
+    },
+    {
+        "id": "q193",
+        "text": "Quel composant est responsable de la gestion des 'Object Types' (Mutex, Semaphore, File) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Object Manager",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Process Manager",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Memory Manager",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Security Reference Monitor",
+                "correct": false
+            }
+        ],
+        "explanation": "L'Object Manager dans l'Executive gère la définition, la création et le cycle de vie de tous les objets noyau."
+    },
+    {
+        "id": "q194",
+        "text": "Quel processus héberge l'autorité de sécurité locale (LSA) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "lsass.exe",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "winlogon.exe",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "services.exe",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "svchost.exe",
+                "correct": false
+            }
+        ],
+        "explanation": "lsass.exe (Local Security Authority Subsystem Service) est le processus qui exécute la LSA et les packages d'authentification."
+    },
+    {
+        "id": "q195",
+        "text": "Que contient un 'Access Token' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le mot de passe de l'utilisateur",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le SID de l'utilisateur, ses groupes et ses privilèges",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "L'historique de navigation",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "La clé de chiffrement BitLocker",
+                "correct": false
+            }
+        ],
+        "explanation": "Le jeton d'accès contient l'identité de sécurité (SID) et les droits (privilèges) de l'utilisateur pour la session en cours."
+    },
+    {
+        "id": "q196",
+        "text": "Dans le modèle de sécurité Windows, qu'est-ce qu'un 'Privilège' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le droit d'accéder à un fichier spécifique",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le droit d'effectuer une action globale sur le système (ex: changer l'heure)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Un mot de passe fort",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Un groupe d'utilisateurs",
+                "correct": false
+            }
+        ],
+        "explanation": "Un privilège est un droit d'effectuer une action système (comme arrêter la machine), contrairement à une permission qui concerne l'accès à un objet spécifique."
+    },
+    {
+        "id": "q197",
+        "text": "Quel est le format utilisé par NTLM pour prouver l'identité sans envoyer le mot de passe ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Challenge-Response",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Clear Text",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Public Key Infrastructure (PKI)",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "OTP",
+                "correct": false
+            }
+        ],
+        "explanation": "NTLM utilise un mécanisme de défi-réponse (Challenge-Response) où le serveur envoie un défi aléatoire que le client signe avec son hash."
+    },
+    {
+        "id": "q198",
+        "text": "Qu'est-ce que le 'System Space' dans la mémoire virtuelle ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "L'espace réservé aux applications utilisateur",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "L'espace réservé au noyau et aux pilotes, inaccessible directement par l'utilisateur",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "L'espace disque disponible",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le cache du processeur",
+                "correct": false
+            }
+        ],
+        "explanation": "Le System Space (ou Kernel Space) est la partie haute de la mémoire virtuelle réservée au code et aux données du système d'exploitation."
+    },
+    {
+        "id": "q199",
+        "text": "Quelle table le processeur utilise-t-il pour trouver l'adresse physique d'une page virtuelle ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "La table des interruptions (IDT)",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "La table des pages (Page Table)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "La table des fichiers (MFT)",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "La table des descripteurs (GDT)",
+                "correct": false
+            }
+        ],
+        "explanation": "La pagination utilise des tables de pages (Page Tables) parcourues par la MMU pour traduire les adresses virtuelles en adresses physiques."
+    },
+    {
+        "id": "q200",
+        "text": "Quel est le rôle d'un 'Handle' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Stocker le code source",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Servir de référence opaque pour accéder à un objet noyau depuis le mode utilisateur",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Calculer des hashs",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Gérer l'alimentation",
+                "correct": false
+            }
+        ],
+        "explanation": "Un handle est un jeton/identifiant donné à une application pour qu'elle puisse manipuler un objet géré par le noyau (fichier, processus) sans toucher à sa structure interne."
+    }
+]

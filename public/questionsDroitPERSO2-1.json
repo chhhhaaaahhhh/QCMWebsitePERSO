@@ -1,0 +1,1622 @@
+[
+    {
+        "id": "q1",
+        "text": "Quelle est la définition générale du droit ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "L'ensemble des règles morales qui guident la conscience individuelle",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "L'ensemble des règles juridiques régissant les relations entre les individus et les institutions",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Une disposition normative applicable uniquement aux entreprises",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "L'ensemble des décisions rendues par les tribunaux",
+                "correct": false
+            }
+        ],
+        "explanation": "Le droit est défini comme l'ensemble des règles juridiques qui régissent les relations entre les individus eux-mêmes et les institutions dans une société."
+    },
+    {
+        "id": "q2",
+        "text": "Quelle branche du droit oppose l'État à un individu ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le droit privé",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le droit pénal",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Le droit public",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Le droit civil",
+                "correct": false
+            }
+        ],
+        "explanation": "Le droit public (comme le droit constitutionnel ou administratif) régit les relations opposant l'État ou une constitution à un individu."
+    },
+    {
+        "id": "q3",
+        "text": "Quelles sont les trois caractéristiques principales de la loi ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Générale, impersonnelle et obligatoire",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Précise, personnelle et facultative",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Générale, individuelle et indicative",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Abstraite, personnelle et obligatoire",
+                "correct": false
+            }
+        ],
+        "explanation": "La loi est générale (applicable à tous), impersonnelle (ne traite pas d'une situation particulière) et obligatoire (imposée à tous)."
+    },
+    {
+        "id": "q4",
+        "text": "Qu'est-ce que la jurisprudence ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "L'ensemble des lois votées par le Parlement",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "L'ensemble des décisions concordantes rendues par les tribunaux sur une question de droit",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "L'aptitude à être titulaire de droits et de devoirs",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Une doctrine établie par les avocats",
+                "correct": false
+            }
+        ],
+        "explanation": "La jurisprudence désigne l'ensemble des décisions de justice rendues pendant une certaine période dans une matière précise, notamment par la Cour de cassation ou le Conseil d'État."
+    },
+    {
+        "id": "q5",
+        "text": "Quel est le rôle de la Cour de cassation ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Rejuger les faits d'une affaire",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Vérifier la conformité de la loi à la Constitution",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Contrôler la bonne application du droit par les juridictions inférieures",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Juger les litiges administratifs en premier ressort",
+                "correct": false
+            }
+        ],
+        "explanation": "La Cour de cassation est la juridiction suprême de l'ordre judiciaire ; elle ne rejuge pas les faits mais vérifie si la règle de droit a été correctement appliquée (contrôle du pourvoi)."
+    },
+    {
+        "id": "q6",
+        "text": "Quelle juridiction est compétente pour les litiges entre commerçants ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le Conseil de prud'hommes",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le Tribunal judiciaire",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Le Tribunal de commerce",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Le Tribunal administratif",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Tribunal de commerce est la juridiction de premier degré de l'ordre judiciaire compétente pour les litiges commerciaux."
+    },
+    {
+        "id": "q7",
+        "text": "Qu'est-ce que le Conseil des prud'hommes ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Une juridiction pénale pour les contraventions",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Une juridiction civile compétente pour les litiges liés au contrat de travail",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Une cour administrative d'appel",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Une chambre de la Cour de cassation",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Conseil des prud'hommes gère les conflits individuels entre employeurs et salariés liés au contrat de travail."
+    },
+    {
+        "id": "q8",
+        "text": "Quelle est la juridiction suprême de l'ordre administratif ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "La Cour de cassation",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le Conseil Constitutionnel",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Le Tribunal des conflits",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le Conseil d'État",
+                "correct": true
+            }
+        ],
+        "explanation": "Le Conseil d'État est l'échelon suprême (contrôle de pourvoi) de l'ordre juridictionnel administratif."
+    },
+    {
+        "id": "q9",
+        "text": "Dans la hiérarchie des normes (pyramide de Kelsen), quel bloc est au sommet ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le bloc de légalité",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le bloc de conventionnalité",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Le bloc de constitutionnalité",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Le bloc réglementaire",
+                "correct": false
+            }
+        ],
+        "explanation": "Le bloc de constitutionnalité (comprenant la Constitution, la DDHC, etc.) est au sommet de la pyramide des normes et prime sur tous les autres."
+    },
+    {
+        "id": "q10",
+        "text": "Que signifie la capacité juridique ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "L'aptitude à être titulaire de droits et devoirs dès la naissance",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "L'aptitude à exercer soi-même ses droits et obligations sans représentant",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Le fait d'avoir la majorité civile",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "La capacité à passer un examen de droit",
+                "correct": false
+            }
+        ],
+        "explanation": "La capacité juridique est l'aptitude à exercer soi-même ses droits. Elle se distingue de la personnalité juridique que tout individu possède dès la naissance."
+    },
+    {
+        "id": "q11",
+        "text": "Quelles sont les conditions de validité d'un contrat ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Consentement, capacité, contenu licite et certain",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Consentement, majorité, signature notariée",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Capacité, objet réel, accord oral",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Consentement, témoins, écrit obligatoire",
+                "correct": false
+            }
+        ],
+        "explanation": "Pour qu'un contrat soit valide, il faut le consentement (libre et éclairé) des parties, leur capacité à contracter, et un contenu licite et certain."
+    },
+    {
+        "id": "q12",
+        "text": "Quelle est la sanction en cas de non-respect des conditions de validité d'un contrat ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "La résiliation",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "La suspension",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "La nullité",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "L'amende civile",
+                "correct": false
+            }
+        ],
+        "explanation": "Si les conditions de validité ne sont pas réunies, le contrat est frappé de nullité : il est censé n'avoir jamais existé (retour à l'état antérieur)."
+    },
+    {
+        "id": "q13",
+        "text": "Quels sont les trois types d'infractions pénales classées par gravité croissante ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Délit, contravention, crime",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Contravention, délit, crime",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Crime, délit, contravention",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Faute, infraction, crime",
+                "correct": false
+            }
+        ],
+        "explanation": "L'ordre de gravité croissante des infractions pénales est : la contravention (le moins grave), le délit, et le crime (le plus grave)."
+    },
+    {
+        "id": "q14",
+        "text": "Quelle est la définition d'un acte juridique ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Un événement involontaire produisant des effets de droit",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Un événement volontaire dont les conséquences juridiques ne sont pas voulues",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Une manifestation de volonté destinée à produire des effets de droit",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Une décision de justice rendue par un tribunal",
+                "correct": false
+            }
+        ],
+        "explanation": "L'acte juridique est une manifestation de volonté (d'une ou plusieurs personnes) destinée à produire des conséquences juridiques recherchées (ex : un contrat)."
+    },
+    {
+        "id": "q15",
+        "text": "Qu'est-ce qu'un fait juridique ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Un contrat signé entre deux parties",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Un événement volontaire ou involontaire produisant des conséquences juridiques non voulues",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Une loi votée par le Parlement",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Une preuve apportée par écrit",
+                "correct": false
+            }
+        ],
+        "explanation": "Le fait juridique est un événement (comme un accident ou une naissance) qui entraîne des effets de droit sans que les parties les aient directement recherchés."
+    },
+    {
+        "id": "q16",
+        "text": "Quelle est la règle concernant la charge de la preuve en droit civil ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "C'est au juge de chercher les preuves (inquisitoire)",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "C'est au défendeur de prouver qu'il n'est pas responsable",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "C'est au demandeur (celui qui allègue un fait) d'apporter la preuve",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "La preuve est toujours libre",
+                "correct": false
+            }
+        ],
+        "explanation": "Selon l'article 1353 du Code civil, c'est à celui qui réclame l'exécution d'une obligation de la prouver (Actori incumbit probatio)."
+    },
+    {
+        "id": "q17",
+        "text": "Quel principe s'applique à la preuve des faits juridiques ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "La preuve doit être écrite",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "La preuve est libre",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Seul l'aveu est admis",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "La preuve par témoin est interdite",
+                "correct": false
+            }
+        ],
+        "explanation": "Pour les faits juridiques (événements imprévus), la preuve est libre et peut être apportée par tout moyen."
+    },
+    {
+        "id": "q18",
+        "text": "Quelle est la limite de la liberté de la preuve pour un acte juridique civil ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Aucune limite",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Si le montant est supérieur à 1500€, un écrit est obligatoire",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Si le montant est inférieur à 5000€, un écrit est obligatoire",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Seuls les actes notariés sont acceptés",
+                "correct": false
+            }
+        ],
+        "explanation": "Pour les actes juridiques portant sur une somme supérieure à 1500€, la preuve doit obligatoirement être apportée par écrit (acte authentique ou sous signature privée)."
+    },
+    {
+        "id": "q19",
+        "text": "Qu'est-ce que le principe de loyauté de la preuve ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Toute preuve doit être certifiée par un huissier",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Une preuve ne doit pas être obtenue par stratagème ou à l'insu de la personne",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Toutes les preuves sont admises même si volées",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "La preuve doit être apportée loyalement par le juge",
+                "correct": false
+            }
+        ],
+        "explanation": "La loyauté de la preuve interdit l'utilisation de moyens déloyaux (enregistrements clandestins, vol) pour prouver un fait en matière civile, sauf exceptions rares indispensables."
+    },
+    {
+        "id": "q20",
+        "text": "Quelles sont les trois caractéristiques que doit avoir une preuve numérique pour être fiable ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Authenticité, fiabilité, intégrité",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Rapidité, cryptage, stockage",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Loyauté, liberté, légalité",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Numérique, papier, orale",
+                "correct": false
+            }
+        ],
+        "explanation": "La preuve numérique doit garantir son authenticité (identité de l'auteur), sa fiabilité (reproduction fidèle) et son intégrité (pas de modification)."
+    },
+    {
+        "id": "q21",
+        "text": "Quel règlement européen encadre la protection des données personnelles ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le Code civil",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "La Convention de Genève",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Le RGPD (Règlement Général sur la Protection des Données)",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "La loi eIDAS",
+                "correct": false
+            }
+        ],
+        "explanation": "Le RGPD, entré en application en 2018, est le texte de référence européen pour la protection des données personnelles."
+    },
+    {
+        "id": "q22",
+        "text": "Qu'est-ce qu'une donnée sensible au sens du RGPD ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Une donnée bancaire (RIB, numéro de carte)",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Une donnée révélant l'origine raciale, les opinions politiques ou la santé",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Une adresse email professionnelle",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le nom et le prénom",
+                "correct": false
+            }
+        ],
+        "explanation": "Les données sensibles (santé, biométrie, opinions, orientation sexuelle, etc.) bénéficient d'une protection renforcée et leur traitement est interdit par principe."
+    },
+    {
+        "id": "q23",
+        "text": "Quel est le rôle de la CNIL ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Juger les crimes financiers",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Veiller à la protection des données personnelles et aux libertés individuelles numériques",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Fournir des accès internet aux citoyens",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Rédiger le Code pénal",
+                "correct": false
+            }
+        ],
+        "explanation": "La Commission Nationale de l'Informatique et des Libertés (CNIL) est l'autorité administrative indépendante chargée de veiller au respect de la loi Informatique et Libertés et du RGPD."
+    },
+    {
+        "id": "q24",
+        "text": "Parmi les droits suivants, lequel est garanti par le RGPD ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le droit à l'anonymat total sur internet",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le droit à l'oubli (effacement des données)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Le droit de pirater des données publiques",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le droit de vendre ses propres données sans limite",
+                "correct": false
+            }
+        ],
+        "explanation": "Le RGPD garantit plusieurs droits aux personnes, dont le droit à l'oubli (déréférencement ou effacement), le droit d'accès, de rectification et de portabilité."
+    },
+    {
+        "id": "q25",
+        "text": "Quelle est la sanction maximale administrative que la CNIL peut prononcer ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "1500 euros",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "1 an d'emprisonnement",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Jusqu'à 20 millions d'euros ou 4% du chiffre d'affaires mondial",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "La fermeture définitive de l'entreprise",
+                "correct": false
+            }
+        ],
+        "explanation": "En cas de manquement grave, la CNIL peut infliger des amendes administratives allant jusqu'à 20 millions d'euros ou 4% du CA mondial."
+    },
+    {
+        "id": "q26",
+        "text": "Le droit au respect de la vie privée inclut-il les données bancaires ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Oui, ce sont des données sensibles par excellence",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Non, les données bancaires ne sont pas considérées comme des données sensibles au sens strict du RGPD mais sont des données personnelles",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Oui, mais uniquement pour les entreprises",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Non, elles sont publiques",
+                "correct": false
+            }
+        ],
+        "explanation": "Le cours précise que les données bancaires ne sont pas classées comme 'données sensibles' (interdites de traitement par principe) bien qu'elles soient personnelles et confidentielles."
+    },
+    {
+        "id": "q27",
+        "text": "Qu'est-ce qu'une signature électronique qualifiée ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Une signature scannée envoyée par mail",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Une signature validée par une autorité de certification agréée offrant le niveau de sécurité le plus élevé",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Une simple case à cocher sur un site web",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Un mot de passe",
+                "correct": false
+            }
+        ],
+        "explanation": "La signature qualifiée est le niveau le plus élevé (après simple et avancée), validée par une autorité de certification, et a la même valeur juridique qu'une signature manuscrite."
+    },
+    {
+        "id": "q28",
+        "text": "Quelles sont les caractéristiques du nom de famille ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Immuable et imprescriptible",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Modifiable à volonté et temporaire",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Vendable et cessible",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Uniquement transmis par le père",
+                "correct": false
+            }
+        ],
+        "explanation": "Le nom de famille est un élément d'état civil immuable (ne change pas par le temps) et imprescriptible (on ne le perd pas par non-usage)."
+    },
+    {
+        "id": "q29",
+        "text": "Comment s'acquiert la nationalité française par filiation ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "En naissant sur le sol français",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "En ayant au moins un parent français (droit du sang)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Par mariage uniquement",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Par décision du tribunal",
+                "correct": false
+            }
+        ],
+        "explanation": "L'acquisition par filiation (jus sanguinis) signifie qu'un enfant est français si au moins l'un de ses parents est français."
+    },
+    {
+        "id": "q30",
+        "text": "Quelle est la définition juridique du domicile ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "L'endroit où une personne se trouve à un instant T",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le lieu du principal établissement d'une personne (stable et continu)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "La résidence secondaire",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "L'adresse de l'employeur",
+                "correct": false
+            }
+        ],
+        "explanation": "Le domicile est le siège légal de la personne, son principal établissement, caractérisé par l'unicité et la volonté de s'y établir."
+    },
+    {
+        "id": "q31",
+        "text": "Dans le cadre de la preuve au pénal, quelle affirmation est vraie ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "La preuve doit obligatoirement être écrite",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "La preuve est libre pour les parties privées et le juge",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "La procédure est accusatoire",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Les preuves déloyales sont toujours rejetées",
+                "correct": false
+            }
+        ],
+        "explanation": "En droit pénal, la preuve est libre (art 427 CPP). De plus, la jurisprudence admet les preuves déloyales produites par les parties privées pour leur défense."
+    },
+    {
+        "id": "q32",
+        "text": "Qu'est-ce que la procédure inquisitoire ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Une procédure où les parties dirigent le procès",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Une procédure où le juge joue un rôle actif dans la recherche des preuves",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Une procédure sans avocat",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Une procédure uniquement orale",
+                "correct": false
+            }
+        ],
+        "explanation": "La procédure inquisitoire (caractéristique du pénal en phase d'instruction) donne au magistrat le rôle de rechercher la vérité et de rassembler les preuves."
+    },
+    {
+        "id": "q33",
+        "text": "Quelle est la différence entre un acte authentique et un acte sous seing privé ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "L'acte authentique est rédigé par un officier public, l'autre par les parties",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "L'acte sous seing privé a plus de valeur",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "L'acte authentique est oral",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Il n'y a aucune différence",
+                "correct": false
+            }
+        ],
+        "explanation": "L'acte authentique est rédigé par un officier public (notaire, huissier) et fait foi jusqu'à inscription de faux, contrairement à l'acte sous signature privée rédigé entre les parties."
+    },
+    {
+        "id": "q34",
+        "text": "Qu'est-ce qu'une présomption irréfragable ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Une présomption qui peut être contestée par la preuve du contraire",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Une présomption qui ne peut pas être renversée",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Une présomption mixte",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Une hypothèse du juge",
+                "correct": false
+            }
+        ],
+        "explanation": "Une présomption irréfragable a un caractère absolu : la loi interdit d'apporter la preuve contraire."
+    },
+    {
+        "id": "q35",
+        "text": "Quelle technologie permet de renforcer l'authenticité des preuves numériques via un registre décentralisé ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le Cloud",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "La Blockchain",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Le pare-feu",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le MP3",
+                "correct": false
+            }
+        ],
+        "explanation": "La blockchain permet d'enregistrer des transactions de manière immuable et décentralisée, renforçant l'authenticité et l'intégrité de la preuve."
+    },
+    {
+        "id": "q36",
+        "text": "Dans le syllogisme juridique, quelle étape correspond à la 'Majeure' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "L'application de la règle aux faits",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le rappel de la règle de droit applicable",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "L'exposé des faits",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "La conclusion",
+                "correct": false
+            }
+        ],
+        "explanation": "Le raisonnement juridique suit souvent un syllogisme : la Majeure (la règle de droit), la Mineure (les faits) et la Conclusion (la solution)."
+    },
+    {
+        "id": "q37",
+        "text": "Quelle loi française de 1978 a créé la CNIL ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "La loi HADOPI",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "La loi Informatique et Libertés",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Le Code du numérique",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "La loi pour la confiance dans l'économie numérique",
+                "correct": false
+            }
+        ],
+        "explanation": "La loi Informatique et Libertés du 6 janvier 1978 est le texte fondateur de la protection des données en France, instituant la CNIL."
+    },
+    {
+        "id": "q38",
+        "text": "Quel principe juridique impose que chaque partie ait accès aux mêmes pièces du dossier ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le principe d'autorité",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le principe du contradictoire (ou égalité des armes)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Le principe de confidentialité",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le principe de clémence",
+                "correct": false
+            }
+        ],
+        "explanation": "Le principe du contradictoire et l'égalité des armes imposent que chaque partie puisse connaître les arguments et preuves de l'autre pour se défendre équitablement."
+    },
+    {
+        "id": "q39",
+        "text": "La biométrie fait-elle partie des données sensibles ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Non, c'est une donnée standard",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Oui, car elle permet l'identification unique d'une personne physique",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Uniquement si elle est utilisée par la police",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Non, sauf si le visage est flouté",
+                "correct": false
+            }
+        ],
+        "explanation": "Les données biométriques sont classées comme des données sensibles par le RGPD et leur traitement est en principe interdit sauf exceptions."
+    },
+    {
+        "id": "q40",
+        "text": "Quel est le but des dommages-intérêts en droit civil ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Envoyer le coupable en prison",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Réparer le préjudice subi par la victime",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Enrichir l'État",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Punir la société",
+                "correct": false
+            }
+        ],
+        "explanation": "La responsabilité civile vise à réparer le dommage causé à autrui, le plus souvent par l'octroi de dommages-intérêts (indemnisation)."
+    },
+    {
+        "id": "q41",
+        "text": "Quelle est la différence entre les termes 'juridique' et 'judiciaire' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Ils sont synonymes",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "'Juridique' se rapporte à la justice, 'judiciaire' au droit",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "'Juridique' se rapporte au droit, 'judiciaire' se rapporte à la justice",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "'Judiciaire' ne concerne que les avocats",
+                "correct": false
+            }
+        ],
+        "explanation": "Le cours précise que le terme juridique se rapporte au droit (la matière), tandis que judiciaire se rapporte à la justice (l'institution et son fonctionnement)."
+    },
+    {
+        "id": "q42",
+        "text": "De la fusion de quelles juridictions le Tribunal Judiciaire est-il issu ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Du Tribunal de Commerce et du Conseil des Prud'hommes",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Du Tribunal de Grande Instance (TGI) et du Tribunal d'Instance (TI)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "De la Cour d'appel et de la Cour de cassation",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Du Tribunal Administratif et du Tribunal de Police",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Tribunal Judiciaire unique est né de la fusion du TGI et du TI au 1er janvier 2020."
+    },
+    {
+        "id": "q43",
+        "text": "Quelle juridiction pénale est compétente pour juger les contraventions ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "La Cour d'assises",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le Tribunal correctionnel",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Le Tribunal de police",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Le Tribunal de commerce",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Tribunal de police est la juridiction pénale de premier degré chargée de juger les contraventions (les infractions les moins graves)."
+    },
+    {
+        "id": "q44",
+        "text": "Que retrouve-t-on dans le 'Bloc de conventionnalité' de la hiérarchie des normes ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "La Constitution et la DDHC",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Les traités internationaux et le droit européen",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Les lois ordinaires et organiques",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Les décrets et arrêtés",
+                "correct": false
+            }
+        ],
+        "explanation": "Le bloc de conventionnalité, situé sous le bloc constitutionnel, regroupe les traités internationaux, les directives et les règlements européens."
+    },
+    {
+        "id": "q45",
+        "text": "Qu'est-ce qu'une procédure accusatoire ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Une procédure où le juge mène l'enquête (typique du pénal)",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Une procédure civile où les parties ont l'initiative et apportent les preuves",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Une procédure sans débat contradictoire",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Une procédure administrative uniquement",
+                "correct": false
+            }
+        ],
+        "explanation": "La procédure accusatoire est celle utilisée au civil, où ce sont les parties (et non le juge) qui rassemblent les preuves et dirigent le procès."
+    },
+    {
+        "id": "q46",
+        "text": "Dans le raisonnement juridique (syllogisme), à quoi correspond la 'Mineure' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "À la règle de droit applicable",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "À la décision finale du juge",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "À l'application de la règle aux faits",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Aux faits de l'espèce",
+                "correct": false
+            }
+        ],
+        "explanation": "Dans le syllogisme juridique classique : la Majeure est la règle, la Mineure correspond aux faits (ou l'application de la règle aux faits selon la structure détaillée), et la Conclusion est la solution."
+    },
+    {
+        "id": "q47",
+        "text": "Qu'est-ce qu'une présomption simple (ou réfragable) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Une présomption qui peut être renversée par la preuve du contraire",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Une présomption absolue sans preuve contraire possible",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Une preuve apportée par témoignage uniquement",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Une décision provisoire du juge",
+                "correct": false
+            }
+        ],
+        "explanation": "Les présomptions simples (réfragables) permettent de déduire un fait, mais peuvent être contestées si la partie adverse apporte la preuve du contraire."
+    },
+    {
+        "id": "q48",
+        "text": "À quel moment commence la personnalité juridique d'une personne physique ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "À la majorité (18 ans)",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "À la conception",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "À la naissance",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "À l'obtention de la carte d'identité",
+                "correct": false
+            }
+        ],
+        "explanation": "La personnalité juridique, soit l'aptitude à être titulaire de droits, commence dès la naissance de l'individu."
+    },
+    {
+        "id": "q49",
+        "text": "Quelle est la sanction pénale maximale prévue pour l'auteur d'une violation de la vie privée ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "15 000€ d'amende",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "1 an d'emprisonnement et 45 000€ d'amende",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "3 ans d'emprisonnement",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "La perpétuité",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Code pénal prévoit jusqu'à 1 an d'emprisonnement et 45 000 euros d'amende pour l'auteur d'une violation de la vie privée."
+    },
+    {
+        "id": "q50",
+        "text": "En quoi consiste le 'droit à la rectification' prévu par le RGPD ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le droit de supprimer toutes ses données",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le droit de demander la correction de données inexactes",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Le droit de récupérer ses données pour changer de fournisseur",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le droit de porter plainte anonymement",
+                "correct": false
+            }
+        ],
+        "explanation": "Le droit à la rectification permet à toute personne de demander que ses données personnelles soient corrigées si elles sont fausses ou inexactes."
+    },
+    {
+        "id": "q51",
+        "text": "Le droit d'opposition (RGPD) permet notamment de s'opposer à :",
+        "options": [
+            {
+                "id": "a",
+                "label": "Une enquête de police",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "L'impôt sur le revenu",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Des traitements à des fins de prospection commerciale",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "L'enregistrement de son état civil",
+                "correct": false
+            }
+        ],
+        "explanation": "Le droit d'opposition permet à l'individu de refuser que ses données soient utilisées pour certains objectifs, comme la prospection commerciale (publicité)."
+    },
+    {
+        "id": "q52",
+        "text": "Quelle condition est nécessaire pour changer de domicile ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Obtenir l'autorisation du maire",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Avoir la volonté de s'établir ailleurs (élément moral)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Payer une taxe de déménagement",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Vivre dans le nouveau lieu depuis 5 ans",
+                "correct": false
+            }
+        ],
+        "explanation": "Le changement de domicile s'effectue par le fait d'une habitation réelle dans un autre lieu, joint à l'intention (volonté) d'y fixer son principal établissement."
+    },
+    {
+        "id": "q53",
+        "text": "Quel est le seul acte d'état civil mentionnant le sexe d'une personne ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "L'acte de mariage",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "L'acte de décès",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "L'acte de naissance",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Le livret de famille",
+                "correct": false
+            }
+        ],
+        "explanation": "L'acte de naissance est le document d'état civil de référence qui mentionne le sexe de la personne."
+    },
+    {
+        "id": "q54",
+        "text": "Quelle est la condition juridique pour changer de sexe à l'état civil en France ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Avoir subi une opération chirurgicale",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Suivre un traitement hormonal lourd",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Le principe est qu'il n'est pas nécessaire d'avoir subi de traitement médical ou chirurgical",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Avoir l'accord de ses parents",
+                "correct": false
+            }
+        ],
+        "explanation": "Le droit français autorise le changement de sexe à l'état civil sans imposer à la personne d'avoir subi des traitements médicaux ou des opérations chirurgicales."
+    },
+    {
+        "id": "q55",
+        "text": "Qu'est-ce qui caractérise une signature électronique 'simple' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Un haut niveau de sécurité avec certificat",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Elle est utilisée pour les communications quotidiennes mais a un faible niveau d'authenticité",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Elle nécessite une clé cryptographique complexe",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Elle est validée par un notaire",
+                "correct": false
+            }
+        ],
+        "explanation": "La signature électronique simple (ex: signature en bas d'un mail) est utilisée couramment mais offre une garantie d'authenticité plus faible que les signatures avancées ou qualifiées."
+    },
+    {
+        "id": "q56",
+        "text": "À quoi sert l'horodatage électronique ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "À crypter le contenu d'un message",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "À garantir l'existence d'un document à une date donnée et son intégrité",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "À supprimer automatiquement les vieux fichiers",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "À signer un document à la place de l'auteur",
+                "correct": false
+            }
+        ],
+        "explanation": "L'horodatage permet d'apposer une date certifiée à un fichier numérique et d'assurer qu'il n'a pas été modifié depuis cet instant (intégrité)."
+    },
+    {
+        "id": "q57",
+        "text": "Que réprime l'article 226-1 du Code pénal concernant la vie privée ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le vol de données bancaires",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "La captation, enregistrement ou transmission de paroles ou d'images privées sans consentement",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "L'usurpation d'identité en ligne",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "L'accès frauduleux à un système informatique",
+                "correct": false
+            }
+        ],
+        "explanation": "L'article 226-1 punit l'atteinte à l'intimité de la vie privée réalisée par l'enregistrement ou la transmission de paroles ou d'images d'une personne dans un lieu privé sans son accord."
+    },
+    {
+        "id": "q58",
+        "text": "Quelle mesure la CNIL peut-elle prendre avant de prononcer une sanction financière ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "La dissolution de l'entreprise",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Une mise en demeure de régulariser la situation",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Une peine de prison ferme",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "La confiscation des ordinateurs",
+                "correct": false
+            }
+        ],
+        "explanation": "La CNIL peut enjoindre à un organisme de se mettre en conformité dans un délai imparti via une mise en demeure, avant d'envisager des amendes."
+    },
+    {
+        "id": "q59",
+        "text": "Quel élément permet de limiter la responsabilité juridique d'une personne ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "La richesse de la victime",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "La faute de la victime",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "L'absence d'avocat",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le refus de payer",
+                "correct": false
+            }
+        ],
+        "explanation": "La responsabilité peut être limitée ou partagée si l'on prouve que la victime a commis une faute ayant contribué à son propre dommage."
+    },
+    {
+        "id": "q60",
+        "text": "Le droit administratif appartient à quelle branche du droit ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le droit privé",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le droit pénal",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Le droit public",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Le droit des affaires",
+                "correct": false
+            }
+        ],
+        "explanation": "Le droit administratif, qui régit l'organisation et l'activité de l'administration, est une composante essentielle du droit public."
+    }
+]

@@ -2158,5 +2158,545 @@
             }
         ],
         "explanation": "PTE signifie Page Table Entry, une entrée dans la table des pages décrivant une page mémoire."
+    },
+    {
+        "id": "q81",
+        "text": "Quel concept introduit avec Windows 10 désigne le modèle de mises à jour continues du système ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Windows NT Kernel",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Metro Interface",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Windows as a Service",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Unified Update Platform",
+                "correct": false
+            }
+        ],
+        "explanation": "Windows 10 a introduit le modèle 'Windows as a Service', caractérisé par des mises à jour continues plutôt que des versions majeures espacées."
+    },
+    {
+        "id": "q82",
+        "text": "Quelle instruction processeur est utilisée pour effectuer un appel système (bascule du Ring 3 au Ring 0) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "jmp",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "mov",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "sysenter ou syscall",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "nop",
+                "correct": false
+            }
+        ],
+        "explanation": "Le passage du mode utilisateur au mode noyau se fait via des instructions spécifiques comme `sysenter`, `syscall` ou `int 0x2E`."
+    },
+    {
+        "id": "q83",
+        "text": "Dans l'en-tête d'un objet noyau, à quoi sert le 'compteur de références' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "À compter le nombre de threads dans un processus",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "À savoir si l'objet est utilisé pour éviter de le libérer prématurément",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "À définir la priorité du processus dans le scheduler",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "À stocker le nombre de pages mémoire allouées",
+                "correct": false
+            }
+        ],
+        "explanation": "Le compteur de références permet au système de savoir combien de handles ou de pointeurs pointent vers l'objet, empêchant sa suppression tant qu'il est utilisé."
+    },
+    {
+        "id": "q84",
+        "text": "Quel est le chemin d'accès au fichier stockant la hive SYSTEM du registre ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "%SystemRoot%\\System32\\config\\SYSTEM",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "%SystemRoot%\\System32\\drivers\\SYSTEM",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "C:\\Windows\\Registry\\SYSTEM.dat",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "%UserProfile%\\ntuser.dat",
+                "correct": false
+            }
+        ],
+        "explanation": "La hive SYSTEM, qui contient la configuration des services et pilotes, est stockée physiquement dans `%SystemRoot%\\System32\\config\\SYSTEM`."
+    },
+    {
+        "id": "q85",
+        "text": "Quel processus système correspond au 'Client/Server Runtime Subsystem' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "smss.exe",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "csrss.exe",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "lsass.exe",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "svchost.exe",
+                "correct": false
+            }
+        ],
+        "explanation": "`csrss.exe` est le processus responsable du sous-système Win32 pour les applications graphiques et la console."
+    },
+    {
+        "id": "q86",
+        "text": "Dans l'architecture Hyper-V, quel est le rôle particulier de la 'Root Partition' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Elle ne contient que les fichiers de log",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "C'est une VM enfant isolée sans accès matériel",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Elle a un accès direct au matériel et supervise les autres VM",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Elle sert uniquement à stocker les ISO d'installation",
+                "correct": false
+            }
+        ],
+        "explanation": "La Root Partition est l'instance principale d'Hyper-V qui gère directement les périphériques physiques et contrôle les partitions enfants (VM)."
+    },
+    {
+        "id": "q87",
+        "text": "Quelle règle de sécurité est imposée par le mécanisme MIC (Mandatory Integrity Control) via la règle 'No Write Up' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Un processus ne peut pas lire les données d'un niveau inférieur",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Un processus de niveau d'intégrité inférieur ne peut pas modifier un objet de niveau supérieur",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Un administrateur ne peut pas écrire dans le dossier System32",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Aucune écriture sur le disque n'est permise sans UAC",
+                "correct": false
+            }
+        ],
+        "explanation": "Le MIC et la règle 'No Write Up' empêchent un processus moins fiable (ex: Internet) de modifier un processus ou objet plus critique (ex: Système)."
+    },
+    {
+        "id": "q88",
+        "text": "Quel élément ajouté dans le 'blob' du client NTLMv2 permet de contrer les attaques par rejeu (replay attacks) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Un timestamp",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Le mot de passe en clair",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "L'adresse MAC du client",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le nom du domaine",
+                "correct": false
+            }
+        ],
+        "explanation": "L'ajout d'un timestamp (horodatage) dans le blob NTLMv2 empêche un attaquant de réutiliser une ancienne réponse interceptée."
+    },
+    {
+        "id": "q89",
+        "text": "Sous quelle identité le compte 'NetworkService' communique-t-il sur le réseau ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Une identité anonyme (Anonymous)",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "L'identité du compte machine (Computer Account)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Le compte Administrateur du domaine",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le compte Guest",
+                "correct": false
+            }
+        ],
+        "explanation": "Contrairement à LocalService (anonyme), NetworkService s'authentifie sur le réseau en utilisant le compte de l'ordinateur (ex: MACHINE$). "
+    },
+    {
+        "id": "q90",
+        "text": "Quel mécanisme utilise des paquets IRP (I/O Request Packet) pour communiquer avec les pilotes ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le Process Manager",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le I/O Manager",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Le Memory Manager",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le LSA",
+                "correct": false
+            }
+        ],
+        "explanation": "L'I/O Manager gère toutes les entrées/sorties du système en envoyant des IRPs aux pilotes de périphériques."
+    },
+    {
+        "id": "q91",
+        "text": "Quel processus système est le 'Session Manager', responsable de la création des sessions utilisateurs ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "smss.exe",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "winlogon.exe",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "services.exe",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "taskmgr.exe",
+                "correct": false
+            }
+        ],
+        "explanation": "Smss.exe (Session Manager Subsystem) est le premier processus user-mode créé par le noyau, il gère les sessions et le démarrage de csrss et winlogon."
+    },
+    {
+        "id": "q92",
+        "text": "À quoi sert le dossier 'Prefetch' dans Windows ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "À stocker les fichiers temporaires d'internet",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "À conserver les clés de registre supprimées",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "À accélérer le lancement des applications en mémorisant leur chargement",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "À isoler les applications malveillantes",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Prefetch est un mécanisme d'optimisation qui analyse le démarrage des applications pour les précharger en mémoire lors des exécutions suivantes."
+    },
+    {
+        "id": "q93",
+        "text": "Dans le registre, quel type de valeur est représenté par 'REG_DWORD' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Une chaîne de caractères",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Un entier sur 32 bits",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Un lien symbolique",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Une séquence binaire arbitraire",
+                "correct": false
+            }
+        ],
+        "explanation": "REG_DWORD stocke un nombre entier de 32 bits, souvent utilisé pour des booléens (0 ou 1) ou des compteurs."
+    },
+    {
+        "id": "q94",
+        "text": "Quel est le RID (Relative Identifier) du groupe 'Backup Operators' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "500",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "551",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "544",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "512",
+                "correct": false
+            }
+        ],
+        "explanation": "Le RID 551 est associé au groupe intégré 'Backup Operators' qui a des droits spécifiques pour la sauvegarde et la restauration."
+    },
+    {
+        "id": "q95",
+        "text": "Quel flag d'héritage dans une ACE indique que les droits s'appliquent aux dossiers enfants ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "OBJECT_INHERIT",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "NO_PROPAGATE",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "CONTAINER_INHERIT",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "INHERITED_ONLY",
+                "correct": false
+            }
+        ],
+        "explanation": "Le flag `CONTAINER_INHERIT` signifie que l'ACE doit être héritée par les conteneurs (c'est-à-dire les sous-dossiers)."
+    },
+    {
+        "id": "q96",
+        "text": "Quel est le RID du groupe 'Domain Admins' dans un environnement Active Directory ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "500",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "512",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "513",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "1000",
+                "correct": false
+            }
+        ],
+        "explanation": "Le RID 512 correspond au groupe 'Domain Admins', qui possède les droits d'administration sur tout le domaine."
+    },
+    {
+        "id": "q97",
+        "text": "Quel débogueur est spécifiquement conçu pour l'analyse du noyau (Kernel-mode) sous Windows ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "OllyDbg",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "x64dbg",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "WinDbg",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "GDB",
+                "correct": false
+            }
+        ],
+        "explanation": "WinDbg est l'outil officiel et puissant pour le débogage noyau, bien qu'il puisse aussi faire du débogage utilisateur."
+    },
+    {
+        "id": "q98",
+        "text": "Quelle clé de registre permet de lancer automatiquement un programme à *chaque* démarrage du système ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "RunOnce",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Run",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "BootExecute",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Image File Execution Options",
+                "correct": false
+            }
+        ],
+        "explanation": "La clé `Run` (contrairement à `RunOnce`) exécute les programmes qui y sont listés à chaque démarrage de Windows."
+    },
+    {
+        "id": "q99",
+        "text": "Quel composant de l'Executive gère la création et la terminaison des processus ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Configuration Manager",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Process Manager",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Object Manager",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Plug and Play Manager",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Process Manager est le sous-système de l'Executive responsable de la gestion du cycle de vie des processus et des threads."
+    },
+    {
+        "id": "q100",
+        "text": "Dans l'architecture de sécurité Windows, qu'est-ce qu'un 'Trustlet' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Un petit certificat numérique",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Un processus protégé exécuté dans un environnement isolé (IUM)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Une clé de registre chiffrée",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Un utilisateur de confiance",
+                "correct": false
+            }
+        ],
+        "explanation": "Les Trustlets sont des processus sécurisés qui s'exécutent dans l'Isolated User Mode (IUM), protégés par la Virtualization Based Security (VBS)."
     }
 ]

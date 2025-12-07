@@ -1,0 +1,827 @@
+[
+    {
+        "id": "q76",
+        "text": "D'où provient le terme 'Forensic' ?",
+        "options": [
+            { "id": "a", "label": "Du monde médical", "correct": false },
+            { "id": "b", "label": "Du monde judiciaire", "correct": true },
+            { "id": "c", "label": "Du monde militaire", "correct": false },
+            { "id": "d", "label": "Du monde financier", "correct": false }
+        ],
+        "explanation": "Le terme forensic vient du monde judiciaire et implique l'utilisation de méthodes scientifiques pour répondre à des questions légales."
+    },
+    {
+        "id": "q77",
+        "text": "Qui effectue l'investigation dans le cadre d'une enquête judiciaire ?",
+        "options": [
+            { "id": "a", "label": "Un expert assermenté", "correct": true },
+            { "id": "b", "label": "Le responsable informatique de l'entreprise", "correct": false },
+            { "id": "c", "label": "Un stagiaire", "correct": false },
+            { "id": "d", "label": "Le fournisseur d'accès internet", "correct": false }
+        ],
+        "explanation": "Dans le cadre judiciaire, l'investigation est confiée à un expert assermenté pour garantir la validité des preuves."
+    },
+    {
+        "id": "q78",
+        "text": "Quel est l'objectif de la sécurité 'Offensive' ?",
+        "options": [
+            { "id": "a", "label": "Réagir à une intrusion", "correct": false },
+            { "id": "b", "label": "Identifier les vulnérabilités par des tests (pentests)", "correct": true },
+            { "id": "c", "label": "Installer des pare-feux", "correct": false },
+            { "id": "d", "label": "Gérer les sauvegardes", "correct": false }
+        ],
+        "explanation": "La sécurité offensive vise à identifier les failles d'un système d'information en simulant des attaques."
+    },
+    {
+        "id": "q79",
+        "text": "Quel organisme est un exemple de CERT institutionnel ?",
+        "options": [
+            { "id": "a", "label": "CERT-FR", "correct": true },
+            { "id": "b", "label": "CERT Orange Cyberdefense", "correct": false },
+            { "id": "c", "label": "CERT Wavestone", "correct": false },
+            { "id": "d", "label": "CERT Google", "correct": false }
+        ],
+        "explanation": "Le CERT-FR et le CERT-EU sont cités comme des exemples de CERT étatiques ou institutionnels."
+    },
+    {
+        "id": "q80",
+        "text": "Que signifie l'acronyme SIRT ?",
+        "options": [
+            { "id": "a", "label": "System Incident Response Tool", "correct": false },
+            { "id": "b", "label": "Security Intelligence and Response Team", "correct": false },
+            { "id": "c", "label": "Computer Security Incident Response Team", "correct": true },
+            { "id": "d", "label": "Server Investigation Response Technician", "correct": false }
+        ],
+        "explanation": "SIRT est souvent utilisé comme raccourci pour CSIRT (Computer Security Incident Response Team)."
+    },
+    {
+        "id": "q81",
+        "text": "Quelle activité fait partie de la 'Threat Intelligence' ?",
+        "options": [
+            { "id": "a", "label": "Le profilage d'acteurs de la menace (APT)", "correct": true },
+            { "id": "b", "label": "La réparation des imprimantes", "correct": false },
+            { "id": "c", "label": "L'installation de Windows", "correct": false },
+            { "id": "d", "label": "Le nettoyage physique des serveurs", "correct": false }
+        ],
+        "explanation": "La Threat Intelligence inclut la lutte contre le phishing, le Data Leak et le profilage des attaquants (APT)."
+    },
+    {
+        "id": "q82",
+        "text": "Quel est un objectif possible d'une cyberattaque mentionné dans le cours ?",
+        "options": [
+            { "id": "a", "label": "La déstabilisation", "correct": true },
+            { "id": "b", "label": "L'augmentation de la bande passante", "correct": false },
+            { "id": "c", "label": "La mise à jour des pilotes", "correct": false },
+            { "id": "d", "label": "L'amélioration du référencement web", "correct": false }
+        ],
+        "explanation": "Les objectifs incluent le gain monétaire, l'espionnage, la déstabilisation, la destruction ou le repositionnement."
+    },
+    {
+        "id": "q83",
+        "text": "Quelle est la deuxième phase de la réponse à incident selon le modèle NIST ?",
+        "options": [
+            { "id": "a", "label": "Préparation", "correct": false },
+            { "id": "b", "label": "Détection et analyse", "correct": true },
+            { "id": "c", "label": "Confinement", "correct": false },
+            { "id": "d", "label": "Activité après incident", "correct": false }
+        ],
+        "explanation": "Dans le modèle NIST, après la préparation vient la phase de détection et analyse."
+    },
+    {
+        "id": "q84",
+        "text": "Dans la méthodologie SANS, quelle étape suit immédiatement l'identification ?",
+        "options": [
+            { "id": "a", "label": "Éradication", "correct": false },
+            { "id": "b", "label": "Confinement", "correct": true },
+            { "id": "c", "label": "Reprise", "correct": false },
+            { "id": "d", "label": "Préparation", "correct": false }
+        ],
+        "explanation": "Le modèle SANS place le confinement en étape 3, juste après l'identification."
+    },
+    {
+        "id": "q85",
+        "text": "Quelle question permet d'identifier le contexte d'un incident ?",
+        "options": [
+            { "id": "a", "label": "Quelle est la marque du clavier ?", "correct": false },
+            { "id": "b", "label": "Quels symptômes ont été observés ?", "correct": true },
+            { "id": "c", "label": "Quel est le prix du serveur ?", "correct": false },
+            { "id": "d", "label": "Quelle est la couleur du boîtier ?", "correct": false }
+        ],
+        "explanation": "Demander quels symptômes ont été observés aide à comprendre la nature et le périmètre de l'incident."
+    },
+    {
+        "id": "q86",
+        "text": "Pourquoi travaille-t-on toujours sur une copie des supports numériques ?",
+        "options": [
+            { "id": "a", "label": "Pour préserver l'intégrité de la preuve originale", "correct": true },
+            { "id": "b", "label": "Parce que c'est plus rapide", "correct": false },
+            { "id": "c", "label": "Pour économiser de l'espace disque", "correct": false },
+            { "id": "d", "label": "Pour éviter les virus", "correct": false }
+        ],
+        "explanation": "Travailler sur une copie garantit que l'original reste inaltéré et admissible en tant que preuve."
+    },
+    {
+        "id": "q87",
+        "text": "Quel est l'un des trois axes d'analyse mentionnés dans la méthodologie ?",
+        "options": [
+            { "id": "a", "label": "L'analyse malware", "correct": true },
+            { "id": "b", "label": "L'analyse financière", "correct": false },
+            { "id": "c", "label": "L'analyse électrique", "correct": false },
+            { "id": "d", "label": "L'analyse acoustique", "correct": false }
+        ],
+        "explanation": "Les trois axes sont l'analyse mémoire, l'analyse disque et l'analyse malware."
+    },
+    {
+        "id": "q88",
+        "text": "Que doit-on reconstituer pour comprendre le déroulement de l'incident ?",
+        "options": [
+            { "id": "a", "label": "Le schéma électrique du bâtiment", "correct": false },
+            { "id": "b", "label": "La timeline des événements", "correct": true },
+            { "id": "c", "label": "L'organigramme de l'entreprise", "correct": false },
+            { "id": "d", "label": "Le code source de Windows", "correct": false }
+        ],
+        "explanation": "La timeline (chronologie) est essentielle pour séquencer les actions de l'attaquant."
+    },
+    {
+        "id": "q89",
+        "text": "Quelle société a racheté Guidance Software (éditeur d'EnCase) ?",
+        "options": [
+            { "id": "a", "label": "Microsoft", "correct": false },
+            { "id": "b", "label": "OpenText", "correct": true },
+            { "id": "c", "label": "AccessData", "correct": false },
+            { "id": "d", "label": "Magnet Forensics", "correct": false }
+        ],
+        "explanation": "Guidance Software, créateur d'EnCase, a été racheté par OpenText en 2017."
+    },
+    {
+        "id": "q90",
+        "text": "Quel outil est fréquemment utilisé par les forces de l'ordre ?",
+        "options": [
+            { "id": "a", "label": "X-Ways", "correct": true },
+            { "id": "b", "label": "Notepad", "correct": false },
+            { "id": "c", "label": "Paint", "correct": false },
+            { "id": "d", "label": "VLC", "correct": false }
+        ],
+        "explanation": "X-Ways Forensics est cité comme un outil fréquemment utilisé par les forces de l'ordre."
+    },
+    {
+        "id": "q91",
+        "text": "Qui développe la suite Sysinternals ?",
+        "options": [
+            { "id": "a", "label": "Apple", "correct": false },
+            { "id": "b", "label": "Linux Foundation", "correct": false },
+            { "id": "c", "label": "Microsoft", "correct": true },
+            { "id": "d", "label": "Eric Zimmerman", "correct": false }
+        ],
+        "explanation": "La suite Sysinternals appartient à Microsoft."
+    },
+    {
+        "id": "q92",
+        "text": "Quel format de fichier est associé à EnCase ?",
+        "options": [
+            { "id": "a", "label": "EWF (Expert Witness Format)", "correct": true },
+            { "id": "b", "label": "JPG", "correct": false },
+            { "id": "c", "label": "PDF", "correct": false },
+            { "id": "d", "label": "MP3", "correct": false }
+        ],
+        "explanation": "Le format EWF (Expert Witness Format) est le format propriétaire d'EnCase."
+    },
+    {
+        "id": "q93",
+        "text": "Quelle information peut être récupérée dans un dump mémoire (RAM) ?",
+        "options": [
+            { "id": "a", "label": "Les clés de chiffrement", "correct": true },
+            { "id": "b", "label": "La poussière accumulée", "correct": false },
+            { "id": "c", "label": "La marque de l'écran", "correct": false },
+            { "id": "d", "label": "Le poids de l'ordinateur", "correct": false }
+        ],
+        "explanation": "La mémoire vive contient des données sensibles actives comme les clés de chiffrement, les mots de passe et les processus."
+    },
+    {
+        "id": "q94",
+        "text": "Quel exécutable permet de lancer l'interface graphique de KAPE ?",
+        "options": [
+            { "id": "a", "label": "kape.exe", "correct": false },
+            { "id": "b", "label": "gkape.exe", "correct": true },
+            { "id": "c", "label": "kape-gui.exe", "correct": false },
+            { "id": "d", "label": "start-kape.exe", "correct": false }
+        ],
+        "explanation": "gkape.exe est la version graphique (GUI) de l'outil KAPE."
+    },
+    {
+        "id": "q95",
+        "text": "Quel script PowerShell permet de mettre à jour KAPE ?",
+        "options": [
+            { "id": "a", "label": "Update-Kape.ps1", "correct": false },
+            { "id": "b", "label": "Get-KAPEUpdate.ps1", "correct": true },
+            { "id": "c", "label": "Install-Kape.ps1", "correct": false },
+            { "id": "d", "label": "Upgrade-All.ps1", "correct": false }
+        ],
+        "explanation": "Le script 'Get-KAPEUpdate.ps1' automatise la mise à jour de KAPE."
+    },
+    {
+        "id": "q96",
+        "text": "Dans la configuration d'une Target KAPE, que définit le champ 'FileMask' ?",
+        "options": [
+            { "id": "a", "label": "Le mot de passe du fichier", "correct": false },
+            { "id": "b", "label": "Le motif de fichier à collecter (ex: *.pf)", "correct": true },
+            { "id": "c", "label": "La taille maximale du fichier", "correct": false },
+            { "id": "d", "label": "La couleur du fichier", "correct": false }
+        ],
+        "explanation": "FileMask permet de spécifier quels fichiers collecter en utilisant des wildcards (ex: *.pf pour les fichiers prefetch)."
+    },
+    {
+        "id": "q97",
+        "text": "Que signifie le champ 'RecreateDirectories: true' dans une Target KAPE ?",
+        "options": [
+            { "id": "a", "label": "Il recrée l'arborescence des dossiers d'origine dans le dossier de destination", "correct": true },
+            { "id": "b", "label": "Il supprime les dossiers vides", "correct": false },
+            { "id": "c", "label": "Il renomme tous les dossiers", "correct": false },
+            { "id": "d", "label": "Il chiffre les dossiers", "correct": false }
+        ],
+        "explanation": "Cette option assure que la structure de dossiers de la machine source est préservée lors de la copie vers la destination."
+    },
+    {
+        "id": "q98",
+        "text": "Quelle catégorie de module KAPE est utilisée pour récupérer les informations système de base ?",
+        "options": [
+            { "id": "a", "label": "LiveResponse", "correct": true },
+            { "id": "b", "label": "DeadAnalysis", "correct": false },
+            { "id": "c", "label": "MalwareScan", "correct": false },
+            { "id": "d", "label": "NetworkMap", "correct": false }
+        ],
+        "explanation": "Le module Windows_SystemInfo.mkape est classé dans la catégorie 'LiveResponse'."
+    },
+    {
+        "id": "q99",
+        "text": "Dans quel dossier KAPE se trouvent les exécutables tiers (Zimmerman, etc.) ?",
+        "options": [
+            { "id": "a", "label": "Modules\\bin", "correct": true },
+            { "id": "b", "label": "Targets\\exe", "correct": false },
+            { "id": "c", "label": "System32", "correct": false },
+            { "id": "d", "label": "Program Files", "correct": false }
+        ],
+        "explanation": "Le dossier Modules\\bin contient les outils externes nécessaires à l'exécution des modules."
+    },
+    {
+        "id": "q100",
+        "text": "Quelle ruche du registre contient la configuration des pilotes et des services ?",
+        "options": [
+            { "id": "a", "label": "SAM", "correct": false },
+            { "id": "b", "label": "SOFTWARE", "correct": false },
+            { "id": "c", "label": "SYSTEM", "correct": true },
+            { "id": "d", "label": "SECURITY", "correct": false }
+        ],
+        "explanation": "La ruche SYSTEM contient les configurations critiques du système, y compris les services et les pilotes."
+    },
+    {
+        "id": "q101",
+        "text": "Où est situé le fichier USRCLASS.DAT ?",
+        "options": [
+            { "id": "a", "label": "C:\\Windows\\System32\\Config", "correct": false },
+            { "id": "b", "label": "C:\\Users\\<username>\\AppData\\Local\\Microsoft\\Windows\\", "correct": true },
+            { "id": "c", "label": "C:\\Program Files\\", "correct": false },
+            { "id": "d", "label": "C:\\Temp\\", "correct": false }
+        ],
+        "explanation": "USRCLASS.DAT se trouve dans AppData\\Local\\Microsoft\\Windows\\ et contient des traces utilisateur comme les ShellBags."
+    },
+    {
+        "id": "q102",
+        "text": "Que contient la ruche SECURITY ?",
+        "options": [
+            { "id": "a", "label": "Les politiques de sécurité appliquées par le noyau", "correct": true },
+            { "id": "b", "label": "L'historique internet", "correct": false },
+            { "id": "c", "label": "Les fonds d'écran", "correct": false },
+            { "id": "d", "label": "Les documents Word", "correct": false }
+        ],
+        "explanation": "La ruche SECURITY stocke les politiques de sécurité locales et les droits."
+    },
+    {
+        "id": "q103",
+        "text": "Quel outil est décrit comme 'automatisé avec des plugins' pour analyser le registre ?",
+        "options": [
+            { "id": "a", "label": "RegRipper", "correct": true },
+            { "id": "b", "label": "Notepad", "correct": false },
+            { "id": "c", "label": "HexEditor", "correct": false },
+            { "id": "d", "label": "Paint", "correct": false }
+        ],
+        "explanation": "RegRipper est un outil populaire qui utilise des plugins pour extraire automatiquement des informations des ruches."
+    },
+    {
+        "id": "q104",
+        "text": "Quelle est la limitation de Windows Registry Recovery (WRR) mentionnée ?",
+        "options": [
+            { "id": "a", "label": "Il est payant", "correct": false },
+            { "id": "b", "label": "Il ne permet pas d'analyse détaillée des clés et valeurs", "correct": true },
+            { "id": "c", "label": "Il ne fonctionne que sur Linux", "correct": false },
+            { "id": "d", "label": "Il efface le registre", "correct": false }
+        ],
+        "explanation": "WRR permet d'ouvrir les fichiers mais n'offre pas d'analyse détaillée comme Registry Explorer."
+    },
+    {
+        "id": "q105",
+        "text": "Dans quelle clé trouve-t-on les interfaces réseau TCP/IP ?",
+        "options": [
+            { "id": "a", "label": "SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters\\Interfaces", "correct": true },
+            { "id": "b", "label": "SOFTWARE\\Microsoft\\Net", "correct": false },
+            { "id": "c", "label": "SAM\\Network", "correct": false },
+            { "id": "d", "label": "SECURITY\\IP", "correct": false }
+        ],
+        "explanation": "Cette clé spécifique dans la ruche SYSTEM liste les configurations des interfaces réseau (IP, DHCP, etc.)."
+    },
+    {
+        "id": "q106",
+        "text": "Quelle sous-clé de 'NetworkList' contient les signatures des réseaux 'Unmanaged' ?",
+        "options": [
+            { "id": "a", "label": "Signatures\\Unmanaged", "correct": true },
+            { "id": "b", "label": "Signatures\\Wifi", "correct": false },
+            { "id": "c", "label": "Signatures\\Local", "correct": false },
+            { "id": "d", "label": "Signatures\\Public", "correct": false }
+        ],
+        "explanation": "L'historique des réseaux est divisé entre 'Managed' (domaine) et 'Unmanaged' (public/privé hors domaine) dans le registre."
+    },
+    {
+        "id": "q107",
+        "text": "Que signifie le RID dans la ruche SAM ?",
+        "options": [
+            { "id": "a", "label": "Relative IDentifier", "correct": true },
+            { "id": "b", "label": "Root ID", "correct": false },
+            { "id": "c", "label": "Remote IP Data", "correct": false },
+            { "id": "d", "label": "Registry Index Data", "correct": false }
+        ],
+        "explanation": "Le RID (Relative Identifier) est un numéro unique associé à chaque compte utilisateur dans la ruche SAM."
+    },
+    {
+        "id": "q108",
+        "text": "Quelle clé de registre contient la liste des fichiers récemment ouverts (RecentDocs) ?",
+        "options": [
+            { "id": "a", "label": "NTUSER.DAT\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RecentDocs", "correct": true },
+            { "id": "b", "label": "SYSTEM\\Recent", "correct": false },
+            { "id": "c", "label": "SOFTWARE\\Docs", "correct": false },
+            { "id": "d", "label": "SAM\\Files", "correct": false }
+        ],
+        "explanation": "RecentDocs dans NTUSER.DAT stocke les extensions et les fichiers ouverts récemment par l'utilisateur."
+    },
+    {
+        "id": "q109",
+        "text": "Pour Office 2013, quelle est la version visible dans la clé de registre ?",
+        "options": [
+            { "id": "a", "label": "12.0", "correct": false },
+            { "id": "b", "label": "14.0", "correct": false },
+            { "id": "c", "label": "15.0", "correct": true },
+            { "id": "d", "label": "16.0", "correct": false }
+        ],
+        "explanation": "La version 15.0 correspond à Office 2013 dans les clés de registre Microsoft\\Office."
+    },
+    {
+        "id": "q110",
+        "text": "Quelle clé spécifique est utilisée pour les fichiers récents dans Office 365 ?",
+        "options": [
+            { "id": "a", "label": "UserMRU", "correct": true },
+            { "id": "b", "label": "SystemMRU", "correct": false },
+            { "id": "c", "label": "AdminMRU", "correct": false },
+            { "id": "d", "label": "CloudMRU", "correct": false }
+        ],
+        "explanation": "Pour Office 365, les fichiers récents sont stockés sous 'UserMRU' suivi de l'ID Live (compte Microsoft)."
+    },
+    {
+        "id": "q111",
+        "text": "Quelle clé ShellBags stocke l'ordre d'accès aux dossiers (MRU) ?",
+        "options": [
+            { "id": "a", "label": "BagMRU", "correct": true },
+            { "id": "b", "label": "Bags", "correct": false },
+            { "id": "c", "label": "FolderSort", "correct": false },
+            { "id": "d", "label": "ViewList", "correct": false }
+        ],
+        "explanation": "BagMRU contient la structure hiérarchique et l'ordre d'accès, tandis que 'Bags' contient les préférences d'affichage."
+    },
+    {
+        "id": "q112",
+        "text": "Quelle clé du registre permet de reconstituer l'activité des fenêtres 'Enregistrer sous' ?",
+        "options": [
+            { "id": "a", "label": "OpenSavePidlMRU", "correct": true },
+            { "id": "b", "label": "SaveList", "correct": false },
+            { "id": "c", "label": "DialogHistory", "correct": false },
+            { "id": "d", "label": "FileDialog", "correct": false }
+        ],
+        "explanation": "OpenSavePidlMRU enregistre les fichiers manipulés via les boîtes de dialogue standard de Windows."
+    },
+    {
+        "id": "q113",
+        "text": "Quelle information le UserAssist contient-il pour chaque programme ?",
+        "options": [
+            { "id": "a", "label": "Le nombre d'exécutions et la date de dernière exécution", "correct": true },
+            { "id": "b", "label": "Le code source du programme", "correct": false },
+            { "id": "c", "label": "L'auteur du programme", "correct": false },
+            { "id": "d", "label": "Le prix du logiciel", "correct": false }
+        ],
+        "explanation": "UserAssist comptabilise combien de fois une application GUI a été lancée et quand pour la dernière fois."
+    },
+    {
+        "id": "q114",
+        "text": "Quelle option de commande est utilisée avec AppCompatCacheParser pour spécifier le ControlSet ?",
+        "options": [
+            { "id": "a", "label": "-c", "correct": true },
+            { "id": "b", "label": "-s", "correct": false },
+            { "id": "c", "label": "-p", "correct": false },
+            { "id": "d", "label": "-x", "correct": false }
+        ],
+        "explanation": "L'argument -c permet de définir quel ControlSet (ex: ControlSet001) utiliser lors du parsing de la ruche SYSTEM."
+    },
+    {
+        "id": "q115",
+        "text": "Quel type de hash est fourni par l'artefact AmCache ?",
+        "options": [
+            { "id": "a", "label": "MD5", "correct": false },
+            { "id": "b", "label": "SHA1", "correct": true },
+            { "id": "c", "label": "SHA256", "correct": false },
+            { "id": "d", "label": "CRC32", "correct": false }
+        ],
+        "explanation": "L'AmCache stocke le hash SHA1 des exécutables, ce qui est très utile pour la recherche de malwares."
+    },
+    {
+        "id": "q116",
+        "text": "Qu'améliore le système de fichiers NTFS par rapport à FAT concernant la sécurité ?",
+        "options": [
+            { "id": "a", "label": "Les ACL (Access Control Lists)", "correct": true },
+            { "id": "b", "label": "La couleur des dossiers", "correct": false },
+            { "id": "c", "label": "La vitesse de la souris", "correct": false },
+            { "id": "d", "label": "Le son de démarrage", "correct": false }
+        ],
+        "explanation": "NTFS introduit les ACL qui permettent de définir des permissions précises (lecture, écriture, etc.) par utilisateur."
+    },
+    {
+        "id": "q117",
+        "text": "Comment s'appellent les flux de données cachés possibles dans NTFS ?",
+        "options": [
+            { "id": "a", "label": "ADS (Alternate Data Stream)", "correct": true },
+            { "id": "b", "label": "Hidden Tracks", "correct": false },
+            { "id": "c", "label": "Ghost Files", "correct": false },
+            { "id": "d", "label": "Shadow Copies", "correct": false }
+        ],
+        "explanation": "Les ADS permettent d'associer des données supplémentaires à un fichier sans changer sa taille apparente."
+    },
+    {
+        "id": "q118",
+        "text": "Quel fichier journal NTFS se trouve dans le dossier $Extend ?",
+        "options": [
+            { "id": "a", "label": "$UsnJrnl", "correct": true },
+            { "id": "b", "label": "$MFT", "correct": false },
+            { "id": "c", "label": "$Boot", "correct": false },
+            { "id": "d", "label": "$Volume", "correct": false }
+        ],
+        "explanation": "Le journal des changements USN ($UsnJrnl) est situé dans le méta-dossier $Extend."
+    },
+    {
+        "id": "q119",
+        "text": "Quelle est l'extension des fichiers Prefetch ?",
+        "options": [
+            { "id": "a", "label": ".pf", "correct": true },
+            { "id": "b", "label": ".pre", "correct": false },
+            { "id": "c", "label": ".fetch", "correct": false },
+            { "id": "d", "label": ".exe", "correct": false }
+        ],
+        "explanation": "Les fichiers créés par le gestionnaire de mémoire de Windows dans C:\\Windows\\Prefetch ont l'extension .pf."
+    },
+    {
+        "id": "q120",
+        "text": "Outre la date d'exécution, que contient un fichier Prefetch ?",
+        "options": [
+            { "id": "a", "label": "La liste des fichiers et handles utilisés lors du lancement", "correct": true },
+            { "id": "b", "label": "Le code source de l'application", "correct": false },
+            { "id": "c", "label": "La photo de l'utilisateur", "correct": false },
+            { "id": "d", "label": "Les emails envoyés", "correct": false }
+        ],
+        "explanation": "Le Prefetch liste les ressources (fichiers, dll) chargées par le programme dans les 10 premières secondes."
+    },
+    {
+        "id": "q121",
+        "text": "Quelle commande PECmd permet de traiter tout un répertoire ?",
+        "options": [
+            { "id": "a", "label": "-d", "correct": true },
+            { "id": "b", "label": "-f", "correct": false },
+            { "id": "c", "label": "-all", "correct": false },
+            { "id": "d", "label": "-dir", "correct": false }
+        ],
+        "explanation": "L'option -d (directory) permet de spécifier un dossier contenant plusieurs fichiers .pf à analyser."
+    },
+    {
+        "id": "q122",
+        "text": "Quel outil permet d'analyser la Timeline Windows 10 ?",
+        "options": [
+            { "id": "a", "label": "WxTCmd", "correct": true },
+            { "id": "b", "label": "TimelinePro", "correct": false },
+            { "id": "c", "label": "WinTime", "correct": false },
+            { "id": "d", "label": "HistoryViewer", "correct": false }
+        ],
+        "explanation": "WxTCmd est l'outil d'Eric Zimmerman pour parser la base de données ActivitiesCache.db (Windows 10 Timeline)."
+    },
+    {
+        "id": "q123",
+        "text": "Où se trouvent les Jump Lists 'Automatic Destinations' ?",
+        "options": [
+            { "id": "a", "label": "Dans le dossier Roaming\\Microsoft\\Windows\\Recent\\", "correct": true },
+            { "id": "b", "label": "Dans le dossier Windows\\Temp", "correct": false },
+            { "id": "c", "label": "Dans la racine C:\\", "correct": false },
+            { "id": "d", "label": "Dans le dossier Documents", "correct": false }
+        ],
+        "explanation": "Elles sont stockées dans le profil utilisateur sous AppData\\Roaming\\Microsoft\\Windows\\Recent\\Automatic Destinations."
+    },
+    {
+        "id": "q124",
+        "text": "Quelle information contient un fichier raccourci (.lnk) concernant le fichier cible ?",
+        "options": [
+            { "id": "a", "label": "Son chemin d'accès complet et le volume de stockage", "correct": true },
+            { "id": "b", "label": "Son contenu complet", "correct": false },
+            { "id": "c", "label": "Le mot de passe du fichier", "correct": false },
+            { "id": "d", "label": "L'auteur du fichier", "correct": false }
+        ],
+        "explanation": "Le fichier .lnk enregistre où se trouvait le fichier cible (chemin, lettre de lecteur, numéro de série du volume)."
+    },
+    {
+        "id": "q125",
+        "text": "Quand Windows crée-t-il automatiquement un fichier .lnk ?",
+        "options": [
+            { "id": "a", "label": "Lorsqu'un fichier est ouvert", "correct": true },
+            { "id": "b", "label": "Lorsqu'un fichier est supprimé", "correct": false },
+            { "id": "c", "label": "Lorsqu'un fichier est renommé", "correct": false },
+            { "id": "d", "label": "Lorsqu'un fichier est téléchargé", "correct": false }
+        ],
+        "explanation": "L'ouverture d'un fichier déclenche souvent la création d'un raccourci dans le dossier Recent pour faciliter l'accès futur."
+    },
+    {
+        "id": "q126",
+        "text": "À quoi sert Autopsy dans l'analyse de fichiers supprimés ?",
+        "options": [
+            { "id": "a", "label": "À faire du carving pour récupérer les fichiers non alloués", "correct": true },
+            { "id": "b", "label": "À créer des virus", "correct": false },
+            { "id": "c", "label": "À formater le disque", "correct": false },
+            { "id": "d", "label": "À chiffrer les données", "correct": false }
+        ],
+        "explanation": "Autopsy est un outil open source capable de scanner l'espace non alloué pour reconstituer des fichiers supprimés."
+    },
+    {
+        "id": "q127",
+        "text": "Quelle commande PowerShell calcule le hash SHA256 par défaut ?",
+        "options": [
+            { "id": "a", "label": "Get-FileHash", "correct": true },
+            { "id": "b", "label": "md5sum", "correct": false },
+            { "id": "c", "label": "sha1sum", "correct": false },
+            { "id": "d", "label": "Compute-Hash", "correct": false }
+        ],
+        "explanation": "La commande Get-FileHash sous Windows utilise l'algorithme SHA256 par défaut si aucun autre n'est spécifié."
+    },
+    {
+        "id": "q128",
+        "text": "Le format FTK 'Smart' est un format :",
+        "options": [
+            { "id": "a", "label": "Forensique propriétaire", "correct": true },
+            { "id": "b", "label": "Open source", "correct": false },
+            { "id": "c", "label": "Texte brut", "correct": false },
+            { "id": "d", "label": "Image bitmap", "correct": false }
+        ],
+        "explanation": "Le format Smart est le format propriétaire développé par AccessData pour FTK."
+    },
+    {
+        "id": "q129",
+        "text": "Quel est le nom complet de l'AFF ?",
+        "options": [
+            { "id": "a", "label": "Advanced Forensic Format", "correct": true },
+            { "id": "b", "label": "Anti Forensic Format", "correct": false },
+            { "id": "c", "label": "Apple File Format", "correct": false },
+            { "id": "d", "label": "Automated File Finder", "correct": false }
+        ],
+        "explanation": "AFF signifie Advanced Forensic Format, un format d'image disque ouvert et extensible."
+    },
+    {
+        "id": "q130",
+        "text": "Que signifie l'analyse à chaud 'Live' ?",
+        "options": [
+            { "id": "a", "label": "Sur un système en cours de fonctionnement", "correct": true },
+            { "id": "b", "label": "Sur un système éteint", "correct": false },
+            { "id": "c", "label": "Sur une copie de sauvegarde", "correct": false },
+            { "id": "d", "label": "Sur le cloud uniquement", "correct": false }
+        ],
+        "explanation": "L'analyse Live se fait sur la machine allumée, permettant de capturer la RAM et les processus actifs."
+    },
+    {
+        "id": "q131",
+        "text": "Quel type de mémoire nécessite une alimentation continue ?",
+        "options": [
+            { "id": "a", "label": "Volatile (RAM)", "correct": true },
+            { "id": "b", "label": "Disque dur", "correct": false },
+            { "id": "c", "label": "DVD", "correct": false },
+            { "id": "d", "label": "Bande magnétique", "correct": false }
+        ],
+        "explanation": "La mémoire volatile perd ses données sans courant, contrairement à la mémoire non volatile."
+    },
+    {
+        "id": "q132",
+        "text": "Lequel est un vecteur de compromission 'Supply Chain Attack' ?",
+        "options": [
+            { "id": "a", "label": "Infecter un logiciel tiers utilisé par la cible", "correct": true },
+            { "id": "b", "label": "Envoyer un mail de phishing", "correct": false },
+            { "id": "c", "label": "Deviner le mot de passe", "correct": false },
+            { "id": "d", "label": "Voler un ordinateur", "correct": false }
+        ],
+        "explanation": "L'attaque par la chaîne d'approvisionnement vise les fournisseurs pour atteindre les clients finaux."
+    },
+    {
+        "id": "q133",
+        "text": "Quel est le rôle d'un 'bloqueur en écriture' ?",
+        "options": [
+            { "id": "a", "label": "Empêcher toute modification des données sur le disque source", "correct": true },
+            { "id": "b", "label": "Empêcher la lecture des données", "correct": false },
+            { "id": "c", "label": "Chiffrer le disque", "correct": false },
+            { "id": "d", "label": "Accélérer la copie", "correct": false }
+        ],
+        "explanation": "C'est un dispositif matériel qui garantit que l'acte de copie ne modifie pas le disque original."
+    },
+    {
+        "id": "q134",
+        "text": "Qu'est-ce qu'une 'target' composée (Compound Target) dans KAPE ?",
+        "options": [
+            { "id": "a", "label": "Une target qui regroupe plusieurs autres targets", "correct": true },
+            { "id": "b", "label": "Une target qui chiffre les données", "correct": false },
+            { "id": "c", "label": "Une target pour Linux uniquement", "correct": false },
+            { "id": "d", "label": "Une target obsolète", "correct": false }
+        ],
+        "explanation": "Les Compound Targets permettent d'exécuter plusieurs collectes (ex: !BasicCollection) en une seule commande."
+    },
+    {
+        "id": "q135",
+        "text": "Quel type de fichier KAPE contient la liste des processeurs (outils) à exécuter ?",
+        "options": [
+            { "id": "a", "label": "Module (.mkape)", "correct": true },
+            { "id": "b", "label": "Target (.tkape)", "correct": false },
+            { "id": "c", "label": "Config (.ini)", "correct": false },
+            { "id": "d", "label": "Script (.bat)", "correct": false }
+        ],
+        "explanation": "Les modules (.mkape) définissent quel exécutable lancer (Processor) et avec quels arguments."
+    },
+    {
+        "id": "q136",
+        "text": "Quelle clé de registre permet de voir les services Windows ?",
+        "options": [
+            { "id": "a", "label": "SYSTEM\\...\\Services", "correct": true },
+            { "id": "b", "label": "SOFTWARE\\Windows\\Run", "correct": false },
+            { "id": "c", "label": "SAM\\Services", "correct": false },
+            { "id": "d", "label": "SECURITY\\Boot", "correct": false }
+        ],
+        "explanation": "La liste des services et leur configuration de démarrage se trouve dans la ruche SYSTEM."
+    },
+    {
+        "id": "q137",
+        "text": "Quel est l'avantage du format E01 (EnCase) sur le RAW ?",
+        "options": [
+            { "id": "a", "label": "Il inclut des métadonnées et des hashs de contrôle", "correct": true },
+            { "id": "b", "label": "Il est plus facile à lire avec Notepad", "correct": false },
+            { "id": "c", "label": "Il ne prend pas de place", "correct": false },
+            { "id": "d", "label": "Il est lisible par tout le monde sans outil", "correct": false }
+        ],
+        "explanation": "Les formats forensiques comme E01 encapsulent l'image disque avec des métadonnées d'intégrité."
+    },
+    {
+        "id": "q138",
+        "text": "Quelle machine virtuelle est recommandée pour les analyses Linux dans l'environnement forensique ?",
+        "options": [
+            { "id": "a", "label": "WSL (Windows Subsystem for Linux)", "correct": true },
+            { "id": "b", "label": "Android Emulator", "correct": false },
+            { "id": "c", "label": "DOSBox", "correct": false },
+            { "id": "d", "label": "Java VM", "correct": false }
+        ],
+        "explanation": "Le cours mentionne l'usage de WSL comme VM d'analyse Linux."
+    },
+    {
+        "id": "q139",
+        "text": "Dans KAPE, quel dossier contient les fichiers de configuration des modules ?",
+        "options": [
+            { "id": "a", "label": "KAPE\\Modules", "correct": true },
+            { "id": "b", "label": "KAPE\\Data", "correct": false },
+            { "id": "c", "label": "KAPE\\Temp", "correct": false },
+            { "id": "d", "label": "KAPE\\Logs", "correct": false }
+        ],
+        "explanation": "Les fichiers .mkape sont stockés dans le répertoire Modules de l'installation KAPE."
+    },
+    {
+        "id": "q140",
+        "text": "Quelle est la définition d'un 'artefact' en forensique ?",
+        "options": [
+            { "id": "a", "label": "Une trace numérique laissée par une activité système ou utilisateur", "correct": true },
+            { "id": "b", "label": "Un outil matériel", "correct": false },
+            { "id": "c", "label": "Un bug logiciel", "correct": false },
+            { "id": "d", "label": "Un type de virus", "correct": false }
+        ],
+        "explanation": "Les artefacts sont les éléments (fichiers, clés de registre, logs) analysés pour reconstituer les faits."
+    },
+    {
+        "id": "q141",
+        "text": "Quel outil permet d'analyser les ShellBags ?",
+        "options": [
+            { "id": "a", "label": "ShellBag Explorer", "correct": true },
+            { "id": "b", "label": "BagParser", "correct": false },
+            { "id": "c", "label": "FolderViewer", "correct": false },
+            { "id": "d", "label": "ExplorerHistory", "correct": false }
+        ],
+        "explanation": "ShellBag Explorer est l'outil graphique dédié à la lecture des artefacts ShellBags."
+    },
+    {
+        "id": "q142",
+        "text": "Quelle information cruciale pour l'analyse temporelle se trouve dans la ruche SYSTEM ?",
+        "options": [
+            { "id": "a", "label": "Le fuseau horaire (TimeZone)", "correct": true },
+            { "id": "b", "label": "La résolution de l'écran", "correct": false },
+            { "id": "c", "label": "Le volume sonore", "correct": false },
+            { "id": "d", "label": "La langue du clavier", "correct": false }
+        ],
+        "explanation": "Connaître le fuseau horaire configuré est indispensable pour corréler les logs avec l'heure UTC."
+    },
+    {
+        "id": "q143",
+        "text": "Quel outil de la suite Sysinternals est souvent utilisé en investigation ?",
+        "options": [
+            { "id": "a", "label": "Autoruns (pour la persistance)", "correct": true },
+            { "id": "b", "label": "Word", "correct": false },
+            { "id": "c", "label": "Excel", "correct": false },
+            { "id": "d", "label": "PowerPoint", "correct": false }
+        ],
+        "explanation": "Bien que non détaillé, la suite Sysinternals (dont Autoruns fait partie) est citée comme outil d'analyse."
+    },
+    {
+        "id": "q144",
+        "text": "Quel fichier de registre est monté sur HKEY_CURRENT_USER ?",
+        "options": [
+            { "id": "a", "label": "NTUSER.DAT", "correct": true },
+            { "id": "b", "label": "DEFAULT", "correct": false },
+            { "id": "c", "label": "SAM", "correct": false },
+            { "id": "d", "label": "SYSTEM", "correct": false }
+        ],
+        "explanation": "HKEY_CURRENT_USER est une vue dynamique du fichier NTUSER.DAT de l'utilisateur connecté."
+    },
+    {
+        "id": "q145",
+        "text": "Que signifie MFT ?",
+        "options": [
+            { "id": "a", "label": "Master File Table", "correct": true },
+            { "id": "b", "label": "Main File Tracker", "correct": false },
+            { "id": "c", "label": "Memory File Type", "correct": false },
+            { "id": "d", "label": "Microsoft File Tool", "correct": false }
+        ],
+        "explanation": "La Master File Table est la structure centrale du système de fichiers NTFS."
+    },
+    {
+        "id": "q146",
+        "text": "Quel outil permet de parser le fichier $MFT en CSV ?",
+        "options": [
+            { "id": "a", "label": "MFTECmd", "correct": true },
+            { "id": "b", "label": "MFTReader", "correct": false },
+            { "id": "c", "label": "TableParser", "correct": false },
+            { "id": "d", "label": "NTFSSearch", "correct": false }
+        ],
+        "explanation": "MFTECmd convertit les enregistrements binaires de la MFT en un format lisible (CSV)."
+    },
+    {
+        "id": "q147",
+        "text": "Quelle est la particularité des fichiers 'RAW' ?",
+        "options": [
+            { "id": "a", "label": "Ils ne contiennent aucune métadonnée d'image", "correct": true },
+            { "id": "b", "label": "Ils sont compressés", "correct": false },
+            { "id": "c", "label": "Ils sont chiffrés par défaut", "correct": false },
+            { "id": "d", "label": "Ils sont illisibles", "correct": false }
+        ],
+        "explanation": "Le format RAW est une copie brute bit-à-bit sans en-tête ni métadonnées ajoutées par l'outil d'acquisition."
+    },
+    {
+        "id": "q148",
+        "text": "Dans une investigation, quel élément permet de prouver qu'un utilisateur a exécuté un fichier spécifique ?",
+        "options": [
+            { "id": "a", "label": "Le UserAssist ou le Prefetch", "correct": true },
+            { "id": "b", "label": "La présence du fichier sur le disque", "correct": false },
+            { "id": "c", "label": "La date de création du fichier", "correct": false },
+            { "id": "d", "label": "Le nom du fichier", "correct": false }
+        ],
+        "explanation": "La simple présence ne suffit pas; UserAssist et Prefetch sont des preuves d'exécution."
+    },
+    {
+        "id": "q149",
+        "text": "À quoi sert le fichier $LogFile ?",
+        "options": [
+            { "id": "a", "label": "Journal du système pour assurer l'intégrité NTFS", "correct": true },
+            { "id": "b", "label": "Journal des connexions internet", "correct": false },
+            { "id": "c", "label": "Journal des erreurs Windows", "correct": false },
+            { "id": "d", "label": "Journal des démarrages", "correct": false }
+        ],
+        "explanation": "$LogFile enregistre les transactions NTFS en cours pour récupérer le système de fichiers en cas de crash."
+    },
+    {
+        "id": "q150",
+        "text": "Quel type d'incident implique une 'fuite de données vers l'extérieur' ?",
+        "options": [
+            { "id": "a", "label": "L'exfiltration de données (Data Leak)", "correct": true },
+            { "id": "b", "label": "Le déni de service (DDoS)", "correct": false },
+            { "id": "c", "label": "Le minage de cryptomonnaie", "correct": false },
+            { "id": "d", "label": "L'effacement de logs", "correct": false }
+        ],
+        "explanation": "L'exfiltration ou fuite de données consiste à copier des données sensibles hors du périmètre de l'organisation."
+    }
+]

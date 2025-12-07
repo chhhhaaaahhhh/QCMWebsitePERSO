@@ -1104,7 +1104,7 @@
                 "correct": false
             }
         ],
-        "explanation": "Le mode Virtual 8086 est un sous-mode du Protected Mode qui permet d'exécuter des applications héritées (Real Mode/16-bits) dans un environnement protégé[cite: 42, 44]."
+        "explanation": "Le mode Virtual 8086 est un sous-mode du Protected Mode qui permet d'exécuter des applications héritées (Real Mode/16-bits) dans un environnement protégé."
     },
     {
         "id": "q42",
@@ -1131,7 +1131,7 @@
                 "correct": false
             }
         ],
-        "explanation": "Le registre SS (Stack Segment) pointe spécifiquement vers le segment où réside la stack (pile) du programme[cite: 62]."
+        "explanation": "Le registre SS (Stack Segment) pointe spécifiquement vers le segment où réside la stack (pile) du programme."
     },
     {
         "id": "q43",
@@ -1158,7 +1158,7 @@
                 "correct": false
             }
         ],
-        "explanation": "Le KPCR est une structure par processeur qui permet au kernel d'accéder aux données spécifiques au matériel (interruptions, état CPU) et au thread en cours[cite: 390, 397]."
+        "explanation": "Le KPCR est une structure par processeur qui permet au kernel d'accéder aux données spécifiques au matériel (interruptions, état CPU) et au thread en cours."
     },
     {
         "id": "q44",
@@ -1185,7 +1185,7 @@
                 "correct": true
             }
         ],
-        "explanation": "CreateProcess() est la fonction documentée de l'API Win32 utilisée par les applications, qui appellera ensuite en interne des fonctions noyau comme NTCreateUserProcess[cite: 293, 296]."
+        "explanation": "CreateProcess() est la fonction documentée de l'API Win32 utilisée par les applications, qui appellera ensuite en interne des fonctions noyau comme NTCreateUserProcess."
     },
     {
         "id": "q45",
@@ -1212,7 +1212,7 @@
                 "correct": false
             }
         ],
-        "explanation": "Les handles sont des descripteurs qui fournissent un accès sécurisé et contrôlé aux objets gérés par le système sans exposer directement les structures internes[cite: 233]."
+        "explanation": "Les handles sont des descripteurs qui fournissent un accès sécurisé et contrôlé aux objets gérés par le système sans exposer directement les structures internes."
     },
     {
         "id": "q46",
@@ -1239,7 +1239,7 @@
                 "correct": false
             }
         ],
-        "explanation": "La MMU est le composant du processeur qui effectue la traduction des adresses virtuelles (vues par le programme) vers les adresses physiques (RAM)[cite: 112]."
+        "explanation": "La MMU est le composant du processeur qui effectue la traduction des adresses virtuelles (vues par le programme) vers les adresses physiques (RAM)."
     },
     {
         "id": "q47",
@@ -1266,7 +1266,7 @@
                 "correct": false
             }
         ],
-        "explanation": "HKCC stocke les informations volatiles sur le profil matériel utilisé durant la session actuelle[cite: 552]."
+        "explanation": "HKCC stocke les informations volatiles sur le profil matériel utilisé durant la session actuelle."
     },
     {
         "id": "q48",
@@ -1293,7 +1293,7 @@
                 "correct": false
             }
         ],
-        "explanation": "Le SID S-1-1-0 est l'identifiant universel pour le groupe 'World Authority' ou 'Everyone'[cite: 723]."
+        "explanation": "Le SID S-1-1-0 est l'identifiant universel pour le groupe 'World Authority' ou 'Everyone'."
     },
     {
         "id": "q49",
@@ -1320,7 +1320,7 @@
                 "correct": true
             }
         ],
-        "explanation": "Le SeLoadDriverPrivilege autorise explicitement le chargement de code noyau (pilotes), ce qui est une opération critique[cite: 755]."
+        "explanation": "Le SeLoadDriverPrivilege autorise explicitement le chargement de code noyau (pilotes), ce qui est une opération critique."
     },
     {
         "id": "q50",
@@ -1347,7 +1347,7 @@
                 "correct": false
             }
         ],
-        "explanation": "Ces privilèges (SeTimeZonePrivilege et SeSystemtimePrivilege) contrôlent la capacité à modifier l'horloge du système[cite: 761]."
+        "explanation": "Ces privilèges (SeTimeZonePrivilege et SeSystemtimePrivilege) contrôlent la capacité à modifier l'horloge du système."
     },
     {
         "id": "q51",
@@ -1374,7 +1374,7 @@
                 "correct": false
             }
         ],
-        "explanation": "LSASS est un processus critique du système situé dans System32 sous le nom lsass.exe[cite: 819]."
+        "explanation": "LSASS est un processus critique du système situé dans System32 sous le nom lsass.exe."
     },
     {
         "id": "q52",
@@ -1401,7 +1401,7 @@
                 "correct": false
             }
         ],
-        "explanation": "Dans NTLMv1, le serveur génère un nombre aléatoire de 8 octets comme challenge, ce qui est considéré comme court et vulnérable aujourd'hui[cite: 873, 886]."
+        "explanation": "Dans NTLMv1, le serveur génère un nombre aléatoire de 8 octets comme challenge, ce qui est considéré comme court et vulnérable aujourd'hui."
     },
     {
         "id": "q53",
@@ -1428,7 +1428,7 @@
                 "correct": false
             }
         ],
-        "explanation": "Le $LogFile est un journal des transactions qui permet à NTFS de rejouer ou d'annuler des opérations incomplètes en cas de coupure brutale[cite: 611, 612]."
+        "explanation": "Le $LogFile est un journal des transactions qui permet à NTFS de rejouer ou d'annuler des opérations incomplètes en cas de coupure brutale."
     },
     {
         "id": "q54",
@@ -1455,7 +1455,7 @@
                 "correct": false
             }
         ],
-        "explanation": "Le Kernel (au sens strict, distingué de l'Executive) gère les fonctions bas niveau comme le scheduling, la synchronisation et les interruptions[cite: 450, 464]."
+        "explanation": "Le Kernel (au sens strict, distingué de l'Executive) gère les fonctions bas niveau comme le scheduling, la synchronisation et les interruptions."
     },
     {
         "id": "q55",
@@ -1482,7 +1482,7 @@
                 "correct": false
             }
         ],
-        "explanation": "Le MZ Header est le tout premier en-tête qui contient le DOS Stub pour assurer que le programme ne plante pas s'il est lancé sous DOS[cite: 522]."
+        "explanation": "Le MZ Header est le tout premier en-tête qui contient le DOS Stub pour assurer que le programme ne plante pas s'il est lancé sous DOS."
     },
     {
         "id": "q56",
@@ -1509,7 +1509,7 @@
                 "correct": true
             }
         ],
-        "explanation": "L'ASLR randomise l'emplacement des zones critiques (stack, heap, libs) pour empêcher les attaquants de prédire les adresses mémoire nécessaires aux exploits[cite: 531]."
+        "explanation": "L'ASLR randomise l'emplacement des zones critiques (stack, heap, libs) pour empêcher les attaquants de prédire les adresses mémoire nécessaires aux exploits."
     },
     {
         "id": "q57",
@@ -1536,7 +1536,7 @@
                 "correct": false
             }
         ],
-        "explanation": "Les Trustlets sont des processus sécurisés hébergés dans l'IUM (Isolated User Mode), protégés par Hyper-V et inaccessibles au kernel standard[cite: 504]."
+        "explanation": "Les Trustlets sont des processus sécurisés hébergés dans l'IUM (Isolated User Mode), protégés par Hyper-V et inaccessibles au kernel standard."
     },
     {
         "id": "q58",
@@ -1563,7 +1563,7 @@
                 "correct": false
             }
         ],
-        "explanation": "Les définitions des tâches planifiées sont stockées sous forme de fichiers XML dans le répertoire C:\\Windows\\System32\\Tasks\\[cite: 242]."
+        "explanation": "Les définitions des tâches planifiées sont stockées sous forme de fichiers XML dans le répertoire C:\\Windows\\System32\\Tasks\\."
     },
     {
         "id": "q59",
@@ -1590,7 +1590,7 @@
                 "correct": false
             }
         ],
-        "explanation": "REG_SZ désigne une valeur de type chaîne de caractères (String) dans le registre[cite: 554]."
+        "explanation": "REG_SZ désigne une valeur de type chaîne de caractères (String) dans le registre."
     },
     {
         "id": "q60",
@@ -1617,7 +1617,7 @@
                 "correct": false
             }
         ],
-        "explanation": "Contrairement aux objets Kernel purs, les objets GDI/User (fenêtres, polices) sont accessibles par les applications via l'API Win32[cite: 239]."
+        "explanation": "Contrairement aux objets Kernel purs, les objets GDI/User (fenêtres, polices) sont accessibles par les applications via l'API Win32."
     },
     {
         "id": "q61",
@@ -1644,7 +1644,7 @@
                 "correct": false
             }
         ],
-        "explanation": "Le PID (Process Identifier) est l'identifiant unique attribué à un processus lors de sa création[cite: 231]."
+        "explanation": "Le PID (Process Identifier) est l'identifiant unique attribué à un processus lors de sa création."
     },
     {
         "id": "q62",
@@ -1671,7 +1671,7 @@
                 "correct": false
             }
         ],
-        "explanation": "Une DLL est une Dynamic Link Library, un format de bibliothèque dynamique utilisé par Windows[cite: 519]."
+        "explanation": "Une DLL est une Dynamic Link Library, un format de bibliothèque dynamique utilisé par Windows."
     },
     {
         "id": "q63",
@@ -1698,7 +1698,7 @@
                 "correct": false
             }
         ],
-        "explanation": "NTFS signifie New Technology File System, le système de fichiers par défaut depuis Windows NT[cite: 590]."
+        "explanation": "NTFS signifie New Technology File System, le système de fichiers par défaut depuis Windows NT."
     },
     {
         "id": "q64",
@@ -1725,7 +1725,7 @@
                 "correct": false
             }
         ],
-        "explanation": "La GDT signifie Global Descriptor Table, une table unique pour tout le système contenant des descripteurs de segments[cite: 101]."
+        "explanation": "La GDT signifie Global Descriptor Table, une table unique pour tout le système contenant des descripteurs de segments."
     },
     {
         "id": "q65",
@@ -1752,7 +1752,7 @@
                 "correct": false
             }
         ],
-        "explanation": "UAC signifie User Account Control, un mécanisme visant à appliquer le principe du moindre privilège[cite: 914]."
+        "explanation": "UAC signifie User Account Control, un mécanisme visant à appliquer le principe du moindre privilège."
     },
     {
         "id": "q66",
@@ -1779,7 +1779,7 @@
                 "correct": false
             }
         ],
-        "explanation": "Un SID est un Security Identifier, un identifiant unique attribué à chaque utilisateur, groupe ou machine[cite: 692]."
+        "explanation": "Un SID est un Security Identifier, un identifiant unique attribué à chaque utilisateur, groupe ou machine."
     },
     {
         "id": "q67",
@@ -1806,7 +1806,7 @@
                 "correct": false
             }
         ],
-        "explanation": "HKLM est l'abréviation de HKEY_LOCAL_MACHINE, la ruche contenant les paramètres globaux de l'ordinateur[cite: 550]."
+        "explanation": "HKLM est l'abréviation de HKEY_LOCAL_MACHINE, la ruche contenant les paramètres globaux de l'ordinateur."
     },
     {
         "id": "q68",
@@ -1833,7 +1833,7 @@
                 "correct": false
             }
         ],
-        "explanation": "Une ACL est une Access Control List, une liste de règles de sécurité associée à un objet[cite: 771]."
+        "explanation": "Une ACL est une Access Control List, une liste de règles de sécurité associée à un objet."
     },
     {
         "id": "q69",
@@ -1860,7 +1860,7 @@
                 "correct": false
             }
         ],
-        "explanation": "PE signifie Portable Executable, le format binaire utilisé par Windows pour les exécutables (.exe) et les DLL[cite: 518]."
+        "explanation": "PE signifie Portable Executable, le format binaire utilisé par Windows pour les exécutables (.exe) et les DLL."
     },
     {
         "id": "q70",
@@ -1887,7 +1887,7 @@
                 "correct": false
             }
         ],
-        "explanation": "NTLM signifie NT LAN Manager, une famille de protocoles d'authentification Microsoft[cite: 863]."
+        "explanation": "NTLM signifie NT LAN Manager, une famille de protocoles d'authentification Microsoft."
     },
     {
         "id": "q71",
@@ -1914,7 +1914,7 @@
                 "correct": false
             }
         ],
-        "explanation": "LSA signifie Local Security Authority, le service interne chargé de la gestion des identités et des politiques de sécurité[cite: 808]."
+        "explanation": "LSA signifie Local Security Authority, le service interne chargé de la gestion des identités et des politiques de sécurité."
     },
     {
         "id": "q72",
@@ -1941,7 +1941,7 @@
                 "correct": false
             }
         ],
-        "explanation": "MMU signifie Memory Management Unit, le composant qui traduit les adresses virtuelles en adresses physiques[cite: 112]."
+        "explanation": "MMU signifie Memory Management Unit, le composant qui traduit les adresses virtuelles en adresses physiques."
     },
     {
         "id": "q73",
@@ -1968,7 +1968,7 @@
                 "correct": true
             }
         ],
-        "explanation": "DEP signifie Data Execution Prevention, un mécanisme qui empêche l'exécution de code dans les zones de données[cite: 528]."
+        "explanation": "DEP signifie Data Execution Prevention, un mécanisme qui empêche l'exécution de code dans les zones de données."
     },
     {
         "id": "q74",
@@ -1995,7 +1995,7 @@
                 "correct": false
             }
         ],
-        "explanation": "VBS signifie Virtualization Based Security, une fonctionnalité utilisant Hyper-V pour isoler des fonctions critiques[cite: 497]."
+        "explanation": "VBS signifie Virtualization Based Security, une fonctionnalité utilisant Hyper-V pour isoler des fonctions critiques."
     },
     {
         "id": "q75",
@@ -2022,7 +2022,7 @@
                 "correct": false
             }
         ],
-        "explanation": "ASLR signifie Address Space Layout Randomization, un mécanisme qui place aléatoirement les zones mémoire[cite: 531]."
+        "explanation": "ASLR signifie Address Space Layout Randomization, un mécanisme qui place aléatoirement les zones mémoire."
     },
     {
         "id": "q76",
@@ -2049,7 +2049,7 @@
                 "correct": false
             }
         ],
-        "explanation": "SAM signifie Security Account Manager, la base de données gérant les comptes locaux[cite: 793]."
+        "explanation": "SAM signifie Security Account Manager, la base de données gérant les comptes locaux."
     },
     {
         "id": "q77",
@@ -2076,7 +2076,7 @@
                 "correct": false
             }
         ],
-        "explanation": "SCM signifie Service Control Manager, le composant qui gère le démarrage et l'arrêt des services[cite: 252]."
+        "explanation": "SCM signifie Service Control Manager, le composant qui gère le démarrage et l'arrêt des services."
     },
     {
         "id": "q78",
@@ -2103,7 +2103,7 @@
                 "correct": false
             }
         ],
-        "explanation": "AD signifie Active Directory, l'annuaire utilisé pour gérer les comptes de domaine[cite: 625]."
+        "explanation": "AD signifie Active Directory, l'annuaire utilisé pour gérer les comptes de domaine."
     },
     {
         "id": "q79",
@@ -2130,7 +2130,7 @@
                 "correct": false
             }
         ],
-        "explanation": "HAL signifie Hardware Abstraction Layer, la couche logicielle masquant les différences matérielles[cite: 471]."
+        "explanation": "HAL signifie Hardware Abstraction Layer, la couche logicielle masquant les différences matérielles."
     },
     {
         "id": "q80",
@@ -2157,6 +2157,6 @@
                 "correct": false
             }
         ],
-        "explanation": "PTE signifie Page Table Entry, une entrée dans la table des pages décrivant une page mémoire[cite: 133]."
+        "explanation": "PTE signifie Page Table Entry, une entrée dans la table des pages décrivant une page mémoire."
     }
 ]

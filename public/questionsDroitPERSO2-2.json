@@ -162,7 +162,7 @@
             { "id": "c", "label": "L'écriture manuscrite sur une tablette", "correct": false },
             { "id": "d", "label": "Le stockage de données sur papier", "correct": false }
         ],
-        "explanation": "La cryptographie asymétrique (PKI) repose sur deux clés : une publique pour chiffrer/vérifier, et une privée (connue du seul titulaire) pour déchiffrer/signer."
+        "explanation": "La cryptographie asymétrique repose sur deux clés : une publique pour chiffrer/vérifier, et une privée (connue du seul titulaire) pour déchiffrer/signer."
     },
     {
         "id": "q76",
@@ -290,7 +290,7 @@
         "text": "Le droit au respect de la vie privée s'applique-t-il au bureau (lieu de travail) ?",
         "options": [
             { "id": "a", "label": "Non, l'entreprise est un lieu public", "correct": false },
-            { "id": "b", "label": "Oui, notamment pour les correspondances privées tolérées (mails identifiés 'personnel')", "correct": true },
+            { "id": "b", "label": "Oui, pour les correspondances privées tolérées", "correct": true },
             { "id": "c", "label": "Non, l'employeur a tous les droits", "correct": false },
             { "id": "d", "label": "Uniquement pendant la pause déjeuner", "correct": false }
         ],
@@ -301,7 +301,7 @@
         "text": "Quelle juridiction s'occupe des litiges liés à la Sécurité Sociale ?",
         "options": [
             { "id": "a", "label": "Le Tribunal de Commerce", "correct": false },
-            { "id": "b", "label": "Le Tribunal Judiciaire (pôle social)", "correct": true },
+            { "id": "b", "label": "Le Tribunal Judiciaire", "correct": true },
             { "id": "c", "label": "Le Tribunal Administratif", "correct": false },
             { "id": "d", "label": "La Cour d'Assises", "correct": false }
         ],
@@ -316,7 +316,7 @@
             { "id": "c", "label": "Une loi ordinaire très importante", "correct": false },
             { "id": "d", "label": "Le règlement intérieur de l'Assemblée", "correct": false }
         ],
-        "explanation": "Les lois constitutionnelles sont celles qui révisent ou modifient le texte même de la Constitution."
+        "explanation": "Les lois constitutionnelles sont celles qui révisent ou modifient le texte de la Constitution."
     },
     {
         "id": "q90",
@@ -408,7 +408,7 @@
     },
     {
         "id": "q98",
-        "text": "Quelle est la juridiction administrative de premier degré (droit commun) ?",
+        "text": "Quelle est la juridiction administrative de premier degré ?",
         "options": [
             { "id": "a", "label": "Le Conseil d'État", "correct": false },
             { "id": "b", "label": "La Cour administrative d'appel", "correct": false },
@@ -444,7 +444,7 @@
         "text": "Qu'est-ce qu'un 'Vice du consentement' ?",
         "options": [
             { "id": "a", "label": "Une erreur de date dans le contrat", "correct": false },
-            { "id": "b", "label": "Un fait (Erreur, Dol, Violence) qui a faussé la volonté d'une partie", "correct": true },
+            { "id": "b", "label": "Un fait qui a faussé la volonté d'une partie", "correct": true },
             { "id": "c", "label": "L'absence de signature", "correct": false },
             { "id": "d", "label": "Une clause abusive", "correct": false }
         ],
@@ -455,7 +455,7 @@
         "text": "Quelle est la conséquence de la 'Nullité' d'un contrat ?",
         "options": [
             { "id": "a", "label": "Il s'arrête pour l'avenir seulement", "correct": false },
-            { "id": "b", "label": "Il est anéanti rétroactivement (remise en l'état antérieur)", "correct": true },
+            { "id": "b", "label": "La remise en l'état antérieur", "correct": true },
             { "id": "c", "label": "On doit payer une amende", "correct": false },
             { "id": "d", "label": "Il est suspendu temporairement", "correct": false }
         ],
@@ -521,7 +521,7 @@
         "text": "La 'vidéosurveillance' au travail peut-elle filmer les employés en permanence à leur poste ?",
         "options": [
             { "id": "a", "label": "Oui, pour vérifier s'ils travaillent", "correct": false },
-            { "id": "b", "label": "Non, sauf circonstances exceptionnelles (manipulation d'argent), cela doit être proportionné", "correct": true },
+            { "id": "b", "label": "Non, sauf circonstances exceptionnelles", "correct": true },
             { "id": "c", "label": "Oui, si c'est écrit dans le contrat", "correct": false },
             { "id": "d", "label": "Oui, mais sans le son", "correct": false }
         ],
@@ -620,7 +620,7 @@
         "text": "Qu'est-ce que la 'Responsabilité du fait d'autrui' ?",
         "options": [
             { "id": "a", "label": "Être puni à la place de quelqu'un", "correct": false },
-            { "id": "b", "label": "L'obligation de réparer le dommage causé par une personne dont on doit répondre (ex: parents pour enfants, employeur pour salariés)", "correct": true },
+            { "id": "b", "label": "L'obligation de réparer le dommage causé par une personne dont on doit répondre", "correct": true },
             { "id": "c", "label": "Une responsabilité pénale collective", "correct": false },
             { "id": "d", "label": "C'est impossible en droit français", "correct": false }
         ],
@@ -642,7 +642,7 @@
         "text": "Qu'est-ce que l''Indisponibilité' du corps humain (principe lié à la personne) ?",
         "options": [
             { "id": "a", "label": "On ne peut pas se faire tatouer", "correct": false },
-            { "id": "b", "label": "Le corps n'est pas une marchandise, il ne peut faire l'objet de contrats commerciaux (vente d'organes interdite)", "correct": true },
+            { "id": "b", "label": "Le corps n'est pas une marchandise, il ne peut faire l'objet de contrats commerciaux", "correct": true },
             { "id": "c", "label": "On ne peut pas donner son sang", "correct": false },
             { "id": "d", "label": "Le médecin décide pour nous", "correct": false }
         ],

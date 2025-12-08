@@ -1,1568 +1,552 @@
 [
     {
         "id": "q1",
-        "text": "Quelle est la définition de la rétro-ingénierie statique ?",
+        "text": "Quelle instruction assembleur est utilisée pour déclencher un appel système (syscall) sous Linux x86_64 ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Analyser un programme en l'exécutant pas à pas dans un débogueur.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Regarder un programme exécutable comme un fichier brut (texte ou image) sans l'exécuter.",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "Modifier le code source d'un programme pour changer son comportement.",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Utiliser uniquement des outils réseaux pour intercepter les paquets.",
-                "correct": false
-            }
+            { "id": "a", "label": "INT 0x80", "correct": false },
+            { "id": "b", "label": "CALL", "correct": false },
+            { "id": "c", "label": "SYSCALL", "correct": true },
+            { "id": "d", "label": "SYSENTER", "correct": false }
         ],
-        "explanation": "La rétro-ingénierie statique consiste à analyser le fichier binaire (exécutable) sans lancer son exécution, en utilisant des désassembleurs ou décompilateurs."
+        "explanation": "Le tableau 'x86_64 Linux Syscall Structure' indique explicitement que l'instruction est SYSCALL."
     },
     {
         "id": "q2",
-        "text": "Quel outil est spécifiquement un désassembleur interactif mentionné pour le cours ?",
+        "text": "Dans quel registre doit-on placer le numéro de l'appel système (Syscall #) avant l'instruction SYSCALL ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Wireshark",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "GDB",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "IDA (Interactive DisAssembler)",
-                "correct": true
-            },
-            {
-                "id": "d",
-                "label": "Python",
-                "correct": false
-            }
+            { "id": "a", "label": "rdi", "correct": false },
+            { "id": "b", "label": "rax", "correct": true },
+            { "id": "c", "label": "rsi", "correct": false },
+            { "id": "d", "label": "rdx", "correct": false }
         ],
-        "explanation": "IDA (et sa version gratuite IDA Free) est l'outil de désassemblage statique privilégié dans ce cours."
+        "explanation": "La colonne 'Syscall #' du tableau de structure indique le registre rax."
     },
     {
         "id": "q3",
-        "text": "Quelle est la différence entre un désassembleur et un décompilateur ?",
+        "text": "Quel registre contient la valeur de retour après un appel système sous Linux x86_64 ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Le désassembleur traduit en langage machine, le décompilateur en binaire.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Le désassembleur affiche les instructions assembleur, le décompilateur tente de reconstituer le code source (C/C++).",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "Le désassembleur sert au dynamique, le décompilateur au statique.",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Il n'y a aucune différence, ce sont des synonymes.",
-                "correct": false
-            }
+            { "id": "a", "label": "rax", "correct": true },
+            { "id": "b", "label": "rbx", "correct": false },
+            { "id": "c", "label": "rcx", "correct": false },
+            { "id": "d", "label": "rdx", "correct": false }
         ],
-        "explanation": "Le désassembleur parse les opcodes pour afficher l'assembleur, tandis que le décompilateur essaie de recréer une représentation haut niveau proche du code source original."
+        "explanation": "La colonne 'Return Value' du tableau de structure désigne le registre rax."
     },
     {
         "id": "q4",
-        "text": "Dans le contexte des niveaux de représentation, que signifie CFG ?",
+        "text": "Quel est le registre utilisé pour le premier argument (arg0) d'un appel système Linux x86_64 ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Code File Generator",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Configuration File Guide",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "Control Flow Graph",
-                "correct": true
-            },
-            {
-                "id": "d",
-                "label": "Central Function Group",
-                "correct": false
-            }
+            { "id": "a", "label": "rsi", "correct": false },
+            { "id": "b", "label": "rdx", "correct": false },
+            { "id": "c", "label": "rax", "correct": false },
+            { "id": "d", "label": "rdi", "correct": true }
         ],
-        "explanation": "Le CFG (Control Flow Graph) ou graphe de flux d'exécution représente l'ensemble des chemins possibles d'exécution d'un programme."
+        "explanation": "La colonne 'arg0' du tableau de structure correspond au registre rdi."
     },
     {
         "id": "q5",
-        "text": "Qu'est-ce qu'un Basic Block dans un CFG ?",
+        "text": "Quel est le numéro de l'appel système `sys_write` ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Une fonction complète du programme.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Un bloc de données chiffrées.",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "Une suite d'instructions linéaires où si la première est exécutée, toutes le sont.",
-                "correct": true
-            },
-            {
-                "id": "d",
-                "label": "Un commentaire laissé par le développeur.",
-                "correct": false
-            }
+            { "id": "a", "label": "0", "correct": false },
+            { "id": "b", "label": "1", "correct": true },
+            { "id": "c", "label": "2", "correct": false },
+            { "id": "d", "label": "3", "correct": false }
         ],
-        "explanation": "Un Basic Block est une séquence d'instructions sans branchement interne ; il a une entrée unique et une sortie (saut, retour) unique."
+        "explanation": "Dans la 'x86_64 Linux Syscall Table', la ligne pour sys_write indique la valeur 1 dans la colonne rax."
     },
     {
         "id": "q6",
-        "text": "Quelle touche permet de basculer en mode 'Graph' (CFG) sous IDA ?",
+        "text": "Quels sont les arguments attendus par l'appel système `sys_open` ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Entrée",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "F5",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "Espace",
-                "correct": true
-            },
-            {
-                "id": "d",
-                "label": "Tab",
-                "correct": false
-            }
+            { "id": "a", "label": "unsigned int fd, char* buf, size_t count", "correct": false },
+            { "id": "b", "label": "const char* filename, int flags, int mode", "correct": true },
+            { "id": "c", "label": "unsigned int fd", "correct": false },
+            { "id": "d", "label": "int mode, int flags", "correct": false }
         ],
-        "explanation": "La touche <espace> est le raccourci standard dans IDA pour alterner entre la vue linéaire (désassemblage textuel) et la vue graphique (CFG)."
+        "explanation": "La table des syscalls liste pour `sys_open` : filename (rdi), flags (rsi), et mode (rdx)."
     },
     {
         "id": "q7",
-        "text": "Pourquoi le mode graphe pourrait-il être inaccessible dans IDA ?",
+        "text": "À quel appel système correspond la valeur 0 dans le registre rax ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Parce que le programme est écrit en C++.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Si la fonction contient trop de basic blocks ou n'est pas correctement analysée.",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "Si l'utilisateur n'a pas la version Pro payante.",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Si le binaire est au format ELF.",
-                "correct": false
-            }
+            { "id": "a", "label": "sys_read", "correct": true },
+            { "id": "b", "label": "sys_write", "correct": false },
+            { "id": "c", "label": "sys_open", "correct": false },
+            { "id": "d", "label": "sys_close", "correct": false }
         ],
-        "explanation": "IDA peut refuser d'afficher le graphe si la complexité est trop grande (trop de nœuds) ou si les limites de la fonction ne sont pas définies (analyse incomplète)."
+        "explanation": "La première ligne de la table des syscalls associe la valeur 0 à `sys_read`."
     },
     {
         "id": "q8",
-        "text": "Qu'est-ce qu'un registre 'non-volatile' (callee-saved) ?",
+        "text": "Quel registre est utilisé pour passer le 2ème argument (arg1) à un syscall ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Un registre qui perd sa valeur aléatoirement.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Un registre qui doit être restauré par la sous-fonction appelée s'il est modifié.",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "Un registre utilisé uniquement pour les calculs flottants.",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Un registre qui ne peut jamais être modifié.",
-                "correct": false
-            }
+            { "id": "a", "label": "rdi", "correct": false },
+            { "id": "b", "label": "rdx", "correct": false },
+            { "id": "c", "label": "rsi", "correct": true },
+            { "id": "d", "label": "r10", "correct": false }
         ],
-        "explanation": "Les registres non-volatiles doivent retrouver leur valeur d'origine au retour d'une fonction, c'est à la fonction appelée ('callee') de les sauvegarder et restaurer."
+        "explanation": "La colonne 'arg1' du tableau de structure indique le registre rsi."
     },
     {
         "id": "q9",
-        "text": "Lequel de ces registres est considéré comme non-volatile en x86_64 (ABI System V) ?",
+        "text": "Dans GDB, quelle commande permet d'afficher les 32 instructions suivant le pointeur d'instruction ($rip) ?",
         "options": [
-            {
-                "id": "a",
-                "label": "RAX",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "RCX",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "RBX",
-                "correct": true
-            },
-            {
-                "id": "d",
-                "label": "RDI",
-                "correct": false
-            }
+            { "id": "a", "label": "x/32x $rip", "correct": false },
+            { "id": "b", "label": "disass $rip", "correct": false },
+            { "id": "c", "label": "x/32i $rip", "correct": true },
+            { "id": "d", "label": "show instructions", "correct": false }
         ],
-        "explanation": "RBX, RBP, RSP et R12 à R15 sont des registres non-volatiles. RAX, RCX, RDI, etc. sont volatiles."
+        "explanation": "L'image des commandes GDB liste explicitement `x/32i $rip` pour afficher les 32 instructions après $rip."
     },
     {
         "id": "q10",
-        "text": "Quelle est la définition de la rétro-ingénierie dynamique ?",
+        "text": "Quelle commande GDB permet d'ajouter un argument au programme avant son exécution ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Analyser le code source imprimé sur papier.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Observer un programme s'exécuter dans son environnement (souvent virtualisé).",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "Réécrire le programme dans un langage plus dynamique comme Python.",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Utiliser un éditeur hexadécimal pour changer des octets au hasard.",
-                "correct": false
-            }
+            { "id": "a", "label": "add args", "correct": false },
+            { "id": "b", "label": "set args", "correct": true },
+            { "id": "c", "label": "args set", "correct": false },
+            { "id": "d", "label": "input", "correct": false }
         ],
-        "explanation": "Le reverse dynamique implique l'exécution du programme, souvent sous le contrôle d'un débogueur, pour observer son comportement réel."
+        "explanation": "La commande `set args` est définie comme 'on ajoute un argument au programme'."
     },
     {
         "id": "q11",
-        "text": "Quel est l'outil incontournable sous Linux pour le reverse dynamique cité dans le cours ?",
+        "text": "Quelle est la différence entre les commandes `ni` et `si` dans GDB ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Photoshop",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "GDB (GNU Debugger)",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "GCC",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Notepad++",
-                "correct": false
-            }
+            { "id": "a", "label": "`ni` entre dans les appels de fonction, `si` passe à la suivante", "correct": false },
+            { "id": "b", "label": "`ni` est pour Intel, `si` pour AT&T", "correct": false },
+            { "id": "c", "label": "`ni` passe à l'instruction suivante (step over), `si` suit les appels (step into)", "correct": true },
+            { "id": "d", "label": "Il n'y a aucune différence", "correct": false }
         ],
-        "explanation": "GDB est l'outil historique et standard pour le débogage et l'analyse dynamique sous Linux."
+        "explanation": "Le cours indique que `ni` exécute l'instruction courante et passe à la suivante, tandis que `si` est pareil que ni mais 'l'exécution suit les appels'."
     },
     {
         "id": "q12",
-        "text": "Que permet de faire un 'wrapper' comme GEF ou PEDA pour GDB ?",
+        "text": "Quelle commande GDB permet d'afficher la chaîne de caractères pointée par le registre RSI ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Il traduit le code C en Python.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Il empêche le programme de crasher.",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "Il améliore l'interface visuelle et ajoute des fonctionnalités d'aide au reverse.",
-                "correct": true
-            },
-            {
-                "id": "d",
-                "label": "Il compile le programme plus vite.",
-                "correct": false
-            }
+            { "id": "a", "label": "p $rsi", "correct": false },
+            { "id": "b", "label": "x/s $rsi", "correct": true },
+            { "id": "c", "label": "disp $rsi", "correct": false },
+            { "id": "d", "label": "x/c $rsi", "correct": false }
         ],
-        "explanation": "Les wrappers comme GEF ajoutent des couleurs, des contextes d'affichage (registres, pile, désassemblage) rendant GDB plus lisible et puissant."
+        "explanation": "La commande `x/s $rsi` est listée avec la description 'on affiche la chaîne de caractère pointée par $rsi'."
     },
     {
         "id": "q13",
-        "text": "Comment fonctionne un breakpoint 'software' ?",
+        "text": "Comment afficher la liste des breakpoints posés dans GDB ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Le débogueur remplace l'instruction cible par une instruction émettant un signal (ex: INT 3).",
-                "correct": true
-            },
-            {
-                "id": "b",
-                "label": "Le débogueur utilise un registre spécial du processeur.",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "Le débogueur coupe l'alimentation du processeur.",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "C'est une simulation purement logicielle sans toucher au binaire en mémoire.",
-                "correct": false
-            }
+            { "id": "a", "label": "show break", "correct": false },
+            { "id": "b", "label": "list b", "correct": false },
+            { "id": "c", "label": "i b", "correct": true },
+            { "id": "d", "label": "info points", "correct": false }
         ],
-        "explanation": "Le breakpoint software modifie temporairement le code en mémoire en insérant une instruction d'interruption, que le débogueur intercepte."
+        "explanation": "La commande `i b` est indiquée pour 'on affiche la liste des breakpoints posés'."
     },
     {
         "id": "q14",
-        "text": "Quel est un avantage majeur du breakpoint software par rapport au hardware ?",
+        "text": "Quelle commande GDB permet de changer la syntaxe de désassemblage pour le format Intel ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Il est indétectable.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Son nombre est illimité.",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "Il ne modifie pas le code.",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Il est plus rapide.",
-                "correct": false
-            }
+            { "id": "a", "label": "set syntax intel", "correct": false },
+            { "id": "b", "label": "set disassembly-flavor intel", "correct": true },
+            { "id": "c", "label": "format intel", "correct": false },
+            { "id": "d", "label": "intel_syntax on", "correct": false }
         ],
-        "explanation": "Comme il s'agit d'une modification en mémoire, on peut en placer autant qu'on veut, contrairement aux registres hardware qui sont en nombre fini."
+        "explanation": "La commande exacte listée est `set disassembly-flavor intel`."
     },
     {
         "id": "q15",
-        "text": "Quel est l'inconvénient principal du breakpoint hardware ?",
+        "text": "Quelle commande GDB affiche la pile d'appels (call stack) ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Il est très lent.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Il modifie le binaire sur le disque.",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "Le nombre de registres de debug disponibles est limité.",
-                "correct": true
-            },
-            {
-                "id": "d",
-                "label": "Il ne fonctionne pas sur les processeurs Intel.",
-                "correct": false
-            }
+            { "id": "a", "label": "stack", "correct": false },
+            { "id": "b", "label": "trace", "correct": false },
+            { "id": "c", "label": "bt", "correct": true },
+            { "id": "d", "label": "cs", "correct": false }
         ],
-        "explanation": "Les processeurs ne disposent que de quelques registres de débogage (ex: 4 sur x86), limitant le nombre de points d'arrêt matériels simultanés."
+        "explanation": "La commande `bt` est décrite comme 'on affiche la call stack'."
     },
     {
         "id": "q16",
-        "text": "Qu'est-ce qu'un Stack Frame ?",
+        "text": "Dans la syntaxe AT&T, quel est l'ordre des opérandes ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Une erreur de compilation.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "L'espace alloué sur la pile dédié à une fonction spécifique lors de son exécution.",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "La structure globale du tas (heap).",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Un cadre décoratif autour du code.",
-                "correct": false
-            }
+            { "id": "a", "label": "destination, source", "correct": false },
+            { "id": "b", "label": "source, destination", "correct": true },
+            { "id": "c", "label": "registre, mémoire", "correct": false },
+            { "id": "d", "label": "valeur, adresse", "correct": false }
         ],
-        "explanation": "Le Stack Frame contient les variables locales, l'adresse de retour et le pointeur de base sauvegardé pour une instance de fonction."
+        "explanation": "Le tableau de comparaison des syntaxes indique pour AT&T : 'source, destination'."
     },
     {
         "id": "q17",
-        "text": "Dans un Stack Frame standard x86_64, que trouve-t-on généralement juste 'au-dessus' (adresse plus élevée) de RBP sauvegardé ?",
+        "text": "Quelle syntaxe utilise le symbole '%' avant les noms des registres ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Les variables locales.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "L'adresse de retour (RET).",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "Le registre RSP.",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Le code de la fonction.",
-                "correct": false
-            }
+            { "id": "a", "label": "Intel", "correct": false },
+            { "id": "b", "label": "Microsoft", "correct": false },
+            { "id": "c", "label": "AT&T", "correct": true },
+            { "id": "d", "label": "ARM", "correct": false }
         ],
-        "explanation": "Lors de l'appel (CALL), l'adresse de retour est empilée. Ensuite, le prologue (PUSH RBP) empile l'ancien RBP. L'adresse de retour est donc juste avant (plus haut en adresse) le RBP sauvegardé."
+        "explanation": "Le tableau indique que la syntaxe AT&T met '% avant les noms des registres'."
     },
     {
         "id": "q18",
-        "text": "Quelle instruction déclenche un appel système (syscall) sur Linux x86_64 ?",
+        "text": "Quelle syntaxe est utilisée par défaut par Microsoft ?",
         "options": [
-            {
-                "id": "a",
-                "label": "INT 0x80",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "CALL KERNEL",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "SYSCALL",
-                "correct": true
-            },
-            {
-                "id": "d",
-                "label": "JMP SYSTEM",
-                "correct": false
-            }
+            { "id": "a", "label": "AT&T", "correct": false },
+            { "id": "b", "label": "Intel", "correct": true },
+            { "id": "c", "label": "Unix", "correct": false },
+            { "id": "d", "label": "SysV", "correct": false }
         ],
-        "explanation": "Sur l'architecture x86_64, l'instruction dédiée est simplement 'SYSCALL'."
+        "explanation": "Le tableau associe la syntaxe Intel à Microsoft."
     },
     {
         "id": "q19",
-        "text": "Dans quel registre doit-on placer le numéro de l'appel système avant l'instruction SYSCALL ?",
+        "text": "Que signifie l'acronyme ISA ?",
         "options": [
-            {
-                "id": "a",
-                "label": "RDI",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "RAX",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "RSI",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "R10",
-                "correct": false
-            }
+            { "id": "a", "label": "Intel System Architecture", "correct": false },
+            { "id": "b", "label": "Instruction Set Architecture", "correct": true },
+            { "id": "c", "label": "Internal System Access", "correct": false },
+            { "id": "d", "label": "Inter-Service Agreement", "correct": false }
         ],
-        "explanation": "L'ABI Linux x86_64 spécifie que le registre RAX contient le numéro identifiant l'appel système à effectuer."
+        "explanation": "Le cours définit ISA comme 'Instruction Set Architecture'."
     },
     {
         "id": "q20",
-        "text": "Quel registre contient le 1er argument d'un appel système sous Linux x86_64 ?",
+        "text": "Quel type d'architecture possède environ 200 instructions et est utilisé dans l'embarqué ?",
         "options": [
-            {
-                "id": "a",
-                "label": "RCX",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "RDI",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "RBX",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "RDX",
-                "correct": false
-            }
+            { "id": "a", "label": "CISC", "correct": false },
+            { "id": "b", "label": "x86-64", "correct": false },
+            { "id": "c", "label": "RISC", "correct": true },
+            { "id": "d", "label": "AMD", "correct": false }
         ],
-        "explanation": "Les arguments pour les syscalls sont passés dans l'ordre : RDI, RSI, RDX, R10, R8, R9."
+        "explanation": "La section 'jeux d'instruction' décrit RISC comme possédant environ 200 instructions et utilisé dans l'embarqué."
     },
     {
         "id": "q21",
-        "text": "A quoi sert la commande GDB 'x/10xg $rax' ?",
+        "text": "Quel type d'architecture est le x86-64 ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Exécuter 10 instructions.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Inspecter 10 'giant words' (8 octets) en hexadécimal à partir de l'adresse dans RAX.",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "Multiplier le registre RAX par 10.",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Mettre 10 points d'arrêt.",
-                "correct": false
-            }
+            { "id": "a", "label": "RISC", "correct": false },
+            { "id": "b", "label": "ARM", "correct": false },
+            { "id": "c", "label": "CISC", "correct": true },
+            { "id": "d", "label": "MIPS", "correct": false }
         ],
-        "explanation": "La commande 'x' signifie eXamine. '/10xg' spécifie le format : 10 unités, x pour hexadécimal, g pour giant (64 bits)."
+        "explanation": "Le cours classe x86-64 (créé par AMD) dans la catégorie CISC."
     },
     {
         "id": "q22",
-        "text": "Que signifie l'acronyme MMU ?",
+        "text": "Quel symbole précède les constantes (valeurs immédiates) dans la syntaxe AT&T ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Memory Management Unit",
-                "correct": true
-            },
-            {
-                "id": "b",
-                "label": "Main Motherboard Unit",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "Micro Management Utility",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Memory Mapping User",
-                "correct": false
-            }
+            { "id": "a", "label": "#", "correct": false },
+            { "id": "b", "label": "%", "correct": false },
+            { "id": "c", "label": "$", "correct": true },
+            { "id": "d", "label": "@", "correct": false }
         ],
-        "explanation": "La MMU (Memory Management Unit) est le composant matériel gérant la traduction des adresses virtuelles en adresses physiques."
+        "explanation": "Le tableau indique pour AT&T : '$ avant les constantes'."
     },
     {
         "id": "q23",
-        "text": "Où peut-on trouver des informations sur un processus (ligne de commande, mémoire) sous Linux ?",
+        "text": "Quels registres sont associés à l'architecture RISC (arm64) dans le cours ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Dans le fichier /etc/process",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Dans le dossier /proc/<pid>",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "Dans le registre Windows.",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Uniquement via la commande top.",
-                "correct": false
-            }
+            { "id": "a", "label": "RAX, RBX", "correct": false },
+            { "id": "b", "label": "EAX, ECX", "correct": false },
+            { "id": "c", "label": "X0, X29", "correct": true },
+            { "id": "d", "label": "RDI, RSI", "correct": false }
         ],
-        "explanation": "Le système de fichiers virtuel /proc expose les informations du noyau sur les processus, accessible via le PID du processus."
+        "explanation": "Le cours mentionne 'utilise les registres X0, X29 etc..' pour RISC : arm64."
     },
     {
         "id": "q24",
-        "text": "En analyse statique, pourquoi regarder les chaînes de caractères (strings) est-il utile ?",
+        "text": "Quel est l'ordre des arguments de fonction sous Linux (ABI sysV) ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Pour vérifier l'orthographe du développeur.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Cela donne souvent des indices sur les fonctionnalités (messages d'erreur, URLs, noms de fichiers).",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "C'est la seule chose lisible dans un binaire.",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Cela permet de recompacter le code.",
-                "correct": false
-            }
+            { "id": "a", "label": "RCX-RDX-R8-R9", "correct": false },
+            { "id": "b", "label": "RDI-RSI-RDX-RCX-R8-R9-stack", "correct": true },
+            { "id": "c", "label": "RAX-RBX-RCX-RDX", "correct": false },
+            { "id": "d", "label": "Stack uniquement", "correct": false }
         ],
-        "explanation": "Les chaînes de caractères sont des points d'ancrage faciles à comprendre qui peuvent orienter l'analyse vers des fonctions intéressantes."
+        "explanation": "La section 'en gros' liste l'ordre des arguments en linux : RDI-RSI-RDX-RCX-R8-R9-stack."
     },
     {
         "id": "q25",
-        "text": "Quel est le but d'un graphe d'appel (Call Graph) ?",
+        "text": "Quel est l'ordre des arguments de fonction sous Windows ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Représenter les sauts conditionnels à l'intérieur d'une fonction.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Représenter les relations d'appel entre les différentes fonctions (qui appelle qui).",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "Visualiser l'utilisation de la RAM.",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Lister les imports DLL.",
-                "correct": false
-            }
+            { "id": "a", "label": "RDI-RSI-RDX-RCX", "correct": false },
+            { "id": "b", "label": "RCX-RDX-R8-R9", "correct": true },
+            { "id": "c", "label": "R0-R1-R2-R3", "correct": false },
+            { "id": "d", "label": "EAX-EBX-ECX-EDX", "correct": false }
         ],
-        "explanation": "Le Call Graph offre une vue macroscopique des dépendances entre fonctions, utile pour comprendre l'architecture globale."
+        "explanation": "La section 'en gros' liste l'ordre des arguments en windows : RCX-RDX-R8-R9."
     },
     {
         "id": "q26",
-        "text": "Que signifie l'instruction 'test rax, rax' souvent vue avant un saut conditionnel ?",
+        "text": "Que signifie ABI ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Elle met RAX à zéro.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Elle vérifie si RAX est nul ou négatif en mettant à jour les drapeaux (flags), sans modifier RAX.",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "Elle copie RAX dans RAX.",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Elle lance un test unitaire.",
-                "correct": false
-            }
+            { "id": "a", "label": "Abstract Binary Interface", "correct": false },
+            { "id": "b", "label": "Application Binary Instruction", "correct": false },
+            { "id": "c", "label": "Application Binary Interface", "correct": true },
+            { "id": "d", "label": "Advanced Basic Interface", "correct": false }
         ],
-        "explanation": "L'instruction TEST effectue un ET logique bit à bit et met à jour les drapeaux (comme Zero Flag), permettant de faire un saut (JZ/JNZ) ensuite."
+        "explanation": "Le cours définit ABI comme 'Application Binary Interface'."
     },
     {
         "id": "q27",
-        "text": "Dans le contexte des outils de reverse, que fait 'objdump' ?",
+        "text": "Quel format de binaire est produit par le compilateur pour Linux ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Il supprime les objets inutiles.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Il permet d'afficher les informations des fichiers objets (en-têtes, désassemblage linéaire).",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "Il crée un dump mémoire d'un crash.",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "C'est un débogueur graphique.",
-                "correct": false
-            }
+            { "id": "a", "label": "PE", "correct": false },
+            { "id": "b", "label": "mach-O", "correct": false },
+            { "id": "c", "label": "ELF", "correct": true },
+            { "id": "d", "label": "EXE", "correct": false }
         ],
-        "explanation": "objdump est un utilitaire en ligne de commande standard pour inspecter les binaires (ELF, etc.) et voir leur contenu linéaire."
+        "explanation": "Le diagramme de compilation associe 'Linux' au format 'ELF'."
     },
     {
         "id": "q28",
-        "text": "Quel registre est utilisé pour la valeur de retour d'une fonction en x86_64 (entiers/pointeurs) ?",
+        "text": "Quel format de binaire est produit pour Windows ?",
         "options": [
-            {
-                "id": "a",
-                "label": "RSP",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "RBP",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "RAX",
-                "correct": true
-            },
-            {
-                "id": "d",
-                "label": "RIP",
-                "correct": false
-            }
+            { "id": "a", "label": "ELF", "correct": false },
+            { "id": "b", "label": "PE", "correct": true },
+            { "id": "c", "label": "mach-O", "correct": false },
+            { "id": "d", "label": "COFF", "correct": false }
         ],
-        "explanation": "Par convention, le résultat d'une fonction est placé dans RAX avant l'instruction RET."
+        "explanation": "Le diagramme de compilation associe 'Windows' au format 'PE'."
     },
     {
         "id": "q29",
-        "text": "Quelle commande GDB permet de passer des arguments au programme lors de son lancement ?",
+        "text": "Quel est le nom de l'ABI utilisée par Linux ?",
         "options": [
-            {
-                "id": "a",
-                "label": "arguments <arg1>",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "set args <arg1> <arg2>",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "input <arg1>",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "run_with <arg1>",
-                "correct": false
-            }
+            { "id": "a", "label": "ms", "correct": false },
+            { "id": "b", "label": "sysV", "correct": true },
+            { "id": "c", "label": "cdecl", "correct": false },
+            { "id": "d", "label": "stdcall", "correct": false }
         ],
-        "explanation": "La commande 'set args' configure les arguments qui seront passés au processus lors de la prochaine commande 'run'."
+        "explanation": "Le cours mentionne 'On a par exemple sysV pour Linux'."
     },
     {
         "id": "q30",
-        "text": "Que signifie le terme 'code managé' (opposé au code natif) ?",
+        "text": "Quelle est la taille d'un 'long' sous Linux (modèle LP64) ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Un code bien organisé.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Un code qui s'exécute directement sur le processeur.",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "Un code qui s'exécute dans une machine virtuelle (Java, .NET) et non directement par le CPU.",
-                "correct": true
-            },
-            {
-                "id": "d",
-                "label": "Un code écrit par un manager.",
-                "correct": false
-            }
+            { "id": "a", "label": "4 octets", "correct": false },
+            { "id": "b", "label": "8 octets", "correct": true },
+            { "id": "c", "label": "16 octets", "correct": false },
+            { "id": "d", "label": "2 octets", "correct": false }
         ],
-        "explanation": "Le code managé (comme le Bytecode Java ou CIL .NET) nécessite un environnement d'exécution (runtime) pour être interprété ou compilé à la volée, contrairement au code natif."
+        "explanation": "La section 'le modèle de données' précise : 'Un long vaut 8 octets sous Linux'."
     },
     {
         "id": "q31",
-        "text": "Quel outil mentionné dans le cours est utilisé pour identifier le type de fichier (architecture, binaire managé/natif) ?",
+        "text": "Quelle est la taille d'un 'long' sous Windows (modèle LLP64) ?",
         "options": [
-            {
-                "id": "a",
-                "label": "grep",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "file",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "cat",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "ls",
-                "correct": false
-            }
+            { "id": "a", "label": "8 octets", "correct": false },
+            { "id": "b", "label": "2 octets", "correct": false },
+            { "id": "c", "label": "4 octets", "correct": true },
+            { "id": "d", "label": "10 octets", "correct": false }
         ],
-        "explanation": "La commande est utilisée pour observer les binaires et déterminer leur type."
+        "explanation": "La section 'le modèle de données' précise : 'mais vaut 4 octets sous Windows'."
+    },
+    {
+        "id": "q32",
+        "text": "Quels sont les trois éléments principaux du contexte de compilation ?",
+        "options": [
+            { "id": "a", "label": "Le langage, le code source, le loader", "correct": false },
+            { "id": "b", "label": "L'architecture, l'interface binaire, le modèle de données", "correct": true },
+            { "id": "c", "label": "Le processeur, la RAM, le disque dur", "correct": false },
+            { "id": "d", "label": "Linux, Windows, iPhone", "correct": false }
+        ],
+        "explanation": "Le cours liste sous 'contexte de compilation' : a) l'architecture (ISA), b) l'interface binaire, c) le modèle de données."
+    },
+    {
+        "id": "q33",
+        "text": "Quel compilateur est associé à Windows dans le schéma ?",
+        "options": [
+            { "id": "a", "label": "gcc", "correct": false },
+            { "id": "b", "label": "clang", "correct": false },
+            { "id": "c", "label": "cl", "correct": true },
+            { "id": "d", "label": "g++", "correct": false }
+        ],
+        "explanation": "Le schéma montre 'cl' pointant vers 'Windows (PE)'."
     },
     {
         "id": "q34",
-        "text": "Quelle fonctionnalité d'IDA permet de visualiser les appels proches d'une fonction sous forme de graphe ?",
+        "text": "Quel compilateur est associé à Linux dans le schéma ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Hex View",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Proximity Browser",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "Debugger Mode",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Strings Window",
-                "correct": false
-            }
+            { "id": "a", "label": "gcc", "correct": true },
+            { "id": "b", "label": "cl", "correct": false },
+            { "id": "c", "label": "msvc", "correct": false },
+            { "id": "d", "label": "turbo c", "correct": false }
         ],
-        "explanation": "La slide 15 mentionne l'outil 'Proximity Browser' disponible depuis IDA 6.2 pour avoir une idée du graphe d'appel local."
+        "explanation": "Le schéma montre 'gcc' pointant vers 'Linux (ELF)'."
     },
     {
         "id": "q35",
-        "text": "Dans le Proximity Browser d'IDA, quelle mise en garde est donnée concernant les nœuds ?",
+        "text": "À quoi sert l'ABI ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Ils sont toujours en rouge.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Ils ne représentent jamais du code exécutable.",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "Certains nœuds ne sont pas forcément des fonctions.",
-                "correct": true
-            },
-            {
-                "id": "d",
-                "label": "Ils disparaissent si on zoome trop.",
-                "correct": false
-            }
+            { "id": "a", "label": "À définir la vitesse du processeur", "correct": false },
+            { "id": "b", "label": "À permettre à différentes unités binaires de fonctionner ensemble", "correct": true },
+            { "id": "c", "label": "À compiler le code source", "correct": false },
+            { "id": "d", "label": "À écrire le code source", "correct": false }
         ],
-        "explanation": "La slide 15 précise : 'Attention, dans ce mode, certains nœuds ne sont pas forcément des fonctions'."
+        "explanation": "La définition donnée est : 'ensemble de conventions qui permet à différentes unités binaires de fonctionner ensemble'."
     },
     {
         "id": "q36",
-        "text": "Dans un CFG (Control Flow Graph), comment appelle-t-on les liaisons entre les blocs de base (Basic Blocks) ?",
+        "text": "Pourquoi deux codes en x86-64 n'utilisent-ils pas forcément les mêmes registres pour les mêmes tâches ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Des arêtes (edges).",
-                "correct": true
-            },
-            {
-                "id": "b",
-                "label": "Des pointeurs nuls.",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "Des stackframes.",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Des syscalls.",
-                "correct": false
-            }
+            { "id": "a", "label": "Car ils ont des ABI différentes (ex: sysV vs ms)", "correct": true },
+            { "id": "b", "label": "Car l'ISA est différente", "correct": false },
+            { "id": "c", "label": "Car le processeur change aléatoirement", "correct": false },
+            { "id": "d", "label": "C'est impossible, ils utilisent toujours les mêmes registres", "correct": false }
         ],
-        "explanation": "La slide 18 montre un exemple de CFG composé de nœuds (basic blocks) et d'arêtes reliant ces nœuds."
+        "explanation": "Le cours explique : 'C'est pour cela que deux codes en x86-64 n'utilisent pas les mêmes registres... On a par exemple sysV pour Linux et ms pour Windows'."
     },
     {
         "id": "q37",
-        "text": "Quelle instruction marque obligatoirement la fin d'un Basic Block ?",
+        "text": "Dans GDB, quelle commande affiche le layout mémoire (sections) ?",
         "options": [
-            {
-                "id": "a",
-                "label": "MOV",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "ADD",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "Une instruction modifiant le flux d'exécution (saut, retour).",
-                "correct": true
-            },
-            {
-                "id": "d",
-                "label": "NOP",
-                "correct": false
-            }
+            { "id": "a", "label": "show memory", "correct": false },
+            { "id": "b", "label": "maintenance info sections", "correct": true },
+            { "id": "c", "label": "info mem", "correct": false },
+            { "id": "d", "label": "display layout", "correct": false }
         ],
-        "explanation": "La slide 19 définit la sortie d'un Basic Block comme une instruction modifiant le flux d'exécution (jg, ja, jmp, retn)."
+        "explanation": "La commande `maintenance info sections` est listée pour 'on affiche une partie du layout mémoire'."
     },
     {
         "id": "q38",
-        "text": "Dans l'analyse des boucles en assembleur, où peut être stocké le compteur de boucle ?",
+        "text": "Quelle commande GDB permet de continuer l'exécution après un breakpoint ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Uniquement dans le registre RCX.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Uniquement dans la mémoire vidéo.",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "Dans un registre (ex: RAX, RCX) ou une variable locale sur la pile.",
-                "correct": true
-            },
-            {
-                "id": "d",
-                "label": "Dans le segment .text.",
-                "correct": false
-            }
+            { "id": "a", "label": "next", "correct": false },
+            { "id": "b", "label": "step", "correct": false },
+            { "id": "c", "label": "continue", "correct": true },
+            { "id": "d", "label": "go", "correct": false }
         ],
-        "explanation": "La slide 23 explique que si RCX/RAX sont souvent utilisés, une variable locale (sur la pile) peut aussi servir de compteur."
+        "explanation": "La commande `continue` est décrite comme 'on continue l'exécution après un breakpoint'."
     },
     {
         "id": "q39",
-        "text": "Quelle structure de contrôle est souvent représentée par une 'Jump Table' ou une suite de comparaisons successives ?",
+        "text": "Quelle commande GDB permet d'assigner la valeur 0x1337 au registre rax ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Une boucle While.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Un Switch Case.",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "Une déclaration de variable.",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Un appel système.",
-                "correct": false
-            }
+            { "id": "a", "label": "mov $rax, 0x1337", "correct": false },
+            { "id": "b", "label": "set $rax=0x1337", "correct": true },
+            { "id": "c", "label": "$rax = 0x1337", "correct": false },
+            { "id": "d", "label": "assign 0x1337 to $rax", "correct": false }
         ],
-        "explanation": "La slide 24 illustre le concept de Switch Case avec des labels comme 'Case1', 'Case2', etc., et des branchements associés."
+        "explanation": "L'exemple donné est `set $rax=0x1337`."
     },
     {
         "id": "q40",
-        "text": "Que signifie le terme 'code strippé' ?",
+        "text": "Quelle commande GDB permet de désassembler une fonction spécifique ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Le code a été compressé.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Le code source a été perdu.",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "Les symboles de débogage (noms de fonctions, variables) ont été retirés du binaire.",
-                "correct": true
-            },
-            {
-                "id": "d",
-                "label": "Le code est illégal.",
-                "correct": false
-            }
+            { "id": "a", "label": "show function", "correct": false },
+            { "id": "b", "label": "disass <function>", "correct": true },
+            { "id": "c", "label": "x/i <function>", "correct": false },
+            { "id": "d", "label": "list <function>", "correct": false }
         ],
-        "explanation": "La slide 30 mentionne la nécessité de vérifier si le code est 'strippé', ce qui complique l'analyse car les noms symboliques sont absents."
+        "explanation": "La commande `disass <function>` est indiquée pour 'on désassemble la fonction <function>'."
     },
     {
         "id": "q41",
-        "text": "Quelle est la particularité d'IDA Free sous Linux mentionnée pour le TP2 ?",
+        "text": "Dans le tableau des syscalls, quel est le 3ème argument (arg2) pour `sys_write` ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Il faut l'installer pour réaliser le TP.",
-                "correct": true
-            },
-            {
-                "id": "b",
-                "label": "Il n'existe pas sous Linux.",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "Il ne supporte pas le mode graphique.",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Il coûte 1000 euros.",
-                "correct": false
-            }
+            { "id": "a", "label": "char* buf", "correct": false },
+            { "id": "b", "label": "unsigned int fd", "correct": false },
+            { "id": "c", "label": "size_t count", "correct": true },
+            { "id": "d", "label": "int flags", "correct": false }
         ],
-        "explanation": "La slide 9 indique explicitement : 'Il vous faudra installer IDAFREE sur linux pour le TP2 !'."
+        "explanation": "La table des syscalls pour `sys_write` liste `size_t count` dans la colonne `rdx` (qui est arg2)."
     },
     {
         "id": "q42",
-        "text": "Dans le contexte de la mémoire virtuelle, quel composant effectue la translation d'adresse ?",
+        "text": "Quel modèle de données est utilisé par Windows ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Le BIOS.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "La MMU (Memory Management Unit).",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "Le disque dur.",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Le compilateur.",
-                "correct": false
-            }
+            { "id": "a", "label": "LP64", "correct": false },
+            { "id": "b", "label": "LLP64", "correct": true },
+            { "id": "c", "label": "ILP32", "correct": false },
+            { "id": "d", "label": "Flat", "correct": false }
         ],
-        "explanation": "La slide 35 explique que la MMU s'occupe de faire la translation d'adresse pour que l'espace virtuel corresponde aux pages physiques."
+        "explanation": "Le texte indique 'Windows (utilise le modèle LLP64)'."
     },
     {
         "id": "q43",
-        "text": "Quel dossier système Linux contient les informations sur l'espace d'adressage (maps) d'un processus ?",
+        "text": "Quel modèle de données est utilisé par Linux ?",
         "options": [
-            {
-                "id": "a",
-                "label": "/var/log",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "/proc/<pid>",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "/home/user",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "/bin",
-                "correct": false
-            }
+            { "id": "a", "label": "LLP64", "correct": false },
+            { "id": "b", "label": "LP64", "correct": true },
+            { "id": "c", "label": "Win32", "correct": false },
+            { "id": "d", "label": "SysV", "correct": false }
         ],
-        "explanation": "La slide 37 indique que le répertoire /proc/<pid> contient les informations sur l'espace d'adressage, les fichiers ouverts, etc."
+        "explanation": "Le texte indique 'Linux (utilise le modèle LP64)'."
     },
     {
         "id": "q44",
-        "text": "Avec quelle option de GDB peut-on s'attacher à un processus déjà en cours d'exécution ?",
+        "text": "Quelle commande GDB affiche la valeur d'un registre spécifique ?",
         "options": [
-            {
-                "id": "a",
-                "label": "-a",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "-p <pid>",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "-run",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "-start",
-                "correct": false
-            }
+            { "id": "a", "label": "show reg <reg>", "correct": false },
+            { "id": "b", "label": "i r <reg>", "correct": true },
+            { "id": "c", "label": "print register <reg>", "correct": false },
+            { "id": "d", "label": "view <reg>", "correct": false }
         ],
-        "explanation": "La slide 37 montre la commande : 'Comment s'attacher à un processus? gdb -p <pid>'."
+        "explanation": "La commande `i r <reg>` est notée pour 'on affiche la valeur du register'."
     },
     {
         "id": "q45",
-        "text": "Quel est l'effet de l'obfuscation sur un binaire ?",
+        "text": "Quelle commande GDB affiche à chaque commande l'instruction courante ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Elle le rend plus rapide.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Elle rend le code difficile à comprendre pour l'analyste.",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "Elle corrige les bugs automatiquement.",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Elle le transforme en code open-source.",
-                "correct": false
-            }
+            { "id": "a", "label": "always show $rip", "correct": false },
+            { "id": "b", "label": "display $rip", "correct": false },
+            { "id": "c", "label": "disp /i $rip", "correct": true },
+            { "id": "d", "label": "show current", "correct": false }
         ],
-        "explanation": "La slide 30 mentionne la nécessité de déterminer si le code est obfusqué, ce qui est un obstacle à la compréhension (cacher le fonctionnement)."
+        "explanation": "La commande `disp /i $rip` est décrite comme 'on affiche à chaque commande l'instruction courante'."
     },
     {
         "id": "q46",
-        "text": "Quelle commande GDB permet de désassembler une fonction spécifique (ex: op_assign) ?",
+        "text": "Comment pose-t-on un breakpoint sur une adresse spécifique dans GDB ?",
         "options": [
-            {
-                "id": "a",
-                "label": "show code",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Disass op_assign",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "dump op_assign",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "list op_assign",
-                "correct": false
-            }
+            { "id": "a", "label": "break <addr>", "correct": false },
+            { "id": "b", "label": "bp <addr>", "correct": false },
+            { "id": "c", "label": "stop at <addr>", "correct": false },
+            { "id": "d", "label": "break *<addr>", "correct": true }
         ],
-        "explanation": "La slide 33 liste la commande 'Disass op_assign' pour désassembler la fonction."
+        "explanation": "La syntaxe donnée est `break *<addr>` (notez l'astérisque)."
     },
     {
         "id": "q47",
-        "text": "Quelle commande GDB permet de voir la liste des breakpoints actifs ?",
+        "text": "Quelle commande GDB permet de lancer l'exécution du programme ?",
         "options": [
-            {
-                "id": "a",
-                "label": "lb",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "info breakpoints (ou i b)",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "show all",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "list break",
-                "correct": false
-            }
+            { "id": "a", "label": "start", "correct": false },
+            { "id": "b", "label": "go", "correct": false },
+            { "id": "c", "label": "run", "correct": true },
+            { "id": "d", "label": "exec", "correct": false }
         ],
-        "explanation": "La slide 33 indique la commande 'i b' ou 'info breakpoints' pour lister les points d'arrêt."
+        "explanation": "La commande `run` est indiquée pour 'on execute le programme'."
     },
     {
         "id": "q48",
-        "text": "Qu'est-ce que 'gef' dans le contexte de GDB ?",
+        "text": "Combien d'instructions environ possède l'architecture CISC (x86-64) selon le cours ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Un virus.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Un wrapper (surcouche) recommandé pour GDB.",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "Une commande pour quitter GDB.",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Le format de fichier exécutable de Google.",
-                "correct": false
-            }
+            { "id": "a", "label": "Environ 200", "correct": false },
+            { "id": "b", "label": "Plus de 1000", "correct": true },
+            { "id": "c", "label": "Moins de 100", "correct": false },
+            { "id": "d", "label": "500 exactement", "correct": false }
         ],
-        "explanation": "La slide 32 et 33 recommandent 'gef' comme wrapper basé sur gdb pour faciliter le reverse dynamique."
+        "explanation": "Le cours mentionne pour CISC : 'possède plus de 1000 instructions'."
     },
     {
         "id": "q49",
-        "text": "Lorsqu'un breakpoint software est atteint, que fait GDB avant de rendre la main à l'utilisateur ?",
+        "text": "Quel est le registre utilisé pour arg3 (4ème argument) dans un syscall Linux (et non une fonction standard) ?",
         "options": [
-            {
-                "id": "a",
-                "label": "Il supprime le programme.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Il restaure l'instruction d'origine pour rendre l'opération transparente.",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "Il redémarre l'ordinateur.",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Il convertit le binaire en texte.",
-                "correct": false
-            }
+            { "id": "a", "label": "rcx", "correct": false },
+            { "id": "b", "label": "r10", "correct": true },
+            { "id": "c", "label": "rdx", "correct": false },
+            { "id": "d", "label": "r8", "correct": false }
         ],
-        "explanation": "La slide 41 explique : 'Une fois ce signal émis, gdb restaure l'instruction d'origine... gdb fait en sorte que l'opération soit transparente'."
+        "explanation": "Bien que l'en-tête de colonne dise 'r', le tableau détaillé des syscalls montre que la colonne après rdx (arg3) est occupée par `r10` (note : RCX est pour les fonctions, R10 pour les syscalls)."
     },
     {
         "id": "q50",
-        "text": "Selon la table des syscalls Linux x86_64 du cours, quel est le numéro (RAX) pour 'sys_write' ?",
+        "text": "Dans la compilation, que signifie 'mach-O' ?",
         "options": [
-            {
-                "id": "a",
-                "label": "0",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "1",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "2",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "3",
-                "correct": false
-            }
+            { "id": "a", "label": "Le format binaire pour Windows", "correct": false },
+            { "id": "b", "label": "Le format binaire pour Linux", "correct": false },
+            { "id": "c", "label": "Le format binaire pour iPhone", "correct": true },
+            { "id": "d", "label": "Un type de processeur", "correct": false }
         ],
-        "explanation": "La slide 50 montre la table des syscalls : RAX=1 correspond à sys_write."
-    },
-    {
-        "id": "q51",
-        "text": "Selon la table des syscalls Linux x86_64, quel est le numéro (RAX) pour 'sys_read' ?",
-        "options": [
-            {
-                "id": "a",
-                "label": "0",
-                "correct": true
-            },
-            {
-                "id": "b",
-                "label": "1",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "10",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "0xFF",
-                "correct": false
-            }
-        ],
-        "explanation": "La slide 50 montre la table des syscalls : RAX=0 correspond à sys_read."
-    },
-    {
-        "id": "q52",
-        "text": "Quel est le numéro de syscall pour 'sys_open' selon le document ?",
-        "options": [
-            {
-                "id": "a",
-                "label": "5",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "2",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "0",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "1",
-                "correct": false
-            }
-        ],
-        "explanation": "La slide 50 indique que RAX=2 correspond à sys_open."
-    },
-    {
-        "id": "q53",
-        "text": "Dans le schéma du Stack Frame (fonction main), quelle variable est au sommet de la pile (adresse la plus basse) ?",
-        "options": [
-            {
-                "id": "a",
-                "label": "RET",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Saved RBP",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "ptr",
-                "correct": true
-            },
-            {
-                "id": "d",
-                "label": "argc",
-                "correct": false
-            }
-        ],
-        "explanation": "Sur la slide 45 (schéma), 'ptr' est situé juste en dessous de RSP, donc au sommet de la pile allouée pour la fonction."
-    },
-    {
-        "id": "q54",
-        "text": "Que signifie l'acronyme ABI ?",
-        "options": [
-            {
-                "id": "a",
-                "label": "Application Binary Interface",
-                "correct": true
-            },
-            {
-                "id": "b",
-                "label": "Abstract Binary Instruction",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "Advanced Basic Input",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Algorithm Base Integer",
-                "correct": false
-            }
-        ],
-        "explanation": "La slide 3 mentionne 'L'Application Binary Interface (ABI)' dans les rappels."
-    },
-    {
-        "id": "q55",
-        "text": "Quel outil est cité pour 'tenter de reconstituer le code source origine' ?",
-        "options": [
-            {
-                "id": "a",
-                "label": "Un assembleur.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Un décompilateur.",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "Un compilateur.",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Un linker.",
-                "correct": false
-            }
-        ],
-        "explanation": "La slide 6 définit les décompilateurs comme des outils existant pour tenter de reconstituer le code source origine."
-    },
-    {
-        "id": "q56",
-        "text": "Quelle stratégie est proposée pour reverser un protocole réseau ?",
-        "options": [
-            {
-                "id": "a",
-                "label": "Coder un parseur et isoler les API manipulant le protocole.",
-                "correct": true
-            },
-            {
-                "id": "b",
-                "label": "Regarder uniquement le graph d'appel du main.",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "Supprimer toutes les chaînes de caractères.",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Ne jamais utiliser de debuggeur.",
-                "correct": false
-            }
-        ],
-        "explanation": "La slide 31 suggère d'isoler les API, les fonctions de lecture/écriture, d'inspecter la mémoire et de coder un parseur."
-    },
-    {
-        "id": "q57",
-        "text": "Quels sont les deux formats de fichiers exécutables cités dans les rappels (TP1) ?",
-        "options": [
-            {
-                "id": "a",
-                "label": "PDF et DOCX",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "ELF et PE",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "HTML et CSS",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "JPEG et PNG",
-                "correct": false
-            }
-        ],
-        "explanation": "La slide 3 et 4 mentionnent les formats ELF (Linux) et PE (Windows)."
-    },
-    {
-        "id": "q58",
-        "text": "Quelle fenêtre d'IDA permet de voir les fonctions appelées depuis des bibliothèques externes ?",
-        "options": [
-            {
-                "id": "a",
-                "label": "Exports",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Imports",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "Strings",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Structures",
-                "correct": false
-            }
-        ],
-        "explanation": "La slide 25 liste la fenêtre 'Imports' dans l'interface d'IDA, et la slide 8 conseille de regarder les fonctions importées."
-    },
-    {
-        "id": "q59",
-        "text": "Dans la méthodologie de reverse statique, après avoir trouvé le format et l'architecture, que doit-on déterminer ?",
-        "options": [
-            {
-                "id": "a",
-                "label": "Le prix du logiciel.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Si c'est du code natif ou managé.",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "La couleur de l'interface.",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "La version de Windows utilisée.",
-                "correct": false
-            }
-        ],
-        "explanation": "La slide 7 pose la question : 'Est-ce du code natif ou managé ?' comme étape clé pour déduire les outils à utiliser."
-    },
-    {
-        "id": "q60",
-        "text": "Quel type de saut est 'jmp' ?",
-        "options": [
-            {
-                "id": "a",
-                "label": "Un saut conditionnel.",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Un saut inconditionnel.",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "Un appel de fonction.",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Un retour de fonction.",
-                "correct": false
-            }
-        ],
-        "explanation": "La slide 19 classe 'jmp' comme un saut inconditionnel."
+        "explanation": "Le schéma de compilation relie 'iPhone (mach-O)' au format binaire."
     }
 ]

@@ -132,7 +132,7 @@
                 "correct": false
             }
         ],
-        "explanation": "La Cour de cassation est la juridiction suprême de l'ordre judiciaire ; elle ne rejuge pas les faits mais vérifie si la règle de droit a été correctement appliquée (contrôle du pourvoi)."
+        "explanation": "La mission de la Cour de cassation n'est pas de décider qui a tort ou raison sur les faits (qui a volé, qui a menti, etc.), mais de vérifier que la loi a été correctement appliquée par les tribunaux et les cours d'appel."
     },
     {
         "id": "q6",
@@ -190,7 +190,7 @@
     },
     {
         "id": "q8",
-        "text": "Quelle est la juridiction suprême de l'ordre administratif ?",
+        "text": "Quelle est la plus haute jurdidiction de l'ordre administratif ?",
         "options": [
             {
                 "id": "a",
@@ -213,7 +213,7 @@
                 "correct": true
             }
         ],
-        "explanation": "Le Conseil d'État est l'échelon suprême (contrôle de pourvoi) de l'ordre juridictionnel administratif."
+        "explanation": "Le Conseil d'État correspond au contrôle de pourvoi de l'ordre juridictionnel administratif."
     },
     {
         "id": "q9",
@@ -420,7 +420,7 @@
             },
             {
                 "id": "c",
-                "label": "C'est au demandeur (celui qui allègue un fait) d'apporter la preuve",
+                "label": "C'est au demandeur d'apporter la preuve",
                 "correct": true
             },
             {
@@ -429,7 +429,7 @@
                 "correct": false
             }
         ],
-        "explanation": "Selon l'article 1353 du Code civil, c'est à celui qui réclame l'exécution d'une obligation de la prouver (Actori incumbit probatio)."
+        "explanation": "Selon l'article 1353 du Code civil, c'est à celui qui réclame l'exécution (le demandeur) d'une obligation de la prouver."
     },
     {
         "id": "q17",
@@ -699,7 +699,7 @@
                 "correct": false
             }
         ],
-        "explanation": "Le cours précise que les données bancaires ne sont pas classées comme 'données sensibles' (interdites de traitement par principe) bien qu'elles soient personnelles et confidentielles."
+        "explanation": "Les données bancaires ne sont pas classées comme 'données sensibles' (interdites de traitement par principe) mais comme données personnelles et confidentielles."
     },
     {
         "id": "q27",
@@ -766,12 +766,12 @@
             },
             {
                 "id": "b",
-                "label": "En ayant au moins un parent français (droit du sang)",
+                "label": "En ayant au moins un parent français",
                 "correct": true
             },
             {
                 "id": "c",
-                "label": "Par mariage uniquement",
+                "label": "Par mariage uniquement ",
                 "correct": false
             },
             {
@@ -780,7 +780,7 @@
                 "correct": false
             }
         ],
-        "explanation": "L'acquisition par filiation (jus sanguinis) signifie qu'un enfant est français si au moins l'un de ses parents est français."
+        "explanation": "L'acquisition par filiation signifie qu'un enfant est français si au moins l'un de ses parents est français."
     },
     {
         "id": "q30",
@@ -1009,7 +1009,7 @@
             },
             {
                 "id": "b",
-                "label": "Le principe du contradictoire (ou égalité des armes)",
+                "label": "Le principe d'égalité des armes",
                 "correct": true
             },
             {
@@ -1023,7 +1023,7 @@
                 "correct": false
             }
         ],
-        "explanation": "Le principe du contradictoire et l'égalité des armes imposent que chaque partie puisse connaître les arguments et preuves de l'autre pour se défendre équitablement."
+        "explanation": "Le principe du contradictoire aussi dit d'égalité des armes impose que chaque partie puisse connaître les arguments et preuves de l'autre pour se défendre équitablement."
     },
     {
         "id": "q39",
@@ -1215,35 +1215,8 @@
         "explanation": "La procédure accusatoire est celle utilisée au civil, où ce sont les parties (et non le juge) qui rassemblent les preuves et dirigent le procès."
     },
     {
-        "id": "q46",
-        "text": "Dans le raisonnement juridique (syllogisme), à quoi correspond la 'Mineure' ?",
-        "options": [
-            {
-                "id": "a",
-                "label": "À la règle de droit applicable",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "À la décision finale du juge",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "À l'application de la règle aux faits",
-                "correct": true
-            },
-            {
-                "id": "d",
-                "label": "Aux faits de l'espèce",
-                "correct": false
-            }
-        ],
-        "explanation": "Dans le syllogisme juridique classique : la Majeure est la règle, la Mineure correspond aux faits (ou l'application de la règle aux faits selon la structure détaillée), et la Conclusion est la solution."
-    },
-    {
         "id": "q47",
-        "text": "Qu'est-ce qu'une présomption simple (ou réfragable) ?",
+        "text": "Qu'est-ce qu'une présomption simple/réfragable ?",
         "options": [
             {
                 "id": "a",
@@ -1365,7 +1338,7 @@
             },
             {
                 "id": "c",
-                "label": "Des traitements à des fins de prospection commerciale",
+                "label": "Le tratement de ses données à des fins de prospection commerciale",
                 "correct": true
             },
             {

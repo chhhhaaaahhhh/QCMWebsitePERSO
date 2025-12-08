@@ -1,0 +1,816 @@
+[
+    {
+        "id": "q1",
+        "text": "Quelle est la définition principale de la rétro-ingénierie selon le cours ?",
+        "options": [
+            { "id": "a", "label": "La création de nouveaux logiciels à partir de zéro.", "correct": false },
+            { "id": "b", "label": "L'étude d'un système pour déterminer son fonctionnement et sa conception.", "correct": true },
+            { "id": "c", "label": "L'optimisation des performances d'un système de base de données.", "correct": false },
+            { "id": "d", "label": "Le piratage illégal de systèmes bancaires.", "correct": false }
+        ],
+        "explanation": "Le cours définit la rétro-ingénierie comme l'étude d'un produit ou d'un système existant dans le but de déterminer son fonctionnement et la manière dont il a été conçu."
+    },
+    {
+        "id": "q2",
+        "text": "Dans le contexte de la sécurité offensive, qu'est-ce qu'un '1-day' ?",
+        "options": [
+            { "id": "a", "label": "Une vulnérabilité qui n'a pas encore de correctif.", "correct": false },
+            { "id": "b", "label": "Une vulnérabilité connue de l'éditeur pour laquelle un correctif existe depuis peu.", "correct": true },
+            { "id": "c", "label": "Une attaque qui prend une journée à exécuter.", "correct": false },
+            { "id": "d", "label": "Un logiciel malveillant qui s'autodétruit après 24 heures.", "correct": false }
+        ],
+        "explanation": "Un 1-day est une vulnérabilité connue de l'éditeur (qui a émis un correctif depuis au moins 1 jour), contrairement au 0-day qui est inconnu de l'éditeur."
+    },
+    {
+        "id": "q3",
+        "text": "Quel organisme français est cité comme un CERT (Centre de Réponse à Incident) ?",
+        "options": [
+            { "id": "a", "label": "La CNIL", "correct": false },
+            { "id": "b", "label": "CERT-FR (ANSSI)", "correct": true },
+            { "id": "c", "label": "La SACEM", "correct": false },
+            { "id": "d", "label": "L'INRIA", "correct": false }
+        ],
+        "explanation": "Le document cite le CERT-FR (rattaché à l'ANSSI) et cert-renater comme exemples de CERT en France."
+    },
+    {
+        "id": "q4",
+        "text": "Quelle est la différence entre un désassembleur et un décompilateur ?",
+        "options": [
+            { "id": "a", "label": "Le désassembleur traduit le binaire en assembleur, le décompilateur tente de retrouver le code source (C/C++).", "correct": true },
+            { "id": "b", "label": "Le désassembleur est pour Windows, le décompilateur pour Linux.", "correct": false },
+            { "id": "c", "label": "Le décompilateur est toujours exact, contrairement au désassembleur.", "correct": false },
+            { "id": "d", "label": "Il n'y a aucune différence, ce sont des synonymes.", "correct": false }
+        ],
+        "explanation": "Le schéma du cours montre que le désassembleur produit de l'assembleur, tandis que le décompilateur tente de reconstruire un code source de haut niveau (best effort)."
+    },
+    {
+        "id": "q5",
+        "text": "Que signifie l'acronyme ISA en informatique ?",
+        "options": [
+            { "id": "a", "label": "Internet Security Association", "correct": false },
+            { "id": "b", "label": "Internal System Architecture", "correct": false },
+            { "id": "c", "label": "Instruction Set Architecture", "correct": true },
+            { "id": "d", "label": "Integrated Software Application", "correct": false }
+        ],
+        "explanation": "ISA signifie Instruction Set Architecture, le modèle abstrait qui définit comment le logiciel contrôle le CPU."
+    },
+    {
+        "id": "q6",
+        "text": "Quel registre x86-64 est utilisé comme pointeur d'instruction (compteur ordinal) ?",
+        "options": [
+            { "id": "a", "label": "RSP", "correct": false },
+            { "id": "b", "label": "RAX", "correct": false },
+            { "id": "c", "label": "RIP", "correct": true },
+            { "id": "d", "label": "RBP", "correct": false }
+        ],
+        "explanation": "RIP (Instruction Pointer) contient l'adresse de la prochaine instruction à exécuter en architecture x86-64."
+    },
+    {
+        "id": "q7",
+        "text": "En assembleur x86-64, quelle instruction permet de copier une valeur d'un registre à un autre ?",
+        "options": [
+            { "id": "a", "label": "ADD", "correct": false },
+            { "id": "b", "label": "MOV", "correct": true },
+            { "id": "c", "label": "CMP", "correct": false },
+            { "id": "d", "label": "JMP", "correct": false }
+        ],
+        "explanation": "L'instruction MOV (Move) est utilisée pour transférer des données entre registres, ou entre mémoire et registres."
+    },
+    {
+        "id": "q8",
+        "text": "Dans la convention d'appel Linux (System V AMD64 ABI), quel registre contient le premier argument entier d'une fonction ?",
+        "options": [
+            { "id": "a", "label": "RAX", "correct": false },
+            { "id": "b", "label": "RCX", "correct": false },
+            { "id": "c", "label": "RDI", "correct": true },
+            { "id": "d", "label": "RSI", "correct": false }
+        ],
+        "explanation": "Sous Linux x86-64, les arguments sont passés dans l'ordre : RDI, RSI, RDX, RCX, R8, R9."
+    },
+    {
+        "id": "q9",
+        "text": "Dans la convention d'appel Windows (Microsoft x64), quel registre contient le premier argument entier ?",
+        "options": [
+            { "id": "a", "label": "RDI", "correct": false },
+            { "id": "b", "label": "RCX", "correct": true },
+            { "id": "c", "label": "RDX", "correct": false },
+            { "id": "d", "label": "RAX", "correct": false }
+        ],
+        "explanation": "Sous Windows x64, les arguments sont passés dans l'ordre : RCX, RDX, R8, R9."
+    },
+    {
+        "id": "q10",
+        "text": "Quel est le format de fichier exécutable standard sous Linux ?",
+        "options": [
+            { "id": "a", "label": "PE (Portable Executable)", "correct": false },
+            { "id": "b", "label": "Mach-O", "correct": false },
+            { "id": "c", "label": "ELF (Executable and Linkable Format)", "correct": true },
+            { "id": "d", "label": "COM", "correct": false }
+        ],
+        "explanation": "Le format ELF est utilisé dans le monde Unix/Linux, tandis que PE est pour Windows et Mach-O pour Apple."
+    },
+    {
+        "id": "q11",
+        "text": "Quel est le format de fichier exécutable standard sous Windows ?",
+        "options": [
+            { "id": "a", "label": "ELF", "correct": false },
+            { "id": "b", "label": "PE", "correct": true },
+            { "id": "c", "label": "Mach-O", "correct": false },
+            { "id": "d", "label": "DMG", "correct": false }
+        ],
+        "explanation": "PE (Portable Executable) est le format utilisé par Microsoft Windows."
+    },
+    {
+        "id": "q12",
+        "text": "Dans l'architecture x86-64, quelle est la taille du registre EAX ?",
+        "options": [
+            { "id": "a", "label": "64 bits", "correct": false },
+            { "id": "b", "label": "32 bits", "correct": true },
+            { "id": "c", "label": "16 bits", "correct": false },
+            { "id": "d", "label": "8 bits", "correct": false }
+        ],
+        "explanation": "EAX est la version 32 bits du registre accumulateur. RAX est la version 64 bits, AX la version 16 bits."
+    },
+    {
+        "id": "q13",
+        "text": "Quelle section d'un binaire contient généralement le code exécutable (les instructions) ?",
+        "options": [
+            { "id": "a", "label": ".data", "correct": false },
+            { "id": "b", "label": ".bss", "correct": false },
+            { "id": "c", "label": ".text", "correct": true },
+            { "id": "d", "label": ".rodata", "correct": false }
+        ],
+        "explanation": "La section .text contient les instructions du programme (le code machine)."
+    },
+    {
+        "id": "q14",
+        "text": "À quoi sert le registre RSP en x86-64 ?",
+        "options": [
+            { "id": "a", "label": "C'est le pointeur de pile (Stack Pointer).", "correct": true },
+            { "id": "b", "label": "C'est le registre de base (Base Pointer).", "correct": false },
+            { "id": "c", "label": "C'est le registre d'index source.", "correct": false },
+            { "id": "d", "label": "C'est le registre accumulateur.", "correct": false }
+        ],
+        "explanation": "RSP (Register Stack Pointer) pointe vers le sommet de la pile."
+    },
+    {
+        "id": "q15",
+        "text": "Que signifie l'acronyme RISC ?",
+        "options": [
+            { "id": "a", "label": "Random Instruction Set Computer", "correct": false },
+            { "id": "b", "label": "Reduced Instruction Set Computer", "correct": true },
+            { "id": "c", "label": "Rapid Instruction System Chip", "correct": false },
+            { "id": "d", "label": "Reversible Instruction Set Code", "correct": false }
+        ],
+        "explanation": "RISC signifie Reduced Instruction Set Computer (Jeu d'instructions réduit), par opposition à CISC."
+    },
+    {
+        "id": "q16",
+        "text": "Quelle syntaxe d'assembleur utilise l'ordre 'Opcode Destination, Source' ?",
+        "options": [
+            { "id": "a", "label": "Syntaxe AT&T", "correct": false },
+            { "id": "b", "label": "Syntaxe Intel", "correct": true },
+            { "id": "c", "label": "Syntaxe ARM", "correct": false },
+            { "id": "d", "label": "Syntaxe Motorola", "correct": false }
+        ],
+        "explanation": "La syntaxe Intel (utilisée dans le cours) place la destination avant la source (ex: MOV EAX, 1), contrairement à AT&T."
+    },
+    {
+        "id": "q17",
+        "text": "Dans la représentation en complément à 2, comment obtient-on la valeur négative d'un nombre ?",
+        "options": [
+            { "id": "a", "label": "On inverse le bit de signe uniquement.", "correct": false },
+            { "id": "b", "label": "On inverse tous les bits (NOT) et on ajoute 1.", "correct": true },
+            { "id": "c", "label": "On soustrait 1 et on inverse les bits.", "correct": false },
+            { "id": "d", "label": "On met tous les bits à 1.", "correct": false }
+        ],
+        "explanation": "Pour obtenir le négatif en complément à 2, on inverse les bits (flip) et on ajoute 1 au résultat."
+    },
+    {
+        "id": "q18",
+        "text": "Quelle section d'un binaire contient les données constantes (Read Only) ?",
+        "options": [
+            { "id": "a", "label": ".data", "correct": false },
+            { "id": "b", "label": ".rodata", "correct": true },
+            { "id": "c", "label": ".bss", "correct": false },
+            { "id": "d", "label": ".text", "correct": false }
+        ],
+        "explanation": "La section .rodata (Read Only Data) contient les données qui ne doivent pas être modifiées, comme les chaînes de caractères littérales."
+    },
+    {
+        "id": "q19",
+        "text": "Quel est l'objectif de l'analyse Forensics ?",
+        "options": [
+            { "id": "a", "label": "Améliorer la vitesse du processeur.", "correct": false },
+            { "id": "b", "label": "Analyser des preuves numériques (post-mortem) pour comprendre une attaque.", "correct": true },
+            { "id": "c", "label": "Créer des interfaces graphiques.", "correct": false },
+            { "id": "d", "label": "Vendre des logiciels de sécurité.", "correct": false }
+        ],
+        "explanation": "L'analyse Forensics vise à comprendre le fonctionnement d'une attaque, trouver le patient zéro et le mode opératoire, souvent via un dump mémoire."
+    },
+    {
+        "id": "q20",
+        "text": "Quel flag est activé (mis à 1) si le résultat d'une opération est zéro ?",
+        "options": [
+            { "id": "a", "label": "CF (Carry Flag)", "correct": false },
+            { "id": "b", "label": "OF (Overflow Flag)", "correct": false },
+            { "id": "c", "label": "SF (Sign Flag)", "correct": false },
+            { "id": "d", "label": "ZF (Zero Flag)", "correct": true }
+        ],
+        "explanation": "ZF (Zero Flag) est mis à 1 si le résultat de l'instruction précédente est égal à zéro."
+    },
+    {
+        "id": "q21",
+        "text": "En assembleur ARM64, comment se nomme le registre de lien (Link Register) ?",
+        "options": [
+            { "id": "a", "label": "X0", "correct": false },
+            { "id": "b", "label": "X30", "correct": true },
+            { "id": "c", "label": "LR", "correct": false },
+            { "id": "d", "label": "PC", "correct": false }
+        ],
+        "explanation": "Le registre X30 est utilisé comme Link Register (LR) pour stocker l'adresse de retour lors d'un appel de fonction."
+    },
+    {
+        "id": "q22",
+        "text": "Quelle est la taille d'une instruction en ARM64 ?",
+        "options": [
+            { "id": "a", "label": "Variable (1 à 15 octets)", "correct": false },
+            { "id": "b", "label": "Toujours 4 octets (32 bits)", "correct": true },
+            { "id": "c", "label": "Toujours 8 octets (64 bits)", "correct": false },
+            { "id": "d", "label": "Toujours 2 octets", "correct": false }
+        ],
+        "explanation": "Les instructions ARM64 ont une taille fixe de 4 octets, contrairement au x86 qui a une taille variable."
+    },
+    {
+        "id": "q23",
+        "text": "Que signifie l'instruction 'CALL' en assembleur x86 ?",
+        "options": [
+            { "id": "a", "label": "Arrêter le programme.", "correct": false },
+            { "id": "b", "label": "Appeler une fonction (pousse l'adresse de retour sur la pile et saute).", "correct": true },
+            { "id": "c", "label": "Comparer deux valeurs.", "correct": false },
+            { "id": "d", "label": "Effectuer une addition.", "correct": false }
+        ],
+        "explanation": "CALL permet d'exécuter une sous-routine : elle empile l'adresse de l'instruction suivante (RIP) et modifie RIP vers la cible."
+    },
+    {
+        "id": "q24",
+        "text": "Quel outil est un désassembleur/décompilateur célèbre mentionné dans le cours ?",
+        "options": [
+            { "id": "a", "label": "Photoshop", "correct": false },
+            { "id": "b", "label": "Excel", "correct": false },
+            { "id": "c", "label": "IDA (Interactive DisAssembler)", "correct": true },
+            { "id": "d", "label": "Word", "correct": false }
+        ],
+        "explanation": "IDA (et Ghidra) sont des outils de référence pour la rétro-ingénierie statique cités dans le document."
+    },
+    {
+        "id": "q25",
+        "text": "Quelle est la particularité d'une vulnérabilité 'Zero-day' (0-day) ?",
+        "options": [
+            { "id": "a", "label": "Elle est connue depuis 0 minute.", "correct": false },
+            { "id": "b", "label": "Elle n'est pas connue de l'éditeur du logiciel.", "correct": true },
+            { "id": "c", "label": "Elle coûte 0 euro.", "correct": false },
+            { "id": "d", "label": "Elle ne fonctionne que le jour même.", "correct": false }
+        ],
+        "explanation": "Un 0-day est une vulnérabilité exploitée alors que l'éditeur n'est pas au courant et n'a donc pas sorti de correctif."
+    },
+    {
+        "id": "q26",
+        "text": "Sous Linux x86-64, si une fonction a plus de 6 arguments, où sont passés les arguments supplémentaires ?",
+        "options": [
+            { "id": "a", "label": "Dans le registre RAX.", "correct": false },
+            { "id": "b", "label": "Sur le tas (heap).", "correct": false },
+            { "id": "c", "label": "Sur la pile (stack).", "correct": true },
+            { "id": "d", "label": "Ils sont ignorés.", "correct": false }
+        ],
+        "explanation": "Les 6 premiers arguments sont dans les registres, les suivants sont poussés sur la pile (stack)."
+    },
+    {
+        "id": "q27",
+        "text": "Quelle instruction x86 est utilisée pour revenir d'une fonction ?",
+        "options": [
+            { "id": "a", "label": "JMP", "correct": false },
+            { "id": "b", "label": "LEAVE", "correct": false },
+            { "id": "c", "label": "RET", "correct": true },
+            { "id": "d", "label": "BACK", "correct": false }
+        ],
+        "explanation": "L'instruction RET dépile l'adresse de retour stockée au sommet de la pile vers le registre RIP pour reprendre l'exécution."
+    },
+    {
+        "id": "q28",
+        "text": "Quel registre est utilisé pour stocker la valeur de retour d'une fonction en x86-64 ?",
+        "options": [
+            { "id": "a", "label": "RAX", "correct": true },
+            { "id": "b", "label": "RDI", "correct": false },
+            { "id": "c", "label": "RSP", "correct": false },
+            { "id": "d", "label": "RIP", "correct": false }
+        ],
+        "explanation": "Par convention, le résultat d'une fonction (s'il est entier) est placé dans le registre RAX avant le retour."
+    },
+    {
+        "id": "q29",
+        "text": "Que signifie le sigle CESTI ?",
+        "options": [
+            { "id": "a", "label": "Centre d'Evaluation de la Sécurité des Technologies de l'Information", "correct": true },
+            { "id": "b", "label": "Centre Européen de Sécurité Technique Informatique", "correct": false },
+            { "id": "c", "label": "Comité d'Etude des Systèmes et Technologies Internet", "correct": false },
+            { "id": "d", "label": "Cyber Espace Sécurisé par Technologie IP", "correct": false }
+        ],
+        "explanation": "Le cours définit les CESTI comme des centres d'évaluation agréés pour la sécurité des technologies de l'information (ex: missions CSPN)."
+    },
+    {
+        "id": "q30",
+        "text": "Quel registre 32 bits correspond aux 32 bits de poids faible de RAX ?",
+        "options": [
+            { "id": "a", "label": "AL", "correct": false },
+            { "id": "b", "label": "AX", "correct": false },
+            { "id": "c", "label": "EAX", "correct": true },
+            { "id": "d", "label": "AH", "correct": false }
+        ],
+        "explanation": "RAX est le registre 64 bits. EAX est sa partie basse 32 bits, AX sa partie 16 bits, et AL sa partie 8 bits basse."
+    },
+    {
+        "id": "q31",
+        "text": "Qu'est-ce que l'obfuscation en rétro-ingénierie ?",
+        "options": [
+            { "id": "a", "label": "Une technique pour rendre le code plus lisible.", "correct": false },
+            { "id": "b", "label": "Une technique pour rendre l'analyse du code difficile sans changer son comportement.", "correct": true },
+            { "id": "c", "label": "Une méthode de compression de fichier.", "correct": false },
+            { "id": "d", "label": "Un type de virus informatique.", "correct": false }
+        ],
+        "explanation": "L'obfuscation vise à complexifier le code binaire pour gêner la rétro-ingénierie, rendant l'analyse statique plus coûteuse en temps."
+    },
+    {
+        "id": "q32",
+        "text": "Dans le format ELF, que contient la section .data ?",
+        "options": [
+            { "id": "a", "label": "Le code exécutable.", "correct": false },
+            { "id": "b", "label": "Les données initialisées modifiables (Read/Write).", "correct": true },
+            { "id": "c", "label": "Les données en lecture seule.", "correct": false },
+            { "id": "d", "label": "La table des symboles dynamiques.", "correct": false }
+        ],
+        "explanation": "La section .data contient les variables globales ou statiques initialisées qui peuvent être modifiées par le programme (R/W)."
+    },
+    {
+        "id": "q34",
+        "text": "Que fait l'instruction 'XOR RAX, RAX' ?",
+        "options": [
+            { "id": "a", "label": "Elle met la valeur de RAX à 0.", "correct": true },
+            { "id": "b", "label": "Elle double la valeur de RAX.", "correct": false },
+            { "id": "c", "label": "Elle ne fait rien (NOP).", "correct": false },
+            { "id": "d", "label": "Elle inverse tous les bits de RAX.", "correct": false }
+        ],
+        "explanation": "Le XOR d'une valeur avec elle-même donne toujours 0. C'est une façon optimisée de mettre un registre à zéro."
+    },
+    {
+        "id": "q35",
+        "text": "À quoi sert la table 'Imports' dans un fichier PE ?",
+        "options": [
+            { "id": "a", "label": "À stocker les images du logiciel.", "correct": false },
+            { "id": "b", "label": "À lister les DLL utilisées par le programme.", "correct": true },
+            { "id": "c", "label": "À exporter les fonctions du programme pour d'autres.", "correct": false },
+            { "id": "d", "label": "À crypter le binaire.", "correct": false }
+        ],
+        "explanation": "La table des imports permet au chargeur (loader) de savoir quelles bibliothèques dynamiques (DLL) charger et quelles fonctions lier."
+    },
+    {
+        "id": "q36",
+        "text": "Quel est le rôle du 'Loader' (chargeur) ?",
+        "options": [
+            { "id": "a", "label": "Compiler le code source.", "correct": false },
+            { "id": "b", "label": "Transformer le fichier binaire sur disque en une unité d'exécution en mémoire.", "correct": true },
+            { "id": "c", "label": "Télécharger le programme depuis internet.", "correct": false },
+            { "id": "d", "label": "Vérifier l'orthographe du code.", "correct": false }
+        ],
+        "explanation": "Le loader lit le format binaire (PE, ELF, etc.), mappe les sections en mémoire et prépare l'exécution."
+    },
+    {
+        "id": "q37",
+        "text": "En assembleur, que désigne le terme 'Opcode' ?",
+        "options": [
+            { "id": "a", "label": "L'adresse de l'instruction.", "correct": false },
+            { "id": "b", "label": "Le code opération.", "correct": true },
+            { "id": "c", "label": "L'opérande (la donnée).", "correct": false },
+            { "id": "d", "label": "Le commentaire.", "correct": false }
+        ],
+        "explanation": "L'opcode est la partie de l'instruction machine qui spécifie l'opération à effectuer."
+    },
+    {
+        "id": "q38",
+        "text": "Que signifie le saut conditionnel 'JZ' ou 'JE' ?",
+        "options": [
+            { "id": "a", "label": "Jump if Zero / Equal.", "correct": true },
+            { "id": "b", "label": "Jump if Not Zero.", "correct": false },
+            { "id": "c", "label": "Jump if Greater.", "correct": false },
+            { "id": "d", "label": "Jump Always.", "correct": false }
+        ],
+        "explanation": "JZ (Jump if Zero) et JE (Jump if Equal) sautent si le flag ZF est activé (=1), ce qui arrive après une comparaison d'égalité."
+    },
+    {
+        "id": "q39",
+        "text": "Dans le contexte des registres x86-64, que sont R8 à R15 ?",
+        "options": [
+            { "id": "a", "label": "Des registres réservés au système.", "correct": false },
+            { "id": "b", "label": "Des registres étendus ajoutés avec l'architecture 64 bits.", "correct": true },
+            { "id": "c", "label": "Des registres flottants.", "correct": false },
+            { "id": "d", "label": "Des drapeaux (flags).", "correct": false }
+        ],
+        "explanation": "L'architecture x86-64 a ajouté 8 nouveaux registres généraux nommés R8 à R15."
+    },
+    {
+        "id": "q40",
+        "text": "Quelle est la caractéristique des processeurs CISC (comme x86) ?",
+        "options": [
+            { "id": "a", "label": "Jeu d'instructions complexe et riche.", "correct": true },
+            { "id": "b", "label": "Jeu d'instructions très réduit.", "correct": false },
+            { "id": "c", "label": "Toutes les instructions ont la même taille.", "correct": false },
+            { "id": "d", "label": "Utilisés uniquement dans les téléphones.", "correct": false }
+        ],
+        "explanation": "CISC (Complex Instruction Set Computer) se caractérise par un grand nombre d'instructions complexes, souvent de taille variable."
+    },
+    {
+        "id": "q41",
+        "text": "Quel est le nom de l'outil de la NSA libéré publiquement, concurrent d'IDA ?",
+        "options": [
+            { "id": "a", "label": "Ghidra", "correct": true },
+            { "id": "b", "label": "OllyDbg", "correct": false },
+            { "id": "c", "label": "Wireshark", "correct": false },
+            { "id": "d", "label": "Metasploit", "correct": false }
+        ],
+        "explanation": "Ghidra est un outil de rétro-ingénierie (SRE) développé par la NSA et rendu open-source, mentionné dans le nuage de mots du cours."
+    },
+    {
+        "id": "q42",
+        "text": "En assembleur x86, l'instruction 'CMP A, B' effectue :",
+        "options": [
+            { "id": "a", "label": "Une addition sans stocker le résultat.", "correct": false },
+            { "id": "b", "label": "Une soustraction virtuelle (A - B) pour mettre à jour les flags.", "correct": true },
+            { "id": "c", "label": "Un déplacement de mémoire.", "correct": false },
+            { "id": "d", "label": "Un saut conditionnel.", "correct": false }
+        ],
+        "explanation": "CMP effectue une soustraction mais ne stocke pas le résultat ; elle met uniquement à jour les drapeaux (RFLAGS) pour les sauts suivants."
+    },
+    {
+        "id": "q43",
+        "text": "Quelle extension de fichier est typiquement associée à un exécutable Windows ?",
+        "options": [
+            { "id": "a", "label": ".exe", "correct": true },
+            { "id": "b", "label": ".elf", "correct": false },
+            { "id": "c", "label": ".sh", "correct": false },
+            { "id": "d", "label": ".app", "correct": false }
+        ],
+        "explanation": "Les fichiers Portable Executable (PE) sous Windows ont généralement l'extension .exe (ou .dll)."
+    },
+    {
+        "id": "q44",
+        "text": "Dans le schéma de compilation, quel élément transforme le code source en fichier objet ?",
+        "options": [
+            { "id": "a", "label": "Le linker", "correct": false },
+            { "id": "b", "label": "Le compilateur", "correct": true },
+            { "id": "c", "label": "Le loader", "correct": false },
+            { "id": "d", "label": "Le débogueur", "correct": false }
+        ],
+        "explanation": "C'est le rôle du compilateur de traduire le code source (haut niveau) en langage machine (objet), avant que le linker ne lie les objets."
+    },
+    {
+        "id": "q46",
+        "text": "Quelle commande Linux permet d'identifier le type de fichier ?",
+        "options": [
+            { "id": "a", "label": "ls", "correct": false },
+            { "id": "b", "label": "cat", "correct": false },
+            { "id": "c", "label": "file", "correct": true },
+            { "id": "d", "label": "grep", "correct": false }
+        ],
+        "explanation": "La commande 'file' analyse l'en-tête du fichier pour déterminer son type."
+    },
+    {
+        "id": "q48",
+        "text": "Que signifie le flag SF ?",
+        "options": [
+            { "id": "a", "label": "Indique si le résultat est négatif.", "correct": true },
+            { "id": "b", "label": "Indique si le résultat est zéro.", "correct": false },
+            { "id": "c", "label": "Indique un débordement non signé.", "correct": false },
+            { "id": "d", "label": "Indique une parité paire.", "correct": false }
+        ],
+        "explanation": "SF copie le bit de signe du résultat. S'il est à 1, le résultat est considéré comme négatif en signé."
+    },
+    {
+        "id": "q49",
+        "text": "Quelle est la taille d'un 'long' en C sous Linux 64 bits ?",
+        "options": [
+            { "id": "a", "label": "4 octets (32 bits)", "correct": false },
+            { "id": "b", "label": "8 octets (64 bits)", "correct": true },
+            { "id": "c", "label": "2 octets (16 bits)", "correct": false },
+            { "id": "d", "label": "16 octets (128 bits)", "correct": false }
+        ],
+        "explanation": "Sous Linux 64 bits (modèle LP64), un 'long' fait 64 bits (8 octets). Sous Windows 64 bits (LLP64), il fait 32 bits."
+    },
+    {
+        "id": "q50",
+        "text": "Quel segment mémoire stocke les variables locales d'une fonction ?",
+        "options": [
+            { "id": "a", "label": "Le tas", "correct": false },
+            { "id": "b", "label": "La pile", "correct": true },
+            { "id": "c", "label": ".text", "correct": false },
+            { "id": "d", "label": ".data", "correct": false }
+        ],
+        "explanation": "La pile est utilisée pour stocker les variables locales, les adresses de retour et les paramètres de fonction lors de l'exécution."
+    },
+    {
+        "id": "q51",
+        "text": "En syntaxe assembleur AT&T (utilisée par défaut sous Linux/GCC), quel caractère précède les valeurs immédiates (constantes) ?",
+        "options": [
+            { "id": "a", "label": "%", "correct": false },
+            { "id": "b", "label": "#", "correct": false },
+            { "id": "c", "label": "$", "correct": true },
+            { "id": "d", "label": "@", "correct": false }
+        ],
+        "explanation": "Dans la syntaxe AT&T, les valeurs immédiates sont préfixées par un '$' (ex: $0x10), contrairement à la syntaxe Intel où elles sont nues."
+    },
+    {
+        "id": "q52",
+        "text": "En syntaxe assembleur AT&T, quel caractère précède les noms de registres ?",
+        "options": [
+            { "id": "a", "label": "$", "correct": false },
+            { "id": "b", "label": "%", "correct": true },
+            { "id": "c", "label": "&", "correct": false },
+            { "id": "d", "label": "R", "correct": false }
+        ],
+        "explanation": "La syntaxe AT&T préfixe toujours les registres avec un '%' (ex: %rax), alors que la syntaxe Intel les utilise sans préfixe."
+    },
+    {
+        "id": "q53",
+        "text": "Quelle est la différence fondamentale d'ordre des opérandes entre la syntaxe Intel et la syntaxe AT&T pour l'instruction MOV ?",
+        "options": [
+            { "id": "a", "label": "Intel : Source, Destination / AT&T : Destination, Source", "correct": false },
+            { "id": "b", "label": "Intel : Destination, Source / AT&T : Source, Destination", "correct": true },
+            { "id": "c", "label": "L'ordre est le même, seuls les préfixes changent.", "correct": false },
+            { "id": "d", "label": "AT&T n'a pas d'instruction MOV.", "correct": false }
+        ],
+        "explanation": "Intel utilise l'ordre 'Opcode Dest, Src' (ex: MOV EAX, 1), tandis qu'AT&T utilise 'Opcode Src, Dest' (ex: movl $1, %eax)."
+    },
+    {
+        "id": "q54",
+        "text": "Dans le jeu d'instructions x86, quelle instruction de saut conditionnel est utilisée pour comparer des entiers non signés (Unsigned) ?",
+        "options": [
+            { "id": "a", "label": "JG (Jump Greater)", "correct": false },
+            { "id": "b", "label": "JL (Jump Less)", "correct": false },
+            { "id": "c", "label": "JA (Jump Above)", "correct": true },
+            { "id": "d", "label": "JS (Jump Sign)", "correct": false }
+        ],
+        "explanation": "JA (Jump Above) et JB (Jump Below) sont utilisées pour les comparaisons non signées. JG et JL sont pour les signées."
+    },
+    {
+        "id": "q55",
+        "text": "Dans le jeu d'instructions x86, quelle instruction de saut conditionnel est utilisée pour comparer des entiers signés (Signed) ?",
+        "options": [
+            { "id": "a", "label": "JA (Jump Above)", "correct": false },
+            { "id": "b", "label": "JG (Jump Greater)", "correct": true },
+            { "id": "c", "label": "JC (Jump Carry)", "correct": false },
+            { "id": "d", "label": "JPE (Jump Parity Even)", "correct": false }
+        ],
+        "explanation": "JG (Jump Greater) et JL (Jump Less) prennent en compte le bit de signe et l'overflow pour les comparaisons signées."
+    },
+    {
+        "id": "q56",
+        "text": "Quelle est la fonction principale de l'instruction 'LEA' (Load Effective Address) en x86 ?",
+        "options": [
+            { "id": "a", "label": "Charger une valeur depuis la mémoire vers un registre.", "correct": false },
+            { "id": "b", "label": "Calculer une adresse mémoire (sans y accéder) et la stocker dans un registre.", "correct": true },
+            { "id": "c", "label": "Effectuer une division entière.", "correct": false },
+            { "id": "d", "label": "Charger les drapeaux d'état.", "correct": false }
+        ],
+        "explanation": "LEA calcule l'adresse effective (ex: base + index*scale + disp) et stocke le résultat, souvent utilisé pour des calculs arithmétiques rapides."
+    },
+    {
+        "id": "q57",
+        "text": "Quel est l'effet de l'instruction 'PUSH RAX' sur le registre RSP en architecture 64 bits ?",
+        "options": [
+            { "id": "a", "label": "Il incrémente RSP de 8 octets.", "correct": false },
+            { "id": "b", "label": "Il ne modifie pas RSP.", "correct": false },
+            { "id": "c", "label": "Il décrémente RSP de 8 octets.", "correct": true },
+            { "id": "d", "label": "Il met RSP à zéro.", "correct": false }
+        ],
+        "explanation": "La pile grandit vers les adresses basses. Empiler (PUSH) une valeur de 64 bits (8 octets) soustrait donc 8 à RSP."
+    },
+    {
+        "id": "q58",
+        "text": "Quel est l'effet de l'instruction 'POP RAX' sur le registre RSP en architecture 64 bits ?",
+        "options": [
+            { "id": "a", "label": "Il décrémente RSP de 8 octets.", "correct": false },
+            { "id": "b", "label": "Il incrémente RSP de 8 octets.", "correct": true },
+            { "id": "c", "label": "Il multiplie RSP par 2.", "correct": false },
+            { "id": "d", "label": "Il réinitialise RSP.", "correct": false }
+        ],
+        "explanation": "Dépiler (POP) libère de l'espace sur la pile, ce qui correspond à augmenter l'adresse contenue dans RSP (vers les adresses hautes)."
+    },
+    {
+        "id": "q59",
+        "text": "Quelle est la différence entre l'instruction 'TEST' et 'CMP' en x86 ?",
+        "options": [
+            { "id": "a", "label": "TEST effectue une addition, CMP une soustraction.", "correct": false },
+            { "id": "b", "label": "TEST effectue un ET logique (AND) sans stocker le résultat, CMP une soustraction sans stocker le résultat.", "correct": true },
+            { "id": "c", "label": "TEST modifie les registres, CMP ne modifie que les flags.", "correct": false },
+            { "id": "d", "label": "Il n'y a aucune différence.", "correct": false }
+        ],
+        "explanation": "TEST fait un AND bit-à-bit pour mettre à jour les flags (souvent ZF), tandis que CMP fait une soustraction pour comparer des valeurs."
+    },
+    {
+        "id": "q60",
+        "text": "Que signifie le flag OF (Overflow Flag) en x86 ?",
+        "options": [
+            { "id": "a", "label": "Il indique un débordement arithmétique signé.", "correct": true },
+            { "id": "b", "label": "Il indique un débordement arithmétique non signé (retenue).", "correct": false },
+            { "id": "c", "label": "Il indique que le résultat est zéro.", "correct": false },
+            { "id": "d", "label": "Il indique une erreur système.", "correct": false }
+        ],
+        "explanation": "OF signale qu'une opération sur des entiers signés a produit un résultat trop grand ou trop petit pour tenir dans le registre cible."
+    },
+    {
+        "id": "q61",
+        "text": "Que signifie le flag CF (Carry Flag) en x86 ?",
+        "options": [
+            { "id": "a", "label": "Il indique le signe du résultat.", "correct": false },
+            { "id": "b", "label": "Il indique un débordement arithmétique non signé (retenue sortante).", "correct": true },
+            { "id": "c", "label": "Il indique la parité du résultat.", "correct": false },
+            { "id": "d", "label": "Il indique un dépassement de capacité signé.", "correct": false }
+        ],
+        "explanation": "CF est utilisé pour l'arithmétique non signée, indiquant une retenue (carry) ou un emprunt (borrow) au-delà de la taille du registre."
+    },
+    {
+        "id": "q62",
+        "text": "Dans la convention d'appel Linux (System V ABI) x86-64, quel registre contient le 2ème argument ?",
+        "options": [
+            { "id": "a", "label": "RDI", "correct": false },
+            { "id": "b", "label": "RDX", "correct": false },
+            { "id": "c", "label": "RSI", "correct": true },
+            { "id": "d", "label": "RCX", "correct": false }
+        ],
+        "explanation": "L'ordre des arguments sous Linux est : RDI, RSI, RDX, RCX, R8, R9."
+    },
+    {
+        "id": "q63",
+        "text": "Dans la convention d'appel Linux (System V ABI) x86-64, quel registre contient le 3ème argument ?",
+        "options": [
+            { "id": "a", "label": "RDX", "correct": true },
+            { "id": "b", "label": "RCX", "correct": false },
+            { "id": "c", "label": "R8", "correct": false },
+            { "id": "d", "label": "RBX", "correct": false }
+        ],
+        "explanation": "Le 3ème argument est passé dans RDX sous Linux."
+    },
+    {
+        "id": "q64",
+        "text": "Dans la convention d'appel Windows (Microsoft x64 ABI), quel registre contient le 2ème argument ?",
+        "options": [
+            { "id": "a", "label": "RCX", "correct": false },
+            { "id": "b", "label": "RDX", "correct": true },
+            { "id": "c", "label": "RSI", "correct": false },
+            { "id": "d", "label": "RDI", "correct": false }
+        ],
+        "explanation": "L'ordre des arguments sous Windows est : RCX, RDX, R8, R9."
+    },
+    {
+        "id": "q65",
+        "text": "Dans la convention d'appel Windows (Microsoft x64 ABI), quel registre contient le 3ème argument ?",
+        "options": [
+            { "id": "a", "label": "R8", "correct": true },
+            { "id": "b", "label": "R9", "correct": false },
+            { "id": "c", "label": "RDX", "correct": false },
+            { "id": "d", "label": "R10", "correct": false }
+        ],
+        "explanation": "Le 3ème argument est passé dans R8 sous Windows."
+    },
+    {
+        "id": "q66",
+        "text": "En architecture ARM64, quelle est la différence entre les registres Xn et Wn (ex: X0 vs W0) ?",
+        "options": [
+            { "id": "a", "label": "Xn est un registre flottant, Wn est un registre entier.", "correct": false },
+            { "id": "b", "label": "Xn fait 64 bits, Wn correspond aux 32 bits de poids faible de Xn.", "correct": true },
+            { "id": "c", "label": "Xn est pour le système, Wn pour l'utilisateur.", "correct": false },
+            { "id": "d", "label": "Il n'y a pas de registre Wn en ARM64.", "correct": false }
+        ],
+        "explanation": "En ARM64, les registres généraux peuvent être accédés en mode 64 bits (X0-X30) ou en mode 32 bits (W0-W30)."
+    },
+    {
+        "id": "q67",
+        "text": "En architecture ARM64, est-il possible d'écrire directement dans le registre PC (Program Counter) avec une instruction MOV ?",
+        "options": [
+            { "id": "a", "label": "Oui, c'est courant pour faire des sauts.", "correct": false },
+            { "id": "b", "label": "Non, le PC ne peut être mis à jour que par des instructions de branchement ou de retour.", "correct": true },
+            { "id": "c", "label": "Oui, mais seulement en mode noyau.", "correct": false },
+            { "id": "d", "label": "Non, le PC n'existe pas en ARM.", "correct": false }
+        ],
+        "explanation": "Contrairement à certaines anciennes architectures, ARM64 interdit l'écriture directe dans PC (sauf via branchements B, BL, RET, etc.)."
+    },
+    {
+        "id": "q68",
+        "text": "Que fait l'instruction ARM64 'STP' (Store Pair) ?",
+        "options": [
+            { "id": "a", "label": "Elle arrête le processeur.", "correct": false },
+            { "id": "b", "label": "Elle stocke deux registres en mémoire en une seule instruction.", "correct": true },
+            { "id": "c", "label": "Elle configure la pile.", "correct": false },
+            { "id": "d", "label": "Elle compare deux chaînes de caractères.", "correct": false }
+        ],
+        "explanation": "STP (Store Pair) permet de sauvegarder deux registres (ex: X29 et X30) sur la pile simultanément, optimisant les préambules de fonctions."
+    },
+    {
+        "id": "q69",
+        "text": "À quoi sert l'instruction ARM64 'ADRP' ?",
+        "options": [
+            { "id": "a", "label": "À additionner deux registres.", "correct": false },
+            { "id": "b", "label": "À calculer l'adresse de base d'une page mémoire de 4KB relative au PC.", "correct": true },
+            { "id": "c", "label": "À appeler une procédure distante.", "correct": false },
+            { "id": "d", "label": "À générer une interruption.", "correct": false }
+        ],
+        "explanation": "ADRP (Address PC-Relative Page) est utilisée pour générer des adresses indépendantes de la position (PIC) par page de 4KB."
+    },
+    {
+        "id": "q70",
+        "text": "À quoi sert l'instruction 'endbr64' souvent vue au début des fonctions en x86-64 moderne ?",
+        "options": [
+            { "id": "a", "label": "Elle marque la fin d'une branche de code.", "correct": false },
+            { "id": "b", "label": "C'est une instruction de sécurité (CET) pour marquer une cible valide de saut indirect.", "correct": true },
+            { "id": "c", "label": "Elle initialise les registres flottants.", "correct": false },
+            { "id": "d", "label": "C'est un commentaire pour le débogueur.", "correct": false }
+        ],
+        "explanation": "endbr64 (End Branch 64-bit) fait partie de la technologie Intel CET pour prévenir les attaques de type ROP/JOP en validant les cibles de saut."
+    },
+    {
+        "id": "q71",
+        "text": "En syntaxe AT&T, que signifie le suffixe 'q' à la fin d'une instruction (ex: movq) ?",
+        "options": [
+            { "id": "a", "label": "Quick (rapide)", "correct": false },
+            { "id": "b", "label": "Quadword (64 bits)", "correct": true },
+            { "id": "c", "label": "Quarter (8 bits)", "correct": false },
+            { "id": "d", "label": "Queue (file d'attente)", "correct": false }
+        ],
+        "explanation": "Le suffixe 'q' indique une opération sur 64 bits (Quadword). 'l' est pour 32 bits (Long), 'w' pour 16 bits (Word), 'b' pour 8 bits (Byte)."
+    },
+    {
+        "id": "q72",
+        "text": "Quel registre est traditionnellement utilisé comme 'Frame Pointer' (pointeur de cadre de pile) en x86-64 ?",
+        "options": [
+            { "id": "a", "label": "RSP", "correct": false },
+            { "id": "b", "label": "RBP", "correct": true },
+            { "id": "c", "label": "RIP", "correct": false },
+            { "id": "d", "label": "RSI", "correct": false }
+        ],
+        "explanation": "RBP (Base Pointer) est utilisé pour pointer vers le début du cadre de pile (stack frame) de la fonction courante, facilitant l'accès aux variables locales."
+    },
+    {
+        "id": "q73",
+        "text": "En x86, quelle condition déclenche le saut 'JNE' (Jump if Not Equal) ?",
+        "options": [
+            { "id": "a", "label": "ZF = 1", "correct": false },
+            { "id": "b", "label": "ZF = 0", "correct": true },
+            { "id": "c", "label": "SF = 1", "correct": false },
+            { "id": "d", "label": "CF = 1", "correct": false }
+        ],
+        "explanation": "JNE (ou JNZ) saute si le Zero Flag est à 0, signifiant que le résultat de la comparaison précédente n'était pas une égalité."
+    },
+    {
+        "id": "q74",
+        "text": "Dans l'ABI Linux x86-64, quel registre est utilisé pour passer le 4ème argument ?",
+        "options": [
+            { "id": "a", "label": "RCX", "correct": true },
+            { "id": "b", "label": "RDX", "correct": false },
+            { "id": "c", "label": "R8", "correct": false },
+            { "id": "d", "label": "R9", "correct": false }
+        ],
+        "explanation": "L'ordre Linux est RDI, RSI, RDX, RCX. Le 4ème argument est donc dans RCX."
+    },
+    {
+        "id": "q75",
+        "text": "Dans l'ABI Windows x64, quel registre est utilisé pour passer le 4ème argument ?",
+        "options": [
+            { "id": "a", "label": "RCX", "correct": false },
+            { "id": "b", "label": "RDX", "correct": false },
+            { "id": "c", "label": "R8", "correct": false },
+            { "id": "d", "label": "R9", "correct": true }
+        ],
+        "explanation": "L'ordre Windows est RCX, RDX, R8, R9. Le 4ème argument est donc dans R9."
+    },
+    {
+        "id": "q76",
+        "text": "Dans la syntaxe assembleur AT&T, comment représente-t-on un accès mémoire avec un déplacement par rapport à un registre de base ?",
+        "options": [
+            { "id": "a", "label": "-8(%rbp)", "correct": true },
+            { "id": "b", "label": "[%rbp-8]", "correct": false },
+            { "id": "c", "label": "%rbp(-8)", "correct": false },
+            { "id": "d", "label": "offset(%rbp, -8)", "correct": false }
+        ],
+        "explanation": "La syntaxe AT&T utilise le format `déplacement(base, index, échelle)`. Ainsi, `[RBP-8]` devient `-8(%rbp)`."
+    },
+    {
+        "id": "q77",
+        "text": "Selon la convention d'appel Microsoft x64 (Windows), où est passé le 5ème argument d'une fonction ?",
+        "options": [
+            { "id": "a", "label": "Dans le registre R10", "correct": false },
+            { "id": "b", "label": "Sur la pile", "correct": true },
+            { "id": "c", "label": "Dans le registre RAX", "correct": false },
+            { "id": "d", "label": "Dans le registre XMM0", "correct": false }
+        ],
+        "explanation": "Sous Windows x64, seuls les 4 premiers arguments tiennent dans les registres (RCX, RDX, R8, R9). Le 5ème argument et les suivants sont poussés sur la pile."
+    }
+]

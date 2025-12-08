@@ -1,0 +1,893 @@
+[
+    {
+        "id": "q1",
+        "text": "Comment qualifie-t-on les nombres générés par la fonction rand() ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Cryptographiquement sûrs",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Pseudo-aléatoires",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Purement aléatoires",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Quantiques",
+                "correct": false
+            }
+        ],
+        "explanation": "Les nombres générés par rand() sont dits pseudo-aléatoires car ils sont déterminés par un algorithme déterministe."
+    },
+    {
+        "id": "q2",
+        "text": "Quel élément détermine la suite de nombres générée par rand() ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "La seed (graine)",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Le processeur",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "La taille de la RAM",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le compilateur",
+                "correct": false
+            }
+        ],
+        "explanation": "La seed est un entier initial qui permet à l'algorithme de calculer la suite unique de nombres."
+    },
+    {
+        "id": "q3",
+        "text": "Quelle fonction est utilisée pour spécifier la graine (seed) du générateur aléatoire ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "seed()",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "init_rand()",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "srand()",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "set_rand()",
+                "correct": false
+            }
+        ],
+        "explanation": "La fonction srand() permet d'initialiser la graine du générateur de nombres pseudo-aléatoires."
+    },
+    {
+        "id": "q4",
+        "text": "Que se passe-t-il si la seed de rand() est connue ou contrôlée ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le programme plante",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Les nombres générés sont imprévisibles",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "La génération devient plus lente",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Toutes les valeurs retournées sont connues et déterminées",
+                "correct": true
+            }
+        ],
+        "explanation": "Si la seed est fixe ou connue, la suite de nombres générée par rand() sera toujours identique et prévisible."
+    },
+    {
+        "id": "q5",
+        "text": "Quel est l'objectif principal de l'obfuscation ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Optimiser la vitesse du programme",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Ralentir la rétro-ingénierie",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Réduire la taille du binaire",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Corriger les bugs automatiquement",
+                "correct": false
+            }
+        ],
+        "explanation": "L'obfuscation vise à cacher le fonctionnement interne pour rendre l'analyse et la compréhension du programme plus difficiles et lentes."
+    },
+    {
+        "id": "q6",
+        "text": "L'obfuscation se fait souvent au détriment de quel aspect ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "La performance ou la taille",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "La sécurité réseau",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "La compatibilité OS",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "La couleur de l'interface",
+                "correct": false
+            }
+        ],
+        "explanation": "Les techniques d'obfuscation ajoutent de la complexité ou du code inutile, ce qui peut augmenter la taille du fichier ou ralentir son exécution."
+    },
+    {
+        "id": "q7",
+        "text": "En quoi consiste la technique du 'Graph Flattening' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Supprimer toutes les boucles",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Casser la structure du graphe de contrôle (CFG)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Réduire la taille du graphe",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Colorer les blocs de base",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Graph Flattening aplatit la structure du programme en mettant tous les blocs de base au même niveau, rendant le flux d'exécution difficile à suivre."
+    },
+    {
+        "id": "q8",
+        "text": "Dans un code obfusqué par Graph Flattening, comment le programme sait-il quel bloc exécuter ensuite ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Il exécute tout séquentiellement",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Il utilise un paramètre ou compteur d'état",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Il utilise des appels système",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "C'est aléatoire",
+                "correct": false
+            }
+        ],
+        "explanation": "Un compteur ou une variable d'état est utilisé dans une structure de contrôle (souvent un switch) pour dispatcher l'exécution vers le bon bloc."
+    },
+    {
+        "id": "q9",
+        "text": "Quel outil universitaire est mentionné pour réaliser du Graph Flattening ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "IDA Pro",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "GDB",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "TIGRESS",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Ghidra",
+                "correct": false
+            }
+        ],
+        "explanation": "TIGRESS est un outil développé par l'université de l'Arizona qui permet d'obfusquer le code source C."
+    },
+    {
+        "id": "q10",
+        "text": "Quelle structure de contrôle est typiquement utilisée pour implémenter le dispatcher d'un Graph Flattening ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Une boucle infinie avec un Switch Case",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Une récursion",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Un simple if/else",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Un appel de fonction",
+                "correct": false
+            }
+        ],
+        "explanation": "Le code aplati est souvent structuré autour d'une boucle while(1) contenant un switch qui dirige le flux selon la variable d'état."
+    },
+    {
+        "id": "q11",
+        "text": "Qu'est-ce que le 'Junk Code' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Du code qui supprime des fichiers",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "L'ajout d'instructions inutiles",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Du code mal écrit par le développeur",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Une bibliothèque externe",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Junk Code consiste à insérer des instructions qui ne servent à rien pour l'exécution réelle mais qui complexifient l'analyse."
+    },
+    {
+        "id": "q12",
+        "text": "Quel effet le Junk Code cherche-t-il souvent à provoquer sur un désassembleur ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le faire planter",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Accélérer l'analyse",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Le désalignement du code",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Colorer le code en rouge",
+                "correct": false
+            }
+        ],
+        "explanation": "En insérant des octets ou des instructions partielles, le Junk Code peut désaligner le désassembleur, lui faisant mal interpréter les instructions suivantes."
+    },
+    {
+        "id": "q14",
+        "text": "Que signifie 'Virtualiser' un programme dans le contexte de l'obfuscation ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le lancer dans VMware",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le transformer en Java",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Transformer ses instructions bas-niveau en instructions haut-niveau personnalisées",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Le mettre dans le cloud",
+                "correct": false
+            }
+        ],
+        "explanation": "La virtualisation ici transforme le code natif (assembleur) en un bytecode personnalisé interprété par une machine virtuelle interne au programme."
+    },
+    {
+        "id": "q15",
+        "text": "Dans une VM d'obfuscation, par quoi sont remplacées les instructions assembleur classiques (mov, add, etc.) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Par des commentaires",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Par du bytecode (opcodes personnalisés)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Par des appels système",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Par des variables globales",
+                "correct": false
+            }
+        ],
+        "explanation": "Les instructions originales sont traduites en un nouveau jeu d'instructions (bytecode) compréhensible uniquement par la VM intégrée."
+    },
+    {
+        "id": "q16",
+        "text": "Quelle structure de code permet généralement d'implémenter l'interpréteur de la VM ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Un Switch Case géant",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Une liste chaînée",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Un arbre binaire",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Un appel récursif",
+                "correct": false
+            }
+        ],
+        "explanation": "Le cœur de la VM est souvent une boucle lisant le bytecode et utilisant un Switch Case pour dispatcher l'exécution vers la fonction traitant l'opcode correspondant."
+    },
+    {
+        "id": "q18",
+        "text": "Pourquoi utiliser srand(time(NULL)) est-il courant ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Pour que la séquence aléatoire change à chaque exécution",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Pour fixer la séquence aléatoire",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Pour accélérer le programme",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Car c'est obligatoire en C",
+                "correct": false
+            }
+        ],
+        "explanation": "Utiliser le temps actuel comme graine permet d'avoir une seed différente à chaque lancement (à la seconde près), donc une suite de nombres différente."
+    },
+    {
+        "id": "q19",
+        "text": "Si je compile le code 'srand(0x41414141);' et que je l'exécute deux fois, les suites de nombres seront :",
+        "options": [
+            {
+                "id": "a",
+                "label": "Différentes",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Identiques",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Inversées",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Nulles",
+                "correct": false
+            }
+        ],
+        "explanation": "Une graine constante (hardcodée) engendre toujours la même suite pseudo-aléatoire."
+    },
+    {
+        "id": "q20",
+        "text": "Quel est l'effet visuel du Graph Flattening sur la vue graphique d'un désassembleur (comme IDA) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le graphe devient très simple et vertical",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le graphe devient plat et large avec beaucoup de liens entremêlés",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Le graphe disparaît",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le graphe devient une seule ligne droite",
+                "correct": false
+            }
+        ],
+        "explanation": "Tous les blocs étant au même niveau sous le dispatcher, le graphe s'aplatit et devient très dense horizontalement."
+    },
+    {
+        "id": "q21",
+        "text": "L'obfuscation par Junk Code rend-elle le code impossible à exécuter ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Oui, toujours",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Non, le processeur exécute le code valide normalement",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Seulement sous Linux",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Oui, sauf si on utilise un debugger",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Junk Code est conçu pour tromper l'analyse humaine ou les outils, mais le flux d'exécution réel (le chemin emprunté par le CPU) reste valide."
+    },
+    {
+        "id": "q23",
+        "text": "Que signifie l'acronyme CFG en rétro-ingénierie ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Code File Generator",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Control Flow Graph",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Central Flow Guide",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Computer Fast Graphics",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Control Flow Graph (Graphe de Flux de Contrôle) représente les chemins possibles que peut emprunter l'exécution d'un programme."
+    },
+    {
+        "id": "q24",
+        "text": "Quelle est la caractéristique des instructions ajoutées par le Junk Code ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Elles sont essentielles au programme",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Elles se trouvent dans des endroits non utilisés ou sont sans effet",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Elles optimisent la mémoire",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Elles chiffrent les données",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Junk Code n'a pas d'utilité fonctionnelle ; il est là pour faire du bruit ou tromper les outils."
+    },
+    {
+        "id": "q25",
+        "text": "Dans l'obfuscation par VM, la fonction originale (ex: addition) existe-t-elle encore sous forme d'instructions assembleur natives groupées ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Oui, elle est juste cachée",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Non, elle est éclatée en bytecode interprété",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Oui, mais chiffrée",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Oui, à la fin du fichier",
+                "correct": false
+            }
+        ],
+        "explanation": "La logique originale disparaît en tant que bloc d'instructions natives ; elle est remplacée par une suite de bytecodes que la VM va traiter un par un."
+    },
+    {
+        "id": "q27",
+        "text": "Quel est l'impact de l'obfuscation par VM sur la taille du fichier ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "La taille diminue",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "La taille reste exactement la même",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "La taille augmente (ajout de la VM + bytecode)",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Le fichier devient vide",
+                "correct": false
+            }
+        ],
+        "explanation": "Il faut stocker le code de la VM (l'interpréteur) ainsi que le bytecode, ce qui augmente généralement la taille du binaire."
+    },
+    {
+        "id": "q28",
+        "text": "Dans le contexte du Junk Code, qu'est-ce qu'une instruction 'non-alignée' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Une instruction écrite en italique",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Une instruction dont le décodage commence au milieu d'une autre",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Une instruction sans paramètres",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Une instruction graphique",
+                "correct": false
+            }
+        ],
+        "explanation": "Le désalignement se produit quand le flux d'exécution saute à une adresse qui ne correspond pas au début d'une instruction telle que vue par un désassemblage linéaire."
+    },
+    {
+        "id": "q29",
+        "text": "Comment appelle-t-on les blocs de code élémentaires dans un graphe de contrôle (CFG) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Code chunks",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Basic blocks",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Instruction sets",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Segments",
+                "correct": false
+            }
+        ],
+        "explanation": "Un 'Basic Block' est une séquence d'instructions sans branchement interne, avec une seule entrée et une seule sortie."
+    },
+    {
+        "id": "q30",
+        "text": "Le Graph Flattening rend le code plus difficile à comprendre car :",
+        "options": [
+            {
+                "id": "a",
+                "label": "Il chiffre les chaînes de caractères",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Il cache la logique conditionnelle et les boucles originales",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Il supprime les noms de fonctions",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Il change le langage de programmation",
+                "correct": false
+            }
+        ],
+        "explanation": "En détruisant la hiérarchie visuelle des if/else et des boucles, la logique originale est noyée dans la structure plate du switch."
+    },
+    {
+        "id": "q31",
+        "text": "L'obfuscation garantit-elle une sécurité absolue du code ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Oui, c'est inviolable",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Non, c'est seulement un ralentissement",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Oui, si on utilise une VM",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Oui, contre les experts uniquement",
+                "correct": false
+            }
+        ],
+        "explanation": "L'obfuscation est une sécurité par l'obscurité ; avec assez de temps et de ressources, elle peut toujours être inversée."
+    },
+    {
+        "id": "q33",
+        "text": "Quelle commande permet de compiler le fichier 'main.c' avec gcc ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "gcc main.c -o programme",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "make main.c",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "python main.c",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "run main.c",
+                "correct": false
+            }
+        ],
+        "explanation": "La commande standard gcc prend le fichier source et l'option -o pour spécifier le fichier de sortie."
+    },
+    {
+        "id": "q34",
+        "text": "Qu'est-ce qu'une 'seed' dans le contexte des nombres aléatoires ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Une erreur de compilation",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Un entier initial déterminant la suite aléatoire",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Une bibliothèque graphique",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Un type de variable",
+                "correct": false
+            }
+        ],
+        "explanation": "La seed (graine) est la valeur de départ utilisée par l'algorithme pour générer la séquence de nombres pseudo-aléatoires."
+    },
+    {
+        "id": "q36",
+        "text": "Dans une VM d'obfuscation, le 'bytecode' est codé dans quel type de langage ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "C++",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Un langage de programmation existant",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Un langage personnalisé propre à la VM",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "HTML",
+                "correct": false
+            }
+        ],
+        "explanation": "Le bytecode est spécifique à l'implémentation de la VM d'obfuscation ; ce n'est pas un standard."
+    },
+    {
+        "id": "q37",
+        "text": "Quel est l'effet de l'obfuscation sur l'analyse statique d'un binaire ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Elle la rend plus facile",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Elle la rend plus complexe et longue",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Elle n'a aucun effet",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Elle supprime le binaire",
+                "correct": false
+            }
+        ],
+        "explanation": "L'analyse statique (lecture du code sans exécution) est fortement entravée car le code ne ressemble plus à la logique originale."
+    },
+    {
+        "id": "q39",
+        "text": "Quel est le risque si on utilise rand() pour de la cryptographie ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "C'est trop lent",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "C'est prédictible si la seed est devinée",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Ça ne compile pas",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Ça utilise trop de mémoire",
+                "correct": false
+            }
+        ],
+        "explanation": "Les générateurs pseudo-aléatoires simples comme rand() ne sont pas sûrs cryptographiquement car leur état peut être prédit."
+    },
+    {
+        "id": "q40",
+        "text": "Le 'Graph Flattening' modifie-t-il le résultat final du calcul de la fonction ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Oui, le résultat est faux",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Non, le comportement fonctionnel est préservé",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Parfois, cela dépend du compilateur",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Oui, il retourne toujours 0",
+                "correct": false
+            }
+        ],
+        "explanation": "L'obfuscation change la forme du code mais doit impérativement conserver sa sémantique (ce qu'il fait) pour que le programme fonctionne toujours."
+    }
+]

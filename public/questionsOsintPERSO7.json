@@ -283,7 +283,7 @@
             { "id": "c", "label": "Cewl", "correct": false },
             { "id": "d", "label": "Google Dorks", "correct": false }
         ],
-        "explanation": "Maltego est cité comme un outil permettant de faire des graphes."
+        "explanation": "Maltego est un outil permettant de faire des graphes."
     },
     {
         "id": "q27",
@@ -334,7 +334,7 @@
         "text": "Quelle est la particularité du moteur de recherche Shodan ?",
         "options": [
             { "id": "a", "label": "Il cherche uniquement des images", "correct": false },
-            { "id": "b", "label": "Il effectue un balayage de ports (objets connectés)", "correct": true },
+            { "id": "b", "label": "Il effectue un balayage de ports", "correct": true },
             { "id": "c", "label": "Il est spécialisé dans les réseaux sociaux", "correct": false },
             { "id": "d", "label": "Il traduit des textes", "correct": false }
         ],
@@ -393,7 +393,7 @@
             { "id": "c", "label": "On ne prend pas de mesure", "correct": true },
             { "id": "d", "label": "On engage un audit externe", "correct": false }
         ],
-        "explanation": "Le cours mentionne : 'risque faible = on prend pas de mesure'."
+        "explanation": "En cas de risque faible, on prend pas de mesures."
     },
     {
         "id": "q37",
@@ -514,7 +514,7 @@
             { "id": "c", "label": "Livraison", "correct": false },
             { "id": "d", "label": "Exploitation", "correct": false }
         ],
-        "explanation": "L'énumération LinkedIn est listée comme un exemple sous la phase de Reconnaissance."
+        "explanation": "L'énumération LinkedIn peut être utilisée dans la phase de Reconnaissance."
     },
     {
         "id": "q48",
@@ -569,7 +569,7 @@
             { "id": "c", "label": "Timestamping", "correct": true },
             { "id": "d", "label": "Chiffrement AES", "correct": false }
         ],
-        "explanation": "Le timestamping est cité comme méthode de camouflage pour masquer les traces lors de l'installation."
+        "explanation": "Le timestamping est une méthode de camouflage pour masquer les traces lors de l'installation."
     },
     {
         "id": "q53",
@@ -580,7 +580,7 @@
             { "id": "c", "label": "Un script malveillant uploadé sur un site pour maintenir l'accès", "correct": true },
             { "id": "d", "label": "Un pare-feu web", "correct": false }
         ],
-        "explanation": "L'exemple donné est 'web shell uploaded to /uploads/admin.php', c'est une technique de persistance."
+        "explanation": "correspond à l'exemple du cours 'web shell uploaded to /uploads/admin.php', une technique de persistance."
     },
     {
         "id": "q54",
@@ -602,7 +602,7 @@
             { "id": "c", "label": "Reconnaissance", "correct": false },
             { "id": "d", "label": "Livraison", "correct": false }
         ],
-        "explanation": "C'est un exemple spécifique listé sous la section Commandement et contrôle (exfiltration of customer database via SFTP)."
+        "explanation": "C'est un exemple de Commandement et contrôle (exfiltration of customer database via SFTP)."
     },
     {
         "id": "q56",
@@ -792,22 +792,11 @@
         "explanation": "Le Service Juridique est cité comme une activité de support."
     },
     {
-        "id": "q73",
-        "text": "Quel outil est associé à la description 'chepa' dans le document (probablement pour dire qu'il est complexe ou vague) ?",
-        "options": [
-            { "id": "a", "label": "Maltego", "correct": false },
-            { "id": "b", "label": "Spiderfoot", "correct": true },
-            { "id": "c", "label": "Shodan", "correct": false },
-            { "id": "d", "label": "Nmap", "correct": false }
-        ],
-        "explanation": "Le document indique textuellement : 'Spiderfoot: chepa'."
-    },
-    {
         "id": "q74",
         "text": "Une 'tâche planifiée' (Scheduled Task) nommée 'windows update' qui lance un payload est un exemple de :",
         "options": [
             { "id": "a", "label": "Reconnaissance", "correct": false },
-            { "id": "b", "label": "Persistance (Installation)", "correct": true },
+            { "id": "b", "label": "Persistance", "correct": true },
             { "id": "c", "label": "Phishing", "correct": false },
             { "id": "d", "label": "Déni de service", "correct": false }
         ],
@@ -829,7 +818,7 @@
         "text": "L'USB 'delivered with labeled company logo' est une technique de :",
         "options": [
             { "id": "a", "label": "Reconnaissance active", "correct": false },
-            { "id": "b", "label": "Livraison (Delivery)", "correct": true },
+            { "id": "b", "label": "Livraison", "correct": true },
             { "id": "c", "label": "C2", "correct": false },
             { "id": "d", "label": "Action sur objectifs", "correct": false }
         ],
@@ -848,7 +837,7 @@
     },
     {
         "id": "q78",
-        "text": "À quoi servent les 'google dorks' dans l'OSINT ?",
+        "text": "À quoi servent les 'google dorks' en OSINT ?",
         "options": [
             { "id": "a", "label": "À accéder au darknet", "correct": false },
             { "id": "b", "label": "À filtrer les résultats de recherche", "correct": true },

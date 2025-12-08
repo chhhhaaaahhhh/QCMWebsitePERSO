@@ -324,33 +324,6 @@
         "explanation": "En insérant des octets ou des instructions partielles, le Junk Code peut désaligner le désassembleur, lui faisant mal interpréter les instructions suivantes."
     },
     {
-        "id": "q13",
-        "text": "Dans l'exemple de Junk Code du cours, quelle instruction est insérée pour perturber l'analyse ?",
-        "options": [
-            {
-                "id": "a",
-                "label": "Un CALL au milieu d'une instruction",
-                "correct": true
-            },
-            {
-                "id": "b",
-                "label": "Un simple NOP",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "Une division par zéro",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Un commentaire",
-                "correct": false
-            }
-        ],
-        "explanation": "L'exemple montre un CALL qui atterrit au milieu d'une autre instruction, ce qui perd le désassembleur linéaire."
-    },
-    {
         "id": "q14",
         "text": "Que signifie 'Virtualiser' un programme dans le contexte de l'obfuscation ?",
         "options": [
@@ -430,33 +403,6 @@
             }
         ],
         "explanation": "Le cœur de la VM est souvent une boucle lisant le bytecode et utilisant un Switch Case pour dispatcher l'exécution vers la fonction traitant l'opcode correspondant."
-    },
-    {
-        "id": "q17",
-        "text": "Dans l'exemple de VM du cours, que fait l'opcode 0x15 ?",
-        "options": [
-            {
-                "id": "a",
-                "label": "Il quitte le programme",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Il assigne une valeur",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "Il additionne deux registres internes",
-                "correct": true
-            },
-            {
-                "id": "d",
-                "label": "Il fait une soustraction",
-                "correct": false
-            }
-        ],
-        "explanation": "Dans l'exemple donné, l'opcode 0x15 correspond à l'opération d'addition entre deux registres internes de la VM."
     },
     {
         "id": "q18",
@@ -567,33 +513,6 @@
         "explanation": "Le Junk Code est conçu pour tromper l'analyse humaine ou les outils, mais le flux d'exécution réel (le chemin emprunté par le CPU) reste valide."
     },
     {
-        "id": "q22",
-        "text": "Dans une VM d'obfuscation, que représente 'R0' ou 'R1' dans l'exemple du cours ?",
-        "options": [
-            {
-                "id": "a",
-                "label": "Les vrais registres RAX et RBX",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Des registres virtuels internes à la VM",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "Des adresses IP",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Des noms de fichiers",
-                "correct": false
-            }
-        ],
-        "explanation": "La VM simule ses propres registres (souvent un tableau en mémoire) pour effectuer ses opérations, indépendamment des registres physiques du CPU."
-    },
-    {
         "id": "q23",
         "text": "Que signifie l'acronyme CFG en rétro-ingénierie ?",
         "options": [
@@ -673,33 +592,6 @@
             }
         ],
         "explanation": "La logique originale disparaît en tant que bloc d'instructions natives ; elle est remplacée par une suite de bytecodes que la VM va traiter un par un."
-    },
-    {
-        "id": "q26",
-        "text": "Quel terme désigne l'identifiant numérique d'une instruction virtuelle dans une VM (ex: 0x13) ?",
-        "options": [
-            {
-                "id": "a",
-                "label": "Seed",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Opcode",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "Hash",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Flag",
-                "correct": false
-            }
-        ],
-        "explanation": "L'opcode (Operation Code) est la valeur qui indique à la VM quelle opération effectuer."
     },
     {
         "id": "q27",
@@ -837,33 +729,6 @@
         "explanation": "L'obfuscation est une sécurité par l'obscurité ; avec assez de temps et de ressources, elle peut toujours être inversée."
     },
     {
-        "id": "q32",
-        "text": "Dans l'exemple de VM, à quoi sert la fonction 'assign' ?",
-        "options": [
-            {
-                "id": "a",
-                "label": "À allouer de la mémoire RAM",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "À copier une valeur dans un registre virtuel",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "À définir le nom de la fonction",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "À ouvrir un fichier",
-                "correct": false
-            }
-        ],
-        "explanation": "L'instruction virtuelle 'assign' (opcode 0x13 dans l'exemple) sert à charger une valeur dans un registre interne de la VM."
-    },
-    {
         "id": "q33",
         "text": "Quelle commande permet de compiler le fichier 'main.c' avec gcc ?",
         "options": [
@@ -916,33 +781,6 @@
             }
         ],
         "explanation": "La seed (graine) est la valeur de départ utilisée par l'algorithme pour générer la séquence de nombres pseudo-aléatoires."
-    },
-    {
-        "id": "q35",
-        "text": "Pourquoi le code 'call' dans l'exemple de Junk Code pointe-t-il vers 'start+0x13' ?",
-        "options": [
-            {
-                "id": "a",
-                "label": "Pour appeler une fonction système",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Pour sauter au milieu d'une instruction suivante et tromper le désassembleur",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "C'est une erreur de programmation",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Pour initialiser la pile",
-                "correct": false
-            }
-        ],
-        "explanation": "Le saut au milieu d'une instruction force le désassembleur à interpréter des octets qui ne sont pas des débuts d'instruction, créant un faux code."
     },
     {
         "id": "q36",

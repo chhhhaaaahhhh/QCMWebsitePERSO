@@ -1,7 +1,7 @@
 [
     {
         "id": "q61",
-        "text": "Qui a l'initiative d'un 'Projet de loi' ?",
+        "text": "Qui a l'initiative d'un Projet de loi ?",
         "options": [
             { "id": "a", "label": "Un groupe de citoyens", "correct": false },
             { "id": "b", "label": "Le Parlement (députés ou sénateurs)", "correct": false },
@@ -33,19 +33,8 @@
         "explanation": "Le magistrat du parquet (le procureur) représente les intérêts de la société et requiert une peine contre l'auteur de l'infraction."
     },
     {
-        "id": "q64",
-        "text": "Quelle juridiction tranche les conflits de compétence entre l'ordre judiciaire et l'ordre administratif ?",
-        "options": [
-            { "id": "a", "label": "La Cour de Cassation", "correct": false },
-            { "id": "b", "label": "Le Conseil d'État", "correct": false },
-            { "id": "c", "label": "Le Tribunal des Conflits", "correct": true },
-            { "id": "d", "label": "Le Conseil Constitutionnel", "correct": false }
-        ],
-        "explanation": "Le Tribunal des Conflits est la juridiction paritaire chargée de départager les deux ordres de juridiction (judiciaire et administratif) en cas de doute sur la compétence."
-    },
-    {
         "id": "q65",
-        "text": "Dans la pyramide des normes, que trouve-t-on dans le 'Bloc de légalité' ?",
+        "text": "Dans la pyramide des normes, que trouve-t-on dans le Bloc de légalité ?",
         "options": [
             { "id": "a", "label": "La Constitution", "correct": false },
             { "id": "b", "label": "Les lois ordinaires, organiques et les ordonnances ratifiées", "correct": true },
@@ -56,7 +45,7 @@
     },
     {
         "id": "q66",
-        "text": "Quelle est la fonction du 'Dispositif' dans une décision de justice ?",
+        "text": "Quelle est la fonction du Dispositif dans une décision de justice ?",
         "options": [
             { "id": "a", "label": "Rappeler les faits chronologiquement", "correct": false },
             { "id": "b", "label": "Exposer les arguments des parties", "correct": false },
@@ -67,7 +56,7 @@
     },
     {
         "id": "q67",
-        "text": "Que sont les 'Motifs' dans un jugement ?",
+        "text": "Que sont les Motif' dans un jugement ?",
         "options": [
             { "id": "a", "label": "Le raisonnement juridique du juge expliquant sa décision", "correct": true },
             { "id": "b", "label": "La liste des preuves fournies", "correct": false },
@@ -78,7 +67,7 @@
     },
     {
         "id": "q68",
-        "text": "Qu'appelle-t-on 'Moyens' dans le jargon juridique ?",
+        "text": "Qu'appelle-t-on Moyens dans le jargon juridique ?",
         "options": [
             { "id": "a", "label": "Les ressources financières du tribunal", "correct": false },
             { "id": "b", "label": "Les arguments juridiques soulevés par les parties", "correct": true },
@@ -89,7 +78,7 @@
     },
     {
         "id": "q69",
-        "text": "Quelle est la définition de la 'Nationalité' ?",
+        "text": "Quelle est la définition de la Nationalité ?",
         "options": [
             { "id": "a", "label": "Le lieu de résidence habituel", "correct": false },
             { "id": "b", "label": "L'origine ethnique d'une personne", "correct": false },
@@ -111,7 +100,7 @@
     },
     {
         "id": "q71",
-        "text": "Qu'est-ce que le 'Commencement de preuve par écrit' ?",
+        "text": "Qu'est-ce que le Commencement de preuve par écrit ?",
         "options": [
             { "id": "a", "label": "Un contrat signé devant notaire", "correct": false },
             { "id": "b", "label": "Un écrit émanant de celui qui conteste l'acte, rendant vraisemblable le fait allégué", "correct": true },
@@ -122,7 +111,7 @@
     },
     {
         "id": "q72",
-        "text": "En quoi consiste le 'Serment' en tant que mode de preuve ?",
+        "text": "En quoi consiste le Serment en tant que mode de preuve ?",
         "options": [
             { "id": "a", "label": "Une promesse faite à sa famille", "correct": false },
             { "id": "b", "label": "Une affirmation solennelle devant le juge attestant de la véracité d'un fait", "correct": true },
@@ -133,7 +122,7 @@
     },
     {
         "id": "q73",
-        "text": "Qu'est-ce que l''Aveu' ?",
+        "text": "Qu'est-ce que l'Aveu ?",
         "options": [
             { "id": "a", "label": "La reconnaissance par une personne d'un fait produisant des conséquences juridiques contre elle", "correct": true },
             { "id": "b", "label": "Une dénonciation calomnieuse", "correct": false },
@@ -144,7 +133,7 @@
     },
     {
         "id": "q74",
-        "text": "Quelle est la particularité d'une 'Présomption mixte' ?",
+        "text": "Quelle est la particularité d'une Présomption mixt ?",
         "options": [
             { "id": "a", "label": "Elle ne peut jamais être renversée", "correct": false },
             { "id": "b", "label": "Elle peut être renversée par tout moyen", "correct": false },
@@ -166,7 +155,7 @@
     },
     {
         "id": "q76",
-        "text": "Quel est le rôle d'une 'Autorité de Certification' ?",
+        "text": "Quel est le rôle d'une Autorité de Certification ?",
         "options": [
             { "id": "a", "label": "Vendre des ordinateurs", "correct": false },
             { "id": "b", "label": "Délivrer des certificats numériques garantissant l'identité d'un utilisateur ou d'un serveur", "correct": true },
@@ -210,7 +199,7 @@
     },
     {
         "id": "q80",
-        "text": "Qu'est-ce que le 'droit à la portabilité' des données ?",
+        "text": "Qu'est-ce que le droit à la portabilité des données ?",
         "options": [
             { "id": "a", "label": "Le droit de transporter son ordinateur portable au travail", "correct": false },
             { "id": "b", "label": "Le droit de récupérer ses données dans un format structuré pour les transmettre à un autre prestataire", "correct": true },
@@ -224,7 +213,7 @@
         "text": "Quelle base légale du RGPD est souvent utilisée pour la prospection commerciale ?",
         "options": [
             { "id": "a", "label": "La sauvegarde des intérêts vitaux", "correct": false },
-            { "id": "b", "label": "L'intérêt légitime (ou le consentement)", "correct": true },
+            { "id": "b", "label": "L'intérêt légitime", "correct": true },
             { "id": "c", "label": "L'obligation légale", "correct": false },
             { "id": "d", "label": "La mission de service public", "correct": false }
         ],
@@ -309,7 +298,7 @@
     },
     {
         "id": "q89",
-        "text": "Qu'est-ce qu'une 'Loi constitutionnelle' ?",
+        "text": "Qu'est-ce qu'une Loi constitutionnelle ?",
         "options": [
             { "id": "a", "label": "Une loi qui modifie la Constitution", "correct": true },
             { "id": "b", "label": "Une loi votée par le Conseil Constitutionnel", "correct": false },
@@ -320,7 +309,7 @@
     },
     {
         "id": "q90",
-        "text": "Qu'est-ce qu'une 'Loi organique' ?",
+        "text": "Qu'est-ce qu'une Loi organique ?",
         "options": [
             { "id": "a", "label": "Une loi relative à l'agriculture", "correct": false },
             { "id": "b", "label": "Une loi précisant l'organisation et le fonctionnement des pouvoirs publics, supérieure aux lois ordinaires", "correct": true },
@@ -330,19 +319,8 @@
         "explanation": "La loi organique complète la Constitution pour organiser les pouvoirs publics et se situe au-dessus de la loi ordinaire dans la hiérarchie."
     },
     {
-        "id": "q91",
-        "text": "Que signifie l'adage 'Actori incumbit probatio' ?",
-        "options": [
-            { "id": "a", "label": "La preuve incombe au demandeur", "correct": true },
-            { "id": "b", "label": "L'accusé est présumé innocent", "correct": false },
-            { "id": "c", "label": "Le juge ne peut pas refuser de juger", "correct": false },
-            { "id": "d", "label": "La loi est dure mais c'est la loi", "correct": false }
-        ],
-        "explanation": "C'est la traduction latine du principe de la charge de la preuve : c'est à celui qui agit (le demandeur) de prouver les faits qu'il allègue."
-    },
-    {
         "id": "q92",
-        "text": "Dans le cadre de la preuve numérique, qu'est-ce que l''Intégrité' ?",
+        "text": "Dans le cadre de la preuve numérique, qu'est-ce que l'Intégrité ?",
         "options": [
             { "id": "a", "label": "Le fait que l'auteur soit honnête", "correct": false },
             { "id": "b", "label": "L'assurance que le document n'a subi aucune modification ou altération", "correct": true },
@@ -353,7 +331,7 @@
     },
     {
         "id": "q93",
-        "text": "La 'Blockchain' est-elle reconnue comme mode de preuve ?",
+        "text": "La Blockchain est-elle reconnue comme mode de preuve ?",
         "options": [
             { "id": "a", "label": "Non, c'est illégal", "correct": false },
             { "id": "b", "label": "Oui, elle renforce l'authenticité grâce à son système d'enregistrement décentralisé et immuable", "correct": true },
@@ -363,19 +341,8 @@
         "explanation": "Bien que nécessitant parfois une expertise, la blockchain est un moyen technique renforçant l'authenticité et l'intégrité (traçabilité infalsifiable) admis en justice."
     },
     {
-        "id": "q94",
-        "text": "En matière pénale, le juge juge-t-il selon des preuves tarifées (valeur fixée) ?",
-        "options": [
-            { "id": "a", "label": "Oui, l'écrit vaut plus que le témoignage", "correct": false },
-            { "id": "b", "label": "Non, il juge selon son 'intime conviction' au vu des éléments débattus", "correct": true },
-            { "id": "c", "label": "Oui, l'aveu est la reine des preuves", "correct": false },
-            { "id": "d", "label": "Uniquement pour les contraventions", "correct": false }
-        ],
-        "explanation": "En droit pénal français, il n'y a pas de hiérarchie légale des preuves (système de l'intime conviction), contrairement au système de preuves légales."
-    },
-    {
         "id": "q95",
-        "text": "Une preuve obtenue par 'provocation' policière (pousser au crime) est-elle recevable ?",
+        "text": "Une preuve obtenue par provocation policière (pousser au crime) est-elle recevable ?",
         "options": [
             { "id": "a", "label": "Oui, tous les moyens sont bons", "correct": false },
             { "id": "b", "label": "Non, c'est une atteinte à la loyauté et à un procès équitable", "correct": true },
@@ -386,7 +353,7 @@
     },
     {
         "id": "q96",
-        "text": "Qu'est-ce qu'une 'Ordonnance' (au sens de l'article 38 de la Constitution) ?",
+        "text": "Qu'est-ce qu'une Ordonnance (au sens de l'article 38 de la Constitution) ?",
         "options": [
             { "id": "a", "label": "Une prescription médicale", "correct": false },
             { "id": "b", "label": "Une mesure prise par le Gouvernement dans un domaine relevant normalement de la Loi", "correct": true },
@@ -397,7 +364,7 @@
     },
     {
         "id": "q97",
-        "text": "Quelle juridiction est compétente pour juger un 'Crime' (ex: meurtre) ?",
+        "text": "Quelle juridiction est compétente pour juger un Crime ?",
         "options": [
             { "id": "a", "label": "Le Tribunal Correctionnel", "correct": false },
             { "id": "b", "label": "La Cour d'Appel", "correct": false },
@@ -421,7 +388,7 @@
         "id": "q99",
         "text": "En cas de divorce, quel juge est compétent ?",
         "options": [
-            { "id": "a", "label": "Le Juge aux Affaires Familiales (JAF) du Tribunal Judiciaire", "correct": true },
+            { "id": "a", "label": "Le Juge aux Affaires Familiales", "correct": true },
             { "id": "b", "label": "Le Juge des Enfants", "correct": false },
             { "id": "c", "label": "Le Tribunal de Commerce", "correct": false },
             { "id": "d", "label": "Le Maire", "correct": false }
@@ -430,7 +397,7 @@
     },
     {
         "id": "q100",
-        "text": "Qu'est-ce que la 'Capacité de contracter' ?",
+        "text": "Qu'est-ce que la Capacité de contracter ?",
         "options": [
             { "id": "a", "label": "Avoir un compte bancaire", "correct": false },
             { "id": "b", "label": "Ne pas être mineur non émancipé ou majeur protégé", "correct": true },
@@ -441,7 +408,7 @@
     },
     {
         "id": "q101",
-        "text": "Qu'est-ce qu'un 'Vice du consentement' ?",
+        "text": "Qu'est-ce qu'un Vice du consentement ?",
         "options": [
             { "id": "a", "label": "Une erreur de date dans le contrat", "correct": false },
             { "id": "b", "label": "Un fait qui a faussé la volonté d'une partie", "correct": true },
@@ -452,7 +419,7 @@
     },
     {
         "id": "q102",
-        "text": "Quelle est la conséquence de la 'Nullité' d'un contrat ?",
+        "text": "Quelle est la conséquence de la Nullité d'un contrat ?",
         "options": [
             { "id": "a", "label": "Il s'arrête pour l'avenir seulement", "correct": false },
             { "id": "b", "label": "La remise en l'état antérieur", "correct": true },
@@ -474,7 +441,7 @@
     },
     {
         "id": "q104",
-        "text": "Qu'est-ce que le 'Bloc réglementaire' ?",
+        "text": "Qu'est-ce que le Bloc réglementaire ?",
         "options": [
             { "id": "a", "label": "L'ensemble des lois votées", "correct": false },
             { "id": "b", "label": "Les actes émanant du pouvoir exécutif (décrets, arrêtés)", "correct": true },
@@ -496,7 +463,7 @@
     },
     {
         "id": "q106",
-        "text": "Qu'est-ce que la 'CJUE' ?",
+        "text": "Qu'est-ce que la CJUE ?",
         "options": [
             { "id": "a", "label": "Le Comité des Jeunes pour l'Union Européenne", "correct": false },
             { "id": "b", "label": "La Cour de Justice de l'Union Européenne (veille au respect du droit de l'UE)", "correct": true },
@@ -518,7 +485,7 @@
     },
     {
         "id": "q108",
-        "text": "La 'vidéosurveillance' au travail peut-elle filmer les employés en permanence à leur poste ?",
+        "text": "La vidéosurveillance au travail peut-elle filmer les employés en permanence à leur poste ?",
         "options": [
             { "id": "a", "label": "Oui, pour vérifier s'ils travaillent", "correct": false },
             { "id": "b", "label": "Non, sauf circonstances exceptionnelles", "correct": true },
@@ -529,7 +496,7 @@
     },
     {
         "id": "q109",
-        "text": "Qu'est-ce qu'une 'Copie fiable' en droit numérique ?",
+        "text": "Qu'est-ce qu'une Copie fiable en droit numérique ?",
         "options": [
             { "id": "a", "label": "Une photocopie couleur", "correct": false },
             { "id": "b", "label": "Une reproduction à l'identique dont l'intégrité est garantie (ex: numérisation certifiée)", "correct": true },
@@ -540,7 +507,7 @@
     },
     {
         "id": "q110",
-        "text": "Quelle est la durée maximale de prison pour un Délit (en général) ?",
+        "text": "Quelle est la durée maximale de prison pour un Délit ?",
         "options": [
             { "id": "a", "label": "6 mois", "correct": false },
             { "id": "b", "label": "10 ans", "correct": true },
@@ -551,7 +518,7 @@
     },
     {
         "id": "q111",
-        "text": "Quelle est la définition d'un 'Majeur protégé' ?",
+        "text": "Quelle est la définition d'un Majeur protégé ?",
         "options": [
             { "id": "a", "label": "Une personne de plus de 18 ans dont les facultés sont altérées et qui bénéficie d'une mesure de protection (tutelle, curatelle)", "correct": true },
             { "id": "b", "label": "Un VIP avec gardes du corps", "correct": false },
@@ -565,7 +532,7 @@
         "text": "Quel principe régit le doute en matière pénale ?",
         "options": [
             { "id": "a", "label": "Le doute profite à l'accusation", "correct": false },
-            { "id": "b", "label": "Le doute profite à l'accusé (In dubio pro reo)", "correct": true },
+            { "id": "b", "label": "Le doute profite à l'accusé", "correct": true },
             { "id": "c", "label": "Le doute annule le procès", "correct": false },
             { "id": "d", "label": "Le juge choisit au hasard", "correct": false }
         ],
@@ -573,7 +540,7 @@
     },
     {
         "id": "q113",
-        "text": "Qu'est-ce que l''Usurpation d'identité' (Art 226-4-1) ?",
+        "text": "Qu'est-ce que l'Usurpation d'identité (Art 226-4-1) ?",
         "options": [
             { "id": "a", "label": "Porter le même nom qu'une star", "correct": false },
             { "id": "b", "label": "Le fait de se faire passer pour un tiers ou d'utiliser ses données pour troubler sa tranquillité ou porter atteinte à son honneur", "correct": true },
@@ -584,7 +551,7 @@
     },
     {
         "id": "q114",
-        "text": "Le 'Droit d'accès' (RGPD) permet-il d'obtenir une copie de ses données ?",
+        "text": "Le Droit d'accès (RGPD) permet-il d'obtenir une copie de ses données ?",
         "options": [
             { "id": "a", "label": "Non, juste de les regarder sur place", "correct": false },
             { "id": "b", "label": "Oui, le responsable doit fournir une copie des données traitées", "correct": true },
@@ -595,7 +562,7 @@
     },
     {
         "id": "q115",
-        "text": "Qu'est-ce qu'une 'Mise en demeure' de la CNIL ?",
+        "text": "Qu'est-ce qu'une Mise en demeure de la CNIL ?",
         "options": [
             { "id": "a", "label": "Une amende immédiate", "correct": false },
             { "id": "b", "label": "Une injonction administrative de se mettre en conformité dans un délai donné sous peine de sanction", "correct": true },
@@ -606,10 +573,10 @@
     },
     {
         "id": "q116",
-        "text": "Un 'Fait juridique' se prouve-t-il obligatoirement par écrit ?",
+        "text": "Un Fait juridique se prouve-t-il obligatoirement par écrit ?",
         "options": [
             { "id": "a", "label": "Oui, toujours", "correct": false },
-            { "id": "b", "label": "Non, la preuve est libre (témoignages, présomptions, etc.)", "correct": true },
+            { "id": "b", "label": "Non, la preuve est libre", "correct": true },
             { "id": "c", "label": "Seulement s'il y a un mort", "correct": false },
             { "id": "d", "label": "Oui, sauf en commerce", "correct": false }
         ],
@@ -617,7 +584,7 @@
     },
     {
         "id": "q117",
-        "text": "Qu'est-ce que la 'Responsabilité du fait d'autrui' ?",
+        "text": "Qu'est-ce que la Responsabilité du fait d'autrui ?",
         "options": [
             { "id": "a", "label": "Être puni à la place de quelqu'un", "correct": false },
             { "id": "b", "label": "L'obligation de réparer le dommage causé par une personne dont on doit répondre", "correct": true },
@@ -628,7 +595,7 @@
     },
     {
         "id": "q118",
-        "text": "La 'Binationalité' est-elle autorisée en France ?",
+        "text": "La Binationalité est-elle autorisée en France ?",
         "options": [
             { "id": "a", "label": "Non, il faut choisir à 18 ans", "correct": false },
             { "id": "b", "label": "Oui, si le principe de réciprocité existe avec l'autre pays", "correct": true },
@@ -638,19 +605,8 @@
         "explanation": "La France accepte qu'un citoyen possède plusieurs nationalités."
     },
     {
-        "id": "q119",
-        "text": "Qu'est-ce que l''Indisponibilité' du corps humain (principe lié à la personne) ?",
-        "options": [
-            { "id": "a", "label": "On ne peut pas se faire tatouer", "correct": false },
-            { "id": "b", "label": "Le corps n'est pas une marchandise, il ne peut faire l'objet de contrats commerciaux", "correct": true },
-            { "id": "c", "label": "On ne peut pas donner son sang", "correct": false },
-            { "id": "d", "label": "Le médecin décide pour nous", "correct": false }
-        ],
-        "explanation": "Le corps humain est hors commerce ; les conventions portant sur le corps (sauf don gratuit et encadré) sont nulles."
-    },
-    {
         "id": "q120",
-        "text": "Quelle est la définition de la 'Force majeure' (cause d'exonération) ?",
+        "text": "Quelle est la définition de la Force majeure ?",
         "options": [
             { "id": "a", "label": "Un événement imprévisible, irrésistible et extérieur", "correct": true },
             { "id": "b", "label": "Une grève surprise", "correct": false },

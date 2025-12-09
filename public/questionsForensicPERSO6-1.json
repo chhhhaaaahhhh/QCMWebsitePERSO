@@ -12,7 +12,7 @@
     },
     {
         "id": "q2",
-        "text": "Quel système d'exploitation est la cible privilégiée des attaquants selon le cours ?",
+        "text": "Quel système d'exploitation est la cible privilégiée des attaquants ?",
         "options": [
             { "id": "a", "label": "Linux", "correct": false },
             { "id": "b", "label": "macOS", "correct": false },
@@ -37,7 +37,7 @@
         "text": "Quelle est la différence principale entre un CERT et un CSIRT ?",
         "options": [
             { "id": "a", "label": "Le CERT s'occupe du matériel, le CSIRT du logiciel", "correct": false },
-            { "id": "b", "label": "Le terme CERT est une marque déposée, tandis que CSIRT est le concept de base, mais leurs missions sont similaires", "correct": true },
+            { "id": "b", "label": "Le CERT est une marque déposée, le CSIRT est le concept de base", "correct": true },
             { "id": "c", "label": "Le CSIRT est uniquement gouvernemental", "correct": false },
             { "id": "d", "label": "Le CERT ne fait pas de réponse à incident", "correct": false }
         ],
@@ -89,7 +89,7 @@
     },
     {
         "id": "q9",
-        "text": "Quel est l'objectif de l'étape 'Corrélation et Reporting' ?",
+        "text": "Quel est l'objectif de l'étape Corrélation et Reporting ?",
         "options": [
             { "id": "a", "label": "Collecter les disques durs", "correct": false },
             { "id": "b", "label": "Réinstaller le système d'exploitation", "correct": false },
@@ -124,8 +124,8 @@
         "id": "q12",
         "text": "Qu'est-ce que la mémoire volatile ?",
         "options": [
-            { "id": "a", "label": "Une mémoire qui conserve les données après extinction (ex: Disque dur)", "correct": false },
-            { "id": "b", "label": "Une mémoire qui nécessite une alimentation continue pour conserver l'information (ex: RAM)", "correct": true },
+            { "id": "a", "label": "Une mémoire qui conserve les données après extinction", "correct": false },
+            { "id": "b", "label": "Une mémoire qui nécessite une alimentation continue pour conserver l'information", "correct": true },
             { "id": "c", "label": "Une mémoire en lecture seule (ROM)", "correct": false },
             { "id": "d", "label": "Une clé USB chiffrée", "correct": false }
         ],
@@ -144,7 +144,7 @@
     },
     {
         "id": "q14",
-        "text": "Dans KAPE, qu'est-ce qu'une 'Target' ?",
+        "text": "Dans KAPE, qu'est-ce qu'une Target ?",
         "options": [
             { "id": "a", "label": "L'adresse IP de l'attaquant", "correct": false },
             { "id": "b", "label": "Un programme qui traite les données collectées", "correct": false },
@@ -155,7 +155,7 @@
     },
     {
         "id": "q15",
-        "text": "À quoi servent les 'Modules' dans KAPE ?",
+        "text": "À quoi servent les Modules dans KAPE ?",
         "options": [
             { "id": "a", "label": "À exécuter des outils spécifiques sur les artefacts collectés pour en extraire des informations", "correct": true },
             { "id": "b", "label": "À définir les extensions de fichiers à ignorer", "correct": false },
@@ -166,7 +166,7 @@
     },
     {
         "id": "q16",
-        "text": "Où se trouvent physiquement les fichiers des ruches du registre système (System hives) ?",
+        "text": "Où se trouvent physiquement les fichiers des ruches du registre système  ?",
         "options": [
             { "id": "a", "label": "C:\\Users\\<username>\\", "correct": false },
             { "id": "b", "label": "C:\\Program Files\\Registry\\", "correct": false },
@@ -193,7 +193,7 @@
             { "id": "a", "label": "MFTECmd", "correct": false },
             { "id": "b", "label": "Registry Explorer", "correct": true },
             { "id": "c", "label": "LECmd", "correct": false },
-            { "id": "d", "label": "PECmd", "correct": false }
+            { "id": "d", "label": "Regedit.exe", "correct": false }
         ],
         "explanation": "Registry Explorer est l'outil GUI dédié au chargement et à l'analyse des ruches de registre hors ligne."
     },
@@ -243,10 +243,10 @@
     },
     {
         "id": "q23",
-        "text": "L'artefact 'UserAssist' est utile pour prouver :",
+        "text": "L'artefact UserAssist est utile pour prouver :",
         "options": [
-            { "id": "a", "label": "L'exécution de programmes via l'interface graphique (GUI)", "correct": true },
-            { "id": "b", "label": "L'exécution de commandes en ligne de commande (CMD)", "correct": false },
+            { "id": "a", "label": "L'exécution de programmes via l'interface graphique", "correct": true },
+            { "id": "b", "label": "L'exécution de commandes en ligne de commande", "correct": false },
             { "id": "c", "label": "La copie de fichiers sur USB", "correct": false },
             { "id": "d", "label": "Le changement de mot de passe", "correct": false }
         ],
@@ -254,7 +254,7 @@
     },
     {
         "id": "q24",
-        "text": "Où est stocké l'artefact ShimCache (AppCompatCache) ?",
+        "text": "Où est stocké l'artefact ShimCache ?",
         "options": [
             { "id": "a", "label": "NTUSER.DAT", "correct": false },
             { "id": "b", "label": "Ruche SYSTEM", "correct": true },
@@ -298,7 +298,7 @@
     },
     {
         "id": "q28",
-        "text": "Quel est le rôle de la MFT (Master File Table) dans NTFS ?",
+        "text": "Quel est le rôle de la MFT dans NTFS ?",
         "options": [
             { "id": "a", "label": "Stocker uniquement les fichiers supprimés", "correct": false },
             { "id": "b", "label": "Servir de base de données contenant les enregistrements de tous les fichiers du volume", "correct": true },
@@ -323,7 +323,7 @@
         "text": "À quoi sert le Prefetch sur Windows ?",
         "options": [
             { "id": "a", "label": "À espionner l'utilisateur", "correct": false },
-            { "id": "b", "label": "À accélérer le démarrage des applications en préchargeant les ressources", "correct": true },
+            { "id": "b", "label": "À accélérer le démarrage des applications", "correct": true },
             { "id": "c", "label": "À supprimer les fichiers temporaires", "correct": false },
             { "id": "d", "label": "À bloquer les virus", "correct": false }
         ],
@@ -331,7 +331,7 @@
     },
     {
         "id": "q31",
-        "text": "Combien de fichiers Prefetch (entrées uniques) Windows conserve-t-il environ ?",
+        "text": "Combien de fichiers Prefetch (entrées uniques) Windows conserve-t-il ?",
         "options": [
             { "id": "a", "label": "1024", "correct": false },
             { "id": "b", "label": "128", "correct": true },
@@ -364,7 +364,7 @@
     },
     {
         "id": "q34",
-        "text": "Que permettent de retracer les 'Jump Lists' ?",
+        "text": "Que permettent de retracer les Jump Lists ?",
         "options": [
             { "id": "a", "label": "Les sauts de ligne dans un fichier texte", "correct": false },
             { "id": "b", "label": "Les fichiers récemment ouverts par une application spécifique (via la barre des tâches)", "correct": true },
@@ -389,7 +389,7 @@
         "text": "Lorsqu'un fichier est supprimé sur NTFS, que se passe-t-il réellement ?",
         "options": [
             { "id": "a", "label": "Le fichier est immédiatement écrasé par des zéros", "correct": false },
-            { "id": "b", "label": "L'entrée MFT est marquée comme libre, mais le contenu reste sur le disque tant qu'il n'est pas réécrit", "correct": true },
+            { "id": "b", "label": "L'entrée MFT est marquée comme libre, mais le contenu reste sur le disque", "correct": true },
             { "id": "c", "label": "Le fichier est déplacé dans un dossier caché 'System Volume Information'", "correct": false },
             { "id": "d", "label": "Le disque dur est formaté", "correct": false }
         ],
@@ -408,7 +408,7 @@
     },
     {
         "id": "q38",
-        "text": "Dans quel dossier sont stockés les fichiers Jump Lists 'Automatic Destinations' ?",
+        "text": "Dans quel dossier sont stockés les fichiers Jump Lists Automatic Destinations ?",
         "options": [
             { "id": "a", "label": "C:\\Windows\\Prefetch", "correct": false },
             { "id": "b", "label": "%AppData%\\Roaming\\Microsoft\\Windows\\Recent\\Automatic Destinations", "correct": true },
@@ -419,7 +419,7 @@
     },
     {
         "id": "q39",
-        "text": "Quel artefact du registre permet de voir les boîtes de dialogue 'Ouvrir/Enregistrer' utilisées ?",
+        "text": "Quel artefact du registre permet de voir les boîtes de dialogue Ouvrir/Enregistrer utilisées ?",
         "options": [
             { "id": "a", "label": "OpenSavePidlMRU", "correct": true },
             { "id": "b", "label": "RunMRU", "correct": false },
@@ -430,7 +430,7 @@
     },
     {
         "id": "q40",
-        "text": "Lequel de ces éléments n'est PAS une ruche système ?",
+        "text": "Lequel de ces éléments n'est pas une ruche système ?",
         "options": [
             { "id": "a", "label": "SAM", "correct": false },
             { "id": "b", "label": "SECURITY", "correct": false },
@@ -465,7 +465,7 @@
         "id": "q43",
         "text": "Dans KAPE, quel type de fichier a l'extension .mkape ?",
         "options": [
-            { "id": "a", "label": "Une Target (Cible)", "correct": false },
+            { "id": "a", "label": "Une Target", "correct": false },
             { "id": "b", "label": "Un Module", "correct": true },
             { "id": "c", "label": "Un rapport d'erreur", "correct": false },
             { "id": "d", "label": "Une image disque", "correct": false }
@@ -474,9 +474,9 @@
     },
     {
         "id": "q44",
-        "text": "Quel est l'intérêt d'utiliser une 'Compound Target' dans KAPE ?",
+        "text": "Quel est l'intérêt d'utiliser une Compound Target dans KAPE ?",
         "options": [
-            { "id": "a", "label": "Collecter plusieurs groupes d'artefacts en une seule commande", "correct": true },
+            { "id": "a", "label": "Collecter plusieurs groupes d'artefacts", "correct": true },
             { "id": "b", "label": "Compresser les données plus fortement", "correct": false },
             { "id": "c", "label": "Cibler uniquement la RAM", "correct": false },
             { "id": "d", "label": "Réparer les fichiers corrompus", "correct": false }
@@ -507,7 +507,7 @@
     },
     {
         "id": "q47",
-        "text": "Lequel de ces outils n'est PAS un outil de la suite Eric Zimmerman ?",
+        "text": "Lequel de ces outils n'est pas un outil de la suite Eric Zimmerman ?",
         "options": [
             { "id": "a", "label": "LECmd", "correct": false },
             { "id": "b", "label": "MFTECmd", "correct": false },
@@ -518,9 +518,9 @@
     },
     {
         "id": "q48",
-        "text": "À quelle catégorie d'incident correspond une 'Supply Chain Attack' ?",
+        "text": "À quelle catégorie d'incident correspond une Supply Chain Attack ?",
         "options": [
-            { "id": "a", "label": "Une attaque visant un fournisseur ou un partenaire pour atteindre la cible finale", "correct": true },
+            { "id": "a", "label": "Une attaque visant un fournisseur ou un partenaire", "correct": true },
             { "id": "b", "label": "Une attaque par déni de service", "correct": false },
             { "id": "c", "label": "Un vol d'ordinateur portable", "correct": false },
             { "id": "d", "label": "Une panne de courant", "correct": false }
@@ -529,9 +529,9 @@
     },
     {
         "id": "q49",
-        "text": "Qu'est-ce que l'analyse 'Post-Mortem' ou 'à froid' ?",
+        "text": "Qu'est-ce que l'analyse Post-Mortem ?",
         "options": [
-            { "id": "a", "label": "L'analyse d'un système éteint, via une copie de son disque dur", "correct": true },
+            { "id": "a", "label": "L'analyse d'un système éteint via une copie de son disque dur", "correct": true },
             { "id": "b", "label": "L'analyse d'un système en cours de fonctionnement", "correct": false },
             { "id": "c", "label": "L'analyse de la mémoire RAM uniquement", "correct": false },
             { "id": "d", "label": "L'analyse des logs réseau en temps réel", "correct": false }
@@ -540,25 +540,14 @@
     },
     {
         "id": "q50",
-        "text": "Quel est l'objectif principal de l'étape 'Identification du contexte' dans une investigation ?",
+        "text": "Quel est l'objectif principal de l'étape Identification du contexte dans une investigation ?",
         "options": [
-            { "id": "a", "label": "Comprendre l'incident, son périmètre et répondre aux questions 'Qui, Quoi, Où'", "correct": true },
+            { "id": "a", "label": "Comprendre l'incident et son périmètre", "correct": true },
             { "id": "b", "label": "Formater les disques durs", "correct": false },
             { "id": "c", "label": "Rédiger le rapport final immédiatement", "correct": false },
             { "id": "d", "label": "Arrêter tous les serveurs de l'entreprise", "correct": false }
         ],
         "explanation": "Cette première étape est cruciale pour qualifier l'incident, savoir quelles machines sont touchées et orienter la suite de l'investigation."
-    },
-    {
-        "id": "q51",
-        "text": "Quelle commande Linux est mentionnée dans le cours pour calculer le hash d'un fichier ?",
-        "options": [
-            { "id": "a", "label": "sha256sum", "correct": false },
-            { "id": "b", "label": "md51sum", "correct": true },
-            { "id": "c", "label": "certutil", "correct": false },
-            { "id": "d", "label": "hashcalc", "correct": false }
-        ],
-        "explanation": "Le cours spécifie l'utilisation de la commande 'md51sum' pour calculer le hash d'un fichier sur un système Linux."
     },
     {
         "id": "q52",
@@ -573,7 +562,7 @@
     },
     {
         "id": "q53",
-        "text": "Quel est le format de fichier utilisé pour les définitions de 'Targets' dans KAPE ?",
+        "text": "Quel est le format de fichier utilisé pour les définitions de Targets dans KAPE ?",
         "options": [
             { "id": "a", "label": ".mkape", "correct": false },
             { "id": "b", "label": ".tkape", "correct": true },
@@ -628,7 +617,7 @@
     },
     {
         "id": "q58",
-        "text": "Quel fichier de métadonnées NTFS commence par '$' et contient tous les enregistrements de fichiers ?",
+        "text": "Quel fichier de métadonnées NTFS contient tous les enregistrements de fichiers ?",
         "options": [
             { "id": "a", "label": "$MFT", "correct": true },
             { "id": "b", "label": "$Root", "correct": false },
@@ -661,10 +650,10 @@
     },
     {
         "id": "q61",
-        "text": "Quelle information spécifique fournit la clé de registre 'NetworkList' ?",
+        "text": "Quelle information spécifique fournit la clé de registre NetworkList ?",
         "options": [
             { "id": "a", "label": "Les adresses MAC des cartes réseau locales", "correct": false },
-            { "id": "b", "label": "Les réseaux (Wi-Fi/Ethernet) précédemment connectés", "correct": true },
+            { "id": "b", "label": "Les réseaux précédemment connectés", "correct": true },
             { "id": "c", "label": "La table de routage actuelle", "correct": false },
             { "id": "d", "label": "Les mots de passe Wi-Fi", "correct": false }
         ],
@@ -672,14 +661,14 @@
     },
     {
         "id": "q62",
-        "text": "Quel attribut n'est PAS un des attributs MACE du système NTFS ?",
+        "text": "Quel attribut n'est pas un des attributs MACE du système NTFS ?",
         "options": [
             { "id": "a", "label": "Modified", "correct": false },
             { "id": "b", "label": "Access", "correct": false },
             { "id": "c", "label": "Executed", "correct": true },
             { "id": "d", "label": "Entry modified", "correct": false }
         ],
-        "explanation": "Les attributs MACE sont Modified, Access, Create, et Entry modified. 'Executed' n'est pas un attribut de fichier standard NTFS."
+        "explanation": "Les attributs MACE sont Modified, Access, Create, et Entry modified."
     },
     {
         "id": "q63",
@@ -726,17 +715,6 @@
         "explanation": "Dans un fichier .mkape, le champ 'ExportFormat' définit si la sortie sera en csv, txt, etc."
     },
     {
-        "id": "q67",
-        "text": "Quel est l'outil 'JLECmd' utilisé pour analyser ?",
-        "options": [
-            { "id": "a", "label": "Les Jump Lists", "correct": true },
-            { "id": "b", "label": "Les journaux d'événements", "correct": false },
-            { "id": "c", "label": "Les fichiers JSON", "correct": false },
-            { "id": "d", "label": "Les fichiers Java", "correct": false }
-        ],
-        "explanation": "JLECmd (Jump List Explorer Command Line) est l'outil pour parser les fichiers de Jump Lists (Custom et Automatic Destinations)."
-    },
-    {
         "id": "q68",
         "text": "Quelle clé de registre stocke le nom de l'ordinateur ?",
         "options": [
@@ -760,10 +738,10 @@
     },
     {
         "id": "q70",
-        "text": "Les fichiers .lnk (raccourcis) contiennent des informations sur :",
+        "text": "Les fichiers .lnk contiennent des informations sur :",
         "options": [
             { "id": "a", "label": "Le contenu du fichier cible", "correct": false },
-            { "id": "b", "label": "La date de création du raccourci (première ouverture) et le chemin d'accès au fichier", "correct": true },
+            { "id": "b", "label": "La date de création du raccourci et le chemin d'accès au fichier", "correct": true },
             { "id": "c", "label": "Le mot de passe de l'utilisateur", "correct": false },
             { "id": "d", "label": "L'historique internet", "correct": false }
         ],
@@ -795,18 +773,18 @@
         "id": "q73",
         "text": "Quel format forensique permet la compression et l'ajout de métadonnées, contrairement au RAW ?",
         "options": [
-            { "id": "a", "label": "AFF (Advanced Forensic Format)", "correct": true },
+            { "id": "a", "label": "AFF", "correct": true },
             { "id": "b", "label": "TXT", "correct": false },
             { "id": "c", "label": "BMP", "correct": false },
             { "id": "d", "label": "CSV", "correct": false }
         ],
-        "explanation": "Les formats forensiques comme AFF ou EWF supportent la compression, le chiffrement et l'intégration de métadonnées d'enquête."
+        "explanation": "Les formats forensiques comme AFF(Advanced Forensic Format) ou EWF supportent la compression, le chiffrement et l'intégration de métadonnées d'enquête."
     },
     {
         "id": "q74",
         "text": "Quel artefact Windows 10 permet de reconstituer une chronologie d'activité détaillée (applications, fichiers, durée) ?",
         "options": [
-            { "id": "a", "label": "Timeline (ActivitiesCache.db)", "correct": true },
+            { "id": "a", "label": "Timeline", "correct": true },
             { "id": "b", "label": "MFT", "correct": false },
             { "id": "c", "label": "Registry", "correct": false },
             { "id": "d", "label": "Pagefile.sys", "correct": false }

@@ -78,7 +78,7 @@
                 "correct": false
             }
         ],
-        "explanation": "La réponse correcte est : TCPView → Cartographie mémoire virtuelle d'un processus."
+        "explanation": "La réponse correcte est : VMMAP → Cartographie mémoire virtuelle d'un processus."
     },
     {
         "id": "q4",
@@ -105,7 +105,7 @@
                 "correct": false
             }
         ],
-        "explanation": "La réponse correcte est : TCPView → Inspection arbre, handles, DLLs, threads."
+        "explanation": "La réponse correcte est : Process Explorer → Inspection arbre, handles, DLLs, threads."
     },
     {
         "id": "q5",
@@ -132,7 +132,7 @@
                 "correct": true
             }
         ],
-        "explanation": "La réponse correcte est : TCPView → Tracer I/O/Registre/Réseau en timeline."
+        "explanation": "La réponse correcte est : Process Monitor → Tracer I/O/Registre/Réseau en timeline."
     },
     {
         "id": "q6",
@@ -279,7 +279,7 @@
                 "correct": true
             }
         ],
-        "explanation": "La réponse correcte est : \\GLOBAL?? → Liens symboliques globaux (dosdevices),"
+        "explanation": "La réponse correcte est : \\Device → Périphériques (disques, claviers) et chemins NT."
     },
     {
         "id": "q12",
@@ -310,7 +310,7 @@
             {
                 "id": "b",
                 "label": "Faux",
-                "correct": true
+                "correct": false
             }
         ],
         "explanation": "Vrai : il participe aux fonctions du sous-système Win32 (graphique/historique avec win32k)."
@@ -391,7 +391,7 @@
             {
                 "id": "d",
                 "label": "HKCR",
-                "correct": true
+                "correct": false
             }
         ],
         "explanation": "Les secrets/NTLM résident dans la hive SAM (protégée). La hive SECURITY contient les politiques et infos de sécurité. La réponse est SAM."
@@ -1040,7 +1040,7 @@
             },
             {
                 "id": "d",
-                "label": "Resources (icônes, version, menus)",
+                "label": "Gestion des handles/références d'objets noyau",
                 "correct": true
             }
         ],

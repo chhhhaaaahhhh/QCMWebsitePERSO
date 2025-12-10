@@ -945,33 +945,6 @@
         "explanation": "La blockchain permet d'enregistrer des transactions de manière immuable et décentralisée, renforçant l'authenticité et l'intégrité de la preuve."
     },
     {
-        "id": "q36",
-        "text": "Dans le syllogisme juridique, quelle étape correspond à la 'Majeure' ?",
-        "options": [
-            {
-                "id": "a",
-                "label": "L'application de la règle aux faits",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Le rappel de la règle de droit applicable",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "L'exposé des faits",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "La conclusion",
-                "correct": false
-            }
-        ],
-        "explanation": "Le raisonnement juridique suit souvent un syllogisme : la Majeure (la règle de droit), la Mineure (les faits) et la Conclusion (la solution)."
-    },
-    {
         "id": "q37",
         "text": "Quelle loi française de 1978 a créé la CNIL ?",
         "options": [
@@ -1104,7 +1077,7 @@
                 "correct": false
             }
         ],
-        "explanation": "Le cours précise que le terme juridique se rapporte au droit (la matière), tandis que judiciaire se rapporte à la justice (l'institution et son fonctionnement)."
+        "explanation": "Le terme juridique se rapporte au droit (la matière), tandis que judiciaire se rapporte à la justice (l'institution et son fonctionnement)."
     },
     {
         "id": "q42",
@@ -1117,7 +1090,7 @@
             },
             {
                 "id": "b",
-                "label": "Du Tribunal de Grande Instance (TGI) et du Tribunal d'Instance (TI)",
+                "label": "Du Tribunal de Grande Instance et du Tribunal d'Instance",
                 "correct": true
             },
             {
@@ -1162,7 +1135,7 @@
     },
     {
         "id": "q44",
-        "text": "Que retrouve-t-on dans le 'Bloc de conventionnalité' de la hiérarchie des normes ?",
+        "text": "Que retrouve-t-on dans le Bloc de conventionnalité de la hiérarchie des normes ?",
         "options": [
             {
                 "id": "a",
@@ -1297,7 +1270,7 @@
     },
     {
         "id": "q50",
-        "text": "En quoi consiste le 'droit à la rectification' prévu par le RGPD ?",
+        "text": "En quoi consiste le droit à la rectification prévu par le RGPD ?",
         "options": [
             {
                 "id": "a",
@@ -1360,7 +1333,7 @@
             },
             {
                 "id": "b",
-                "label": "Avoir la volonté de s'établir ailleurs (élément moral)",
+                "label": "Avoir la volonté de s'établir ailleurs",
                 "correct": true
             },
             {
@@ -1374,7 +1347,7 @@
                 "correct": false
             }
         ],
-        "explanation": "Le changement de domicile s'effectue par le fait d'une habitation réelle dans un autre lieu, joint à l'intention (volonté) d'y fixer son principal établissement."
+        "explanation": "Le changement de domicile s'effectue par le fait d'une habitation réelle dans un autre lieu, joint à l'intention d'y fixer son principal établissement."
     },
     {
         "id": "q53",
@@ -1432,7 +1405,7 @@
     },
     {
         "id": "q55",
-        "text": "Qu'est-ce qui caractérise une signature électronique 'simple' ?",
+        "text": "Qu'est-ce qui caractérise une signature électronique simple ?",
         "options": [
             {
                 "id": "a",

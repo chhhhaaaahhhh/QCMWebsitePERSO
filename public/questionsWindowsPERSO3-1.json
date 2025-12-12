@@ -55,7 +55,7 @@
     },
     {
         "id": "q3",
-        "text": "Dans le contexte de la pagination, que se passe-t-il si le bit 'present' d'une PTE (Page Table Entry) est à 0 ?",
+        "text": "Dans le contexte de la pagination, que se passe-t-il si le bit 'present' d'une PTE est à 0 ?",
         "options": [
             {
                 "id": "a",
@@ -96,7 +96,7 @@
             },
             {
                 "id": "c",
-                "label": "Ring 0 (Kernel) et Ring 3 (User)",
+                "label": "Ring 0 et Ring 3",
                 "correct": true
             },
             {
@@ -136,7 +136,7 @@
     },
     {
         "id": "q6",
-        "text": "Parmi ces structures, laquelle réside dans l'espace mémoire utilisateur (User Space) ?",
+        "text": "Parmi ces structures, laquelle réside dans l'espace mémoire utilisateur ?",
         "options": [
             {
                 "id": "a",
@@ -155,7 +155,7 @@
             },
             {
                 "id": "d",
-                "label": "PEB (Process Environment Block)",
+                "label": "PEB",
                 "correct": true
             }
         ],
@@ -217,7 +217,7 @@
     },
     {
         "id": "q9",
-        "text": "Quel est le RID (Relative Identifier) du compte Administrateur intégré (built-in) ?",
+        "text": "Quel est le RID du compte Administrateur intégré ?",
         "options": [
             {
                 "id": "a",
@@ -244,7 +244,7 @@
     },
     {
         "id": "q10",
-        "text": "Quel mécanisme de sécurité empêche l'exécution de code dans des zones mémoire de données (comme la heap ou la stack) ?",
+        "text": "Quel mécanisme de sécurité empêche l'exécution de code dans des zones mémoire comme la heap ou la stack ?",
         "options": [
             {
                 "id": "a",
@@ -298,7 +298,7 @@
     },
     {
         "id": "q12",
-        "text": "Quel privilège système permet d'ouvrir n'importe quel processus avec tous les droits, souvent utilisé pour le débogage ?",
+        "text": "Quel privilège système permet d'ouvrir n'importe quel processus avec tous les droits ?",
         "options": [
             {
                 "id": "a",
@@ -325,7 +325,7 @@
     },
     {
         "id": "q13",
-        "text": "Quelle bibliothèque (DLL) est chargée par LSASS pour implémenter le protocole d'authentification NTLM ?",
+        "text": "Quelle DLL est chargée par LSASS pour implémenter le protocole d'authentification NTLM ?",
         "options": [
             {
                 "id": "a",
@@ -469,7 +469,7 @@
             },
             {
                 "id": "b",
-                "label": "À exécuter des processus non-Windows (ex: Linux pour WSL) directement sur le noyau NT",
+                "label": "À exécuter des processus non-Windows directement sur le noyau NT",
                 "correct": true
             },
             {
@@ -487,7 +487,7 @@
     },
     {
         "id": "q19",
-        "text": "Quelle est la fonction principale du composant VBS (Virtualization Based Security) 'Credential Guard' ?",
+        "text": "Quelle est la fonction principale du composant VBS 'Credential Guard' ?",
         "options": [
             {
                 "id": "a",
@@ -540,35 +540,8 @@
         "explanation": "Sur les systèmes 64 bits modernes (Win 8.1+), l'espace utilisateur (User Process Space) et l'espace système sont passés à 128 TB chacun."
     },
     {
-        "id": "q21",
-        "text": "En quelle année le MS-DOS, base des premiers systèmes Windows, a-t-il été introduit ?",
-        "options": [
-            {
-                "id": "a",
-                "label": "1978",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "1993",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "1981",
-                "correct": true
-            },
-            {
-                "id": "d",
-                "label": "1985",
-                "correct": false
-            }
-        ],
-        "explanation": "D'après l'historique fourni, MS-DOS a été introduit en 1981 et a servi de base aux premiers Windows."
-    },
-    {
         "id": "q22",
-        "text": "Quelle est la fonction principale du mode SMM (System Management Mode) ?",
+        "text": "Quelle est la fonction principale du mode SMM ?",
         "options": [
             {
                 "id": "a",
@@ -599,22 +572,22 @@
         "options": [
             {
                 "id": "a",
-                "label": "SS (Stack Segment)",
+                "label": "SS",
                 "correct": false
             },
             {
                 "id": "b",
-                "label": "CS (Code Segment)",
+                "label": "CS",
                 "correct": true
             },
             {
                 "id": "c",
-                "label": "DS (Data Segment)",
+                "label": "DS",
                 "correct": false
             },
             {
                 "id": "d",
-                "label": "ES (Extra Segment)",
+                "label": "ES",
                 "correct": false
             }
         ],
@@ -641,7 +614,7 @@
             },
             {
                 "id": "d",
-                "label": "TEB (Thread Environment Block)",
+                "label": "TEB",
                 "correct": true
             }
         ],
@@ -712,7 +685,7 @@
             },
             {
                 "id": "b",
-                "label": "HKEY_CLASSES_ROOT (HKCR)",
+                "label": "HKEY_CLASSES_ROOT",
                 "correct": true
             },
             {
@@ -749,7 +722,7 @@
             },
             {
                 "id": "d",
-                "label": "SCM (Service Control Manager)",
+                "label": "SCM",
                 "correct": true
             }
         ],
@@ -992,7 +965,7 @@
             },
             {
                 "id": "d",
-                "label": "L'absence d'authentification mutuelle (vulnérabilité au NTLM Relay)",
+                "label": "L'absence d'authentification mutuelle",
                 "correct": true
             }
         ],
@@ -1000,7 +973,7 @@
     },
     {
         "id": "q38",
-        "text": "Quel est le rôle du journal USN (USN Journal) dans NTFS ?",
+        "text": "Quel est le rôle du journal USN dans NTFS ?",
         "options": [
             {
                 "id": "a",
@@ -1031,7 +1004,7 @@
         "options": [
             {
                 "id": "a",
-                "label": "Hosted (Type 2)",
+                "label": "Hosted",
                 "correct": false
             },
             {
@@ -1041,7 +1014,7 @@
             },
             {
                 "id": "c",
-                "label": "Bare metal (Type 1)",
+                "label": "Bare metal",
                 "correct": true
             },
             {
@@ -1112,22 +1085,22 @@
         "options": [
             {
                 "id": "a",
-                "label": "Le segment de code (Code Segment)",
+                "label": "Le segment de code",
                 "correct": false
             },
             {
                 "id": "b",
-                "label": "Le segment de pile (Stack Segment)",
+                "label": "Le segment de pile",
                 "correct": true
             },
             {
                 "id": "c",
-                "label": "Le segment de données (Data Segment)",
+                "label": "Le segment de données",
                 "correct": false
             },
             {
                 "id": "d",
-                "label": "Le segment étendu (Extra Segment)",
+                "label": "Le segment étendu",
                 "correct": false
             }
         ],
@@ -1135,11 +1108,11 @@
     },
     {
         "id": "q43",
-        "text": "Quelle structure mémoire du kernel est propre à chaque processeur logique (cœur CPU) et stocke des informations comme l'IDT et le thread courant ?",
+        "text": "Quelle structure mémoire du kernel est propre à chaque processeur logique et stocke des informations comme l'IDT et le thread courant ?",
         "options": [
             {
                 "id": "a",
-                "label": "KPCR (Kernel Processor Control Region)",
+                "label": "KPCR",
                 "correct": true
             },
             {
@@ -1158,7 +1131,7 @@
                 "correct": false
             }
         ],
-        "explanation": "Le KPCR est une structure par processeur qui permet au kernel d'accéder aux données spécifiques au matériel (interruptions, état CPU) et au thread en cours."
+        "explanation": "Le KPCR (Kernel Processor Control Region) est une structure par processeur qui permet au kernel d'accéder aux données spécifiques au matériel (interruptions, état CPU) et au thread en cours."
     },
     {
         "id": "q44",
@@ -1181,7 +1154,7 @@
             },
             {
                 "id": "d",
-                "label": "CreateProcess()",
+                "label": "CreateProcess",
                 "correct": true
             }
         ],
@@ -1230,7 +1203,7 @@
             },
             {
                 "id": "c",
-                "label": "MMU (Memory Management Unit)",
+                "label": "MMU",
                 "correct": true
             },
             {
@@ -1239,7 +1212,7 @@
                 "correct": false
             }
         ],
-        "explanation": "La MMU est le composant du processeur qui effectue la traduction des adresses virtuelles (vues par le programme) vers les adresses physiques (RAM)."
+        "explanation": "La MMU (Memory Management Unit) est le composant du processeur qui effectue la traduction des adresses virtuelles (vues par le programme) vers les adresses physiques (RAM)."
     },
     {
         "id": "q47",
@@ -1270,7 +1243,7 @@
     },
     {
         "id": "q48",
-        "text": "Quel est le SID (Security Identifier) universel correspondant au groupe 'Everyone' ?",
+        "text": "Quel est le SID universel correspondant au groupe 'Everyone' ?",
         "options": [
             {
                 "id": "a",
@@ -1297,7 +1270,7 @@
     },
     {
         "id": "q49",
-        "text": "Quel privilège est nécessaire pour charger ou décharger des pilotes (drivers) en mode noyau ?",
+        "text": "Quel privilège est nécessaire pour charger ou décharger des pilotes en mode noyau ?",
         "options": [
             {
                 "id": "a",
@@ -1324,7 +1297,7 @@
     },
     {
         "id": "q50",
-        "text": "Quel privilège permet de modifier l'heure système ou le fuseau horaire ?",
+        "text": "Quel privilège permet de modifier le fuseau horaire ?",
         "options": [
             {
                 "id": "a",
@@ -1338,7 +1311,7 @@
             },
             {
                 "id": "c",
-                "label": "SeTimeZonePrivilege / SeSystemtimePrivilege",
+                "label": "SeTimeZonePrivilege",
                 "correct": true
             },
             {
@@ -1468,7 +1441,7 @@
             },
             {
                 "id": "b",
-                "label": "Le DOS Stub (en-tête de compatibilité DOS)",
+                "label": "Le DOS Stub",
                 "correct": true
             },
             {
@@ -1486,7 +1459,7 @@
     },
     {
         "id": "q56",
-        "text": "Quel est l'objectif principal de l'ASLR (Address Space Layout Randomization) ?",
+        "text": "Quel est l'objectif principal de l'ASLR ?",
         "options": [
             {
                 "id": "a",
@@ -1505,15 +1478,15 @@
             },
             {
                 "id": "d",
-                "label": "Placer aléatoirement les zones mémoire pour contrer les attaques type ROP",
+                "label": "Placer aléatoirement les zones mémoire",
                 "correct": true
             }
         ],
-        "explanation": "L'ASLR randomise l'emplacement des zones critiques (stack, heap, libs) pour empêcher les attaquants de prédire les adresses mémoire nécessaires aux exploits."
+        "explanation": "L'ASLR randomise l'emplacement des zones critiques (stack, heap, libs) pour empêcher les attaquants de prédire les adresses mémoire nécessaires aux exploits (attaques type ROP)."
     },
     {
         "id": "q57",
-        "text": "Que sont les 'Trustlets' dans l'architecture sécurisée de Windows 10/11 ?",
+        "text": "Que sont les 'Trustlets' ?",
         "options": [
             {
                 "id": "a",
@@ -1527,7 +1500,7 @@
             },
             {
                 "id": "c",
-                "label": "Des processus protégés exécutés dans un environnement isolé (IUM) via VBS",
+                "label": "Des processus protégés exécutés dans un environnement isolé via VBS",
                 "correct": true
             },
             {
@@ -1576,7 +1549,7 @@
             },
             {
                 "id": "b",
-                "label": "Une chaîne de caractères (texte)",
+                "label": "Une chaîne de caractères",
                 "correct": true
             },
             {
@@ -1608,12 +1581,12 @@
             },
             {
                 "id": "c",
-                "label": "Uniquement en mode administrateur",
+                "label": "Oui, uniquement en mode administrateur",
                 "correct": false
             },
             {
                 "id": "d",
-                "label": "Seulement via un débogueur noyau",
+                "label": "Oui, seulement via un débogueur noyau",
                 "correct": false
             }
         ],
@@ -1702,7 +1675,7 @@
     },
     {
         "id": "q64",
-        "text": "Que signifie l'acronyme GDT dans la gestion de la mémoire ?",
+        "text": "Que signifie l'acronyme GDT  ?",
         "options": [
             {
                 "id": "a",
@@ -1810,7 +1783,7 @@
     },
     {
         "id": "q68",
-        "text": "Que signifie l'acronyme ACL en termes de sécurité ?",
+        "text": "Que signifie l'acronyme ACL ?",
         "options": [
             {
                 "id": "a",
@@ -1972,7 +1945,7 @@
     },
     {
         "id": "q74",
-        "text": "Que signifie l'acronyme VBS en lien avec la sécurité Windows ?",
+        "text": "Que signifie l'acronyme VBS ?",
         "options": [
             {
                 "id": "a",
@@ -2188,7 +2161,7 @@
     },
     {
         "id": "q82",
-        "text": "Quelle instruction processeur est utilisée pour effectuer un appel système (bascule du Ring 3 au Ring 0) ?",
+        "text": "Quelle instruction processeur est utilisée pour effectuer un appel système ?",
         "options": [
             {
                 "id": "a",
@@ -2381,12 +2354,12 @@
         "options": [
             {
                 "id": "a",
-                "label": "Une identité anonyme (Anonymous)",
+                "label": "Une identité anonyme",
                 "correct": false
             },
             {
                 "id": "b",
-                "label": "L'identité du compte machine (Computer Account)",
+                "label": "L'identité du compte machine",
                 "correct": true
             },
             {
@@ -2511,33 +2484,6 @@
         "explanation": "REG_DWORD stocke un nombre entier de 32 bits, souvent utilisé pour des booléens (0 ou 1) ou des compteurs."
     },
     {
-        "id": "q94",
-        "text": "Quel est le RID (Relative Identifier) du groupe 'Backup Operators' ?",
-        "options": [
-            {
-                "id": "a",
-                "label": "500",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "551",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "544",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "512",
-                "correct": false
-            }
-        ],
-        "explanation": "Le RID 551 est associé au groupe intégré 'Backup Operators' qui a des droits spécifiques pour la sauvegarde et la restauration."
-    },
-    {
         "id": "q95",
         "text": "Quel flag d'héritage dans une ACE indique que les droits s'appliquent aux dossiers enfants ?",
         "options": [
@@ -2563,33 +2509,6 @@
             }
         ],
         "explanation": "Le flag `CONTAINER_INHERIT` signifie que l'ACE doit être héritée par les conteneurs (c'est-à-dire les sous-dossiers)."
-    },
-    {
-        "id": "q96",
-        "text": "Quel est le RID du groupe 'Domain Admins' dans un environnement Active Directory ?",
-        "options": [
-            {
-                "id": "a",
-                "label": "500",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "512",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "513",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "1000",
-                "correct": false
-            }
-        ],
-        "explanation": "Le RID 512 correspond au groupe 'Domain Admins', qui possède les droits d'administration sur tout le domaine."
     },
     {
         "id": "q97",
@@ -2620,7 +2539,7 @@
     },
     {
         "id": "q98",
-        "text": "Quelle clé de registre permet de lancer automatiquement un programme à *chaque* démarrage du système ?",
+        "text": "Quelle clé de registre permet de lancer automatiquement un programme à chaque démarrage du système ?",
         "options": [
             {
                 "id": "a",
@@ -2683,7 +2602,7 @@
             },
             {
                 "id": "b",
-                "label": "Un processus protégé exécuté dans un environnement isolé (IUM)",
+                "label": "Un processus protégé exécuté dans un environnement isolé",
                 "correct": true
             },
             {

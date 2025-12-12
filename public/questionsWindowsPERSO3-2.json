@@ -1,59 +1,5 @@
 [
     {
-        "id": "q101",
-        "text": "Quelle version de Windows a introduit le noyau NT 6.0 ?",
-        "options": [
-            {
-                "id": "a",
-                "label": "Windows XP",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Windows 7",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "Windows Vista",
-                "correct": true
-            },
-            {
-                "id": "d",
-                "label": "Windows 8",
-                "correct": false
-            }
-        ],
-        "explanation": "Windows Vista correspond à la version 6.0 du noyau NT, marquant une évolution majeure après la version 5.1 de XP."
-    },
-    {
-        "id": "q102",
-        "text": "Quel processeur a introduit le mode protégé (Protected Mode) en 1982 ?",
-        "options": [
-            {
-                "id": "a",
-                "label": "Intel 8086",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Intel 80286",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "Intel 80386",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "AMD64",
-                "correct": false
-            }
-        ],
-        "explanation": "Le Protected Mode a été introduit avec le processeur 80286, apportant la gestion de la mémoire virtuelle et la protection mémoire."
-    },
-    {
         "id": "q103",
         "text": "Dans la segmentation, quel registre est utilisé pour le 'Data Segment' ?",
         "options": [
@@ -108,35 +54,8 @@
         "explanation": "La LDT (Local Descriptor Table) est spécifique à un processus, permettant d'avoir des segments propres à chaque tâche, bien qu'elle soit peu utilisée aujourd'hui."
     },
     {
-        "id": "q105",
-        "text": "Quel registre du processeur contient l'adresse physique de la racine de la structure de pagination (PML4 ou Page Directory) ?",
-        "options": [
-            {
-                "id": "a",
-                "label": "EIP",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "CR3",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "ESP",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "EAX",
-                "correct": false
-            }
-        ],
-        "explanation": "Le registre de contrôle CR3 contient l'adresse physique de base des tables de pagination (PML4 en 64 bits ou Page Directory en 32 bits)."
-    },
-    {
         "id": "q106",
-        "text": "Dans la distribution de l'espace mémoire 32 bits par défaut, quelle est la taille réservée au Kernel (System Space) ?",
+        "text": "Dans la distribution de l'espace mémoire 32 bits par défaut, quelle est la taille réservée au Kernel ?",
         "options": [
             {
                 "id": "a",
@@ -163,7 +82,7 @@
     },
     {
         "id": "q107",
-        "text": "Quelle structure mémoire noyau permet de gérer l'isolation mémoire d'un processus (liste des plages d'adresses virtuelles allouées) ?",
+        "text": "Quelle structure mémoire noyau permet de gérer l'isolation mémoire d'un processus ?",
         "options": [
             {
                 "id": "a",
@@ -187,33 +106,6 @@
             }
         ],
         "explanation": "Les VAD (Virtual Address Descriptors) sont des structures de données utilisées par le gestionnaire de mémoire pour garder une trace des adresses virtuelles allouées à un processus."
-    },
-    {
-        "id": "q108",
-        "text": "Quel fichier exécutable du noyau est utilisé sur un système multiprocesseur supportant le PAE ?",
-        "options": [
-            {
-                "id": "a",
-                "label": "ntoskrnl.exe",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "ntkrnlmp.exe",
-                "correct": false
-            },
-            {
-                "id": "c",
-                "label": "ntkrpamp.exe",
-                "correct": true
-            },
-            {
-                "id": "d",
-                "label": "hal.dll",
-                "correct": false
-            }
-        ],
-        "explanation": "Lors de l'installation, ntoskrnl.exe est remplacé par une version spécifique. 'ntkrpamp.exe' correspond à la version Multiprocesseur + PAE."
     },
     {
         "id": "q109",
@@ -248,7 +140,7 @@
         "options": [
             {
                 "id": "a",
-                "label": "Il s'exécute directement sur le matériel (bare metal)",
+                "label": "Il s'exécute directement sur le matériel",
                 "correct": false
             },
             {
@@ -393,7 +285,7 @@
             },
             {
                 "id": "c",
-                "label": "Historique USB (USBSTOR)",
+                "label": "USB",
                 "correct": true
             },
             {
@@ -415,7 +307,7 @@
             },
             {
                 "id": "b",
-                "label": "Guest (Invité)",
+                "label": "Guest",
                 "correct": true
             },
             {
@@ -447,7 +339,7 @@
             },
             {
                 "id": "c",
-                "label": "MSA (Managed Service Account)",
+                "label": "MSA",
                 "correct": true
             },
             {
@@ -487,7 +379,7 @@
     },
     {
         "id": "q119",
-        "text": "Dans un Security Descriptor, quel champ identifie l'entité qui a le droit par défaut de modifier les permissions (DACL) ?",
+        "text": "Dans un Security Descriptor, quel champ identifie l'entité qui a le droit par défaut de modifier les permissions ?",
         "options": [
             {
                 "id": "a",
@@ -501,7 +393,7 @@
             },
             {
                 "id": "c",
-                "label": "Le propriétaire (Owner)",
+                "label": "Le propriétaire",
                 "correct": true
             },
             {
@@ -568,7 +460,7 @@
     },
     {
         "id": "q122",
-        "text": "Quelle clé (Key) est utilisée pour chiffrer les hashs stockés dans la base SAM ?",
+        "text": "Quelle key est utilisée pour chiffrer les hashs stockés dans la base SAM ?",
         "options": [
             {
                 "id": "a",
@@ -577,7 +469,7 @@
             },
             {
                 "id": "b",
-                "label": "Boot Key (ou SysKey)",
+                "label": "Boot Key",
                 "correct": true
             },
             {
@@ -757,7 +649,7 @@
     },
     {
         "id": "q129",
-        "text": "Quel est le rôle du 'Service Control Manager' (SCM) ?",
+        "text": "Quel est le rôle du 'Service Control Manager' ?",
         "options": [
             {
                 "id": "a",
@@ -766,7 +658,7 @@
             },
             {
                 "id": "b",
-                "label": "Gérer les services (démarrage, arrêt, configuration)",
+                "label": "Gérer les services",
                 "correct": true
             },
             {
@@ -784,7 +676,7 @@
     },
     {
         "id": "q130",
-        "text": "Quel privilège permet de sauvegarder des fichiers en contournant les droits d'accès NTFS standards (DACL) ?",
+        "text": "Quel privilège permet de sauvegarder des fichiers en contournant les droits d'accès NTFS standards ?",
         "options": [
             {
                 "id": "a",
@@ -811,7 +703,7 @@
     },
     {
         "id": "q131",
-        "text": "Quel processus utilisateur contient la structure PEB (Process Environment Block) ?",
+        "text": "Quel processus utilisateur contient la structure PEB  ?",
         "options": [
             {
                 "id": "a",
@@ -847,7 +739,7 @@
             },
             {
                 "id": "b",
-                "label": "MRU (Most Recently Used)",
+                "label": "MRU",
                 "correct": true
             },
             {
@@ -1144,7 +1036,7 @@
             },
             {
                 "id": "b",
-                "label": "À pointer vers la base et la taille de la GDT (Global Descriptor Table)",
+                "label": "À pointer vers la base et la taille de la GDT",
                 "correct": true
             },
             {
@@ -1198,7 +1090,7 @@
             },
             {
                 "id": "b",
-                "label": "TLS (Thread Local Storage)",
+                "label": "TLS",
                 "correct": true
             },
             {
@@ -1306,7 +1198,7 @@
             },
             {
                 "id": "b",
-                "label": "Il utilise DES (56 bits), facilement cassable",
+                "label": "Il utilise DES",
                 "correct": true
             },
             {
@@ -1320,7 +1212,7 @@
                 "correct": false
             }
         ],
-        "explanation": "NTLMv1 repose sur l'algorithme DES, dont la clé est trop courte (56 bits), ce qui le rend vulnérable aux attaques par force brute modernes."
+        "explanation": "NTLMv1 repose sur l'algorithme DES, dont la clé est trop courte (56 bits), ce qui le rend vulnérable aux attaques bruteforce."
     },
     {
         "id": "q150",
@@ -1333,7 +1225,7 @@
             },
             {
                 "id": "b",
-                "label": "Stocker des preuves d'exécution et des métadonnées sur les programmes (SHA1, date...)",
+                "label": "Stocker des preuves d'exécution et des métadonnées sur les programmes",
                 "correct": true
             },
             {
@@ -1350,33 +1242,6 @@
         "explanation": "Amcache.hve est un fichier de registre qui conserve des traces détaillées des exécutables lancés ou présents sur le système, très utile en forensic."
     },
     {
-        "id": "q151",
-        "text": "Dans le mécanisme de segmentation, quel est le rôle du registre GDTR ?",
-        "options": [
-            {
-                "id": "a",
-                "label": "Stocker l'adresse de la pile",
-                "correct": false
-            },
-            {
-                "id": "b",
-                "label": "Pointer vers la base et définir la taille de la GDT (Global Descriptor Table)",
-                "correct": true
-            },
-            {
-                "id": "c",
-                "label": "Calculer les offsets de mémoire",
-                "correct": false
-            },
-            {
-                "id": "d",
-                "label": "Gérer les interruptions matérielles",
-                "correct": false
-            }
-        ],
-        "explanation": "Le registre GDTR est un registre spécial qui indique au processeur où se trouve la GDT en mémoire RAM et quelle est sa taille."
-    },
-    {
         "id": "q152",
         "text": "Quelle est la principale différence entre la fragmentation en segmentation et en pagination ?",
         "options": [
@@ -1387,7 +1252,7 @@
             },
             {
                 "id": "b",
-                "label": "La segmentation cause de la fragmentation externe, la pagination peut causer de la fragmentation interne",
+                "label": "La segmentation cause de la fragmentation externe, la pagination de la fragmentation interne",
                 "correct": true
             },
             {
@@ -1409,7 +1274,7 @@
         "options": [
             {
                 "id": "a",
-                "label": "Un bloc de taille fixe dans la mémoire physique (RAM)",
+                "label": "Un bloc de taille fixe dans la mémoire physique",
                 "correct": true
             },
             {
@@ -1432,7 +1297,7 @@
     },
     {
         "id": "q154",
-        "text": "Quelle structure contient la liste des modules chargés (DLLs) pour un processus donné ?",
+        "text": "Quelle structure contient la liste des modules chargés pour un processus donné ?",
         "options": [
             {
                 "id": "a",
@@ -1441,7 +1306,7 @@
             },
             {
                 "id": "b",
-                "label": "Le Loader Database (dans le PEB)",
+                "label": "Le Loader Database",
                 "correct": true
             },
             {
@@ -1486,7 +1351,7 @@
     },
     {
         "id": "q156",
-        "text": "Quelle structure noyau lie un processus à sa session utilisateur (graphique, périphérique) ?",
+        "text": "Quelle structure noyau lie un processus à sa session utilisateur ?",
         "options": [
             {
                 "id": "a",
@@ -1603,7 +1468,7 @@
             },
             {
                 "id": "b",
-                "label": "HAL (Hardware Abstraction Layer)",
+                "label": "HAL",
                 "correct": true
             },
             {
@@ -1657,7 +1522,7 @@
             },
             {
                 "id": "b",
-                "label": "Les objets Executive sont accessibles via des handles, les Kernel sont internes au noyau",
+                "label": "Les objets Executive sont accessibles via des handles, les Kernel non",
                 "correct": true
             },
             {
@@ -1675,7 +1540,7 @@
     },
     {
         "id": "q163",
-        "text": "Quel privilège est nécessaire pour gérer les journaux de sécurité (Security Logs) ?",
+        "text": "Quel privilège est nécessaire pour gérer les journaux de sécurité ?",
         "options": [
             {
                 "id": "a",
@@ -1819,7 +1684,7 @@
             },
             {
                 "id": "b",
-                "label": "Explicit Deny (Refus explicite)",
+                "label": "Explicit Deny",
                 "correct": true
             },
             {
@@ -1851,7 +1716,7 @@
             },
             {
                 "id": "c",
-                "label": "Des données brutes (octets)",
+                "label": "Des données brutes",
                 "correct": true
             },
             {
@@ -1864,7 +1729,7 @@
     },
     {
         "id": "q170",
-        "text": "À quoi sert la clé 'HKEY_CURRENT_CONFIG' (HKCC) ?",
+        "text": "À quoi sert la clé 'HKEY_CURRENT_CONFIG' ?",
         "options": [
             {
                 "id": "a",
@@ -2008,7 +1873,7 @@
             },
             {
                 "id": "b",
-                "label": "DEP (Data Execution Prevention)",
+                "label": "DEP",
                 "correct": true
             },
             {
@@ -2138,7 +2003,7 @@
         "options": [
             {
                 "id": "a",
-                "label": "Le jeton restreint (Restricted/Filtered Token)",
+                "label": "Le jeton restreint",
                 "correct": true
             },
             {
@@ -2211,7 +2076,7 @@
                 "correct": false
             }
         ],
-        "explanation": "La taille par défaut d'une page (et d'une frame) est de 4 Ko (4096 octets)."
+        "explanation": "La taille par défaut d'une page (frame) est de 4 Ko (4096 octets)."
     },
     {
         "id": "q183",
@@ -2224,7 +2089,7 @@
             },
             {
                 "id": "b",
-                "label": "MMU (Memory Management Unit)",
+                "label": "MMU",
                 "correct": true
             },
             {
@@ -2354,7 +2219,7 @@
         "options": [
             {
                 "id": "a",
-                "label": "Pico Process / Pico Provider",
+                "label": "Pico Process",
                 "correct": true
             },
             {
@@ -2435,7 +2300,7 @@
         "options": [
             {
                 "id": "a",
-                "label": "Gérer les services Windows (lancement, arrêt)",
+                "label": "Gérer les services Windows",
                 "correct": true
             },
             {
@@ -2485,7 +2350,7 @@
     },
     {
         "id": "q193",
-        "text": "Quel composant est responsable de la gestion des 'Object Types' (Mutex, Semaphore, File) ?",
+        "text": "Quel composant est responsable de la gestion des 'Object Types' ?",
         "options": [
             {
                 "id": "a",
@@ -2512,7 +2377,7 @@
     },
     {
         "id": "q194",
-        "text": "Quel processus héberge l'autorité de sécurité locale (LSA) ?",
+        "text": "Quel processus héberge l'autorité de sécurité locale ?",
         "options": [
             {
                 "id": "a",
@@ -2575,7 +2440,7 @@
             },
             {
                 "id": "b",
-                "label": "Le droit d'effectuer une action globale sur le système (ex: changer l'heure)",
+                "label": "Le droit d'effectuer une action globale sur le système",
                 "correct": true
             },
             {
@@ -2629,7 +2494,7 @@
             },
             {
                 "id": "b",
-                "label": "L'espace réservé au noyau et aux pilotes, inaccessible directement par l'utilisateur",
+                "label": "L'espace réservé au noyau et aux pilotes",
                 "correct": true
             },
             {
@@ -2651,22 +2516,22 @@
         "options": [
             {
                 "id": "a",
-                "label": "La table des interruptions (IDT)",
+                "label": "La table des interruptions",
                 "correct": false
             },
             {
                 "id": "b",
-                "label": "La table des pages (Page Table)",
+                "label": "La table des pages",
                 "correct": true
             },
             {
                 "id": "c",
-                "label": "La table des fichiers (MFT)",
+                "label": "La table des fichiers",
                 "correct": false
             },
             {
                 "id": "d",
-                "label": "La table des descripteurs (GDT)",
+                "label": "La table des descripteurs",
                 "correct": false
             }
         ],

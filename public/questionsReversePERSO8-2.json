@@ -96,7 +96,7 @@
             { "id": "c", "label": "x/32i $rip", "correct": true },
             { "id": "d", "label": "show instructions", "correct": false }
         ],
-        "explanation": "L'image des commandes GDB liste explicitement `x/32i $rip` pour afficher les 32 instructions après $rip."
+        "explanation": "`x/32i $rip` affiche les 32 instructions après $rip."
     },
     {
         "id": "q10",
@@ -107,7 +107,7 @@
             { "id": "c", "label": "args set", "correct": false },
             { "id": "d", "label": "input", "correct": false }
         ],
-        "explanation": "La commande `set args` est définie comme 'on ajoute un argument au programme'."
+        "explanation": "`set args` ajoute un argument au programme."
     },
     {
         "id": "q11",
@@ -115,10 +115,10 @@
         "options": [
             { "id": "a", "label": "`ni` entre dans les appels de fonction, `si` passe à la suivante", "correct": false },
             { "id": "b", "label": "`ni` est pour Intel, `si` pour AT&T", "correct": false },
-            { "id": "c", "label": "`ni` passe à l'instruction suivante (step over), `si` suit les appels (step into)", "correct": true },
+            { "id": "c", "label": "`ni` passe à l'instruction suivante, `si` suit les appels", "correct": true },
             { "id": "d", "label": "Il n'y a aucune différence", "correct": false }
         ],
-        "explanation": "Le cours indique que `ni` exécute l'instruction courante et passe à la suivante, tandis que `si` est pareil que ni mais 'l'exécution suit les appels'."
+        "explanation": "`ni` exécute l'instruction courante et passe à la suivante (step over), tandis que `si` suit les appels (step into)."
     },
     {
         "id": "q12",
@@ -129,7 +129,7 @@
             { "id": "c", "label": "disp $rsi", "correct": false },
             { "id": "d", "label": "x/c $rsi", "correct": false }
         ],
-        "explanation": "La commande `x/s $rsi` est listée avec la description 'on affiche la chaîne de caractère pointée par $rsi'."
+        "explanation": "`x/s $rsi` affiche la chaîne de caractère pointée par $rsi."
     },
     {
         "id": "q13",
@@ -140,7 +140,7 @@
             { "id": "c", "label": "i b", "correct": true },
             { "id": "d", "label": "info points", "correct": false }
         ],
-        "explanation": "La commande `i b` est indiquée pour 'on affiche la liste des breakpoints posés'."
+        "explanation": "`i b` affiche la liste des breakpoints posés."
     },
     {
         "id": "q14",
@@ -151,7 +151,7 @@
             { "id": "c", "label": "format intel", "correct": false },
             { "id": "d", "label": "intel_syntax on", "correct": false }
         ],
-        "explanation": "La commande exacte listée est `set disassembly-flavor intel`."
+        "explanation": "`set disassembly-flavor intel`."
     },
     {
         "id": "q15",
@@ -162,7 +162,7 @@
             { "id": "c", "label": "bt", "correct": true },
             { "id": "d", "label": "cs", "correct": false }
         ],
-        "explanation": "La commande `bt` est décrite comme 'on affiche la call stack'."
+        "explanation": "`bt` affiche la call stack."
     },
     {
         "id": "q16",
@@ -173,7 +173,7 @@
             { "id": "c", "label": "registre, mémoire", "correct": false },
             { "id": "d", "label": "valeur, adresse", "correct": false }
         ],
-        "explanation": "Le tableau de comparaison des syntaxes indique pour AT&T : 'source, destination'."
+        "explanation": "Pour AT&T : source, destination."
     },
     {
         "id": "q17",
@@ -184,7 +184,7 @@
             { "id": "c", "label": "AT&T", "correct": true },
             { "id": "d", "label": "ARM", "correct": false }
         ],
-        "explanation": "Le tableau indique que la syntaxe AT&T met '% avant les noms des registres'."
+        "explanation": "Pour AT&T : %."
     },
     {
         "id": "q18",
@@ -195,7 +195,7 @@
             { "id": "c", "label": "Unix", "correct": false },
             { "id": "d", "label": "SysV", "correct": false }
         ],
-        "explanation": "Le tableau associe la syntaxe Intel à Microsoft."
+        "explanation": "Syntaxe Intel pour Microsoft."
     },
     {
         "id": "q19",
@@ -206,18 +206,18 @@
             { "id": "c", "label": "Internal System Access", "correct": false },
             { "id": "d", "label": "Inter-Service Agreement", "correct": false }
         ],
-        "explanation": "Le cours définit ISA comme 'Instruction Set Architecture'."
+        "explanation": "ISA = Instruction Set Architecture."
     },
     {
         "id": "q20",
-        "text": "Quel type d'architecture possède environ 200 instructions et est utilisé dans l'embarqué ?",
+        "text": "Quel type d'architecture possède environ 200 instructions ?",
         "options": [
             { "id": "a", "label": "CISC", "correct": false },
             { "id": "b", "label": "x86-64", "correct": false },
             { "id": "c", "label": "RISC", "correct": true },
             { "id": "d", "label": "AMD", "correct": false }
         ],
-        "explanation": "La section 'jeux d'instruction' décrit RISC comme possédant environ 200 instructions et utilisé dans l'embarqué."
+        "explanation": "RISC comme possède environ 200 instructions."
     },
     {
         "id": "q21",
@@ -228,18 +228,18 @@
             { "id": "c", "label": "CISC", "correct": true },
             { "id": "d", "label": "MIPS", "correct": false }
         ],
-        "explanation": "Le cours classe x86-64 (créé par AMD) dans la catégorie CISC."
+        "explanation": "x86-64 (créé par AMD) est en CISC."
     },
     {
         "id": "q22",
         "text": "Quel symbole précède les constantes (valeurs immédiates) dans la syntaxe AT&T ?",
         "options": [
-            { "id": "a", "label": "#", "correct": false },
+            { "id": "a", "label": "rien", "correct": false },
             { "id": "b", "label": "%", "correct": false },
             { "id": "c", "label": "$", "correct": true },
             { "id": "d", "label": "@", "correct": false }
         ],
-        "explanation": "Le tableau indique pour AT&T : '$ avant les constantes'."
+        "explanation": "Pour AT&T : $ ."
     },
     {
         "id": "q23",
@@ -250,7 +250,7 @@
             { "id": "c", "label": "X0, X29", "correct": true },
             { "id": "d", "label": "RDI, RSI", "correct": false }
         ],
-        "explanation": "Le cours mentionne 'utilise les registres X0, X29 etc..' pour RISC : arm64."
+        "explanation": "ARM64 utilise les registres X0, X29."
     },
     {
         "id": "q24",
@@ -258,10 +258,10 @@
         "options": [
             { "id": "a", "label": "RCX-RDX-R8-R9", "correct": false },
             { "id": "b", "label": "RDI-RSI-RDX-RCX-R8-R9-stack", "correct": true },
-            { "id": "c", "label": "RAX-RBX-RCX-RDX", "correct": false },
-            { "id": "d", "label": "Stack uniquement", "correct": false }
+            { "id": "c", "label": "RDI-RSI-RCX-RDX-R8-R9-stack", "correct": false },
+            { "id": "d", "label": "RSI-RDI-RDX-RCX-R8-R9-stack", "correct": false }
         ],
-        "explanation": "La section 'en gros' liste l'ordre des arguments en linux : RDI-RSI-RDX-RCX-R8-R9-stack."
+        "explanation": "Ordre des arguments sous Linux : RDI-RSI-RDX-RCX-R8-R9-stack."
     },
     {
         "id": "q25",
@@ -269,10 +269,10 @@
         "options": [
             { "id": "a", "label": "RDI-RSI-RDX-RCX", "correct": false },
             { "id": "b", "label": "RCX-RDX-R8-R9", "correct": true },
-            { "id": "c", "label": "R0-R1-R2-R3", "correct": false },
+            { "id": "c", "label": "RDX-RCX-R8-R9", "correct": false },
             { "id": "d", "label": "EAX-EBX-ECX-EDX", "correct": false }
         ],
-        "explanation": "La section 'en gros' liste l'ordre des arguments en windows : RCX-RDX-R8-R9."
+        "explanation": "Ordre des arguments sous Windows : RCX-RDX-R8-R9."
     },
     {
         "id": "q26",
@@ -283,7 +283,7 @@
             { "id": "c", "label": "Application Binary Interface", "correct": true },
             { "id": "d", "label": "Advanced Basic Interface", "correct": false }
         ],
-        "explanation": "Le cours définit ABI comme 'Application Binary Interface'."
+        "explanation": "ABI = Application Binary Interface."
     },
     {
         "id": "q27",
@@ -294,7 +294,7 @@
             { "id": "c", "label": "ELF", "correct": true },
             { "id": "d", "label": "EXE", "correct": false }
         ],
-        "explanation": "Le diagramme de compilation associe 'Linux' au format 'ELF'."
+        "explanation": "Linux utilise le format ELF."
     },
     {
         "id": "q28",
@@ -305,7 +305,7 @@
             { "id": "c", "label": "mach-O", "correct": false },
             { "id": "d", "label": "COFF", "correct": false }
         ],
-        "explanation": "Le diagramme de compilation associe 'Windows' au format 'PE'."
+        "explanation": "Windows utilise le format PE."
     },
     {
         "id": "q29",
@@ -316,7 +316,7 @@
             { "id": "c", "label": "cdecl", "correct": false },
             { "id": "d", "label": "stdcall", "correct": false }
         ],
-        "explanation": "Le cours mentionne 'On a par exemple sysV pour Linux'."
+        "explanation": "sysV pour Linux."
     },
     {
         "id": "q30",
@@ -327,7 +327,7 @@
             { "id": "c", "label": "16 octets", "correct": false },
             { "id": "d", "label": "2 octets", "correct": false }
         ],
-        "explanation": "La section 'le modèle de données' précise : 'Un long vaut 8 octets sous Linux'."
+        "explanation": "Sous Linux (LP64) le long vaut 8 octets."
     },
     {
         "id": "q31",
@@ -338,7 +338,7 @@
             { "id": "c", "label": "4 octets", "correct": true },
             { "id": "d", "label": "10 octets", "correct": false }
         ],
-        "explanation": "La section 'le modèle de données' précise : 'mais vaut 4 octets sous Windows'."
+        "explanation": "Sous Windows (LLP64) le long vaut 4 octets."
     },
     {
         "id": "q32",
@@ -349,29 +349,29 @@
             { "id": "c", "label": "Le processeur, la RAM, le disque dur", "correct": false },
             { "id": "d", "label": "Linux, Windows, iPhone", "correct": false }
         ],
-        "explanation": "Le cours liste sous 'contexte de compilation' : a) l'architecture (ISA), b) l'interface binaire, c) le modèle de données."
+        "explanation": "a) l'architecture (ISA), b) l'interface binaire (ABI), c) le modèle de données."
     },
     {
         "id": "q33",
-        "text": "Quel compilateur est associé à Windows dans le schéma ?",
+        "text": "Quel compilateur est associé à Windows ?",
         "options": [
             { "id": "a", "label": "gcc", "correct": false },
             { "id": "b", "label": "clang", "correct": false },
             { "id": "c", "label": "cl", "correct": true },
             { "id": "d", "label": "g++", "correct": false }
         ],
-        "explanation": "Le schéma montre 'cl' pointant vers 'Windows (PE)'."
+        "explanation": "'cl' correspond à Windows (PE)."
     },
     {
         "id": "q34",
-        "text": "Quel compilateur est associé à Linux dans le schéma ?",
+        "text": "Quel compilateur est associé à Linux ?",
         "options": [
             { "id": "a", "label": "gcc", "correct": true },
             { "id": "b", "label": "cl", "correct": false },
             { "id": "c", "label": "msvc", "correct": false },
             { "id": "d", "label": "turbo c", "correct": false }
         ],
-        "explanation": "Le schéma montre 'gcc' pointant vers 'Linux (ELF)'."
+        "explanation": "'gcc' correspond à Linux (ELF)."
     },
     {
         "id": "q35",
@@ -382,18 +382,18 @@
             { "id": "c", "label": "À compiler le code source", "correct": false },
             { "id": "d", "label": "À écrire le code source", "correct": false }
         ],
-        "explanation": "La définition donnée est : 'ensemble de conventions qui permet à différentes unités binaires de fonctionner ensemble'."
+        "explanation": "C'ensemble de conventions qui permet à différentes unités binaires de fonctionner ensemble'."
     },
     {
         "id": "q36",
         "text": "Pourquoi deux codes en x86-64 n'utilisent-ils pas forcément les mêmes registres pour les mêmes tâches ?",
         "options": [
-            { "id": "a", "label": "Car ils ont des ABI différentes (ex: sysV vs ms)", "correct": true },
+            { "id": "a", "label": "Car ils ont des ABI différentes", "correct": true },
             { "id": "b", "label": "Car l'ISA est différente", "correct": false },
             { "id": "c", "label": "Car le processeur change aléatoirement", "correct": false },
             { "id": "d", "label": "C'est impossible, ils utilisent toujours les mêmes registres", "correct": false }
         ],
-        "explanation": "Le cours explique : 'C'est pour cela que deux codes en x86-64 n'utilisent pas les mêmes registres... On a par exemple sysV pour Linux et ms pour Windows'."
+        "explanation": "Deux codes en x86-64 n'utilisent pas forcément les mêmes registres car ils peuvent avoir une ABI différente : sysV pour Linux et ms pour Windows'."
     },
     {
         "id": "q37",
@@ -404,7 +404,7 @@
             { "id": "c", "label": "info mem", "correct": false },
             { "id": "d", "label": "display layout", "correct": false }
         ],
-        "explanation": "La commande `maintenance info sections` est listée pour 'on affiche une partie du layout mémoire'."
+        "explanation": "`maintenance info sections` affiche une partie du layout mémoire."
     },
     {
         "id": "q38",
@@ -415,7 +415,7 @@
             { "id": "c", "label": "continue", "correct": true },
             { "id": "d", "label": "go", "correct": false }
         ],
-        "explanation": "La commande `continue` est décrite comme 'on continue l'exécution après un breakpoint'."
+        "explanation": "`continue` continue l'exécution après un breakpoint."
     },
     {
         "id": "q39",
@@ -426,7 +426,7 @@
             { "id": "c", "label": "$rax = 0x1337", "correct": false },
             { "id": "d", "label": "assign 0x1337 to $rax", "correct": false }
         ],
-        "explanation": "L'exemple donné est `set $rax=0x1337`."
+        "explanation": "`set $rax=0x1337`."
     },
     {
         "id": "q40",
@@ -437,7 +437,7 @@
             { "id": "c", "label": "x/i <function>", "correct": false },
             { "id": "d", "label": "list <function>", "correct": false }
         ],
-        "explanation": "La commande `disass <function>` est indiquée pour 'on désassemble la fonction <function>'."
+        "explanation": "`disass <function>` désassemble la fonction <function>."
     },
     {
         "id": "q41",
@@ -459,7 +459,7 @@
             { "id": "c", "label": "ILP32", "correct": false },
             { "id": "d", "label": "Flat", "correct": false }
         ],
-        "explanation": "Le texte indique 'Windows (utilise le modèle LLP64)'."
+        "explanation": "Windows utilise le modèle LLP64."
     },
     {
         "id": "q43",
@@ -470,7 +470,7 @@
             { "id": "c", "label": "Win32", "correct": false },
             { "id": "d", "label": "SysV", "correct": false }
         ],
-        "explanation": "Le texte indique 'Linux (utilise le modèle LP64)'."
+        "explanation": "Linux utilise le modèle LP64."
     },
     {
         "id": "q44",
@@ -481,7 +481,7 @@
             { "id": "c", "label": "print register <reg>", "correct": false },
             { "id": "d", "label": "view <reg>", "correct": false }
         ],
-        "explanation": "La commande `i r <reg>` est notée pour 'on affiche la valeur du register'."
+        "explanation": "`i r <reg>` affiche la valeur du registre."
     },
     {
         "id": "q45",
@@ -492,7 +492,7 @@
             { "id": "c", "label": "disp /i $rip", "correct": true },
             { "id": "d", "label": "show current", "correct": false }
         ],
-        "explanation": "La commande `disp /i $rip` est décrite comme 'on affiche à chaque commande l'instruction courante'."
+        "explanation": "`disp /i $rip` affiche à chaque commande l'instruction courante."
     },
     {
         "id": "q46",
@@ -503,7 +503,7 @@
             { "id": "c", "label": "stop at <addr>", "correct": false },
             { "id": "d", "label": "break *<addr>", "correct": true }
         ],
-        "explanation": "La syntaxe donnée est `break *<addr>` (notez l'astérisque)."
+        "explanation": "La syntaxe donnée est `break *<addr>`."
     },
     {
         "id": "q47",
@@ -514,7 +514,7 @@
             { "id": "c", "label": "run", "correct": true },
             { "id": "d", "label": "exec", "correct": false }
         ],
-        "explanation": "La commande `run` est indiquée pour 'on execute le programme'."
+        "explanation": "`run` execute le programme."
     },
     {
         "id": "q48",
@@ -525,7 +525,7 @@
             { "id": "c", "label": "Moins de 100", "correct": false },
             { "id": "d", "label": "500 exactement", "correct": false }
         ],
-        "explanation": "Le cours mentionne pour CISC : 'possède plus de 1000 instructions'."
+        "explanation": "CISC possède plus de 1000 instructions."
     },
     {
         "id": "q49",
@@ -536,7 +536,7 @@
             { "id": "c", "label": "rdx", "correct": false },
             { "id": "d", "label": "r8", "correct": false }
         ],
-        "explanation": "Bien que l'en-tête de colonne dise 'r', le tableau détaillé des syscalls montre que la colonne après rdx (arg3) est occupée par `r10` (note : RCX est pour les fonctions, R10 pour les syscalls)."
+        "explanation": "Bien que l'en-tête de colonne dise 'r', le tableau détaillé des syscalls montre que la colonne après rdx (arg3) est occupée par `r10` (note : RCX est pour les fonctions, R10 pour les syscalls) (voir cours du prof)."
     },
     {
         "id": "q50",

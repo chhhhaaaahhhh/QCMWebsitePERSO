@@ -1,18 +1,18 @@
 [
     {
         "id": "q1",
-        "text": "Selon le cours, qu'est-ce que l'on sécurise principalement aujourd'hui ?",
+        "text": "Que sécurise-ton principalement aujourd'hui ?",
         "options": [
             { "id": "a", "label": "L'informatique", "correct": false },
             { "id": "b", "label": "Le réseau", "correct": false },
             { "id": "c", "label": "L'information", "correct": true },
             { "id": "d", "label": "Les serveurs", "correct": false }
         ],
-        "explanation": "Le cours précise qu'aujourd'hui 'on sécurise l'information, pas l'informatique'."
+        "explanation": "Aaujourd'hui 'on sécurise l'information, pas l'informatique'."
     },
     {
         "id": "q2",
-        "text": "Quelle famille d'activité concourt directement à la livraison des produits et génère les revenus ?",
+        "text": "Quelleactivité concourt directement à la livraison des produits et génère les revenus ?",
         "options": [
             { "id": "a", "label": "Activités de support", "correct": false },
             { "id": "b", "label": "Activités de réalisation", "correct": true },
@@ -23,11 +23,11 @@
     },
     {
         "id": "q3",
-        "text": "Parmi les suivantes, laquelle est une activité de support ?",
+        "text": "Laquelle de ces activités est une activité de support ?",
         "options": [
             { "id": "a", "label": "Définition de la stratégie", "correct": false },
             { "id": "b", "label": "Livraison des produits", "correct": false },
-            { "id": "c", "label": "Gestion des ressources humaines (RH)", "correct": true },
+            { "id": "c", "label": "Gestion des ressources humaines", "correct": true },
             { "id": "d", "label": "Contrôle qualité", "correct": false }
         ],
         "explanation": "Les activités de support incluent le juridique, la finance, les RH, la maintenance et la sécurité."
@@ -47,10 +47,10 @@
         "id": "q5",
         "text": "Quelle caractéristique est essentielle pour une mesure de sécurité ?",
         "options": [
-            { "id": "a", "label": "Elle doit être coûteuse", "correct": false },
-            { "id": "b", "label": "Elle doit être invisible", "correct": false },
-            { "id": "c", "label": "Elle doit être complexe", "correct": false },
-            { "id": "d", "label": "Elle doit être testable", "correct": true }
+            { "id": "a", "label": "être coûteuse", "correct": false },
+            { "id": "b", "label": "être invisible", "correct": false },
+            { "id": "c", "label": "être complexe", "correct": false },
+            { "id": "d", "label": "être testable", "correct": true }
         ],
         "explanation": "Une mesure de sécurité doit être testable pour prouver qu'elle fonctionne."
     },
@@ -67,7 +67,7 @@
     },
     {
         "id": "q7",
-        "text": "Que signifie l'acronyme OIV ?",
+        "text": "Que signifie OIV ?",
         "options": [
             { "id": "a", "label": "Organisation Interne de Vigilance", "correct": false },
             { "id": "b", "label": "Organisme d'Importance Vitale", "correct": true },
@@ -103,7 +103,7 @@
         "text": "Qu'est-ce que la reconnaissance passive ?",
         "options": [
             { "id": "a", "label": "Scanner les ports du serveur cible", "correct": false },
-            { "id": "b", "label": "Rechercher des informations sur internet sans interagir avec le système", "correct": true },
+            { "id": "b", "label": "Rechercher des informations sur internet", "correct": true },
             { "id": "c", "label": "Envoyer un email de phishing", "correct": false },
             { "id": "d", "label": "Tenter une injection SQL", "correct": false }
         ],
@@ -147,7 +147,7 @@
         "text": "Que se passe-t-il lors de la phase d'Exploitation ?",
         "options": [
             { "id": "a", "label": "L'attaquant installe une backdoor", "correct": false },
-            { "id": "b", "label": "Le code malveillant se déclenche grâce à une vulnérabilité", "correct": true },
+            { "id": "b", "label": "Le code malveillant se déclenche", "correct": true },
             { "id": "c", "label": "L'attaquant exfiltre les données", "correct": false },
             { "id": "d", "label": "L'attaquant scanne le réseau", "correct": false }
         ],
@@ -298,7 +298,7 @@
     },
     {
         "id": "q28",
-        "text": "Quels outils sont cités pour l'analyse réseau ?",
+        "text": "Quels outils sont utilisés pour l'analyse réseau ?",
         "options": [
             { "id": "a", "label": "Photoshop, Gimp", "correct": false },
             { "id": "b", "label": "Word, Excel", "correct": false },
@@ -356,7 +356,7 @@
         "text": "Que sont les données EXIF ?",
         "options": [
             { "id": "a", "label": "Des virus cachés dans les images", "correct": false },
-            { "id": "b", "label": "Des métadonnées dans les fichiers images (date, lieu, appareil...)", "correct": true },
+            { "id": "b", "label": "Des métadonnées dans les fichiers images", "correct": true },
             { "id": "c", "label": "Des extensions de fichiers cryptés", "correct": false },
             { "id": "d", "label": "Des filtres Instagram", "correct": false }
         ],
@@ -371,7 +371,7 @@
             { "id": "c", "label": "Elles sont obligatoires par la loi", "correct": false },
             { "id": "d", "label": "Elles sont vendues aux enchères", "correct": false }
         ],
-        "explanation": "Le cours note que les réseaux sociaux ne conservent pratiquement plus les données EXIF aujourd'hui."
+        "explanation": "Les réseaux sociaux ne conservent pratiquement plus les données EXIF aujourd'hui."
     },
     {
         "id": "q35",
@@ -415,7 +415,7 @@
             { "id": "c", "label": "DDOS", "correct": false },
             { "id": "d", "label": "SQL Injection", "correct": false }
         ],
-        "explanation": "Le 'DNS tunneling' est cité comme moyen d'exfiltrer des petits morceaux de données."
+        "explanation": "Le 'DNS tunneling' est un moyen d'exfiltrer des petits morceaux de données."
     },
     {
         "id": "q39",
@@ -426,7 +426,7 @@
             { "id": "c", "label": "youtube.com", "correct": false },
             { "id": "d", "label": "maps.google.com", "correct": false }
         ],
-        "explanation": "Dehashed est listé parmi les outils pour les listes de hashs."
+        "explanation": "Dehashed est un outil pour les listes de hashs."
     },
     {
         "id": "q40",
@@ -459,11 +459,11 @@
             { "id": "c", "label": "Les activités de support prennent le relais", "correct": false },
             { "id": "d", "label": "La direction change de stratégie", "correct": false }
         ],
-        "explanation": "Le cours stipule clairement : 'Si l'activité de réalisation s'arrête, l'entreprise fait faillite'."
+        "explanation": "Si l'activité de réalisation s'arrête, l'entreprise fait faillite."
     },
     {
         "id": "q43",
-        "text": "Outre les mots de passe, quelle autre 'mesure de sécurité' est citée pour le traitement des risques ?",
+        "text": "Outre les mots de passe, quelle autre 'mesure de sécurité' est prise pour le traitement des risques ?",
         "options": [
             { "id": "a", "label": "L'installation d'un antivirus", "correct": false },
             { "id": "b", "label": "Le licenciement", "correct": false },
@@ -474,7 +474,7 @@
     },
     {
         "id": "q44",
-        "text": "Quelle est la 3ème étape de l'ordre logique de gestion présenté ?",
+        "text": "Quelle est la 3ème étape de l'ordre logique de gestion ?",
         "options": [
             { "id": "a", "label": "Identification des ressources", "correct": true },
             { "id": "b", "label": "Appréciation des risques", "correct": false },
@@ -492,7 +492,7 @@
             { "id": "c", "label": "Elle doit être gouvernementale", "correct": false },
             { "id": "d", "label": "Elle doit être cryptée", "correct": false }
         ],
-        "explanation": "Il est noté : 'on dit que la source doit délivrer l'information de son plein gré'."
+        "explanation": "La source doit délivrer l'information de son plein gré."
     },
     {
         "id": "q46",
@@ -521,7 +521,7 @@
         "text": "Lors de la phase d'Armement, l'attaquant peut utiliser un 'crypter'. À quoi cela sert-il ?",
         "options": [
             { "id": "a", "label": "À voler des mots de passe", "correct": false },
-            { "id": "b", "label": "À empaqueter (pack) le malware compilé", "correct": true },
+            { "id": "b", "label": "À pack le malware compilé", "correct": true },
             { "id": "c", "label": "À scanner le réseau", "correct": false },
             { "id": "d", "label": "À envoyer des emails", "correct": false }
         ],
@@ -627,19 +627,8 @@
         "explanation": "L'attaquant peut procéder à la 'Deletion of Shadow copies and local backups' pour empêcher la restauration."
     },
     {
-        "id": "q58",
-        "text": "Quelle catégorie d'information est 'licitement accessible' ?",
-        "options": [
-            { "id": "a", "label": "Blanche uniquement", "correct": false },
-            { "id": "b", "label": "Grise uniquement", "correct": false },
-            { "id": "c", "label": "Blanche et Grise", "correct": true },
-            { "id": "d", "label": "Noire uniquement", "correct": false }
-        ],
-        "explanation": "L'information blanche est 'aisément et licitement accessible', la grise est 'licitement accessible' mais difficile d'accès."
-    },
-    {
         "id": "q59",
-        "text": "L'information 'Noire' représente quel pourcentage (par déduction) des informations ?",
+        "text": "L'information 'Noire' représente quel pourcentage des informations ?",
         "options": [
             { "id": "a", "label": "Environ 5%", "correct": true },
             { "id": "b", "label": "Environ 50%", "correct": false },
@@ -657,7 +646,7 @@
             { "id": "c", "label": "Vendre des données", "correct": false },
             { "id": "d", "label": "Héberger des images", "correct": false }
         ],
-        "explanation": "C'est un référentiel d'outils (le lien est donné comme outil général)."
+        "explanation": "C'est un référentiel d'outils."
     },
     {
         "id": "q61",
@@ -668,7 +657,7 @@
             { "id": "c", "label": "C'est un gestionnaire de mots de passe", "correct": false },
             { "id": "d", "label": "C'est un antivirus", "correct": false }
         ],
-        "explanation": "ZAP est cité dans la liste des 'crawlers comme cewl ou ZAP'."
+        "explanation": "ZAP est cité dans la liste des crawlers comme cewl ou ZAP."
     },
     {
         "id": "q62",
@@ -679,7 +668,7 @@
             { "id": "c", "label": "nmap et wireshark", "correct": false },
             { "id": "d", "label": "whois et curl", "correct": false }
         ],
-        "explanation": "Le document liste : 'DNS via nslookup, dig'."
+        "explanation": "nslookup et dig parce que c'est dans le cours quoi."
     },
     {
         "id": "q63",
@@ -704,26 +693,15 @@
         "explanation": "Le lien reddit fourni mentionne 'hashes.org archives of all cracked hash lists'."
     },
     {
-        "id": "q65",
-        "text": "L'Ingénierie sociale fait partie de quel type d'OSINT ?",
-        "options": [
-            { "id": "a", "label": "Elle est listée comme un type d'OSINT à part entière", "correct": true },
-            { "id": "b", "label": "Ce n'est pas de l'OSINT", "correct": false },
-            { "id": "c", "label": "OSINT Technique uniquement", "correct": false },
-            { "id": "d", "label": "OSINT Géographique", "correct": false }
-        ],
-        "explanation": "Dans la section 'types d'OSINT', l'Ingénierie sociale est listée."
-    },
-    {
         "id": "q66",
-        "text": "Quels services sont cités pour le positionnement géographique ?",
+        "text": "Quels services sont utilisés pour le positionnement géographique ?",
         "options": [
             { "id": "a", "label": "Google Maps, Bing Maps, OpenStreetMap", "correct": true },
             { "id": "b", "label": "Waze uniquement", "correct": false },
             { "id": "c", "label": "Mappy et ViaMichelin", "correct": false },
             { "id": "d", "label": "GPS Coordinates App", "correct": false }
         ],
-        "explanation": "Le cours cite 'Google Maps, Bing Maps, OpenStreetMap'."
+        "explanation": "Google Maps, Bing Maps, OpenStreetMap."
     },
     {
         "id": "q67",
@@ -734,11 +712,11 @@
             { "id": "c", "label": "whois", "correct": false },
             { "id": "d", "label": "dig", "correct": false }
         ],
-        "explanation": "Dans l'analyse réseau, traceroute est cité (et c'est sa fonction technique)."
+        "explanation": "Dans l'analyse réseau, traceroute ets utilisé."
     },
     {
         "id": "q68",
-        "text": "La Cybersécurité 'Organisationnelle' concerne :",
+        "text": "La cybersécurité 'Organisationnelle' concerne :",
         "options": [
             { "id": "a", "label": "Le pentest", "correct": false },
             { "id": "b", "label": "Le SOC", "correct": false },
@@ -756,7 +734,7 @@
             { "id": "c", "label": "Organisationnelle", "correct": false },
             { "id": "d", "label": "Juridique", "correct": false }
         ],
-        "explanation": "Le cours classe 'analyste soc' dans la catégorie 'technique (défensif)'."
+        "explanation": "L'analyste soc fait partie de la catégorie technique défensive."
     },
     {
         "id": "q70",
@@ -767,18 +745,7 @@
             { "id": "c", "label": "De support RH", "correct": false },
             { "id": "d", "label": "De direction", "correct": false }
         ],
-        "explanation": "Le cours classe 'pentester osint' dans la catégorie 'technique (offensif)'."
-    },
-    {
-        "id": "q71",
-        "text": "Dans la 'Kill Chain', à quel moment l'attaquant choisit-il comment 'livrer' l'arme ?",
-        "options": [
-            { "id": "a", "label": "Livraison", "correct": true },
-            { "id": "b", "label": "Exploitation", "correct": false },
-            { "id": "c", "label": "Installation", "correct": false },
-            { "id": "d", "label": "Armement", "correct": false }
-        ],
-        "explanation": "La définition de la Livraison est : 'C'est le moment où l'attaquant choisit comment livrer l'arme'."
+        "explanation": "Le pentester osint fait partie de la catégorie technique offensive."
     },
     {
         "id": "q72",
@@ -789,7 +756,7 @@
             { "id": "c", "label": "Activités de direction", "correct": false },
             { "id": "d", "label": "Activités commerciales", "correct": false }
         ],
-        "explanation": "Le Service Juridique est cité comme une activité de support."
+        "explanation": "Le Service Juridique est une activité de support."
     },
     {
         "id": "q74",
@@ -800,7 +767,7 @@
             { "id": "c", "label": "Phishing", "correct": false },
             { "id": "d", "label": "Déni de service", "correct": false }
         ],
-        "explanation": "C'est l'exemple donné pour la persistance dans la phase d'Installation."
+        "explanation": "C'est un exemple de persistance dans la phase d'Installation."
     },
     {
         "id": "q75",
@@ -833,18 +800,7 @@
             { "id": "c", "label": "Vulnérabilité physique", "correct": false },
             { "id": "d", "label": "Aucune vulnérabilité", "correct": false }
         ],
-        "explanation": "Le document associe 'vulnérabilité logicielle' à 'CVE exploit against a public-facing web application'."
-    },
-    {
-        "id": "q78",
-        "text": "À quoi servent les 'google dorks' en OSINT ?",
-        "options": [
-            { "id": "a", "label": "À accéder au darknet", "correct": false },
-            { "id": "b", "label": "À filtrer les résultats de recherche", "correct": true },
-            { "id": "c", "label": "À créer des faux comptes", "correct": false },
-            { "id": "d", "label": "À analyser des images", "correct": false }
-        ],
-        "explanation": "Les Google Dorks permettent de filtrer les résultats de la recherche."
+        "explanation": "Un 'CVE exploit against a public-facing web application' exploite une vulnérabilité logicielle."
     },
     {
         "id": "q79",
@@ -852,7 +808,7 @@
         "options": [
             { "id": "a", "label": "L'emplacement de la prise", "correct": false },
             { "id": "b", "label": "La date de la prise", "correct": false },
-            { "id": "c", "label": "Le nom du photographe (auteur)", "correct": false },
+            { "id": "c", "label": "L'auteur'", "correct": false },
             { "id": "d", "label": "L'adresse IP du serveur hébergeant l'image", "correct": true }
         ],
         "explanation": "Les EXIF concernent la caméra, la date, l'auteur, le lieu, mais pas l'IP du serveur web qui l'héberge."

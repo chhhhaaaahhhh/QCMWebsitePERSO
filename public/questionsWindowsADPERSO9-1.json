@@ -1,0 +1,442 @@
+[
+    {
+        "id": "q1",
+        "text": "Que signifie l'acronyme AD DS ?",
+        "options": [
+            { "id": "a", "label": "Active Directory Data System", "correct": false },
+            { "id": "b", "label": "Active Directory Domain Services", "correct": true },
+            { "id": "c", "label": "Advanced Directory Domain Server", "correct": false },
+            { "id": "d", "label": "Active Domain Directory System", "correct": false }
+        ],
+        "explanation": "AD DS signifie Active Directory Domain Services. C'est le cœur du service d'annuaire de Windows."
+    },
+    {
+        "id": "q2",
+        "text": "Quel protocole est principalement utilisé par les annuaires comme Active Directory pour l'interrogation et la modification ?",
+        "options": [
+            { "id": "a", "label": "HTTP", "correct": false },
+            { "id": "b", "label": "FTP", "correct": false },
+            { "id": "c", "label": "LDAP", "correct": true },
+            { "id": "d", "label": "SMTP", "correct": false }
+        ],
+        "explanation": "Active Directory est un service d'annuaire basé sur le protocole LDAP (Lightweight Directory Access Protocol)."
+    },
+    {
+        "id": "q3",
+        "text": "Comment appelle-t-on le serveur qui héberge les services Active Directory ?",
+        "options": [
+            { "id": "a", "label": "Contrôleur de domaine (DC)", "correct": true },
+            { "id": "b", "label": "Serveur de fichiers", "correct": false },
+            { "id": "c", "label": "Serveur DHCP", "correct": false },
+            { "id": "d", "label": "Serveur Proxy", "correct": false }
+        ],
+        "explanation": "Le serveur exécutant les services AD DS est appelé Contrôleur de Domaine (Domain Controller ou DC)."
+    },
+    {
+        "id": "q4",
+        "text": "Dans la structure logique d'AD, quel est le conteneur de plus haut niveau représentant une instance complète ?",
+        "options": [
+            { "id": "a", "label": "Le Domaine", "correct": false },
+            { "id": "b", "label": "L'Arbre", "correct": false },
+            { "id": "c", "label": "La Forêt", "correct": true },
+            { "id": "d", "label": "L'Unité d'Organisation", "correct": false }
+        ],
+        "explanation": "La Forêt est le conteneur de premier niveau qui regroupe un ou plusieurs arbres de domaines partageant le même schéma."
+    },
+    {
+        "id": "q5",
+        "text": "Que signifie l'acronyme OU ?",
+        "options": [
+            { "id": "a", "label": "Operational User", "correct": false },
+            { "id": "b", "label": "Organizational Unit", "correct": true },
+            { "id": "c", "label": "Object Utility", "correct": false },
+            { "id": "d", "label": "Open Unit", "correct": false }
+        ],
+        "explanation": "OU signifie Organizational Unit (Unité d'Organisation), un conteneur permettant d'organiser les objets dans un domaine."
+    },
+    {
+        "id": "q6",
+        "text": "Quel composant d'Active Directory définit les classes d'objets et leurs attributs ?",
+        "options": [
+            { "id": "a", "label": "Le catalogue global", "correct": false },
+            { "id": "b", "label": "La partition de configuration", "correct": false },
+            { "id": "c", "label": "Le schéma", "correct": true },
+            { "id": "d", "label": "Le SYSVOL", "correct": false }
+        ],
+        "explanation": "Le schéma contient la définition de toutes les classes (ex: utilisateur) et attributs (ex: nom, téléphone) disponibles dans l'annuaire."
+    },
+    {
+        "id": "q7",
+        "text": "Quel est le nom du fichier de base de données physique d'Active Directory ?",
+        "options": [
+            { "id": "a", "label": "AD.db", "correct": false },
+            { "id": "b", "label": "NTDS.dit", "correct": true },
+            { "id": "c", "label": "SYSVOL.dat", "correct": false },
+            { "id": "d", "label": "WIN.log", "correct": false }
+        ],
+        "explanation": "La base de données Active Directory est stockée dans le fichier NTDS.dit."
+    },
+    {
+        "id": "q8",
+        "text": "Quel rôle FSMO est unique au niveau de la forêt et gère les modifications de la structure des classes et attributs ?",
+        "options": [
+            { "id": "a", "label": "Maître RID", "correct": false },
+            { "id": "b", "label": "Émulateur PDC", "correct": false },
+            { "id": "c", "label": "Maître d'infrastructure", "correct": false },
+            { "id": "d", "label": "Contrôleur de schéma", "correct": true }
+        ],
+        "explanation": "Le Contrôleur de schéma (Schema Master) est le seul autorisé à traiter les modifications du schéma pour toute la forêt."
+    },
+    {
+        "id": "q9",
+        "text": "À quoi sert le Catalogue Global (Global Catalog) ?",
+        "options": [
+            { "id": "a", "label": "Stocker les fichiers de scripts", "correct": false },
+            { "id": "b", "label": "Retrouver des objets dans l'ensemble de la forêt", "correct": true },
+            { "id": "c", "label": "Gérer les adresses IP", "correct": false },
+            { "id": "d", "label": "Authentifier les clients non-Windows", "correct": false }
+        ],
+        "explanation": "Le Catalogue Global contient une copie partielle de tous les objets de la forêt, facilitant la recherche inter-domaines."
+    },
+    {
+        "id": "q10",
+        "text": "Quel protocole d'authentification sécurisé est utilisé par défaut dans un domaine Windows ?",
+        "options": [
+            { "id": "a", "label": "Kerberos", "correct": true },
+            { "id": "b", "label": "NTLMv1", "correct": false },
+            { "id": "c", "label": "PAP", "correct": false },
+            { "id": "d", "label": "Radius", "correct": false }
+        ],
+        "explanation": "Kerberos est le protocole d'authentification standard et sécurisé utilisé par Active Directory."
+    },
+    {
+        "id": "q11",
+        "text": "Quel est le port par défaut pour le service LDAP (non sécurisé) ?",
+        "options": [
+            { "id": "a", "label": "80", "correct": false },
+            { "id": "b", "label": "443", "correct": false },
+            { "id": "c", "label": "636", "correct": false },
+            { "id": "d", "label": "389", "correct": true }
+        ],
+        "explanation": "Le port TCP/UDP 389 est le port standard pour les communications LDAP."
+    },
+    {
+        "id": "q12",
+        "text": "Que signifie l'acronyme GPO ?",
+        "options": [
+            { "id": "a", "label": "Global Policy Organization", "correct": false },
+            { "id": "b", "label": "Group Policy Object", "correct": true },
+            { "id": "c", "label": "General Protocol Output", "correct": false },
+            { "id": "d", "label": "Graphical Policy Option", "correct": false }
+        ],
+        "explanation": "GPO signifie Group Policy Object (Objet de Stratégie de Groupe), utilisé pour configurer les paramètres des utilisateurs et ordinateurs."
+    },
+    {
+        "id": "q13",
+        "text": "Dans quel ordre les GPO sont-elles appliquées (LSDOU) ?",
+        "options": [
+            { "id": "a", "label": "Local, Site, Domaine, Unité d'Organisation", "correct": true },
+            { "id": "b", "label": "Local, Service, Domaine, Utilisateur", "correct": false },
+            { "id": "c", "label": "Liste, Site, Dossier, Unité", "correct": false },
+            { "id": "d", "label": "Unité d'Organisation, Domaine, Site, Local", "correct": false }
+        ],
+        "explanation": "L'ordre de traitement est Local, Site, Domaine, puis Unité d'Organisation (LSDOU). La dernière appliquée l'emporte en cas de conflit."
+    },
+    {
+        "id": "q14",
+        "text": "Quel dossier partagé sur les contrôleurs de domaine stocke les fichiers des GPO ?",
+        "options": [
+            { "id": "a", "label": "WINDOWS", "correct": false },
+            { "id": "b", "label": "SYSTEM32", "correct": false },
+            { "id": "c", "label": "SYSVOL", "correct": true },
+            { "id": "d", "label": "NTDS", "correct": false }
+        ],
+        "explanation": "Le dossier SYSVOL est partagé sur tous les DC et contient les modèles de stratégies de groupe (GPT) et les scripts."
+    },
+    {
+        "id": "q15",
+        "text": "Quelle est la principale différence entre un Groupe de Sécurité et un Groupe de Distribution ?",
+        "options": [
+            { "id": "a", "label": "Le groupe de distribution a un SID", "correct": false },
+            { "id": "b", "label": "Le groupe de sécurité sert aux permissions, celui de distribution aux e-mails", "correct": true },
+            { "id": "c", "label": "Le groupe de sécurité ne peut contenir que des ordinateurs", "correct": false },
+            { "id": "d", "label": "Il n'y a aucune différence", "correct": false }
+        ],
+        "explanation": "Les groupes de sécurité gèrent les accès (permissions) et ont un SID. Les groupes de distribution servent uniquement aux listes d'email."
+    },
+    {
+        "id": "q16",
+        "text": "Que signifie FSMO ?",
+        "options": [
+            { "id": "a", "label": "File System Master Organization", "correct": false },
+            { "id": "b", "label": "Flexible Single Master Operation", "correct": true },
+            { "id": "c", "label": "Fast Server Management Option", "correct": false },
+            { "id": "d", "label": "Full Security Master Object", "correct": false }
+        ],
+        "explanation": "FSMO signifie Flexible Single Master Operation, désignant les rôles spécialisés détenus par certains contrôleurs de domaine."
+    },
+    {
+        "id": "q17",
+        "text": "Quel rôle FSMO est responsable de la gestion du temps et des verrous de mot de passe ?",
+        "options": [
+            { "id": "a", "label": "Maître RID", "correct": false },
+            { "id": "b", "label": "Maître d'infrastructure", "correct": false },
+            { "id": "c", "label": "Émulateur PDC", "correct": true },
+            { "id": "d", "label": "Maître d'attribution des noms", "correct": false }
+        ],
+        "explanation": "L'Émulateur PDC agit comme source de temps principale et gère les changements de mots de passe et les verrouillages."
+    },
+    {
+        "id": "q18",
+        "text": "Quel caractère termine le nom d'un compte ordinateur (machine) dans la base AD ?",
+        "options": [
+            { "id": "a", "label": "#", "correct": false },
+            { "id": "b", "label": "%", "correct": false },
+            { "id": "c", "label": "$", "correct": true },
+            { "id": "d", "label": "@", "correct": false }
+        ],
+        "explanation": "Le nom du compte machine (sAMAccountName) est le nom de l'ordinateur suivi d'un signe dollar ($)."
+    },
+    {
+        "id": "q19",
+        "text": "Quelle cmdlet PowerShell permet de créer un nouvel utilisateur dans AD ?",
+        "options": [
+            { "id": "a", "label": "New-ADUser", "correct": true },
+            { "id": "b", "label": "Add-User", "correct": false },
+            { "id": "c", "label": "Create-ADObject", "correct": false },
+            { "id": "d", "label": "Make-User", "correct": false }
+        ],
+        "explanation": "La commande PowerShell standard pour créer un utilisateur est New-ADUser."
+    },
+    {
+        "id": "q20",
+        "text": "Quel type de contrôleur de domaine contient une copie en lecture seule de la base de données ?",
+        "options": [
+            { "id": "a", "label": "PDC", "correct": false },
+            { "id": "b", "label": "RODC", "correct": true },
+            { "id": "c", "label": "BDC", "correct": false },
+            { "id": "d", "label": "GC", "correct": false }
+        ],
+        "explanation": "Un RODC (Read-Only Domain Controller) héberge une copie en lecture seule de la base NTDS.dit pour des raisons de sécurité."
+    },
+    {
+        "id": "q21",
+        "text": "Dans un DN (Distinguished Name) comme 'cn=Toto,ou=IT,dc=epita,dc=local', que signifie 'dc' ?",
+        "options": [
+            { "id": "a", "label": "Direct Connect", "correct": false },
+            { "id": "b", "label": "Data Center", "correct": false },
+            { "id": "c", "label": "Domain Controller", "correct": false },
+            { "id": "d", "label": "Domain Component", "correct": true }
+        ],
+        "explanation": "Dans la syntaxe LDAP, 'dc' signifie Domain Component (ex: dc=epita, dc=local)."
+    },
+    {
+        "id": "q22",
+        "text": "Quel outil permet de gérer les rôles FSMO en ligne de commande en cas de panne d'un DC ?",
+        "options": [
+            { "id": "a", "label": "ping", "correct": false },
+            { "id": "b", "label": "ipconfig", "correct": false },
+            { "id": "c", "label": "ntdsutil", "correct": true },
+            { "id": "d", "label": "gpupdate", "correct": false }
+        ],
+        "explanation": "L'utilitaire 'ntdsutil' permet de faire la maintenance de la base et de saisir (seize) les rôles FSMO si le titulaire est hors ligne."
+    },
+    {
+        "id": "q23",
+        "text": "Qu'est-ce qu'un TGT dans le protocole Kerberos ?",
+        "options": [
+            { "id": "a", "label": "The Great Token", "correct": false },
+            { "id": "b", "label": "Ticket Granting Ticket", "correct": true },
+            { "id": "c", "label": "Time Generated Ticket", "correct": false },
+            { "id": "d", "label": "Total Group Trust", "correct": false }
+        ],
+        "explanation": "Le TGT (Ticket Granting Ticket) est un ticket d'authentification initial délivré par le KDC pour demander ensuite des tickets de service."
+    },
+    {
+        "id": "q24",
+        "text": "Quel port est utilisé par Kerberos pour l'authentification ?",
+        "options": [
+            { "id": "a", "label": "88", "correct": true },
+            { "id": "b", "label": "53", "correct": false },
+            { "id": "c", "label": "445", "correct": false },
+            { "id": "d", "label": "25", "correct": false }
+        ],
+        "explanation": "Kerberos utilise le port 88 (TCP/UDP)."
+    },
+    {
+        "id": "q25",
+        "text": "Quel est l'avantage principal de créer une arborescence de domaines (Tree) ?",
+        "options": [
+            { "id": "a", "label": "Ne pas utiliser de DNS", "correct": false },
+            { "id": "b", "label": "Avoir un espace de nom contigu et hiérarchique", "correct": true },
+            { "id": "c", "label": "Supprimer la sécurité", "correct": false },
+            { "id": "d", "label": "Héberger des sites web", "correct": false }
+        ],
+        "explanation": "Un arbre regroupe des domaines partageant un espace de nom contigu (ex: uk.epita.local est enfant de epita.local)."
+    },
+    {
+        "id": "q26",
+        "text": "Pour joindre un ordinateur à un domaine, quel paramètre réseau est critique ?",
+        "options": [
+            { "id": "a", "label": "La passerelle par défaut", "correct": false },
+            { "id": "b", "label": "Le serveur DNS", "correct": true },
+            { "id": "c", "label": "L'adresse MAC", "correct": false },
+            { "id": "d", "label": "Le masque de sous-réseau", "correct": false }
+        ],
+        "explanation": "Le client doit avoir pour serveur DNS l'adresse du Contrôleur de Domaine pour pouvoir résoudre le nom du domaine."
+    },
+    {
+        "id": "q27",
+        "text": "Quel rôle FSMO gère le pool d'identifiants relatifs pour la création de SIDs ?",
+        "options": [
+            { "id": "a", "label": "Maître RID", "correct": true },
+            { "id": "b", "label": "Maître de schéma", "correct": false },
+            { "id": "c", "label": "Maître de nommage", "correct": false },
+            { "id": "d", "label": "Catalogue global", "correct": false }
+        ],
+        "explanation": "Le Maître RID attribue des blocs d'identifiants aux DC pour qu'ils puissent générer des SID uniques pour les nouveaux objets."
+    },
+    {
+        "id": "q28",
+        "text": "Quelle fonctionnalité permet d'empêcher la suppression involontaire d'une OU ?",
+        "options": [
+            { "id": "a", "label": "Le pare-feu Windows", "correct": false },
+            { "id": "b", "label": "Le chiffrement BitLocker", "correct": false },
+            { "id": "c", "label": "La protection contre la suppression accidentelle", "correct": true },
+            { "id": "d", "label": "L'antivirus", "correct": false }
+        ],
+        "explanation": "Une case à cocher 'Protéger le conteneur contre une suppression accidentelle' est disponible dans les propriétés de l'objet."
+    },
+    {
+        "id": "q29",
+        "text": "Quel est le but de la Délégation de contrôle dans AD ?",
+        "options": [
+            { "id": "a", "label": "Donner tous les droits à tout le monde", "correct": false },
+            { "id": "b", "label": "Accorder des droits spécifiques à des utilisateurs sur des OU", "correct": true },
+            { "id": "c", "label": "Supprimer des utilisateurs automatiquement", "correct": false },
+            { "id": "d", "label": "Installer des mises à jour", "correct": false }
+        ],
+        "explanation": "La délégation permet de donner des permissions granulaires (ex: réinitialiser mot de passe) à des non-admins sur une partie de l'annuaire."
+    },
+    {
+        "id": "q30",
+        "text": "Que contient la partition de configuration d'Active Directory ?",
+        "options": [
+            { "id": "a", "label": "Les fichiers utilisateurs", "correct": false },
+            { "id": "b", "label": "La topologie de la forêt (sites, liens, serveurs)", "correct": true },
+            { "id": "c", "label": "Les mots de passe en clair", "correct": false },
+            { "id": "d", "label": "Les définitions d'attributs", "correct": false }
+        ],
+        "explanation": "La partition de configuration contient les informations sur la structure physique et logique de la forêt (sites, sous-réseaux, DC)."
+    },
+    {
+        "id": "q31",
+        "text": "Quelle console permet de lier des GPO aux OU ?",
+        "options": [
+            { "id": "a", "label": "Utilisateurs et ordinateurs Active Directory", "correct": false },
+            { "id": "b", "label": "Gestion de stratégie de groupe (GPMC)", "correct": true },
+            { "id": "c", "label": "Sites et services Active Directory", "correct": false },
+            { "id": "d", "label": "Gestionnaire de serveur", "correct": false }
+        ],
+        "explanation": "La console Gestion de stratégie de groupe (Group Policy Management Console) est l'outil dédié pour gérer et lier les GPO."
+    },
+    {
+        "id": "q32",
+        "text": "Quel port est utilisé pour le Catalogue Global ?",
+        "options": [
+            { "id": "a", "label": "389", "correct": false },
+            { "id": "b", "label": "3268", "correct": true },
+            { "id": "c", "label": "443", "correct": false },
+            { "id": "d", "label": "8080", "correct": false }
+        ],
+        "explanation": "Le port TCP 3268 est utilisé pour les requêtes au Catalogue Global."
+    },
+    {
+        "id": "q33",
+        "text": "Dans Kerberos, quel composant délivre les tickets ?",
+        "options": [
+            { "id": "a", "label": "Le client", "correct": false },
+            { "id": "b", "label": "Le serveur de fichiers", "correct": false },
+            { "id": "c", "label": "Le KDC (Key Distribution Center)", "correct": true },
+            { "id": "d", "label": "Le routeur", "correct": false }
+        ],
+        "explanation": "Le KDC, situé sur le contrôleur de domaine, est responsable de l'émission des tickets Kerberos."
+    },
+    {
+        "id": "q34",
+        "text": "Quelle est la particularité des SID (Security Identifier) ?",
+        "options": [
+            { "id": "a", "label": "Ils changent à chaque connexion", "correct": false },
+            { "id": "b", "label": "Ils sont uniques pour chaque objet de sécurité", "correct": true },
+            { "id": "c", "label": "Ils sont identiques pour tous les utilisateurs", "correct": false },
+            { "id": "d", "label": "Ce sont des adresses IP", "correct": false }
+        ],
+        "explanation": "Un SID est un identifiant unique attribué à chaque objet de sécurité (utilisateur, groupe, ordinateur) à sa création."
+    },
+    {
+        "id": "q35",
+        "text": "Comment se nomme le fichier contenant les paramètres de registre dans un GPT (Group Policy Template) ?",
+        "options": [
+            { "id": "a", "label": "registry.pol", "correct": true },
+            { "id": "b", "label": "settings.ini", "correct": false },
+            { "id": "c", "label": "config.xml", "correct": false },
+            { "id": "d", "label": "gpo.reg", "correct": false }
+        ],
+        "explanation": "Le fichier registry.pol situé dans le dossier SYSVOL contient les paramètres de registre appliqués par la GPO."
+    },
+    {
+        "id": "q36",
+        "text": "Quel groupe local permet d'administrer complètement le domaine ?",
+        "options": [
+            { "id": "a", "label": "Utilisateurs du domaine", "correct": false },
+            { "id": "b", "label": "Invités", "correct": false },
+            { "id": "c", "label": "Administrateurs du domaine", "correct": true },
+            { "id": "d", "label": "Opérateurs de sauvegarde", "correct": false }
+        ],
+        "explanation": "Le groupe 'Administrateurs du domaine' dispose des privilèges complets sur l'ensemble du domaine."
+    },
+    {
+        "id": "q37",
+        "text": "Qu'est-ce qu'une relation d'approbation 'transitive' ?",
+        "options": [
+            { "id": "a", "label": "Si A approuve B et B approuve C, alors A approuve C", "correct": true },
+            { "id": "b", "label": "Une relation qui ne dure que 24h", "correct": false },
+            { "id": "c", "label": "Une relation manuelle uniquement", "correct": false },
+            { "id": "d", "label": "Une relation qui bloque les accès", "correct": false }
+        ],
+        "explanation": "La transitivité signifie que la confiance se propage automatiquement à travers les relations existantes."
+    },
+    {
+        "id": "q38",
+        "text": "Quel est l'impact d'augmenter le niveau fonctionnel d'un domaine ?",
+        "options": [
+            { "id": "a", "label": "Cela supprime tous les utilisateurs", "correct": false },
+            { "id": "b", "label": "Cela débloque de nouvelles fonctionnalités mais empêche l'ajout de vieux DC", "correct": true },
+            { "id": "c", "label": "Cela change le nom du domaine", "correct": false },
+            { "id": "d", "label": "Cela n'a aucun impact", "correct": false }
+        ],
+        "explanation": "Monter le niveau fonctionnel active de nouvelles fonctions mais exige que tous les DC soient au moins à cette version d'OS."
+    },
+    {
+        "id": "q39",
+        "text": "Quelle cmdlet PowerShell permet de lier une GPO à une OU ?",
+        "options": [
+            { "id": "a", "label": "New-GPLink", "correct": true },
+            { "id": "b", "label": "Connect-GPO", "correct": false },
+            { "id": "c", "label": "Link-Policy", "correct": false },
+            { "id": "d", "label": "Set-ADLink", "correct": false }
+        ],
+        "explanation": "New-GPLink est la commande utilisée pour créer un lien entre un objet GPO et un conteneur (Domaine, Site ou OU)."
+    },
+    {
+        "id": "q40",
+        "text": "Dans une GPO, quelle est la différence entre Configuration Ordinateur et Configuration Utilisateur ?",
+        "options": [
+            { "id": "a", "label": "Aucune différence", "correct": false },
+            { "id": "b", "label": "Ordinateur s'applique au démarrage, Utilisateur à l'ouverture de session", "correct": true },
+            { "id": "c", "label": "Utilisateur est plus prioritaire", "correct": false },
+            { "id": "d", "label": "Ordinateur ne concerne que les serveurs", "correct": false }
+        ],
+        "explanation": "Les paramètres Ordinateur s'appliquent à la machine (au démarrage), tandis que les paramètres Utilisateur s'appliquent au compte (au login)."
+    }
+]

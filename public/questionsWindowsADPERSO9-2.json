@@ -1,0 +1,552 @@
+[
+    {
+        "id": "q1",
+        "text": "Quelle commande faut-il exécuter pour enregistrer la DLL nécessaire à l'affichage de la console 'Schéma Active Directory' dans la MMC ?",
+        "options": [
+            { "id": "a", "label": "install-windowsfeature rsat-ad-powershell", "correct": false },
+            { "id": "b", "label": "regsvr32 schmmgmt.dll", "correct": true },
+            { "id": "c", "label": "net start ntds", "correct": false },
+            { "id": "d", "label": "dcpromo /schema", "correct": false }
+        ],
+        "explanation": "Le snap-in du schéma n'est pas affiché par défaut. Il faut enregistrer la bibliothèque schmmgmt.dll via la commande 'regsvr32 schmmgmt.dll' pour l'ajouter à la MMC."
+    },
+    {
+        "id": "q2",
+        "text": "Dans la structure de la base de données NTDS.dit, quelle table contient les 'Security Descriptors' des objets ?",
+        "options": [
+            { "id": "a", "label": "La table Data", "correct": false },
+            { "id": "b", "label": "La table Link", "correct": false },
+            { "id": "c", "label": "La table SD", "correct": true },
+            { "id": "d", "label": "La table Object", "correct": false }
+        ],
+        "explanation": "La base NTDS.dit se compose de plusieurs tables, dont la table SD qui contient les descripteurs de sécurité des objets."
+    },
+    {
+        "id": "q3",
+        "text": "Quel est le port TCP utilisé spécifiquement pour le Catalogue Global (Global Catalog) ?",
+        "options": [
+            { "id": "a", "label": "389", "correct": false },
+            { "id": "b", "label": "636", "correct": false },
+            { "id": "c", "label": "3268", "correct": true },
+            { "id": "d", "label": "88", "correct": false }
+        ],
+        "explanation": "Le catalogue global utilise les ports TCP/UDP 3268 et 3269, distincts du port LDAP standard 389."
+    },
+    {
+        "id": "q4",
+        "text": "Lors de l'utilisation de Kerberos, quel échange correspond à la demande initiale d'un TGT par le client ?",
+        "options": [
+            { "id": "a", "label": "KRB_TGS_REQ", "correct": false },
+            { "id": "b", "label": "KRB_AS_REQ", "correct": true },
+            { "id": "c", "label": "KRB_AP_REQ", "correct": false },
+            { "id": "d", "label": "KRB_AS_REP", "correct": false }
+        ],
+        "explanation": "La première étape est la demande d'un Ticket Granting Ticket (TGT) au service d'authentification (AS), appelée KRB_AS_REQ."
+    },
+    {
+        "id": "q5",
+        "text": "Quelle cmdlet PowerShell est utilisée pour transférer les rôles FSMO vers un autre contrôleur de domaine ?",
+        "options": [
+            { "id": "a", "label": "Set-ADDomainMode", "correct": false },
+            { "id": "b", "label": "Move-ADObject", "correct": false },
+            { "id": "c", "label": "Move-ADDirectoryServerOperationMasterRole", "correct": true },
+            { "id": "d", "label": "Install-ADDSForest", "correct": false }
+        ],
+        "explanation": "La cmdlet Move-ADDirectoryServerOperationMasterRole permet de transférer proprement les rôles FSMO."
+    },
+    {
+        "id": "q6",
+        "text": "Quel élément d'une GPO est stocké dans le partage SYSVOL et contient les scripts et les fichiers de registre ?",
+        "options": [
+            { "id": "a", "label": "GPC (Group Policy Container)", "correct": false },
+            { "id": "b", "label": "GPT (Group Policy Template)", "correct": true },
+            { "id": "c", "label": "GPO GUID", "correct": false },
+            { "id": "d", "label": "WMI Filter", "correct": false }
+        ],
+        "explanation": "Le GPT (Group Policy Template) est une structure de dossiers dans SYSVOL qui stocke les fichiers physiques de la GPO."
+    },
+    {
+        "id": "q7",
+        "text": "Quel attribut spécifique permet de protéger une Unité d'Organisation (OU) contre la suppression accidentelle lors de sa création en PowerShell ?",
+        "options": [
+            { "id": "a", "label": "-ProtectedFromAccidentalDeletion $true", "correct": true },
+            { "id": "b", "label": "-PreventDelete $true", "correct": false },
+            { "id": "c", "label": "-SecureOU $true", "correct": false },
+            { "id": "d", "label": "-LockObject $true", "correct": false }
+        ],
+        "explanation": "L'argument -ProtectedFromAccidentalDeletion $true est utilisé avec New-ADOrganizationalUnit pour activer cette protection."
+    },
+    {
+        "id": "q8",
+        "text": "Dans le modèle FSMO, quel rôle est responsable de la gestion des références aux objets fantômes d'autres domaines ?",
+        "options": [
+            { "id": "a", "label": "Maître RID", "correct": false },
+            { "id": "b", "label": "Émulateur PDC", "correct": false },
+            { "id": "c", "label": "Maître d'attribution des noms de domaine", "correct": false },
+            { "id": "d", "label": "Maître d'infrastructure", "correct": true }
+        ],
+        "explanation": "Le Maître d'infrastructure maintient les références (objets fantômes) vers des objets situés dans d'autres domaines."
+    },
+    {
+        "id": "q9",
+        "text": "Quel est le délai par défaut pour l'actualisation des stratégies de groupe (GPO) en arrière-plan ?",
+        "options": [
+            { "id": "a", "label": "30 minutes", "correct": false },
+            { "id": "b", "label": "60 minutes", "correct": false },
+            { "id": "c", "label": "90 minutes", "correct": true },
+            { "id": "d", "label": "24 heures", "correct": false }
+        ],
+        "explanation": "Les stratégies de groupe sont actualisées en arrière-plan toutes les 90 minutes par défaut."
+    },
+    {
+        "id": "q10",
+        "text": "Quelle partition de la base AD contient la topologie de la forêt (sites, liens) et est répliquée dans toute la forêt ?",
+        "options": [
+            { "id": "a", "label": "La partition de domaine", "correct": false },
+            { "id": "b", "label": "La partition de configuration", "correct": true },
+            { "id": "c", "label": "La partition de schéma", "correct": false },
+            { "id": "d", "label": "La partition applicative", "correct": false }
+        ],
+        "explanation": "La partition de configuration contient la topologie de la forêt et est unique au sein d'une forêt."
+    },
+    {
+        "id": "q11",
+        "text": "Si un contrôleur de domaine est définitivement hors ligne, quelle commande ntdsutil doit-on utiliser pour récupérer ses rôles FSMO ?",
+        "options": [
+            { "id": "a", "label": "transfer", "correct": false },
+            { "id": "b", "label": "move", "correct": false },
+            { "id": "c", "label": "seize", "correct": true },
+            { "id": "d", "label": "recover", "correct": false }
+        ],
+        "explanation": "La commande 'seize' (saisir) est utilisée dans ntdsutil lorsque le détenteur actuel du rôle est hors ligne et ne peut pas le transférer."
+    },
+    {
+        "id": "q12",
+        "text": "Quel type de fichier peut être utilisé pour modifier le schéma AD via du texte, bien que cette méthode soit déconseillée ?",
+        "options": [
+            { "id": "a", "label": "Fichiers XML", "correct": false },
+            { "id": "b", "label": "Fichiers CSV", "correct": false },
+            { "id": "c", "label": "Fichiers LDIF", "correct": true },
+            { "id": "d", "label": "Fichiers BAT", "correct": false }
+        ],
+        "explanation": "Les fichiers LDIF (LDAP Data Interchange Format) peuvent être utilisés pour importer ou exporter des modifications de schéma."
+    },
+    {
+        "id": "q13",
+        "text": "Quel est le comportement de la stratégie 'last writer wins' implémentée par Microsoft pour la réplication AD ?",
+        "options": [
+            { "id": "a", "label": "Elle fusionne toutes les modifications", "correct": false },
+            { "id": "b", "label": "Elle conserve la dernière modification valide en cas de conflit", "correct": true },
+            { "id": "c", "label": "Elle rejette toutes les modifications concurrentes", "correct": false },
+            { "id": "d", "label": "Elle donne priorité au contrôleur PDC uniquement", "correct": false }
+        ],
+        "explanation": "Pour gérer les conflits de réplication multi-maîtres, AD utilise la stratégie 'last writer wins' (dernière version valide)."
+    },
+    {
+        "id": "q14",
+        "text": "Dans une GPO, quel fichier spécifique contient les paramètres indiquant les clés de registre à modifier ?",
+        "options": [
+            { "id": "a", "label": "registry.pol", "correct": true },
+            { "id": "b", "label": "gpt.ini", "correct": false },
+            { "id": "c", "label": "schema.ldf", "correct": false },
+            { "id": "d", "label": "ntds.dit", "correct": false }
+        ],
+        "explanation": "Dans le GPT, on retrouve un fichier registry.pol contenant les indications concernant les clés de registre à modifier."
+    },
+    {
+        "id": "q15",
+        "text": "Quel groupe de sécurité permet aux utilisateurs d'ignorer les permissions de fichiers pour effectuer des sauvegardes ?",
+        "options": [
+            { "id": "a", "label": "Opérateurs de compte", "correct": false },
+            { "id": "b", "label": "Opérateurs de serveur", "correct": false },
+            { "id": "c", "label": "Opérateurs de sauvegarde", "correct": true },
+            { "id": "d", "label": "Opérateurs d'impression", "correct": false }
+        ],
+        "explanation": "Les Opérateurs de sauvegarde sont autorisés à accéder à n'importe quel fichier en ignorant les permissions pour effectuer des sauvegardes."
+    },
+    {
+        "id": "q16",
+        "text": "Quelle fonctionnalité du rôle 'Émulateur PDC' est essentielle pour la sécurité temporelle du réseau ?",
+        "options": [
+            { "id": "a", "label": "Il gère les mises à jour Windows", "correct": false },
+            { "id": "b", "label": "Il agit comme source de temps primaire pour le domaine", "correct": true },
+            { "id": "c", "label": "Il gère le schéma LDAP", "correct": false },
+            { "id": "d", "label": "Il sauvegarde la base NTDS", "correct": false }
+        ],
+        "explanation": "L'émulateur PDC agit en tant que source de temps primaire pour le domaine ; tous les DC se synchronisent sur lui."
+    },
+    {
+        "id": "q17",
+        "text": "Quelle partition Active Directory est répliquée sur tous les contrôleurs de domaine de la forêt, pas seulement ceux du domaine local ?",
+        "options": [
+            { "id": "a", "label": "La partition de Domaine", "correct": false },
+            { "id": "b", "label": "La partition de Schéma", "correct": true },
+            { "id": "c", "label": "La partition DNS locale", "correct": false },
+            { "id": "d", "label": "La partition Utilisateur", "correct": false }
+        ],
+        "explanation": "La partition de schéma est unique au sein d'une forêt et répliquée partout, tout comme la partition de configuration."
+    },
+    {
+        "id": "q18",
+        "text": "Quelle commande PowerShell permet de lier une GPO existante à une Unité d'Organisation ?",
+        "options": [
+            { "id": "a", "label": "Link-GPO", "correct": false },
+            { "id": "b", "label": "Add-GPOLink", "correct": false },
+            { "id": "c", "label": "New-GPLink", "correct": true },
+            { "id": "d", "label": "Set-GPOAssociation", "correct": false }
+        ],
+        "explanation": "La cmdlet New-GPLink est utilisée pour lier une GPO à une cible (OU, Domaine, etc.)."
+    },
+    {
+        "id": "q19",
+        "text": "Quel est le format du nom de compte (SamAccountName) d'une machine dans Active Directory ?",
+        "options": [
+            { "id": "a", "label": "NomMachine$", "correct": true },
+            { "id": "b", "label": "NomMachine.local", "correct": false },
+            { "id": "c", "label": "Computer_NomMachine", "correct": false },
+            { "id": "d", "label": "#NomMachine", "correct": false }
+        ],
+        "explanation": "Le nom du compte machine est le nom de l'ordinateur suivi d'un signe dollar (ex: DC01$)."
+    },
+    {
+        "id": "q20",
+        "text": "Quel est l'impact de la commande 'Install-ADDSForest' avec l'argument '-InstallDNS' ?",
+        "options": [
+            { "id": "a", "label": "Elle installe uniquement le rôle DNS sans AD", "correct": false },
+            { "id": "b", "label": "Elle crée une nouvelle forêt et configure le serveur comme contrôleur de domaine et serveur DNS", "correct": true },
+            { "id": "c", "label": "Elle ajoute un serveur DNS secondaire à un domaine existant", "correct": false },
+            { "id": "d", "label": "Elle met à jour les zones DNS uniquement", "correct": false }
+        ],
+        "explanation": "Cette commande installe une nouvelle forêt Active Directory et installe également le rôle de serveur DNS sur la machine."
+    },
+    {
+        "id": "q21",
+        "text": "Quelle restriction s'applique à la modification du schéma Active Directory ?",
+        "options": [
+            { "id": "a", "label": "N'importe quel administrateur peut le faire", "correct": false },
+            { "id": "b", "label": "Cela nécessite d'être membre du groupe 'Schema Admins'", "correct": true },
+            { "id": "c", "label": "Cela ne peut être fait qu'en mode sans échec", "correct": false },
+            { "id": "d", "label": "C'est impossible après l'installation initiale", "correct": false }
+        ],
+        "explanation": "La modification du schéma nécessite l'appartenance au groupe 'Schema Admins', un groupe hautement privilégié."
+    },
+    {
+        "id": "q22",
+        "text": "Quel est le port utilisé par le service de changement de mot de passe Kerberos (kpasswd) ?",
+        "options": [
+            { "id": "a", "label": "464", "correct": true },
+            { "id": "b", "label": "445", "correct": false },
+            { "id": "c", "label": "88", "correct": false },
+            { "id": "d", "label": "389", "correct": false }
+        ],
+        "explanation": "Le service de changement de mot de passe Kerberos utilise le port TCP/UDP 464."
+    },
+    {
+        "id": "q23",
+        "text": "Quelle est la particularité d'un RODC concernant les mots de passe ?",
+        "options": [
+            { "id": "a", "label": "Il stocke tous les mots de passe en clair", "correct": false },
+            { "id": "b", "label": "Il ne stocke aucun mot de passe par défaut, sauf ceux autorisés par la politique de réplication", "correct": true },
+            { "id": "c", "label": "Il peut modifier les mots de passe des utilisateurs", "correct": false },
+            { "id": "d", "label": "Il détient le rôle FSMO PDC Emulator", "correct": false }
+        ],
+        "explanation": "Les RODC contiennent une copie en lecture seule et ne stockent pas les mots de passe par défaut, sauf ceux explicitement autorisés (PRP)."
+    },
+    {
+        "id": "q24",
+        "text": "Quel est l'identifiant unique utilisé par le système pour identifier un objet GPC (Group Policy Container) dans l'annuaire ?",
+        "options": [
+            { "id": "a", "label": "Le Distinguished Name (DN)", "correct": false },
+            { "id": "b", "label": "Le GUID (Globally Unique Identifier)", "correct": true },
+            { "id": "c", "label": "Le sAMAccountName", "correct": false },
+            { "id": "d", "label": "L'OID (Object Identifier)", "correct": false }
+        ],
+        "explanation": "Le GPC est identifiable dans l'annuaire grâce à un identifiant unique appelé GUID."
+    },
+    {
+        "id": "q25",
+        "text": "Quelle est la conséquence d'une modification de schéma mal conçue ?",
+        "options": [
+            { "id": "a", "label": "Elle est automatiquement rejetée par le système", "correct": false },
+            { "id": "b", "label": "Elle n'affecte que le contrôleur de domaine local", "correct": false },
+            { "id": "c", "label": "Elle peut impacter négativement la réplication et la performance de toute la forêt", "correct": true },
+            { "id": "d", "label": "Elle crée une nouvelle partition de domaine", "correct": false }
+        ],
+        "explanation": "Des modifications de schéma mal conçues peuvent avoir un impact négatif sur les performances d'Active Directory et la réplication."
+    },
+    {
+        "id": "q26",
+        "text": "Dans le modèle OSI de Kerberos décrit dans le cours, que contient le message KRB_AP_REQ envoyé au serveur de ressources ?",
+        "options": [
+            { "id": "a", "label": "Le mot de passe de l'utilisateur en clair", "correct": false },
+            { "id": "b", "label": "Une demande de TGT", "correct": false },
+            { "id": "c", "label": "Le Ticket de Service (ST) chiffré et un authentifieur", "correct": true },
+            { "id": "d", "label": "La clé de session du TGT", "correct": false }
+        ],
+        "explanation": "La requête KRB_AP_REQ contient le Ticket de Service (fourni par le TGS) pour prouver l'identité au serveur de ressources."
+    },
+    {
+        "id": "q27",
+        "text": "Quelle option permet d'afficher le conteneur 'System' ou les GPC dans la console 'Utilisateurs et ordinateurs Active Directory' ?",
+        "options": [
+            { "id": "a", "label": "Affichage > Icônes moyennes", "correct": false },
+            { "id": "b", "label": "Affichage > Fonctionnalités avancées", "correct": true },
+            { "id": "c", "label": "Action > Connecter au contrôleur de domaine", "correct": false },
+            { "id": "d", "label": "Clic droit > Propriétés du domaine", "correct": false }
+        ],
+        "explanation": "Le conteneur GPC est caché par défaut ; il faut activer 'Fonctionnalités avancées' dans le menu Affichage pour le voir."
+    },
+    {
+        "id": "q28",
+        "text": "Quel groupe de sécurité est utilisé par défaut pour appliquer une GPO à tous les utilisateurs authentifiés ?",
+        "options": [
+            { "id": "a", "label": "Everyone", "correct": false },
+            { "id": "b", "label": "Domain Admins", "correct": false },
+            { "id": "c", "label": "Authenticated Users", "correct": true },
+            { "id": "d", "label": "Domain Users", "correct": false }
+        ],
+        "explanation": "Dans le filtrage de sécurité par défaut d'une GPO, on trouve le groupe 'Authenticated Users' (Utilisateurs authentifiés)."
+    },
+    {
+        "id": "q29",
+        "text": "Quelle est la fonction principale du rôle FSMO 'Maître d'attribution des noms de domaine' ?",
+        "options": [
+            { "id": "a", "label": "Gérer les mots de passe", "correct": false },
+            { "id": "b", "label": "Ajouter ou supprimer des domaines dans la forêt", "correct": true },
+            { "id": "c", "label": "Créer les comptes utilisateurs", "correct": false },
+            { "id": "d", "label": "Gérer les GPO", "correct": false }
+        ],
+        "explanation": "Ce rôle gère l'espace de noms de la forêt et est le seul autorisé à ajouter ou supprimer des domaines."
+    },
+    {
+        "id": "q30",
+        "text": "Que signifie le terme 'Transitive' dans une relation d'approbation ?",
+        "options": [
+            { "id": "a", "label": "La relation est temporaire", "correct": false },
+            { "id": "b", "label": "Si A approuve B et B approuve C, alors A approuve C", "correct": true },
+            { "id": "c", "label": "La relation ne fonctionne que dans un sens", "correct": false },
+            { "id": "d", "label": "La relation est limitée au domaine local", "correct": false }
+        ],
+        "explanation": "Une approbation transitive permet à la confiance de se propager via des intermédiaires (A->B->C implique A->C)."
+    },
+    {
+        "id": "q31",
+        "text": "Quel service gère la réplication du dossier SYSVOL dans les versions récentes de Windows Server ?",
+        "options": [
+            { "id": "a", "label": "FRS (File Replication Service)", "correct": false },
+            { "id": "b", "label": "DFSR (Distributed File System Replication)", "correct": true },
+            { "id": "c", "label": "XCOPY", "correct": false },
+            { "id": "d", "label": "ROBOCOPY", "correct": false }
+        ],
+        "explanation": "DFSR remplace FRS pour la réplication du dossier SYSVOL dans les versions récentes."
+    },
+    {
+        "id": "q32",
+        "text": "Quelle propriété d'une GPO permet de forcer son application même si l'héritage est bloqué sur une OU enfant ?",
+        "options": [
+            { "id": "a", "label": "Le lien activé (Link Enabled)", "correct": false },
+            { "id": "b", "label": "L'application forcée (Enforced)", "correct": true },
+            { "id": "c", "label": "Le filtrage WMI", "correct": false },
+            { "id": "d", "label": "La boucle de rappel (Loopback processing)", "correct": false }
+        ],
+        "explanation": "L'option 'Enforced' (Appliqué) sur un lien de GPO force son application et outrepasse le blocage d'héritage."
+    },
+    {
+        "id": "q33",
+        "text": "Quel attribut LDAP représente le chemin complet et unique pour trouver un objet dans l'annuaire ?",
+        "options": [
+            { "id": "a", "label": "CN (Common Name)", "correct": false },
+            { "id": "b", "label": "SN (Surname)", "correct": false },
+            { "id": "c", "label": "DN (Distinguished Name)", "correct": true },
+            { "id": "d", "label": "UPN (User Principal Name)", "correct": false }
+        ],
+        "explanation": "Le DN (Distinguished Name) est l'identifiant unique représentant le chemin LDAP complet vers l'objet."
+    },
+    {
+        "id": "q34",
+        "text": "À quoi servent les 'classes' dans le schéma Active Directory ?",
+        "options": [
+            { "id": "a", "label": "À définir les permissions des utilisateurs", "correct": false },
+            { "id": "b", "label": "À servir de modèles pour la création d'objets", "correct": true },
+            { "id": "c", "label": "À stocker les mots de passe", "correct": false },
+            { "id": "d", "label": "À définir la topologie réseau", "correct": false }
+        ],
+        "explanation": "Les classes servent de modèles (templates) définissant quels types d'objets peuvent être créés et leurs propriétés."
+    },
+    {
+        "id": "q35",
+        "text": "Quel est le rôle du composant KDC (Key Distribution Center) dans Kerberos ?",
+        "options": [
+            { "id": "a", "label": "Il agit comme serveur de fichiers", "correct": false },
+            { "id": "b", "label": "Il héberge le service d'authentification (AS) et le service d'octroi de tickets (TGS)", "correct": true },
+            { "id": "c", "label": "Il crypte le disque dur", "correct": false },
+            { "id": "d", "label": "Il gère uniquement les requêtes DNS", "correct": false }
+        ],
+        "explanation": "Le KDC, situé sur le contrôleur de domaine, regroupe les services AS (Authentication Service) et TGS (Ticket Granting Service)."
+    },
+    {
+        "id": "q36",
+        "text": "Dans PowerShell, quelle commande permet d'obtenir les informations sur le niveau fonctionnel d'un domaine ?",
+        "options": [
+            { "id": "a", "label": "Get-ADUser", "correct": false },
+            { "id": "b", "label": "Get-ADDomain", "correct": true },
+            { "id": "c", "label": "Get-ADForest", "correct": false },
+            { "id": "d", "label": "Get-GPO", "correct": false }
+        ],
+        "explanation": "La commande 'Get-ADDomain' renvoie les propriétés du domaine, y compris son niveau fonctionnel (DomainMode)."
+    },
+    {
+        "id": "q37",
+        "text": "Quel est l'inconvénient principal de mettre à niveau le niveau fonctionnel d'un domaine (avant Windows Server 2012 R2) ?",
+        "options": [
+            { "id": "a", "label": "Cela efface les utilisateurs", "correct": false },
+            { "id": "b", "label": "C'est un processus irréversible", "correct": true },
+            { "id": "c", "label": "Cela désactive le DNS", "correct": false },
+            { "id": "d", "label": "Cela nécessite de réinstaller Windows", "correct": false }
+        ],
+        "explanation": "La mise à niveau fonctionnelle était un processus à sens unique (irréversible) dans les anciennes versions de Windows Server."
+    },
+    {
+        "id": "q38",
+        "text": "Quelle table de la base NTDS.dit contient les liens qui existent entre les objets ?",
+        "options": [
+            { "id": "a", "label": "Data", "correct": false },
+            { "id": "b", "label": "SD", "correct": false },
+            { "id": "c", "label": "Link", "correct": true },
+            { "id": "d", "label": "Schema", "correct": false }
+        ],
+        "explanation": "La table 'Link' contient les informations sur les liens existant entre les objets du domaine."
+    },
+    {
+        "id": "q39",
+        "text": "Dans l'ordre d'application LSDOU, quelle stratégie est appliquée en dernier et a donc la priorité (sauf si 'Enforced') ?",
+        "options": [
+            { "id": "a", "label": "Local", "correct": false },
+            { "id": "b", "label": "Site", "correct": false },
+            { "id": "c", "label": "Domaine", "correct": false },
+            { "id": "d", "label": "Unité d'Organisation (OU)", "correct": true }
+        ],
+        "explanation": "L'ordre est Local > Site > Domaine > OU. Les règles les plus spécifiques (OU) sont traitées en dernier et l'emportent."
+    },
+    {
+        "id": "q40",
+        "text": "Quel utilitaire graphique permet de créer des sites et configurer la réplication inter-sites ?",
+        "options": [
+            { "id": "a", "label": "Utilisateurs et ordinateurs Active Directory", "correct": false },
+            { "id": "b", "label": "Sites et services Active Directory", "correct": true },
+            { "id": "c", "label": "Centre d'administration Active Directory", "correct": false },
+            { "id": "d", "label": "Gestionnaire de serveur", "correct": false }
+        ],
+        "explanation": "Le snap-in 'Active Directory Sites and Services' est utilisé pour gérer la topologie physique, les sites et la réplication."
+    },
+    {
+        "id": "q41",
+        "text": "Quel protocole est utilisé par le dossier SYSVOL pour le partage de fichiers ?",
+        "options": [
+            { "id": "a", "label": "FTP", "correct": false },
+            { "id": "b", "label": "HTTP", "correct": false },
+            { "id": "c", "label": "SMB", "correct": true },
+            { "id": "d", "label": "NFS", "correct": false }
+        ],
+        "explanation": "SYSVOL est un répertoire partagé accessible via le protocole SMB (Server Message Block)."
+    },
+    {
+        "id": "q42",
+        "text": "Combien de caractères aléatoires composent généralement le mot de passe d'un compte machine géré automatiquement ?",
+        "options": [
+            { "id": "a", "label": "8", "correct": false },
+            { "id": "b", "label": "120", "correct": true },
+            { "id": "c", "label": "14", "correct": false },
+            { "id": "d", "label": "256", "correct": false }
+        ],
+        "explanation": "Les mots de passe des comptes machines se composent généralement de 120 caractères aléatoires."
+    },
+    {
+        "id": "q43",
+        "text": "Quelle est la commande pour déplacer un objet AD vers une autre OU en PowerShell ?",
+        "options": [
+            { "id": "a", "label": "Move-ADObject", "correct": true },
+            { "id": "b", "label": "Set-ADObject", "correct": false },
+            { "id": "c", "label": "Transfer-ADUser", "correct": false },
+            { "id": "d", "label": "Copy-ADObject", "correct": false }
+        ],
+        "explanation": "La cmdlet Move-ADObject est utilisée pour déplacer un objet (utilisateur, ordinateur) vers un nouveau chemin cible."
+    },
+    {
+        "id": "q44",
+        "text": "Quelle est la particularité de la partition de Schéma par rapport à la partition de Domaine ?",
+        "options": [
+            { "id": "a", "label": "Elle est unique par domaine", "correct": false },
+            { "id": "b", "label": "Elle est unique au sein d'une forêt", "correct": true },
+            { "id": "c", "label": "Elle contient les utilisateurs", "correct": false },
+            { "id": "d", "label": "Elle n'est pas répliquée", "correct": false }
+        ],
+        "explanation": "La partition de schéma est unique au sein d'une forêt, contrairement à la partition de domaine qui est propre à chaque domaine."
+    },
+    {
+        "id": "q45",
+        "text": "Quel outil permet une gestion plus complète (déploiement d'applications, inventaire) que les outils AD de base ?",
+        "options": [
+            { "id": "a", "label": "SCCM / MECM", "correct": true },
+            { "id": "b", "label": "WSUS", "correct": false },
+            { "id": "c", "label": "Hyper-V", "correct": false },
+            { "id": "d", "label": "PowerShell ISE", "correct": false }
+        ],
+        "explanation": "SCCM (System Center Configuration Manager), devenu MECM, permet la gestion d'inventaire, le déploiement d'applis, etc."
+    },
+    {
+        "id": "q46",
+        "text": "Que signifie le sigle RID dans le contexte du Maître RID ?",
+        "options": [
+            { "id": "a", "label": "Root Identifier", "correct": false },
+            { "id": "b", "label": "Relative Identifier", "correct": true },
+            { "id": "c", "label": "Remote ID", "correct": false },
+            { "id": "d", "label": "Role ID", "correct": false }
+        ],
+        "explanation": "RID signifie Relative Identifier. C'est une partie du SID qui rend l'identifiant unique au sein du domaine."
+    },
+    {
+        "id": "q47",
+        "text": "Quelle cmdlet permet de créer un lien entre une GPO et une OU ?",
+        "options": [
+            { "id": "a", "label": "New-GPLink", "correct": true },
+            { "id": "b", "label": "Add-GPO", "correct": false },
+            { "id": "c", "label": "Link-Policy", "correct": false },
+            { "id": "d", "label": "Set-GPOLink", "correct": false }
+        ],
+        "explanation": "La commande New-GPLink permet de lier une GPO existante à une cible comme une OU."
+    },
+    {
+        "id": "q48",
+        "text": "Quel attribut LDAP est utilisé pour spécifier le gestionnaire d'une Unité d'Organisation (ManagedBy) ?",
+        "options": [
+            { "id": "a", "label": "owner", "correct": false },
+            { "id": "b", "label": "managedBy", "correct": true },
+            { "id": "c", "label": "managerID", "correct": false },
+            { "id": "d", "label": "admin", "correct": false }
+        ],
+        "explanation": "L'attribut 'managedBy' permet de définir le responsable d'un objet, comme une OU."
+    },
+    {
+        "id": "q49",
+        "text": "Dans le contexte de la délégation, que permet de faire la 'Délégation de Gestion des GPOs' ?",
+        "options": [
+            { "id": "a", "label": "Créer des utilisateurs", "correct": false },
+            { "id": "b", "label": "Donner des droits de gestion sur les GPOs à des utilisateurs spécifiques", "correct": true },
+            { "id": "c", "label": "Installer des logiciels", "correct": false },
+            { "id": "d", "label": "Changer le schéma AD", "correct": false }
+        ],
+        "explanation": "Cela permet de déléguer spécifiquement la capacité de gérer les objets de stratégie de groupe sans être administrateur du domaine."
+    },
+    {
+        "id": "q50",
+        "text": "Quel est le port utilisé par RPC (Remote Procedure Call) pour les communications inter-contrôleurs ?",
+        "options": [
+            { "id": "a", "label": "443", "correct": false },
+            { "id": "b", "label": "135", "correct": true },
+            { "id": "c", "label": "25", "correct": false },
+            { "id": "d", "label": "110", "correct": false }
+        ],
+        "explanation": "Le port TCP/UDP 135 est utilisé par RPC (Endpoint Mapper) pour initier les connexions."
+    }
+]

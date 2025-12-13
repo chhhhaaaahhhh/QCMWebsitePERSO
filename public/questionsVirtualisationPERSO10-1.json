@@ -1,0 +1,1622 @@
+[
+    {
+        "id": "q1",
+        "text": "Qu'est-ce qu'un hyperviseur de Type 1 ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Un logiciel qui s'exécute sur un OS hôte (Hosted)",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Un conteneur léger",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Une solution 'Bare-metal' installée directement sur le matériel",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Un outil de monitoring réseau",
+                "correct": false
+            }
+        ],
+        "explanation": "L'hyperviseur de Type 1 (Bare-metal) s'installe directement sur le matériel physique, sans système d'exploitation intermédiaire."
+    },
+    {
+        "id": "q2",
+        "text": "Quelle vulnérabilité célèbre, nommée VENOM (CVE-2015-3456), permet l'évasion de VM ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Une faille dans le driver floppy de QEMU",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Une injection SQL dans vCenter",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Un défaut de chiffrement vMotion",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Un ransomware sur ESXi",
+                "correct": false
+            }
+        ],
+        "explanation": "VENOM est une vulnérabilité de type 'Buffer overflow' dans le driver de disquette (floppy) de QEMU permettant l'exécution de code sur l'hôte depuis une VM."
+    },
+    {
+        "id": "q3",
+        "text": "Quelle est la différence fondamentale entre la segmentation classique et la micro-segmentation ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "La segmentation utilise des VLANs, la micro-segmentation utilise des câbles physiques",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "La micro-segmentation applique une politique 'Zéro Trust' avec une isolation fine par machine ou application",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "La segmentation est plus sécurisée que la micro-segmentation",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Il n'y a aucune différence technique",
+                "correct": false
+            }
+        ],
+        "explanation": "La micro-segmentation permet un contrôle du trafic à l'intérieur d'une zone avec une isolation fine (par machine/app) et une politique Zéro Trust, contrairement à la segmentation par zone (VLAN)."
+    },
+    {
+        "id": "q4",
+        "text": "Quel composant est considéré comme le 'cerveau' d'un cluster ESXi et représente une cible critique ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "vMotion",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "OpenSLP",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "vSwitch",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "vCenter",
+                "correct": true
+            }
+        ],
+        "explanation": "vCenter est décrit comme le cerveau d'un cluster ESXi ; son impact potentiel en cas de compromission est le contrôle total de l'infrastructure."
+    },
+    {
+        "id": "q5",
+        "text": "Sur quels mécanismes repose l'isolation des conteneurs sous Linux ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Namespaces et Cgroups",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Hyperviseur et BIOS",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "VLAN et VPN",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Firewall et Antivirus",
+                "correct": false
+            }
+        ],
+        "explanation": "L'isolation des conteneurs est basée sur les Namespaces (pour la vue du système) et les Cgroups (pour la limitation des ressources)."
+    },
+    {
+        "id": "q6",
+        "text": "Quelle est la principale différence de sécurité entre une VM et un conteneur ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Les conteneurs sont plus lents",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Les conteneurs partagent le noyau (kernel) de l'hôte, offrant une isolation plus faible",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Les VM partagent le système de fichiers de l'hôte",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Les VM n'ont pas d'adresse IP",
+                "correct": false
+            }
+        ],
+        "explanation": "Contrairement aux VMs qui ont leur propre noyau via l'OS invité, les conteneurs partagent le noyau de l'hôte, ce qui rend l'isolation superficielle."
+    },
+    {
+        "id": "q7",
+        "text": "Que signifie l'acronyme HPA dans Kubernetes ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Hypervisor Protection Agent",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "High Performance Application",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Horizontal Pod Autoscaler",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Hosted Private Area",
+                "correct": false
+            }
+        ],
+        "explanation": "HPA signifie Horizontal Pod Autoscaler, une méthode pour ajouter ou supprimer automatiquement des instances (pods) d'une application."
+    },
+    {
+        "id": "q8",
+        "text": "Quel est le rôle d'un 'etcd' dans un cluster Kubernetes ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Exécuter les conteneurs",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Base de données clé-valeur stockant l'état du cluster",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Gérer le réseau du cluster",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Effectuer le monitoring des logs",
+                "correct": false
+            }
+        ],
+        "explanation": "etcd est une base de données clé-valeur consistante et hautement disponible utilisée comme mémoire de sauvegarde pour toutes les données du cluster."
+    },
+    {
+        "id": "q9",
+        "text": "Dans le contexte du monitoring, quels sont les trois piliers de l'observabilité ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "CPU, RAM, Disque",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Métriques, Logs, Traces",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Confidentialité, Intégrité, Disponibilité",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Ping, Latence, Jitter",
+                "correct": false
+            }
+        ],
+        "explanation": "L'observabilité repose sur trois piliers principaux : les métriques (chiffres), les logs (événements textuels) et les traces (suivi des requêtes)."
+    },
+    {
+        "id": "q10",
+        "text": "À quoi sert une 'Liveness Probe' dans Kubernetes ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "À vérifier si le conteneur est prêt à recevoir du trafic",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "À vérifier si le conteneur fonctionne correctement et le redémarrer si nécessaire",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "À authentifier les utilisateurs",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "À stocker des données de manière persistante",
+                "correct": false
+            }
+        ],
+        "explanation": "La Liveness probe vérifie si le conteneur est en vie (pas de crash ou blocage). En cas d'échec, Kubernetes redémarre le conteneur."
+    },
+    {
+        "id": "q11",
+        "text": "Quel est le risque principal lié à l'utilisation d'images Docker provenant de sources inconnues ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Elles prennent trop de place disque",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Elles peuvent contenir des backdoors ou des cryptominers",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Elles sont incompatibles avec Kubernetes",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Elles ne peuvent pas être mises à jour",
+                "correct": false
+            }
+        ],
+        "explanation": "Les images publiques peuvent être compromises (Supply Chain Attack) et contenir du code malveillant comme des mineurs de cryptomonnaie ou des portes dérobées."
+    },
+    {
+        "id": "q12",
+        "text": "Qu'est-ce que le 'Container Escape' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "La suppression accidentelle d'un conteneur",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Une technique pour migrer un conteneur vers un autre cloud",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "La compromission de l'hôte depuis un conteneur",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "L'arrêt normal d'un conteneur",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Container Escape est une menace où un attaquant parvient à sortir de l'isolation du conteneur pour accéder au système hôte."
+    },
+    {
+        "id": "q13",
+        "text": "Quelle norme ISO fournit un code de pratique pour la sécurité du cloud ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "ISO 9001",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "ISO 27017",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "ISO 14001",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "ISO 27040",
+                "correct": false
+            }
+        ],
+        "explanation": "La norme ISO 27017 est spécifiquement dédiée au code de pratique pour les contrôles de sécurité de l'information basés sur l'ISO/IEC 27002 pour les services du cloud."
+    },
+    {
+        "id": "q14",
+        "text": "Dans Kubernetes, quel objet est utilisé pour gérer des applications avec état (stateful) comme des bases de données ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Deployment",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "DaemonSet",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "StatefulSet",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Job",
+                "correct": false
+            }
+        ],
+        "explanation": "StatefulSet est l'objet API utilisé pour gérer des applications avec état, garantissant l'ordre et l'unicité des pods ainsi que la persistance du stockage."
+    },
+    {
+        "id": "q15",
+        "text": "Quel composant de Kubernetes s'exécute sur chaque nœud (worker) et gère les conteneurs ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Kube-apiserver",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Kube-scheduler",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Etcd",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Kubelet",
+                "correct": true
+            }
+        ],
+        "explanation": "Le Kubelet est l'agent qui s'exécute sur chaque nœud et qui est responsable du fonctionnement de l'ensemble des sous-composants k8s sur le nœud."
+    },
+    {
+        "id": "q16",
+        "text": "Quelle est la définition du Monitoring par rapport à la Supervision ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "C'est la même chose",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le monitoring est la collecte et l'analyse de données pour évaluer la santé, la supervision inclut des actions correctives en temps réel",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Le monitoring est manuel, la supervision est automatique",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le monitoring ne concerne que le matériel",
+                "correct": false
+            }
+        ],
+        "explanation": "Le monitoring se concentre sur la collecte, l'analyse et la visualisation (santé du système), tandis que la supervision implique une surveillance en temps réel avec des actions correctives pour garantir le fonctionnement."
+    },
+    {
+        "id": "q17",
+        "text": "Quel outil est souvent utilisé pour la visualisation des logs dans la stack ELK ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Elasticsearch",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Logstash",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Kibana",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Grafana",
+                "correct": false
+            }
+        ],
+        "explanation": "Dans la stack ELK, Kibana est le composant responsable de la visualisation des données stockées dans Elasticsearch."
+    },
+    {
+        "id": "q18",
+        "text": "Qu'est-ce qu'un 'Pod' dans Kubernetes ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Un serveur physique",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "L'unité d'exécution de base représentant un ou plusieurs conteneurs",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Un réseau virtuel",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Un système de stockage",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Pod est la plus petite unité d'exécution dans Kubernetes, qui encapsule un ou plusieurs conteneurs applicatifs partageant les mêmes ressources."
+    },
+    {
+        "id": "q19",
+        "text": "Quel est l'objectif principal de l'outil Helm ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Scanner les vulnérabilités",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Gérer les paquets pour Kubernetes (deployer des applications complexes)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Monitorer les logs",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Créer des machines virtuelles",
+                "correct": false
+            }
+        ],
+        "explanation": "Helm est le gestionnaire de paquets pour Kubernetes, permettant de déployer, gérer les dépendances et partager des configurations via des charts."
+    },
+    {
+        "id": "q20",
+        "text": "Quel risque spécifique est lié à la fonctionnalité vMotion de VMware ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Perte de données sur le disque dur",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Capture du réseau exposant la mémoire vive en clair",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Ralentissement extrême du CPU",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Incompatibilité avec Linux",
+                "correct": false
+            }
+        ],
+        "explanation": "Lors d'une migration à chaud (vMotion), le contenu de la mémoire vive circule sur le réseau. Si ce réseau n'est pas chiffré/isolé, une capture permet de lire des données sensibles."
+    },
+    {
+        "id": "q21",
+        "text": "Que signifie l'acronyme VPA ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Virtual Private Access",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Verified Pod Authentication",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Vertical Pod Autoscaler",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Volume Persistent Allocation",
+                "correct": false
+            }
+        ],
+        "explanation": "VPA signifie Vertical Pod Autoscaler, qui permet d'augmenter ou diminuer automatiquement les ressources (CPU, RAM) allouées à un pod."
+    },
+    {
+        "id": "q22",
+        "text": "Quelle bonne pratique de sécurité concerne les images de conteneurs au moment du 'Build' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Utiliser l'utilisateur root par défaut",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Inclure les clés API et les secrets dans l'image",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Utiliser des images minimales (ex: Distroless, Alpine)",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Installer tous les outils de debug possibles",
+                "correct": false
+            }
+        ],
+        "explanation": "Pour sécuriser le build, il est recommandé d'utiliser des images minimales pour réduire la surface d'attaque, de ne pas utiliser root et de ne pas inclure de secrets."
+    },
+    {
+        "id": "q23",
+        "text": "Qu'est-ce que SecNumCloud ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Un antivirus français",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Une qualification de l'ANSSI pour les prestataires de cloud sécurisés",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Un protocole de chiffrement",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Un outil de virtualisation",
+                "correct": false
+            }
+        ],
+        "explanation": "SecNumCloud est une qualification de l'ANSSI qui combine les exigences de la norme ISO 27001 avec des exigences supplémentaires de sécurité souveraine."
+    },
+    {
+        "id": "q24",
+        "text": "Quel est le rôle d'un 'Service' dans Kubernetes ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Redémarrer les pods",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Exposer une application s'exécutant sur un ensemble de pods via le réseau",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Gérer le stockage disque",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Créer des utilisateurs",
+                "correct": false
+            }
+        ],
+        "explanation": "Un Service est une abstraction permettant d'exposer une application réseau s'exécutant sur un ou plusieurs Pods, fournissant une IP et un nom DNS stables."
+    },
+    {
+        "id": "q25",
+        "text": "Qu'est-ce qu'un DaemonSet garantit ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Que l'application ne plante jamais",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Qu'une copie du pod s'exécute sur tout ou partie des nœuds du cluster",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Que les données sont sauvegardées",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Que le pod a un accès root",
+                "correct": false
+            }
+        ],
+        "explanation": "Un DaemonSet assure que chaque nœud (ou une sélection de nœuds) exécute une copie d'un Pod spécifique (utile pour les logs, monitoring, etc.)."
+    },
+    {
+        "id": "q26",
+        "text": "Quelle vulnérabilité critique a touché massivement les serveurs ESXi via OpenSLP ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Log4Shell",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "ESXiArgs (CVE-2021-21974)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Heartbleed",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Spectre",
+                "correct": false
+            }
+        ],
+        "explanation": "La campagne de ransomware ESXiArgs a exploité la vulnérabilité CVE-2021-21974 (RCE sur OpenSLP) pour chiffrer des centaines de serveurs."
+    },
+    {
+        "id": "q27",
+        "text": "Dans le cycle de vie de sécurité des conteneurs, que signifie 'Secure the Runtime' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Scanner le code source",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Appliquer le principe de moindre privilège et surveiller l'exécution",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Choisir le bon OS hôte",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Signer les images Docker",
+                "correct": false
+            }
+        ],
+        "explanation": "Sécuriser le runtime implique de restreindre les capacités (capabilities), d'utiliser un système de fichiers en lecture seule et de limiter les privilèges pendant l'exécution."
+    },
+    {
+        "id": "q28",
+        "text": "Que permet Kustomize ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "De personnaliser des fichiers YAML sans utiliser de templates (via overlays)",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "De créer des VM",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "De monitorer le réseau",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "De remplacer Docker",
+                "correct": false
+            }
+        ],
+        "explanation": "Kustomize est un outil natif permettant de personnaliser des manifestes Kubernetes via un système de patchs et d'overlays, sans modifier les fichiers de base."
+    },
+    {
+        "id": "q29",
+        "text": "Quel est le rôle d'une 'Readiness Probe' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Redémarrer le pod en boucle",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Vérifier si le conteneur est prêt à accepter du trafic",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Vérifier la licence du logiciel",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Calculer la consommation CPU",
+                "correct": false
+            }
+        ],
+        "explanation": "La Readiness probe vérifie si l'application est prête. Si elle échoue, le pod est retiré du Service et ne reçoit plus de trafic, mais n'est pas redémarré."
+    },
+    {
+        "id": "q30",
+        "text": "Qu'est-ce qu'un PersistentVolumeClaim (PVC) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Un disque dur physique",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Une demande de stockage faite par un utilisateur ou un pod",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Un logiciel de sauvegarde",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Un type de mémoire RAM",
+                "correct": false
+            }
+        ],
+        "explanation": "Le PVC est une requête émise par un utilisateur pour obtenir du stockage. Il consomme les ressources définies par un PersistentVolume (PV)."
+    },
+    {
+        "id": "q31",
+        "text": "Que signifie l'acronyme SBOM ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Secure Boot On Machine",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "System Binary Object Model",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Software Bill Of Materials",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Simple Backup Of Memory",
+                "correct": false
+            }
+        ],
+        "explanation": "SBOM (Software Bill Of Materials) est une liste de tous les composants et dépendances d'un logiciel, essentielle pour la sécurité de la Supply Chain."
+    },
+    {
+        "id": "q32",
+        "text": "Quel composant Kubernetes est responsable de planifier les pods sur les nœuds ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Kube-proxy",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Kube-scheduler",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "CoreDNS",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Container Runtime",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Kube-scheduler surveille les nouveaux pods non assignés et sélectionne le nœud le plus approprié pour les exécuter."
+    },
+    {
+        "id": "q33",
+        "text": "Qu'est-ce que le 'Cryptojacking' dans le contexte des conteneurs ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le vol de mots de passe chiffrés",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "L'utilisation non autorisée de CPU pour miner de la cryptomonnaie",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Le chiffrement des données contre rançon",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "L'attaque des protocoles HTTPS",
+                "correct": false
+            }
+        ],
+        "explanation": "Le cryptojacking est une menace où des conteneurs compromis ou malveillants utilisent les ressources CPU de l'infrastructure pour miner de la monnaie virtuelle."
+    },
+    {
+        "id": "q34",
+        "text": "Quelle est la recommandation de l'ANSSI concernant l'administration des hyperviseurs ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Utiliser le même réseau que les utilisateurs pour simplifier",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Utiliser un VLAN dédié et un bastion d'administration",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Ouvrir l'interface de gestion sur Internet",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Désactiver les logs pour gagner en performance",
+                "correct": false
+            }
+        ],
+        "explanation": "L'ANSSI recommande de cloisonner les flux d'administration (VLAN dédié) et d'utiliser des bastions de rebond pour accéder aux interfaces de gestion."
+    },
+    {
+        "id": "q35",
+        "text": "Qu'est-ce qu'un hyperviseur de Type 2 ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Un hyperviseur Bare-metal",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Un hyperviseur qui s'installe comme une application sur un OS hôte",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Un orchestrateur de conteneurs",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Un pare-feu virtuel",
+                "correct": false
+            }
+        ],
+        "explanation": "L'hyperviseur de Type 2 (Hosted) s'exécute au-dessus d'un système d'exploitation existant (ex: VirtualBox sur Windows), contrairement au Type 1."
+    },
+    {
+        "id": "q36",
+        "text": "Quel est le rôle de Prometheus dans une stack de monitoring ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "La visualisation des dashboards",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "La collecte et le stockage des métriques",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "L'envoi d'emails",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "La gestion des logs textes",
+                "correct": false
+            }
+        ],
+        "explanation": "Prometheus est un outil spécialisé dans la collecte (scraping) et le stockage de métriques temporelles."
+    },
+    {
+        "id": "q37",
+        "text": "Qu'est-ce qu'un 'Pod Disruption Budget' (PDB) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Une limite financière sur le coût des pods",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Une configuration limitant le nombre de pods indisponibles pendant une maintenance",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Un outil pour supprimer les pods inutiles",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Une taxe sur l'utilisation du CPU",
+                "correct": false
+            }
+        ],
+        "explanation": "Le PDB assure la haute disponibilité en garantissant qu'un nombre minimum de pods reste actif lors d'opérations de maintenance volontaires sur les nœuds."
+    },
+    {
+        "id": "q38",
+        "text": "Que signifie 'Anti-Affinity' dans Kubernetes ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Interdire à deux utilisateurs de se connecter",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Configurer les règles pour éviter que deux pods d'une même application soient sur le même nœud",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Bloquer le trafic réseau entrant",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Désactiver l'authentification",
+                "correct": false
+            }
+        ],
+        "explanation": "L'Anti-Affinity permet de répartir les pods sur des nœuds différents pour tolérer la panne d'un nœud sans interrompre le service."
+    },
+    {
+        "id": "q39",
+        "text": "Quel est le but principal de la 'Supervision' (par opposition au simple monitoring) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Stocker des données historiques",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Observer l'état en temps réel et mettre en œuvre des actions correctives",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Créer des graphiques colorés",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Installer des mises à jour",
+                "correct": false
+            }
+        ],
+        "explanation": "La supervision va au-delà de la simple observation ; elle vise à garantir le bon fonctionnement via des actions correctives ou préventives en temps réel."
+    },
+    {
+        "id": "q40",
+        "text": "Quelle vulnérabilité 'Leaky Vessels' (2024) concerne runc et Docker BuildKit ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Une fuite de mémoire",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Une fuite de 'file descriptor' menant à un container escape",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Une attaque DDoS",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Un vol de mot de passe wifi",
+                "correct": false
+            }
+        ],
+        "explanation": "Les vulnérabilités Leaky Vessels (ex: CVE-2024-21626) exploitent des fuites de descripteurs de fichiers pour permettre à un conteneur d'accéder au système de fichiers de l'hôte."
+    },
+    {
+        "id": "q41",
+        "text": "Dans l'architecture de sécurité d'un hyperviseur, quelle est la distinction entre le 'Plan de contrôle' (Management Domain) et le 'Plan de données' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le plan de contrôle gère le stockage, le plan de données gère le réseau",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le plan de contrôle est dédié aux VMs de gestion, le plan de données aux VMs métiers",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Le plan de contrôle est public, le plan de données est privé",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Il n'y a pas de distinction, tout est mélangé pour la performance",
+                "correct": false
+            }
+        ],
+        "explanation": "L'architecture sécurisée repose sur une séparation stricte entre le plan de contrôle (ressources dédiées à la gestion) et le plan de données (ressources pour les VMs métiers)."
+    },
+    {
+        "id": "q42",
+        "text": "Quelle était la cible spécifique de l'exploit 'Cloudburst' (CVE-2009-1244) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le contrôleur de domaine Windows",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le driver vidéo (SVGA) de la machine virtuelle",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Le port SSH de l'hôte",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "L'interface web de vCenter",
+                "correct": false
+            }
+        ],
+        "explanation": "Cloudburst est une vulnérabilité qui visait le driver vidéo (SVGA) pour briser l'isolation et permettre l'exécution de code sur l'hôte."
+    },
+    {
+        "id": "q43",
+        "text": "À quoi sert spécifiquement le composant CoreDNS dans un cluster Kubernetes ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "À chiffrer les communications entre les pods",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "À gérer l'authentification des utilisateurs",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Au service de résolution de noms et de nommage interne",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "À surveiller la consommation CPU des nœuds",
+                "correct": false
+            }
+        ],
+        "explanation": "CoreDNS est le composant du Control Plane responsable de la résolution DNS et du nommage interne des services au sein du cluster."
+    },
+    {
+        "id": "q44",
+        "text": "Que couvre spécifiquement la norme ISO 27018 ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "La sécurité du stockage physique",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "La continuité d'activité",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "La sécurité des réseaux industriels",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "La protection des données personnelles dans le cloud",
+                "correct": true
+            }
+        ],
+        "explanation": "La norme ISO 27018 est dédiée à la protection des données personnelles (PII) dans les environnements de cloud computing."
+    },
+    {
+        "id": "q45",
+        "text": "Dans Kubernetes, quelle est la fonction principale d'un objet 'Job' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Maintenir un service web en ligne 24/7",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Créer des pods et garantir qu'un nombre spécifié d'entre eux se terminent avec succès (tâche finie)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Exposer une adresse IP publique",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Gérer les mises à jour automatiques des nœuds",
+                "correct": false
+            }
+        ],
+        "explanation": "Contrairement à un Deployment qui maintient des pods actifs indéfiniment, un Job est conçu pour exécuter une tâche finie jusqu'à ce qu'elle réussisse, puis s'arrête."
+    },
+    {
+        "id": "q46",
+        "text": "Quel est le risque de sécurité majeur associé au montage du volume '/var/run/docker.sock' dans un conteneur ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Cela permet au conteneur de communiquer directement avec le démon Docker de l'hôte et potentiellement d'en prendre le contrôle",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Cela ralentit les performances réseau du conteneur",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Cela empêche le conteneur de démarrer si le fichier est verrouillé",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Cela expose les logs de l'application au public",
+                "correct": false
+            }
+        ],
+        "explanation": "L'accès à docker.sock donne un contrôle total sur le moteur Docker de l'hôte, permettant à un attaquant de créer des conteneurs privilégiés et de compromettre l'hôte."
+    },
+    {
+        "id": "q47",
+        "text": "Quelle fonctionnalité assure spécifiquement le composant 'kube-proxy' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le stockage des secrets",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "La planification des pods",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Le maintien des règles réseau sur les nœuds et la transmission du trafic",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "La gestion des images conteneurs",
+                "correct": false
+            }
+        ],
+        "explanation": "Kube-proxy tourne sur chaque nœud et gère les règles réseau (via iptables/ipvs) pour permettre la communication entre les services et les pods."
+    },
+    {
+        "id": "q48",
+        "text": "Dans une structure Helm Chart, à quoi sert le fichier 'values.yaml' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "À définir les secrets chiffrés",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "À lister les dépendances du noyau Linux",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "À définir les métadonnées du chart (version, nom)",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "À fournir les valeurs par défaut pour personnaliser les templates de déploiement",
+                "correct": true
+            }
+        ],
+        "explanation": "Le fichier values.yaml contient les variables et paramètres par défaut qui sont injectés dans les templates lors du déploiement avec Helm."
+    },
+    {
+        "id": "q49",
+        "text": "Dans Kustomize, qu'est-ce qu'un 'Overlay' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Un dossier qui surcharge la configuration de base pour un environnement spécifique",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Un type de réseau virtuel",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Un plugin de monitoring",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Une commande pour supprimer des ressources",
+                "correct": false
+            }
+        ],
+        "explanation": "Un Overlay dans Kustomize est utilisé pour modifier ou étendre une 'Base' commune afin de l'adapter à un contexte précis (ex: production vs développement)."
+    },
+    {
+        "id": "q50",
+        "text": "Quel est l'inconvénient principal du mode 'Auto' du Vertical Pod Autoscaler (VPA) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Il ne fonctionne pas avec Linux",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Il peut entraîner des redémarrages de pods pour appliquer les nouvelles ressources",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Il consomme trop de bande passante réseau",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Il est incompatible avec les Services",
+                "correct": false
+            }
+        ],
+        "explanation": "Le mode 'Auto' du VPA applique les recommandations de ressources, ce qui nécessite souvent de tuer et redémarrer le pod pour que les changements prennent effet."
+    },
+    {
+        "id": "q51",
+        "text": "Qu'est-ce qui caractérise une alerte de monitoring dite 'Actionnable' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Elle est envoyée à tous les employés",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Elle indique clairement quoi faire pour résoudre le problème",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Elle contient uniquement des graphiques",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Elle sonne très fort",
+                "correct": false
+            }
+        ],
+        "explanation": "Une bonne alerte doit être actionnable, c'est-à-dire donner une instruction claire sur la résolution (ex: 'Redémarrer le service X')."
+    },
+    {
+        "id": "q52",
+        "text": "Que désigne l'acronyme PDIS dans le cadre réglementaire français ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Protocole De l'Internet Sécurisé",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Plan De Intervention et Secours",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Prestataire de Détection d'Incidents de Sécurité",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Programme De l'Industrie Spatiale",
+                "correct": false
+            }
+        ],
+        "explanation": "PDIS (Prestataire de Détection d'Incidents de Sécurité) concerne les infrastructures hautement sensibles avec des critères de sécurité renforcés."
+    },
+    {
+        "id": "q53",
+        "text": "Quel objet Kubernetes sert à maintenir un ensemble stable de Pods identiques à un moment donné ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "ReplicaSet",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Ingress",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "ConfigMap",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "CronJob",
+                "correct": false
+            }
+        ],
+        "explanation": "Le ReplicaSet a pour but de garantir la disponibilité d'un nombre défini de copies (répliques) identiques d'un Pod."
+    },
+    {
+        "id": "q54",
+        "text": "Quelle est la particularité des malwares de type 'Hyperviseur' comme VirtualPITA ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Ils sont invisibles depuis l'OS hébergé (VM) et persistent au reboot",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Ils infectent uniquement les fichiers PDF",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Ils sont facilement détectables par un antivirus classique dans la VM",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Ils ne fonctionnent que si l'écran est éteint",
+                "correct": false
+            }
+        ],
+        "explanation": "Les malwares hyperviseurs sont rares mais redoutables car ils s'exécutent au niveau de l'hyperviseur, restant invisibles pour les OS invités et persistant après redémarrage."
+    },
+    {
+        "id": "q55",
+        "text": "Dans quel cas utiliser une 'Startup Probe' plutôt qu'une Liveness Probe standard ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Pour les applications qui démarrent très rapidement",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Pour les applications statiques HTML",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Pour les applications lentes à démarrer (legacy), afin d'éviter qu'elles ne soient tuées prématurément",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Pour les bases de données en lecture seule",
+                "correct": false
+            }
+        ],
+        "explanation": "La Startup Probe est conçue pour vérifier le succès du démarrage initial, particulièrement utile pour les applications lentes qui échoueraient aux tests de Liveness standards au début."
+    },
+    {
+        "id": "q56",
+        "text": "Que représente un 'Namespace' dans Kubernetes ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Un cluster virtuel au sein d'un cluster physique",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Un espace de nommage DNS externe",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Une interface réseau physique",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Un type de stockage cloud",
+                "correct": false
+            }
+        ],
+        "explanation": "Les Namespaces permettent de diviser un cluster physique en plusieurs clusters virtuels, permettant l'isolation des ressources entre différentes équipes ou projets."
+    },
+    {
+        "id": "q57",
+        "text": "Quel outil est recommandé pour la détection de menaces au runtime (exécution) dans les conteneurs ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Photoshop",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Falco",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Git",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Nginx",
+                "correct": false
+            }
+        ],
+        "explanation": "Falco est un outil de sécurité (utilisant eBPF) cité pour surveiller l'exécution (runtime) et détecter des comportements anormaux comme un shell dans un conteneur web."
+    },
+    {
+        "id": "q58",
+        "text": "Quel incident de 2024 illustre une attaque de type 'Supply Chain' via une librairie compromise ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "WannaCry",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "L'affaire xz-utils (liblzma)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "SolarWinds",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Stuxnet",
+                "correct": false
+            }
+        ],
+        "explanation": "Le cas xz-utils (2024) est un exemple d'attaque Supply Chain où une backdoor a été insérée dans la librairie liblzma, impactant les images conteneurs qui l'utilisaient."
+    },
+    {
+        "id": "q59",
+        "text": "Quelle pratique est à bloquer impérativement lors de l'étape 'Secure the Deploy' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "L'utilisation de ports HTTP",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le déploiement de pods privilégiés (--privileged)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "L'utilisation de replicas multiples",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "L'ajout de labels aux pods",
+                "correct": false
+            }
+        ],
+        "explanation": "L'exécution de pods en mode privilégié (--privileged) donne accès à tous les périphériques de l'hôte et contourne l'isolation, ce qui est une pratique à risque critique."
+    },
+    {
+        "id": "q60",
+        "text": "Quel guide américain fournit des recommandations pour la sécurité de la virtualisation (durcissement hyperviseur, monitoring) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "GDPR",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "NIST SP 800-125",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "RFC 1918",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "OWASP Top 10",
+                "correct": false
+            }
+        ],
+        "explanation": "Le NIST SP 800-125 est le guide de référence américain traitant spécifiquement de la sécurité de la virtualisation."
+    }
+]

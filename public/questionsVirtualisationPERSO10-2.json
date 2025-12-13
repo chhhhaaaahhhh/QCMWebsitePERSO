@@ -1,0 +1,1082 @@
+[
+    {
+        "id": "q61",
+        "text": "Si un attaquant parvient à compromettre le noyau (kernel) de l'hôte dans une architecture conteneurisée, quel est l'impact immédiat ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Seul le conteneur infecté est compromis",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "L'attaquant doit encore passer la couche de l'hyperviseur",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Tous les conteneurs et l'hôte sont potentiellement compromis car le noyau est partagé",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Le cluster Kubernetes migre automatiquement les conteneurs ailleurs",
+                "correct": false
+            }
+        ],
+        "explanation": "Contrairement aux VMs qui ont leur propre noyau, les conteneurs partagent celui de l'hôte. Une compromission du kernel affecte donc la totalité de l'environnement (Container Escape)."
+    },
+    {
+        "id": "q62",
+        "text": "Vous devez déployer une application 'Legacy' qui n'est pas conçue pour être redondante et qui nécessite une adresse réseau fixe et des données persistantes. Quel objet Kubernetes choisissez-vous ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Deployment",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "StatefulSet",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "DaemonSet",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Job",
+                "correct": false
+            }
+        ],
+        "explanation": "Le StatefulSet est le seul objet garantissant l'ordre, l'unicité de l'identité réseau (ex: pod-0) et la persistance du stockage, ce qui est requis pour les applis non 'cloud-native' ou stateful."
+    },
+    {
+        "id": "q63",
+        "text": "Dans une stratégie de défense en profondeur, pourquoi isoler le 'Plan de contrôle' (Management Domain) du 'Plan de données' (Workload Domain) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Pour que les administrateurs puissent regarder Netflix sans ralentir la production",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Pour empêcher qu'une compromission d'une VM métier ne permette d'accéder directement aux interfaces de gestion de l'hyperviseur",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "C'est uniquement pour des raisons de performance disque",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Pour économiser des adresses IP",
+                "correct": false
+            }
+        ],
+        "explanation": "La séparation stricte empêche les mouvements latéraux : si une VM exposée est piratée, l'attaquant ne doit pas pouvoir rebondir vers le vCenter ou les interfaces ESXi (Plan de contrôle)."
+    },
+    {
+        "id": "q64",
+        "text": "Votre site e-commerce subit un pic de trafic soudain (Black Friday). Votre application est 'stateless'. Quelle stratégie de scaling est la plus adaptée et réactive ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "VPA (Vertical Pod Autoscaler) pour augmenter la RAM de chaque pod",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "HPA (Horizontal Pod Autoscaler) pour multiplier le nombre de pods",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Acheter un plus gros serveur physique manuellement",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Cluster Autoscaler uniquement",
+                "correct": false
+            }
+        ],
+        "explanation": "Le HPA est conçu pour réagir aux pics de charge en ajoutant des répliques (pods), ce qui est plus rapide et moins risqué (pas de redémarrage forcé) que le VPA pour des applis stateless."
+    },
+    {
+        "id": "q65",
+        "text": "Pourquoi l'utilisation d'images 'Distroless' ou 'Alpine' améliore-t-elle la sécurité lors de l'étape 'Secure the Build' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Elles chiffrent le code source automatiquement",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Elles réduisent la surface d'attaque en supprimant les outils inutiles (shells, gestionnaires de paquets)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Elles empêchent le conteneur de se connecter à Internet",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Elles sont fournies avec un antivirus pré-installé",
+                "correct": false
+            }
+        ],
+        "explanation": "Moins il y a d'outils dans l'image (comme bash, curl, apt), plus il est difficile pour un attaquant de 'vivre sur le terrain' (live off the land) après une intrusion."
+    },
+    {
+        "id": "q66",
+        "text": "Si le composant 'Kube-scheduler' tombe en panne, quelle en est la conséquence directe pour le cluster ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Les pods existants s'arrêtent immédiatement",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Les nouveaux pods créés restent en état 'Pending' car aucun nœud ne leur est assigné",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "L'API Server ne répond plus aux commandes kubectl",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le réseau entre les pods est coupé",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Scheduler a pour rôle unique d'assigner un nœud aux nouveaux pods. S'il est down, les pods sont créés dans etcd mais restent en attente (Pending) d'affectation."
+    },
+    {
+        "id": "q67",
+        "text": "Quelle est la nuance entre un 'Pod Disruption Budget' (PDB) et la résilience face aux pannes matérielles ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le PDB protège contre les pannes disques imprévues",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le PDB ne gère que les interruptions volontaires (maintenance), il ne peut rien contre un crash physique soudain",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Le PDB redémarre les serveurs physiques",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Il n'y a aucune différence",
+                "correct": false
+            }
+        ],
+        "explanation": "Le PDB est un contrat pour les opérations volontaires (drain d'un nœud pour mise à jour). Si un serveur brûle (involontaire), le PDB ne peut pas empêcher l'indisponibilité."
+    },
+    {
+        "id": "q68",
+        "text": "Pourquoi l'exploit 'Cloudburst' (CVE-2009-1244) est-il considéré comme un exemple critique de faille d'isolation ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Car il permettait d'éteindre l'écran de l'administrateur",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Car il permettait de passer de l'OS Invité (Guest) à l'OS Hôte via le processus vmware-vmx",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Car il permettait de voler les mots de passe du BIOS",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Car il infectait le firmware de la carte réseau",
+                "correct": false
+            }
+        ],
+        "explanation": "Cloudburst est l'exemple type du 'VM Escape' : l'attaquant sort de la machine virtuelle pour exécuter du code sur l'hyperviseur hôte, brisant le principe même de la virtualisation."
+    },
+    {
+        "id": "q69",
+        "text": "Vous configurez une 'Readiness Probe' qui échoue. Que fait Kubernetes ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Il redémarre le conteneur immédiatement",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Il supprime le pod et en crée un nouveau",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Il arrête d'envoyer du trafic réseau vers ce pod (retrait du Service)",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Il envoie une alerte mais continue d'envoyer du trafic",
+                "correct": false
+            }
+        ],
+        "explanation": "Contrairement à la Liveness Probe (qui redémarre), la Readiness Probe sert à dire 'je suis vivant mais occupé/pas prêt'. Kubernetes coupe temporairement le flux vers ce pod."
+    },
+    {
+        "id": "q70",
+        "text": "Dans le contexte du monitoring, vous observez une saturation du CPU mais aucune augmentation du trafic utilisateur ni des logs applicatifs. Que pouvez-vous suspecter ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Une mise à jour normale de Windows",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Un succès commercial soudain",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Une attaque de type Cryptojacking (minage de cryptomonnaie)",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Une panne du disque dur",
+                "correct": false
+            }
+        ],
+        "explanation": "Une utilisation anormale des ressources (CPU) sans corrélation avec l'activité métier est un indicateur fort de cryptojacking (logiciel malveillant minant des cryptos)."
+    },
+    {
+        "id": "q71",
+        "text": "Pourquoi recommande-t-on de ne jamais monter le socket Docker (/var/run/docker.sock) dans un conteneur, sauf cas très spécifique ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Cela donne au conteneur les privilèges root complets sur l'hôte via le démon Docker",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Cela consomme trop de descripteurs de fichiers",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Cela empêche Kubernetes de planifier le pod",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "C'est incompatible avec les images Alpine",
+                "correct": false
+            }
+        ],
+        "explanation": "Accéder à ce socket permet d'envoyer des commandes au démon Docker de l'hôte, comme 'lance un nouveau conteneur privilégié avec accès au disque hôte', ce qui équivaut à être root sur l'hôte."
+    },
+    {
+        "id": "q72",
+        "text": "Quelle est la différence fondamentale entre Helm et Kustomize dans la gestion des manifestes ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Helm utilise des templates avec variables, Kustomize utilise des surcharges (overlays) sans templating",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Helm est payant, Kustomize est gratuit",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Kustomize nécessite un serveur central, Helm non",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Helm ne gère que les services, Kustomize ne gère que les déploiements",
+                "correct": false
+            }
+        ],
+        "explanation": "Helm fonctionne par injection de valeurs dans des modèles (templates), tandis que Kustomize fonctionne par patchs appliqués sur des fichiers YAML de base (overlays)."
+    },
+    {
+        "id": "q73",
+        "text": "Si vous appliquez une 'Anti-Affinity' sur les nœuds pour un Deployment de 3 replicas, quel est l'objectif recherché ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Regrouper tous les pods sur le nœud le plus puissant",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Forcer les pods à s'exécuter sur des nœuds différents pour garantir la haute disponibilité en cas de panne d'un nœud",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Empêcher les pods de communiquer entre eux",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Réduire la latence réseau en les mettant sur le même processeur",
+                "correct": false
+            }
+        ],
+        "explanation": "L'Anti-Affinity Node sert à disperser les pods. Si un serveur physique (nœud) tombe, on ne perd qu'un seul pod sur les trois, assurant la continuité de service."
+    },
+    {
+        "id": "q74",
+        "text": "Dans le modèle 'Secure the Supply Chain', pourquoi l'incident xz-utils (2024) est-il inquiétant pour les utilisateurs de conteneurs ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Il montre que Docker est instable",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Il prouve qu'un simple 'docker pull' d'une image apparemment saine peut introduire une backdoor via une dépendance compromise",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Il ne concerne que les utilisateurs Windows",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Il montre que les registres privés sont inutiles",
+                "correct": false
+            }
+        ],
+        "explanation": "L'incident montre que même en téléchargeant une image officielle, si une librairie de bas niveau (comme liblzma) a été compromise en amont, le conteneur est vulnérable (Supply Chain Attack)."
+    },
+    {
+        "id": "q75",
+        "text": "Quel est l'intérêt d'utiliser un 'Bastion de rebond' pour l'administration d'une infrastructure virtualisée ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Accélérer la connexion SSH",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Permettre aux administrateurs de travailler depuis un cybercafé",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Réduire la surface d'attaque en exposant un point d'entrée unique et contrôlé plutôt que toute l'infrastructure",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Contourner les pare-feux de l'entreprise",
+                "correct": false
+            }
+        ],
+        "explanation": "Le bastion sert de sas de sécurité unique. On n'expose pas le vCenter ou les ESXi directement ; on passe par ce serveur durci et surveillé."
+    },
+    {
+        "id": "q76",
+        "text": "Vous utilisez un VPA en mode 'Auto'. Vos utilisateurs se plaignent de micro-coupures régulières. Quelle peut en être la cause ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le VPA met à jour les ressources allouées, ce qui force le redémarrage des pods",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Le VPA consomme toute la bande passante",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Le VPA est incompatible avec les applications web",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "C'est impossible, le VPA ne touche pas aux pods en cours d'exécution",
+                "correct": false
+            }
+        ],
+        "explanation": "Pour changer la limite de CPU/RAM d'un pod existant, Kubernetes doit le recréer. En mode Auto, le VPA le fait dynamiquement, causant des redémarrages (et donc des coupures si mal géré)."
+    },
+    {
+        "id": "q77",
+        "text": "Quelle est la principale limite de la sécurité par 'Namespaces' dans Kubernetes ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Elle ne permet pas de créer plus de 10 projets",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "C'est une isolation logique, pas physique. Le noyau et le matériel sont toujours partagés",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Les namespaces consomment trop de RAM",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Elle ne fonctionne pas avec Docker",
+                "correct": false
+            }
+        ],
+        "explanation": "Les namespaces séparent les ressources (vues) au niveau API, mais les conteneurs de différents namespaces tournent sur les mêmes nœuds et partagent le même noyau (isolation faible vs VM)."
+    },
+    {
+        "id": "q78",
+        "text": "Pourquoi l'utilisation de l'option '--privileged' est-elle considérée comme une erreur critique de configuration (Misconfiguration) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Elle rend le conteneur plus lent",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Elle supprime tous les logs du conteneur",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Elle donne au conteneur accès à tous les périphériques de l'hôte et contourne la plupart des isolations de sécurité",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Elle empêche le conteneur de redémarrer",
+                "correct": false
+            }
+        ],
+        "explanation": "Le mode privilégié désactive les protections de sécurité (seccomp, capabilities, cgroups device access), rendant le conteneur presque aussi puissant que le processus root de l'hôte."
+    },
+    {
+        "id": "q79",
+        "text": "Dans une architecture Kubernetes, pourquoi le composant 'etcd' est-il une cible privilégiée pour un attaquant ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Car il contient tous les secrets, configurations et l'état du cluster en clair (si non chiffré)",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Car il gère l'interface graphique",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Car il est facile à deviner",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Car c'est lui qui exécute les conteneurs",
+                "correct": false
+            }
+        ],
+        "explanation": "etcd est la mémoire du cluster. S'il est compromis, l'attaquant peut lire les secrets (mots de passe, clés API) et modifier l'état du cluster à sa guise."
+    },
+    {
+        "id": "q80",
+        "text": "Quel est l'avantage de définir un 'readOnlyRootFilesystem: true' dans le contexte de sécurité d'un pod ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Cela améliore la vitesse de lecture du disque",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Cela empêche un attaquant de télécharger des outils malveillants ou de modifier des binaires système pour persister",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Cela réduit la taille de l'image Docker",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Cela empêche l'application d'écrire des logs",
+                "correct": false
+            }
+        ],
+        "explanation": "Si le système de fichiers est en lecture seule, un hacker qui pénètre le conteneur ne peut pas écrire de script, modifier /etc/passwd ou installer de backdoor."
+    },
+    {
+        "id": "q81",
+        "text": "Vous avez un cluster ESXi. Si le vCenter tombe en panne, quel est l'impact sur les VMs en cours d'exécution ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Toutes les VMs s'arrêtent immédiatement",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Les VMs continuent de fonctionner, mais vous perdez les fonctionnalités de gestion centralisée (vMotion, clonage...)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Les VMs redémarrent en mode sans échec",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le réseau des VMs est coupé",
+                "correct": false
+            }
+        ],
+        "explanation": "vCenter est le plan de contrôle. S'il tombe, le plan de données (les ESXi et leurs VMs) continue de tourner, mais on ne peut plus piloter le cluster."
+    },
+    {
+        "id": "q82",
+        "text": "Quelle est la principale différence entre un DaemonSet et un Deployment concernant la localisation des pods ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le Deployment place les pods n'importe où selon les ressources, le DaemonSet place exactement un pod par nœud",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Le DaemonSet est pour le cloud, le Deployment pour le sur-site",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Le Deployment utilise moins de CPU",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le DaemonSet ne peut pas avoir de volumes",
+                "correct": false
+            }
+        ],
+        "explanation": "Le but du DaemonSet est l'ubiquité (ex: un agent de logs sur CHAQUE serveur), alors que le Deployment vise la disponibilité globale sans se soucier de quel nœud héberge quoi."
+    },
+    {
+        "id": "q83",
+        "text": "En matière de monitoring, qu'est-ce que le 'Bruit' (Noise) dans la gestion des alertes ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le son des ventilateurs des serveurs",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Un surplus d'alertes non pertinentes ou redondantes qui noient les vrais incidents (Fatigue d'alerte)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Les interférences électromagnétiques",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Les logs d'erreur système",
+                "correct": false
+            }
+        ],
+        "explanation": "Le bruit désigne la multiplication d'alertes inutiles (faux positifs, doublons) qui désensibilisent les équipes opérationnelles et cachent les vrais problèmes."
+    },
+    {
+        "id": "q84",
+        "text": "Pourquoi l'isolation par 'Micro-segmentation' est-elle plus efficace contre les ransomwares que la segmentation classique par VLAN ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Parce qu'elle utilise des câbles en fibre optique",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Parce qu'elle limite la propagation latérale (Est-Ouest) entre machines d'un même réseau, empêchant un serveur infecté d'attaquer son voisin",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Parce qu'elle est certifiée par Microsoft",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Parce qu'elle chiffre le disque dur",
+                "correct": false
+            }
+        ],
+        "explanation": "Dans un VLAN classique, si un serveur est infecté, il peut souvent attaquer les autres serveurs du même VLAN. La micro-segmentation bloque ce trafic intra-zone (Zero Trust)."
+    },
+    {
+        "id": "q85",
+        "text": "Quel est le rôle du 'Kube-apiserver' dans le flux de commande Kubernetes ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Il stocke les données sur le disque",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "C'est le point d'entrée unique : tous les composants (kubectl, scheduler, kubelet) passent par lui pour communiquer",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Il exécute les conteneurs Docker",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Il gère le DNS du cluster",
+                "correct": false
+            }
+        ],
+        "explanation": "L'API Server est le front-end du Control Plane. Aucun composant ne parle directement à un autre (ex: Scheduler vers Kubelet) ; tout transite par l'API Server."
+    },
+    {
+        "id": "q86",
+        "text": "Si vous supprimez un Pod géré par un ReplicaSet, que se passe-t-il ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "L'application s'arrête définitivement",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le ReplicaSet détecte qu'il manque un pod par rapport à l'état désiré et en recrée un nouveau automatiquement",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Le nœud s'éteint",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Vous recevez une amende de Google",
+                "correct": false
+            }
+        ],
+        "explanation": "C'est le principe de l'auto-guérison (self-healing). Le ReplicaSet (ou Deployment) surveille la boucle de réconciliation pour maintenir le nombre de replicas demandé."
+    },
+    {
+        "id": "q87",
+        "text": "Pourquoi l'utilisation de 'Tags' (ex: :latest) pour les images Docker est-elle déconseillée en production (Supply Chain) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Car 'latest' est un mot réservé",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Car le contenu de l'image peut changer à tout moment, brisant la reproductibilité et pouvant introduire des bugs/failles à votre insu",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Car c'est plus lent à télécharger",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Car Kubernetes ne supporte pas les tags",
+                "correct": false
+            }
+        ],
+        "explanation": "Utiliser un hash (SHA256) ou une version précise (v1.2.3) garantit que le code déployé est exactement celui qui a été testé. ':latest' est mutable et imprévisible."
+    },
+    {
+        "id": "q88",
+        "text": "Quelle métrique permettrait de détecter une boucle infinie dans une application web via le monitoring ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Espace disque restant",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Utilisation CPU restant élevée (>90%) de manière constante sans corrélation avec le nombre de requêtes",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Latence réseau",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Nombre de fichiers ouverts",
+                "correct": false
+            }
+        ],
+        "explanation": "Une boucle infinie consomme du CPU à 100% sur le thread concerné. Si le trafic utilisateur est faible mais le CPU au max, c'est souvent un bug logique."
+    },
+    {
+        "id": "q89",
+        "text": "Dans Kubernetes, quel est le lien entre un PV (Persistent Volume) et un PVC (Persistent Volume Claim) ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Le PV est la demande, le PVC est le disque",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le PV est la ressource de stockage réelle (provisionnée par l'admin), le PVC est la demande de consommation faite par le développeur",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Ce sont deux noms pour la même chose",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le PVC sert à supprimer le PV",
+                "correct": false
+            }
+        ],
+        "explanation": "Kubernetes découple le stockage. L'admin fournit des PVs (disques). Le développeur crée un PVC (ticket de réclamation). Kubernetes lie (bind) le PVC au PV adéquat."
+    },
+    {
+        "id": "q90",
+        "text": "Que se passe-t-il si vous n'avez pas défini de 'Resource Limits' (CPU/RAM) sur vos pods ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Rien, c'est la configuration recommandée",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Un seul pod défaillant (fuite de mémoire) peut consommer toute la RAM du nœud et faire planter les autres pods (voisins bruyants)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Le pod ne démarrera pas",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le pod sera automatiquement limité à 10Mo",
+                "correct": false
+            }
+        ],
+        "explanation": "Sans limites (cgroups), un conteneur peut monopoliser les ressources de l'hôte, causant un déni de service pour les autres applications hébergées sur le même nœud."
+    },
+    {
+        "id": "q91",
+        "text": "Pourquoi l'utilisation de 'Falco' est-elle pertinente même si vous avez déjà scanné vos images conteneurs ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Car le scan d'image ne détecte que les vulnérabilités statiques (CVE), pas les attaques dynamiques en temps réel (ex: un shell inversé)",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Car Falco remplace l'antivirus",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Car Falco permet de corriger les bugs de code",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Car le scan d'image est payant",
+                "correct": false
+            }
+        ],
+        "explanation": "La sécurité se fait en couches. Le scan protège le 'Build' (statique), Falco protège le 'Run' (dynamique) en surveillant les appels système suspects."
+    },
+    {
+        "id": "q92",
+        "text": "Quel est l'avantage principal d'un Service de type 'LoadBalancer' par rapport à 'NodePort' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Il est gratuit",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Il provisionne automatiquement une IP externe via le fournisseur Cloud, évitant d'exposer directement les ports des nœuds",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Il permet d'accéder aux pods sans authentification",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Il utilise moins de CPU",
+                "correct": false
+            }
+        ],
+        "explanation": "NodePort ouvre un port sur chaque nœud (ex: 30080), ce qui est peu pratique. LoadBalancer demande au Cloud (AWS/Azure) une IP unique qui répartit la charge vers le cluster."
+    },
+    {
+        "id": "q93",
+        "text": "Lors d'un audit, vous voyez que le service 'etcd' communique en clair (HTTP). Quel est le risque ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Lenteur du cluster",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Man-in-the-Middle : un attaquant sur le réseau peut intercepter tous les secrets et configurations du cluster",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Impossibilité de créer des pods",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Incompatibilité avec Windows",
+                "correct": false
+            }
+        ],
+        "explanation": "Comme etcd stocke les états et secrets, le trafic doit impérativement être chiffré (HTTPS/TLS) pour éviter l'interception."
+    },
+    {
+        "id": "q94",
+        "text": "Pourquoi est-il déconseillé d'exécuter des conteneurs en tant qu'utilisateur 'root' (UID 0), même à l'intérieur du conteneur ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Parce que root n'a pas accès à Internet",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Parce qu'en cas d'évasion (container escape), l'attaquant se retrouverait root sur l'hôte, maximisant l'impact",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Parce que cela empêche Kubernetes de redémarrer le pod",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "C'est une légende, root est sécurisé",
+                "correct": false
+            }
+        ],
+        "explanation": "Si un processus est root dans le conteneur et qu'il s'échappe, il peut potentiellement conserver ses privilèges root sur l'hôte (sauf si User Namespaces est configuré, ce qui est rare par défaut)."
+    },
+    {
+        "id": "q95",
+        "text": "À quoi correspond le 'Secure Boot' activé sur l'UEFI d'un hyperviseur ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "À un mot de passe pour allumer l'écran",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "À une vérification de la signature cryptographique du bootloader et de l'OS pour empêcher les rootkits de démarrage",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "À un chiffrement complet du disque dur",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "À une connexion VPN automatique",
+                "correct": false
+            }
+        ],
+        "explanation": "Le Secure Boot assure que seuls les binaires signés et approuvés peuvent être chargés au démarrage, protégeant l'hyperviseur contre les modifications malveillantes (bootkits)."
+    },
+    {
+        "id": "q96",
+        "text": "Quelle est la fonction d'un 'Ingress Controller' par rapport à un simple Service ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Il gère le routage HTTP/HTTPS (Layer 7) basé sur des noms de domaine et des chemins, ce que ne fait pas un Service standard",
+                "correct": true
+            },
+            {
+                "id": "b",
+                "label": "Il remplace le pare-feu",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Il permet de connecter des disques durs",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Il sert uniquement à l'authentification",
+                "correct": false
+            }
+        ],
+        "explanation": "Un Service opère généralement en couche 4 (TCP/IP). L'Ingress opère en couche 7, permettant d'héberger plusieurs sites (host-based routing) sur une seule IP."
+    },
+    {
+        "id": "q97",
+        "text": "Si vous utilisez Kubernetes, pourquoi devez-vous tout de même vous soucier du 'Patch Management' de l'OS des nœuds ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Vous ne devez pas, Kubernetes le fait tout seul",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Parce que Kubernetes (kubelet, runtime) tourne SUR l'OS. Si l'OS a une faille kernel, tout le cluster est vulnérable",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "Pour avoir une belle interface graphique",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Pour que la souris fonctionne",
+                "correct": false
+            }
+        ],
+        "explanation": "Kubernetes n'est qu'un logiciel tournant sur un OS (Linux/Windows). Si le noyau de l'OS n'est pas patché, les conteneurs (qui partagent ce noyau) sont à risque."
+    },
+    {
+        "id": "q98",
+        "text": "Quel est le rôle de 'Promtail' dans la stack de monitoring Grafana/Loki ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Visualiser les graphiques",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Stocker les métriques",
+                "correct": false
+            },
+            {
+                "id": "c",
+                "label": "Collecter les logs sur les nœuds et les envoyer à Loki",
+                "correct": true
+            },
+            {
+                "id": "d",
+                "label": "Générer des alertes SMS",
+                "correct": false
+            }
+        ],
+        "explanation": "Promtail est l'agent (similaire à Logstash ou Filebeat) qui lit les fichiers de logs sur les serveurs et les expédie vers le système de stockage centralisé Loki."
+    },
+    {
+        "id": "q99",
+        "text": "Qu'est-ce qui différencie un 'Container' d'une 'Sandbox' stricte ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "Rien, c'est la même chose",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "Le conteneur est conçu pour le déploiement et partage le noyau, une sandbox vise l'isolation totale et sécurisée (parfois via virtualisation)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "La sandbox est plus rapide",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "Le conteneur est payant",
+                "correct": false
+            }
+        ],
+        "explanation": "Le cours précise que le conteneur n'est 'pas une sandbox stricte' car l'isolation est superficielle (partage du noyau), contrairement à des technologies de sandboxing plus lourdes."
+    },
+    {
+        "id": "q100",
+        "text": "Dans le cadre de l'observabilité, à quoi servent les 'Traces' ?",
+        "options": [
+            {
+                "id": "a",
+                "label": "À voir l'utilisation mémoire en temps réel",
+                "correct": false
+            },
+            {
+                "id": "b",
+                "label": "À suivre le parcours d'une requête à travers les différents microservices pour identifier les goulots d'étranglement (latence)",
+                "correct": true
+            },
+            {
+                "id": "c",
+                "label": "À lire les messages d'erreur textuels",
+                "correct": false
+            },
+            {
+                "id": "d",
+                "label": "À tracer l'adresse IP des hackers",
+                "correct": false
+            }
+        ],
+        "explanation": "Les traces (Distributed Tracing) permettent de comprendre le cheminement d'une requête utilisateur à travers l'ensemble des services distribués et de mesurer le temps passé dans chaque service."
+    }
+]
